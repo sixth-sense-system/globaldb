@@ -8,5 +8,5 @@ Generated: 2025-09-16 01:36
 .\scripts\iis_ingest.ps1 -Input ".\INBOX\ideas" -Mode txtmd
 .\scripts\synthesis_run.ps1 -ExtractDir "._OpsLog\DERIVED\extract\latest" `
   -BacklogCsv ".\enerqis_backlog.csv" -BacklogMd ".\enerqis_backlog.md"
-.\scriptsoadmap_sync.ps1 -BacklogCsv ".\enerqis_backlog.csv" -BacklogMd ".\enerqis_backlog.md"
+.\scriptsoadmap_sync.ps1 -BacklogCsv ".\enerqis_backlog.csv" -BacklogMd ".\enerqis_backlog.md"
 ```

@@ -1,4 +1,4 @@
-﻿Param([int]$MaxMissionControlAgeDays = 7)
+Param([int]$MaxMissionControlAgeDays = 7)
 
 $ErrorActionPreference = "Stop"
 $errors = @()
