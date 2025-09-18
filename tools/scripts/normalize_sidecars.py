@@ -6,10 +6,15 @@
 import argparse, json, sys
 from pathlib import Path
 
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--root", default=".", help="Repo root")
-    ap.add_argument("--delete-legacy", action="store_true", help="Delete *.meta.json when *.erqmeta.json is present")
+    ap.add_argument(
+        "--delete-legacy",
+        action="store_true",
+        help="Delete *.meta.json when *.erqmeta.json is present",
+    )
     args = ap.parse_args()
 
     root = Path(args.root).resolve()
@@ -39,12 +44,20 @@ def main():
         else:
             # create minimal sidecar scaffold
             try:
-                prefer.write_text(json.dumps({"_note":"add ERQ-META here if required"}, indent=2), encoding="utf-8")
+                prefer.write_text(
+                    json.dumps({"_note": "add ERQ-META here if required"}, indent=2),
+                    encoding="utf-8",
+                )
                 created += 1
             except Exception as e:
                 print(f"ERROR creating {prefer}: {e}", file=sys.stderr)
 
-    print(json.dumps({"migrated": moved, "deleted_legacy": deleted, "created_scaffold": created}))
+    print(
+        json.dumps(
+            {"migrated": moved, "deleted_legacy": deleted, "created_scaffold": created}
+        )
+    )
+
 
 if __name__ == "__main__":
     main()

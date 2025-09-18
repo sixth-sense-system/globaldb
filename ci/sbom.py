@@ -6,19 +6,35 @@
 import argparse, hashlib, json, os, time
 from pathlib import Path
 
+
 def sha256_file(p: Path) -> str:
     h = hashlib.sha256()
-    with p.open('rb') as f:
-        for chunk in iter(lambda: f.read(1024*1024), b''):
+    with p.open("rb") as f:
+        for chunk in iter(lambda: f.read(1024 * 1024), b""):
             h.update(chunk)
     return "SHA256:" + h.hexdigest()
+
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--root", default=".", help="repo root")
     ap.add_argument("--out", default="00_repo/.cbr/reports/sbom.spdx.json")
-    ap.add_argument("--include-globs", nargs="*", default=["**/*.py","**/*.yml","**/*.yaml","**/*.json","**/*.md"])
-    ap.add_argument("--skip-globs", nargs="*", default=["**/.git/**","**/__pycache__/**","**/*.parquet","**/*.zip","**/*.tar*"])
+    ap.add_argument(
+        "--include-globs",
+        nargs="*",
+        default=["**/*.py", "**/*.yml", "**/*.yaml", "**/*.json", "**/*.md"],
+    )
+    ap.add_argument(
+        "--skip-globs",
+        nargs="*",
+        default=[
+            "**/.git/**",
+            "**/__pycache__/**",
+            "**/*.parquet",
+            "**/*.zip",
+            "**/*.tar*",
+        ],
+    )
     args = ap.parse_args()
 
     root = Path(args.root).resolve()
@@ -29,26 +45,28 @@ def main():
         files.difference_update(root.glob(pat))
 
     doc = {
-      "spdxVersion": "SPDX-2.3",
-      "dataLicense": "CC0-1.0",
-      "SPDXID": "SPDXRef-DOCUMENT",
-      "name": "ENERQIS Repository SBOM",
-      "documentNamespace": f"spdx:enerqis:{int(time.time())}",
-      "creationInfo": {
-        "created": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
-        "creators": ["Tool: sbom.py"]
-      },
-      "packages": []
+        "spdxVersion": "SPDX-2.3",
+        "dataLicense": "CC0-1.0",
+        "SPDXID": "SPDXRef-DOCUMENT",
+        "name": "ENERQIS Repository SBOM",
+        "documentNamespace": f"spdx:enerqis:{int(time.time())}",
+        "creationInfo": {
+            "created": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+            "creators": ["Tool: sbom.py"],
+        },
+        "packages": [],
     }
 
     for p in sorted(files):
-        rel = str(p.relative_to(root)).replace('\\','/')
+        rel = str(p.relative_to(root)).replace("\\", "/")
         pkg = {
-          "name": rel,
-          "SPDXID": "SPDXRef-" + hashlib.sha1(rel.encode()).hexdigest()[:12],
-          "filesAnalyzed": False,
-          "licenseConcluded": "NOASSERTION",
-          "checksums": [{"algorithm":"SHA256","checksumValue": sha256_file(p).split(":")[1]}]
+            "name": rel,
+            "SPDXID": "SPDXRef-" + hashlib.sha1(rel.encode()).hexdigest()[:12],
+            "filesAnalyzed": False,
+            "licenseConcluded": "NOASSERTION",
+            "checksums": [
+                {"algorithm": "SHA256", "checksumValue": sha256_file(p).split(":")[1]}
+            ],
         }
         doc["packages"].append(pkg)
 
@@ -56,6 +74,7 @@ def main():
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(doc, indent=2))
     print(f"Wrote SBOM to {out} with {len(doc['packages'])} packages.")
+
 
 if __name__ == "__main__":
     main()

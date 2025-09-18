@@ -1,25 +1,48 @@
 # ERQ-META-BEGIN
 # {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "ci_precommit", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "8d649768df2f82a37faec12893d14903bcf41ab3d32571f38c3398b9ae21ab69"}, "provenance": {"build_id": "f7f3dd91-1786-45d1-bac4-0f565d48d93f", "builder": "ENERQIS RC1c builder", "built_at": "2025-09-10T00:46:55Z", "tools": {"hashlib": "sha256", "python": "3.10"}}, "source_baseline_hash": "471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb", "spec_version": "1.0"}
 # ERQ-META-END
-repos:
-  - repo: https://github.com/psf/black
-    rev: 24.8.0
-    hooks: [{ id: black }]
-
-# .github/workflows/precommit.yml
+# .github/workflows/pre-commit.yml
 name: pre-commit
+
 on:
-  pull_request:           # <-- add this
-    branches: [ main ]    # (or remove this line to run on all PRs)
-  push:
+  pull_request:           # run on PRs into main (make THIS one Required)
+    branches: [ main ]
+  push:                   # optional safety net after merge
     branches: [ main ]
 
+permissions:
+  contents: read
+
+# Avoid wasting minutes: cancel older runs for the same PR/branch
+concurrency:
+  group: pre-commit-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  precommit:
+  pre-commit:
+    name: pre-commit
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v4
-        with: { python-version: "3.10" }
-      - run: python -m pip install --upgrade pip pre-commit
-      - run: python -m pre_commit run --all-files
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+          cache: pip
+
+      - name: Cache pre-commit env
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pre-commit
+          key: ${{ runner.os }}-precommit-${{ hashFiles('.pre-commit-config.yaml') }}
+          restore-keys: ${{ runner.os }}-precommit-
+
+      - name: Run pre-commit
+        uses: pre-commit/action@v3.0.1
+        with:
+          extra_args: --all-files --show-diff-on-failure

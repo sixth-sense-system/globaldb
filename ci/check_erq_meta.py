@@ -6,9 +6,26 @@
 import json, sys, os, glob
 
 ROOTS = [
-  "00_repo/.cbr","01_MasterControl","02_Governance","03_Data","04_Infrastructure","05_Blueprint",
-  "06_System","07_Theory","08_Market","09_Tech","10_AI_Algo","11_Research","12_Future","13_OpsLog","99_Archive","ci","templates","tools"
+    "00_repo/.cbr",
+    "01_MasterControl",
+    "02_Governance",
+    "03_Data",
+    "04_Infrastructure",
+    "05_Blueprint",
+    "06_System",
+    "07_Theory",
+    "08_Market",
+    "09_Tech",
+    "10_AI_Algo",
+    "11_Research",
+    "12_Future",
+    "13_OpsLog",
+    "99_Archive",
+    "ci",
+    "templates",
+    "tools",
 ]
+
 
 def main():
     missing = []
@@ -24,10 +41,15 @@ def main():
             except Exception as e:
                 print(f"[WARN] Skipped {path}: {e}", file=sys.stderr)
     if missing:
-        print("ERROR: The following JSON artifacts are missing `_erq_meta`:", file=sys.stderr)
+        print(
+            "ERROR: The following JSON artifacts are missing `_erq_meta`:",
+            file=sys.stderr,
+        )
         for m in missing:
             print(" -", m, file=sys.stderr)
         sys.exit(1)
     print("OK: All JSON artifacts include `_erq_meta`.")
+
+
 if __name__ == "__main__":
     main()

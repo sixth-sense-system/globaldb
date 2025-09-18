@@ -1,4 +1,4 @@
-﻿# ---------- Line endings policy ----------
+# ---------- Line endings policy ----------
 # Default: normalize text in repo; LF in repo, LF on checkout unless overridden
 * text=auto eol=lf
 
@@ -21,6 +21,7 @@
 *.yml   text eol=lf
 *.md    text eol=lf
 *.csv   text eol=lf
+*.txt   text eol=lf
 
 # Binary (never modify line endings)
 *.zip     binary
