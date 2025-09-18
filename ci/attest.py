@@ -6,15 +6,19 @@
 import argparse, json, os, time, hashlib
 from pathlib import Path
 
+
 def read_json(p: Path):
     if p.exists():
         return json.loads(p.read_text(encoding="utf-8"))
     return None
 
+
 def git_sha():
     sha = os.environ.get("GITHUB_SHA")
-    if sha: return sha
+    if sha:
+        return sha
     return None
+
 
 def main():
     ap = argparse.ArgumentParser()
@@ -29,28 +33,63 @@ def main():
     manifest = read_json(root / args.manifest) or {}
 
     statement = {
-      "_type": "https://in-toto.io/Statement/v1",
-      "subject": [{"name":"module_manifest.json","digest":{"sha256": manifest.get('manifest_sha256','')}}],
-      "predicateType": "https://slsa.dev/provenance/v1",
-      "predicate": {
-        "builder": {"id":"enerqis/erep"},
-        "buildType": "erep/full",
-        "buildInvocation": {"configSource": {"uri":"repo://","digest":{"git": git_sha() or "unknown"}}},
-        "metadata": {
-          "buildStartedOn": "2025-09-12T14:55:57Z",
-          "buildFinishedOn": "2025-09-12T14:55:57Z"
+        "_type": "https://in-toto.io/Statement/v1",
+        "subject": [
+            {
+                "name": "module_manifest.json",
+                "digest": {"sha256": manifest.get("manifest_sha256", "")},
+            }
+        ],
+        "predicateType": "https://slsa.dev/provenance/v1",
+        "predicate": {
+            "builder": {"id": "enerqis/erep"},
+            "buildType": "erep/full",
+            "buildInvocation": {
+                "configSource": {
+                    "uri": "repo://",
+                    "digest": {"git": git_sha() or "unknown"},
+                }
+            },
+            "metadata": {
+                "buildStartedOn": "2025-09-12T14:55:57Z",
+                "buildFinishedOn": "2025-09-12T14:55:57Z",
+            },
+            "materials": [
+                {
+                    "uri": "file://00_repo/.cbr/erep_policy.json",
+                    "digest": {
+                        "sha256": (
+                            hashlib.sha256(
+                                (root / args.policy).read_bytes()
+                            ).hexdigest()
+                            if (root / args.policy).exists()
+                            else ""
+                        )
+                    },
+                },
+                {
+                    "uri": "file://00_repo/.cbr/acceptance_gates.yaml",
+                    "digest": {
+                        "sha256": (
+                            hashlib.sha256(
+                                (
+                                    root / "00_repo/.cbr/acceptance_gates.yaml"
+                                ).read_bytes()
+                            ).hexdigest()
+                            if (root / "00_repo/.cbr/acceptance_gates.yaml").exists()
+                            else ""
+                        )
+                    },
+                },
+            ],
         },
-        "materials": [
-          {"uri":"file://00_repo/.cbr/erep_policy.json","digest":{"sha256": hashlib.sha256((root / args.policy).read_bytes()).hexdigest() if (root/args.policy).exists() else ""}},
-          {"uri":"file://00_repo/.cbr/acceptance_gates.yaml","digest":{"sha256": hashlib.sha256((root / '00_repo/.cbr/acceptance_gates.yaml').read_bytes()).hexdigest() if (root/'00_repo/.cbr/acceptance_gates.yaml').exists() else ""}}
-        ]
-      }
     }
 
     out = root / args.out
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(statement, indent=2))
     print(f"Wrote attestation to {out}")
+
 
 if __name__ == "__main__":
     main()
