@@ -3,8 +3,6 @@ pre_package:
   - name: ops_debt_audit
     run: "powershell -ExecutionPolicy Bypass -File scripts/ops_debt_audit.ps1"
     on_fail_gate: "G-OPS-DEBT-ZERO"
-
-pre_package:
   - name: content_guard
     run: "powershell -ExecutionPolicy Bypass -File scripts/content_guard.ps1"
     on_fail_gate: "G-NOPLACEHOLDER"
