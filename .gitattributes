@@ -7,6 +7,9 @@
 *.py   text eol=lf
 *.ps1  text eol=lf
 
+# cTrader bots (text, keep LF)
+*.cbot text eol=lf
+
 # Windows batch/cmd prefer CRLF on checkout (still LF in the repo)
 *.bat  text eol=crlf
 *.cmd  text eol=crlf
