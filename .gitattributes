@@ -1,6 +1,6 @@
 ﻿# ---------- Line endings policy ----------
-# Default: normalize text in repo; LF in repo, platform EOL on checkout per rule.
-* text=auto
+# Default: normalize text in repo; LF in repo, LF on checkout unless overridden
+* text=auto eol=lf
 
 # Scripts — keep LF (works on Windows PowerShell & PowerShell 7)
 *.sh   text eol=lf
@@ -20,6 +20,7 @@
 *.yaml  text eol=lf
 *.yml   text eol=lf
 *.md    text eol=lf
+*.csv   text eol=lf
 
 # Repo-specific (add as needed)
 *.cbot text eol=lf
