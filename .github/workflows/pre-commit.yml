@@ -7,13 +7,11 @@ name: pre-commit
 on:
   pull_request:           # run on PRs into main (make THIS one Required)
     branches: [ main ]
-  push:                   # optional safety net after merge
-    branches: [ main ]
 
 permissions:
   contents: read
 
-# Avoid wasting minutes: cancel older runs for the same PR/branch
+# Cancel older runs for the same PR/branch
 concurrency:
   group: pre-commit-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
@@ -33,7 +31,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-          cache: pip
 
       - name: Cache pre-commit env
         uses: actions/cache@v4
