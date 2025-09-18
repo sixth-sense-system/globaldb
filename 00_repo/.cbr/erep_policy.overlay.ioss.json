@@ -1,0 +1,8 @@
+{
+  "runs": {
+    "RUNBOOK_CONSOLIDATE": {
+      "enabled": true,
+      "report": "00_repo/.cbr/reports/ioss_report.json"
+    }
+  }
+}

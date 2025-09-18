@@ -1,0 +1,33 @@
+{
+  "canonicalization": {
+    "encoding": "utf-8",
+    "newline": "LF",
+    "sort_keys": true
+  },
+  "doc_type": "sidecar_meta",
+  "governance_links": {
+    "acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml",
+    "audit_log": "00_repo/.cbr/audit_log.json",
+    "registry": "00_repo/.cbr/registry.json"
+  },
+  "integrity": {
+    "algo": "sha256",
+    "canonical_scope": "payload",
+    "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "provenance": {
+    "build_id": "dfb1f918-207e-437a-8bd2-1957bab3b913",
+    "builder": "EREP v2.3.3 stabilization overlay",
+    "built_at": "2025-09-12T17:00:06Z",
+    "tools": {
+      "hash": "sha256",
+      "python": "3.11.8"
+    }
+  },
+  "source_baseline_hash": "baseline:unknown",
+  "spec_version": "2.3.3",
+  "targets": {
+    "file": "11_Research/machine/notebooks/.keep",
+    "size": 0
+  }
+}

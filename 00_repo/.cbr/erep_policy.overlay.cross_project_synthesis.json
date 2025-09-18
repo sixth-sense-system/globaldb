@@ -1,0 +1,114 @@
+{
+  "synthesis": {
+    "enabled": true,
+    "triggers": [
+      "post_ingest",
+      "post_compliance",
+      "weekly_fri_17_00"
+    ],
+    "budgets": {
+      "daily_tokens": 200000,
+      "per_run_tokens": 60000,
+      "editorial_max_patches": 12
+    },
+    "queue_file": "00_repo/.cbr/out/synthesis_queue.json",
+    "cross_reference": {
+      "emit": true,
+      "path": "00_repo/.cbr/reports/xref_index.json",
+      "scan_globs": [
+        "**/*.md",
+        "**/*.txt",
+        "**/*.json"
+      ]
+    },
+    "impact_rules": [
+      {
+        "match": {
+          "any_of_terms": [
+            "WTI",
+            "CL",
+            "Crude Oil",
+            "NYMEX CL"
+          ]
+        },
+        "targets": [
+          "08_Market/**/WTI*.*",
+          "08_Market/**/Crude*.*"
+        ]
+      },
+      {
+        "match": {
+          "any_of_terms": [
+            "Time cycles",
+            "Hurst",
+            "Gann",
+            "square of nine",
+            "vibration"
+          ]
+        },
+        "targets": [
+          "07_Theory/**",
+          "05_Blueprint/**/theory*.md"
+        ]
+      },
+      {
+        "match": {
+          "any_of_terms": [
+            "Order Flow",
+            "CVD",
+            "cumulative delta",
+            "footprint",
+            "market profile"
+          ]
+        },
+        "targets": [
+          "08_Market/**",
+          "10_AI_Algo/**",
+          "11_Research/**"
+        ]
+      }
+    ]
+  },
+  "enrichment": {
+    "mechanical": {
+      "enabled": true,
+      "fixes": [
+        "titles",
+        "toc",
+        "anchors",
+        "links",
+        "frontmatter",
+        "erq_meta",
+        "lint",
+        "link_rot"
+      ],
+      "auto_apply": true,
+      "report": "00_repo/.cbr/reports/mech_enrich_report.json"
+    },
+    "editorial": {
+      "enabled": true,
+      "mode": "preview",
+      "max_tokens_per_file": 1200,
+      "targets": {
+        "thin_pages": {
+          "min_words": 180,
+          "priority": "high",
+          "globs": [
+            "07_Theory/**",
+            "08_Market/**"
+          ]
+        },
+        "high_value": {
+          "paths": [
+            "10_AI_Algo/**",
+            "11_Research/**",
+            "13_OpsLog/ROADMAP/**"
+          ]
+        }
+      },
+      "emit_patches_to": "13_OpsLog/CHANGES/patches/${DATE}/",
+      "emit_previews_to": "13_OpsLog/CHANGES/preview/${DATE}/",
+      "report": "00_repo/.cbr/reports/editorial_suggestions.json"
+    }
+  }
+}

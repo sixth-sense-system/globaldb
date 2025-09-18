@@ -1,0 +1,38 @@
+# ERQ-META-BEGIN
+# {"canonicalization":{"encoding":"utf-8","newline":"LF","sort_keys":true},"doc_type":"config","governance_links":{"acceptance_gates":"00_repo/.cbr/acceptance_gates.yaml","audit_log":"00_repo/.cbr/audit_log.json","registry":"00_repo/.cbr/registry.json"},"integrity":{"algo":"sha256","canonical_scope":"payload","value":"5738a495a19ecd78494025de481bb557234151c5718e35114a3c874b3cab8e08"},"provenance":{"build_id":"4262c0e9-93a9-4b06-89db-c26cd8cc1249","builder":"EREP v2.4.1 (inline)","built_at":"2025-09-12T23:35:39Z","tools":{"python":"3.11.8"}},"source_baseline_hash":"pending","spec_version":"2.4"}
+# ERQ-META-END
+# EREP acceptance gates (v2.4 baseline)
+global:
+  required_files:
+    - 00_repo/.cbr/erep_policy.json
+    - 00_repo/.cbr/structure_lock.yml
+  prohibited_terms: ["WIP", "DO NOT COMMIT", "TEMP"]
+  min_readme_words: 50
+
+modules:
+  "00_repo": { required: ["README.md"] }
+  "02_Governance": { required: ["README.md"] }
+  "06_System": { required: ["README.md"] }
+
+ci_gates:
+  - id: G-NOPLACEHOLDER
+    description: No placeholder/tiny machine files
+  - id: G-SCHEMA
+    description: Machine/control files validate against schema
+  - id: G-DETERMINISM
+    description: Deterministic settings present & used
+  - id: G-WRITE-SCOPE
+    description: Writes limited to allowed roots
+  - id: G-EREP-DOSSIER
+    description: Innovation dossier emitted on FULL mode when innovation.enable
+  - id: G-EREP-TODOS
+    description: Module TODOs emitted when innovation.write_module_todos
+  - id: G-EREP-EQUIV
+    description: FULL & COMPLIANCE diffs must be empty for changed files
+  - id: G-ANTI-DUP-SIDECAR
+    description: Reject redundant .meta.json when parent embeds ERQ-META
+  - id: G-OPS-DEBT-ZERO
+    description: Ops debt audit passed (no outstanding debt; Mission Control fresh; backlog/scorecard in sync; no uncommitted changes)
+    type: process
+    severity: error
+    expects_report: "00_repo/.cbr/reports/ops_debt_report.json"

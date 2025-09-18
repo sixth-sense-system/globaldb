@@ -1,0 +1,22 @@
+{
+  "policy_sets": {
+    "SECURITY:baseline:v1": {
+      "description": "Security posture v1 gates",
+      "gates": [
+        "G-SEC-IDENTITY",
+        "G-SEC-2FA",
+        "G-SEC-BRANCH-PROTECT",
+        "G-SEC-CODEOWNERS",
+        "G-SEC-NO-SECRETS",
+        "G-SEC-SOPS",
+        "G-SEC-DETERMINISM",
+        "G-SEC-SNAPSHOT",
+        "G-SEC-CI-PIN",
+        "G-SEC-CODEQL",
+        "G-SEC-DEPENDABOT",
+        "G-SEC-MINISIGN",
+        "G-SEC-OFFSITE"
+      ]
+    }
+  }
+}

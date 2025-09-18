@@ -1,0 +1,15 @@
+--- a/00_repo/.cbr/acceptance_gates.yaml
++++ b/00_repo/.cbr/acceptance_gates.yaml
+@@
+ gates:
++  - id: G-EREP-DOSSIER
++    description: Innovation Dossier present for every EREP FULL run
++    must_exist:
++      - path: "00_repo/.cbr/opportunities/erep/*/innovation_brief.json"
++      - path: "00_repo/.cbr/opportunities/erep/*/opportunities_report.md"
++  - id: G-EREP-TODOS
++    description: Module-scoped TODOs emitted when modules are touched
++    conditional:
++      if_changed_modules: true
++      then_must_exist:
++        - path: "*/human/innovation_todos.md"

@@ -1,0 +1,9 @@
+{
+  "overlays": {
+    "no_placeholders": {
+      "gates_files": [
+        "00_repo/.cbr/acceptance_gates_no_placeholders.yaml"
+      ]
+    }
+  }
+}

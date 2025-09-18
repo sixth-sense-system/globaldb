@@ -1,0 +1,44 @@
+// ERQ-META-BEGIN
+// {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "b33b63eabef984ed95b36bc8f571e4d00fb073a42193b2d3154121ff6a40205d"}, "provenance": {"build_id": "7a7d4ec2-0edf-4e30-b1bc-39354cda593a", "builder": "EREP v2.3 FULL", "built_at": "2025-09-12T06:13:49Z", "tools": {"hash": "sha256", "python": "3.11"}}, "source_baseline_hash": "pending", "spec_version": "2.3"}
+// ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization":{"encoding":"utf-8","newline":"LF","sort_keys":true},"doc_type":"artifact","governance_links":{"acceptance_gates":"00_repo/.cbr/acceptance_gates.yaml","audit_log":"00_repo/.cbr/audit_log.json","registry":"00_repo/.cbr/registry.json"},"integrity":{"algo":"sha256","canonical_scope":"payload","value":"6c6628db47e1e2b5f4e5275dd99589e164b3c94355a57699014e81ccad9f0dfc"},"provenance":{"build_id":"26a9b8c0-937a-4434-81fd-d52d88db338c","builder":"EREP v2.2","built_at":"2025-09-12T02:53:32Z","tools":{"hashlib":"sha256","python":"3.11.8"}},"source_baseline_hash":"ff16b4e65447d1d6658cdd60d6bb9d426f0a238cd08f4488eea666a53abb8653","spec_version":"2.2"}
+# ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "7d5ee12b08bbfc5e001780b9527339c20496228c954afc7f7d8a8dfc8cdd2a89"}, "provenance": {"build_id": "b9469890-ed90-4637-bec2-b6073aa32072", "builder": "EREP v2.2", "built_at": "2025-09-12T02:49:11Z", "tools": {"hash": "sha256", "python": "3.10"}}, "source_baseline_hash": "27fc28fe0f19e3cad5b5d3e44fc1032b732a3d7b5455ed39895731aefc4c6a6d", "spec_version": "2.2"}
+# ERQ-META-END
+// ERQ-META-BEGIN
+// {"doc_type":"machine","spec_version":"2.0","source_baseline_hash":"246d0097ad23b1bdf7615f56f441385b54ce69534d64aa58cff0ba194d67c854","provenance":{"erep_version":"2.2","build_id":"b5ea0a07-8e22-4f6a-9db4-9bbd9e9c5fe2","built_at":"2025-09-12T01:58:15Z","tools":{"python":"3.11.8","hashlib":"sha256"}},"governance_links":{"acceptance_gates":"00_repo/.cbr/acceptance_gates.yaml","registry":"00_repo/.cbr/registry.json","audit_log":"00_repo/.cbr/audit_log.json"},"canonicalization":{"encoding":"utf-8","newline":"LF","sort_keys":true},"integrity":{"algo":"sha256","canonical_scope":"payload","value":"24eb4a451d212d3d9f9346b3ae41f81cd8a156329356343e66920b7d25beec83"}}
+// ERQ-META-END
+{
+  "canonicalization": {
+    "encoding": "utf-8",
+    "newline": "LF",
+    "sort_keys": true
+  },
+  "doc_type": "roadmap_snapshots",
+  "governance_links": {
+    "acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml",
+    "audit_log": "00_repo/.cbr/audit_log.json",
+    "registry": "00_repo/.cbr/registry.json"
+  },
+  "integrity": {
+    "algo": "sha256",
+    "canonical_scope": "payload",
+    "value": "11346e53d14d9d2089235af96c8b44557afc5d9efa85da3c9fb663fa81f31e75"
+  },
+  "payload": {
+    "snapshots": []
+  },
+  "provenance": {
+    "build_id": "f7f3dd91-1786-45d1-bac4-0f565d48d93f",
+    "builder": "ENERQIS RC1c builder",
+    "built_at": "2025-09-10T00:46:55Z",
+    "tools": {
+      "hashlib": "sha256",
+      "python": "3.10"
+    }
+  },
+  "source_baseline_hash": "471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb",
+  "spec_version": "1.0"
+}

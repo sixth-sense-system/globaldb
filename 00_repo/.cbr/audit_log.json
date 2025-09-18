@@ -1,0 +1,61 @@
+// ERQ-META-BEGIN
+// {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "a7921ecb1cf664c2a6d2c5d4d4f29711985ede726fe8cbba522d0a1fa8c1ecc5"}, "provenance": {"build_id": "a723ebd2-037a-4d35-a83d-d2051652c4f1", "builder": "EREP v2.3 FULL", "built_at": "2025-09-12T06:13:49Z", "tools": {"hash": "sha256", "python": "3.11"}}, "source_baseline_hash": "pending", "spec_version": "2.3"}
+// ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "9426072c000b1bfa899ff19260fa488e04c6d022934d8b0bd6c1e32505f9b4e6"}, "provenance": {"build_id": "714bf4c2-ab2e-4409-b878-1d29f931a418", "builder": "EREP v2.2", "built_at": "2025-09-12T02:49:11Z", "tools": {"hash": "sha256", "python": "3.10"}}, "source_baseline_hash": "27fc28fe0f19e3cad5b5d3e44fc1032b732a3d7b5455ed39895731aefc4c6a6d", "spec_version": "2.2"}
+# ERQ-META-END
+/* ERQ-META-BEGIN
+{
+  "canonicalization": {
+    "encoding": "utf-8",
+    "newline": "LF",
+    "sort_keys": true
+  },
+  "doc_type": "log",
+  "governance_links": {
+    "acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml",
+    "audit_log": "00_repo/.cbr/audit_log.json",
+    "registry": "00_repo/.cbr/registry.json"
+  },
+  "integrity": {
+    "algo": "sha256",
+    "canonical_scope": "payload",
+    "value": "97ebe724fff3784d0cf3361d370d6f05e69178a86c0d8c72cdb212b510b35369"
+  },
+  "provenance": {
+    "build_id": "151551f1-e386-4562-93ca-e6c59b217316",
+    "builder": "EREP v2.2",
+    "built_at": "2025-09-12T00:20:14Z",
+    "tools": {
+      "hashlib": "sha256",
+      "python": "3.11.8"
+    }
+  },
+  "source_baseline_hash": "471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb",
+  "spec_version": "1.0"
+}
+ERQ-META-END */
+{
+  "doc_type": "audit_log",
+  "events": [
+    {
+      "action": "init",
+      "actor": "RC1c",
+      "at": "2025-09-10T00:46:55Z",
+      "details": "Initialize machine artifact supplement."
+    }
+  ],
+  "source_baseline_hash": "471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb",
+  "spec_version": "1.0"
+}
+{
+  "version": "1",
+  "events": [
+    {
+      "ts": "2025-09-12T00:00:00Z",
+      "actor": "system",
+      "action": "init",
+      "details": "Initialized audit log"
+    }
+  ]
+}

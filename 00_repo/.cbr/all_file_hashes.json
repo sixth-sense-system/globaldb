@@ -1,0 +1,429 @@
+// ERQ-META-BEGIN
+// {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "4b01f7635daf6d7e1f1f41462c3d83f1050a2c65df1b1da2186f32c889bbaaf0"}, "provenance": {"build_id": "1290e0d5-12ff-4af8-b7c2-6418a998874a", "builder": "EREP v2.3 FULL", "built_at": "2025-09-12T06:13:49Z", "tools": {"hash": "sha256", "python": "3.11"}}, "source_baseline_hash": "pending", "spec_version": "2.3"}
+// ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "c5dd74ee45c236283feee7ae0e57f4456881668675ca220b46b72fc08c9fdd8c"}, "provenance": {"build_id": "ad940f05-af43-42bb-a3b3-23e4e2148f4f", "builder": "EREP v2.2", "built_at": "2025-09-12T02:49:11Z", "tools": {"hash": "sha256", "python": "3.10"}}, "source_baseline_hash": "27fc28fe0f19e3cad5b5d3e44fc1032b732a3d7b5455ed39895731aefc4c6a6d", "spec_version": "2.2"}
+# ERQ-META-END
+# ERQ-META-BEGIN
+# {"doc_type":"json-doc","spec_version":"1.0","source_baseline_hash":"471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb","provenance":{"build_id":"ce5b6cf7-8994-48d9-8317-683b1dd45bb2","builder":"ENERQIS RC1+ upgrader","built_at":"2025-09-10T01:10:56Z","tools":{"python":"3.11.8","hashlib":"sha256"}},"governance_links":{"acceptance_gates":"00_repo/.cbr/acceptance_gates.yaml","registry":"00_repo/.cbr/registry.json","audit_log":"00_repo/.cbr/audit_log.json"},"canonicalization":{"encoding":"utf-8","newline":"LF","sort_keys":true},"integrity":{"algo":"sha256","canonical_scope":"payload","value":"a8cfc93ab05e46d7cc89e2ac0236f94a2e62bd0011f5bd45ecef169c0a9e5f57"}}
+# ERQ-META-END
+{
+  "files": [
+    {
+      "path": "00_repo/.cbr/acceptance_gates.yaml",
+      "sha256": "0053e2ed8abb6a189a1288a0081a1c4078c47e26b1c61f03298081b01d86eab8",
+      "size": 1445
+    },
+    {
+      "path": "00_repo/.cbr/provenance_schema.json",
+      "sha256": "a905a1ac965be8485660925198e8792104839603ad3936374814cd3154e3fe30",
+      "size": 435
+    },
+    {
+      "path": "00_repo/.cbr/registry.json",
+      "sha256": "2b22ec95392998d66bf702fa6457a94bb2ea80fd0dcd8d7dc1d82b3b822d12ce",
+      "size": 1805
+    },
+    {
+      "path": "00_repo/.cbr/audit_log.json",
+      "sha256": "97ebe724fff3784d0cf3361d370d6f05e69178a86c0d8c72cdb212b510b35369",
+      "size": 321
+    },
+    {
+      "path": "00_repo/.cbr/structure_spec.json",
+      "sha256": "ca5e70d842101c4e06fbf30b8612dc62fe6b3b9635ede965b46f0e1bd9091623",
+      "size": 191
+    },
+    {
+      "path": "00_repo/.cbr/structure_lock.json",
+      "sha256": "1991546ef1070eb9e5cee3f4ca0c4a85a90cc9527db232cccf9770b1ccf82c5a",
+      "size": 206
+    },
+    {
+      "path": "00_repo/.cbr/proposals/enterprise_baseline_proposals.json",
+      "sha256": "3bcc0b93fd1e9568b2588080389f49e50cb39d4547c12a0bb3f4e700e5b5fae5",
+      "size": 2259
+    },
+    {
+      "path": "01_MasterControl/machine/manifest.json",
+      "sha256": "acd97e36fe96a3e1ddd97298293bdcb2add247fd98f05ed71c286ce438973fb4",
+      "size": 1076
+    },
+    {
+      "path": "01_MasterControl/machine/metrics_config.json",
+      "sha256": "062a25ce8ed4d35d45b19bfdd8432cb1db179a46c647c2424888287dcbadd983",
+      "size": 1013
+    },
+    {
+      "path": "01_MasterControl/machine/workflow_synthesis.yaml",
+      "sha256": "611958d370575df8cb39d3bc70d6d4aee3500f1b0d3133b6b2b7f047d1b77a19",
+      "size": 2894
+    },
+    {
+      "path": "01_MasterControl/machine/workflow_packaging.yaml",
+      "sha256": "ba6e82a43459ae1392658f84724c843a8154cda146f9ed22f7c42fb165880167",
+      "size": 1244
+    },
+    {
+      "path": "01_MasterControl/machine/workflow_rebuild.yaml",
+      "sha256": "afdc5878975e0a76fd7b539662c803536185abed40548d84b5fac824dc68cf01",
+      "size": 1029
+    },
+    {
+      "path": "01_MasterControl/machine/validation_logs/integrity_checks.log",
+      "sha256": "4558b3402e92ca700619c5e309b4feaaeaa56189afaa450fb6d3fd662aeefec0",
+      "size": 614
+    },
+    {
+      "path": "02_Governance/machine/access_control.json",
+      "sha256": "c536c5220976c796c64fa33f626f15f541c1249d1db86640688bd66f8fad2f72",
+      "size": 1011
+    },
+    {
+      "path": "02_Governance/machine/accountability_framework.json",
+      "sha256": "b86fbd0cf314912772624590e73e35406ec7627212681eb399f6b2bc339d2213",
+      "size": 1031
+    },
+    {
+      "path": "02_Governance/machine/compliance_confidentiality.json",
+      "sha256": "ebb0073c6e7ca64ff151303ea222083630e4b057fbe284f60ab03d3dd3082f80",
+      "size": 1035
+    },
+    {
+      "path": "02_Governance/machine/data_handling_policy.json",
+      "sha256": "aefc3605213c337eb96bbc84dc0c485d2deaabdd4fc0e997b00e9f3ea777cdfe",
+      "size": 1023
+    },
+    {
+      "path": "02_Governance/machine/enterprise_baseline_governance.json",
+      "sha256": "889dacff894bcbd76a312d64b4653a0bc1571457c09342a3478833d5b1060e5e",
+      "size": 1043
+    },
+    {
+      "path": "02_Governance/machine/governance_index.json",
+      "sha256": "b88c1e0a344f346ed1cf4b7790f68a1e6b8e64c4be9e465e72a55823758c0829",
+      "size": 1015
+    },
+    {
+      "path": "02_Governance/machine/governance_overview.json",
+      "sha256": "5630bbbd36ff0dd8ee3a53096a89442504812c61ad188d7982c0c9610bff6fb3",
+      "size": 1021
+    },
+    {
+      "path": "02_Governance/machine/llm_safety_policy.json",
+      "sha256": "e31343f72c18845381a6816002735ad38ee0f7326f2f8fed2e1d7679b2d12896",
+      "size": 1017
+    },
+    {
+      "path": "03_Data/machine/manifest.json",
+      "sha256": "19ad54b62f984e53b458cf27ea34c0b019a182248fd04d89f05a7409bec15820",
+      "size": 866
+    },
+    {
+      "path": "03_Data/machine/pipeline_ingest.yaml",
+      "sha256": "bbf77dfa98521654c50c6fdcd0bc66520b04da7de51520abc940a25b0689bacf",
+      "size": 861
+    },
+    {
+      "path": "03_Data/machine/pipeline_normalize.yaml",
+      "sha256": "f6872d427ecec979bf9ccc7555d87b8d6953d5c7498858a816d56e8aed0b4a14",
+      "size": 831
+    },
+    {
+      "path": "03_Data/machine/schema_registry.json",
+      "sha256": "7a895f6978873fb27daf66595d764e5e14392119d147eb3212d42a556284a119",
+      "size": 860
+    },
+    {
+      "path": "03_Data/machine/validation_checks.log",
+      "sha256": "314efc4cdae85323c0ef2501356efd8fb672734dc5af52c63cf84b01474d3f92",
+      "size": 619
+    },
+    {
+      "path": "03_Data/machine/dataset-manifests/datasets_index.json",
+      "sha256": "b922dd76d28439d76b52e479672ed2121f636efac083ba64c4e31244aa12c291",
+      "size": 860
+    },
+    {
+      "path": "03_Data/machine/dataset-manifests/dataset_hashes.json",
+      "sha256": "c582dd40e27dd55dc960ae3c8fe53491d755a35fbc6990bdbfadaa9bf2779965",
+      "size": 838
+    },
+    {
+      "path": "04_Infrastructure/machine/manifest.json",
+      "sha256": "e5fbb62d282e215413929cc246b43e7467e6d0c87b51d82a23aec2ffb1ebb536",
+      "size": 876
+    },
+    {
+      "path": "04_Infrastructure/machine/network_config.yaml",
+      "sha256": "842f50b67e57fd4da4c225159db81c2ff070ee57dbf9ffbef62f72d10ebbf4a0",
+      "size": 783
+    },
+    {
+      "path": "04_Infrastructure/machine/server_inventory.json",
+      "sha256": "cf85fde7d864b3ea28bf141ad098ff8fd30db9f854406323a1de7ee5a4013426",
+      "size": 861
+    },
+    {
+      "path": "04_Infrastructure/machine/storage_layout.yaml",
+      "sha256": "5c2fd1164ca1484fde8666410563612773faa2c91ccc44eb911ee0aea1d8bf93",
+      "size": 765
+    },
+    {
+      "path": "04_Infrastructure/machine/dr_runbooks/disaster_recovery.md",
+      "sha256": "285890a090abc9bd77646a89261e721d43588f5bc82e11a0ece87f721692a65a",
+      "size": 607
+    },
+    {
+      "path": "04_Infrastructure/machine/monitoring_logs/alerts.log",
+      "sha256": "b202c998cc3ec72efc7df7077cc7f1e9e02b154db5f6529802fc56374253cb8f",
+      "size": 611
+    },
+    {
+      "path": "05_Blueprint/machine/integration_manifest.json",
+      "sha256": "436f70df5929584947b4e76a54d5a484d68a49c36e6070c342186415077e800e",
+      "size": 863
+    },
+    {
+      "path": "05_Blueprint/machine/module_dependencies.json",
+      "sha256": "8c7cfcc5242dedf597a8201e92b097b422a81987605eff796ccc2a2467ebba2e",
+      "size": 862
+    },
+    {
+      "path": "05_Blueprint/machine/roadmap_snapshots.json",
+      "sha256": "24eb4a451d212d3d9f9346b3ae41f81cd8a156329356343e66920b7d25beec83",
+      "size": 864
+    },
+    {
+      "path": "06_System/machine/backtest_results.json",
+      "sha256": "ff3145d5e007fd8c7ec692d9af007a14c5f3f0b455f35daacb5e25d450eb39e2",
+      "size": 861
+    },
+    {
+      "path": "06_System/machine/experiment_manifest.json",
+      "sha256": "0eee93f85c7c71cd687e050d8537e8cfc41e4cb8b5d06331c3af0d75a0c044a9",
+      "size": 868
+    },
+    {
+      "path": "06_System/machine/parity_logs.json",
+      "sha256": "5e7ef027bca21a121be7b9d717c58c37ebddc0c105ca7ef87bbdad59dedb84e2",
+      "size": 860
+    },
+    {
+      "path": "06_System/machine/prototype_strategies/cBot_SimpleMA.cbot",
+      "sha256": "16fae57ef0f8e66ebfae42947129a0145a05557b9407ce9642c26a7ab9b4d611",
+      "size": 1536
+    },
+    {
+      "path": "06_System/machine/prototype_strategies/cBot_Breakout.cbot",
+      "sha256": "6024549e2d207e4b41b48a7bfb05355260168ecbdb3cadf216d84f2877e746d5",
+      "size": 1536
+    },
+    {
+      "path": "07_Theory/machine/crosslinks.yaml",
+      "sha256": "94b9e715e72f9d429cab1491f8af433181d3499cc174b69bdf650b68fbe811dd",
+      "size": 767
+    },
+    {
+      "path": "07_Theory/machine/references.json",
+      "sha256": "9da93208a6001c23f7cd0bb0fac4db3e659ca041429b5a43fb837d2781d073f7",
+      "size": 852
+    },
+    {
+      "path": "07_Theory/machine/hypothesis_register.csv",
+      "sha256": "5bd5c48405c4fc11b5bfba7cfc43e139a7837387f0a0cb181e9879483596df2d",
+      "size": 16
+    },
+    {
+      "path": "07_Theory/machine/theory_tags.yaml",
+      "sha256": "478e79a0979d794d9df7b90da789127093ff4dbfdb5b99f712e96dc5ed36cf1f",
+      "size": 760
+    },
+    {
+      "path": "08_Market/machine/indicator_configs.yaml",
+      "sha256": "04a1fc2446615d768e62f2a5a7277a49181e5aec8a0761c4c7b79560610a8895",
+      "size": 772
+    },
+    {
+      "path": "08_Market/machine/instrument_metadata.json",
+      "sha256": "3fc82c15bacadf13ba477bb9a3f3f993a9be878d2744aa8117354d9c5e2e0143",
+      "size": 868
+    },
+    {
+      "path": "08_Market/machine/market_data.json",
+      "sha256": "05f62c869a91f4ef3d53c3988e4caaa756c6b293c35f78ab9c839883f0a389ec",
+      "size": 856
+    },
+    {
+      "path": "08_Market/machine/research_notes_embeddings.json",
+      "sha256": "45b19ced71ac0db54d2c20c1e3328e27e3781b50a7b445a0fcdc0cf075c2ec4d",
+      "size": 877
+    },
+    {
+      "path": "09_Tech/machine/manifest.json",
+      "sha256": "92c148e7bdb91129496a56dc219d0a05a6c902c59193cd99a195066e997588ee",
+      "size": 866
+    },
+    {
+      "path": "09_Tech/machine/dependencies_registry.json",
+      "sha256": "ce8a4b19bf472b6d664d044110ed36f7b4174421081f4113ec8a81125c7387c3",
+      "size": 863
+    },
+    {
+      "path": "09_Tech/machine/testing_matrix.json",
+      "sha256": "0f3cfa6f31044885eb623323ab8ad19cf011c722692d742f19423453ae90f016",
+      "size": 858
+    },
+    {
+      "path": "09_Tech/machine/deployment_manifest.json",
+      "sha256": "c5fa7bed8061112232b525f431f88786b15e8f7c8dc8d98ea7228f9ef373f30d",
+      "size": 864
+    },
+    {
+      "path": "09_Tech/machine/observability_manifest.json",
+      "sha256": "beb574feb2ec4f6651a879fba41730f6e538b1459e56f837bdcd2f0ce70cdb92",
+      "size": 870
+    },
+    {
+      "path": "09_Tech/machine/security_manifest.json",
+      "sha256": "768d4bc9c730e57a23433730ecf9e8c26fd6c87ac7e3295491a9445d03a76f02",
+      "size": 863
+    },
+    {
+      "path": "09_Tech/machine/tech_roadmap.json",
+      "sha256": "b114bac3cc6079d8b745a944af9c6e19ecccca002fe7d7331bced4919cc5f275",
+      "size": 860
+    },
+    {
+      "path": "10_AI_Algo/machine/model_registry.json",
+      "sha256": "acf73fbb16010547f0c2835390199e22e0487ffe80035643a7c30374c5c82a2d",
+      "size": 905
+    },
+    {
+      "path": "10_AI_Algo/machine/inference_pipeline.yaml",
+      "sha256": "ae4319099a8f604eac12174cd03709ab4bfb4fae8a00ebf9f8281a4b02c67265",
+      "size": 769
+    },
+    {
+      "path": "10_AI_Algo/machine/training_runs.log",
+      "sha256": "ebb027a885f916d5c9932981aa407b3597c70c3ccd81cdf6c433c2184187726f",
+      "size": 606
+    },
+    {
+      "path": "10_AI_Algo/machine/experiment_results/exp_001.json",
+      "sha256": "b9928639f631e3bef9cf83bbac771c3a8af64b597be1dbf8cedd2f9c0a069899",
+      "size": 883
+    },
+    {
+      "path": "10_AI_Algo/machine/models/model_001/model_config.json",
+      "sha256": "75988ff22f8bd12f8d5ea893ee967325b2fd2fb5db732534a161ba900b09bd4a",
+      "size": 888
+    },
+    {
+      "path": "11_Research/machine/research_index.json",
+      "sha256": "817bddaf7f6c9f7a0989180bb5c85f597e2f83e2d6d769b2410d0c6d46b555c6",
+      "size": 859
+    },
+    {
+      "path": "11_Research/machine/dataset_manifests/registry.json",
+      "sha256": "34b61a2e43928691af53f39007bfcc87d86150360cfbb5d7c08210e172398c70",
+      "size": 862
+    },
+    {
+      "path": "11_Research/machine/experiments/exp_manifest.schema.json",
+      "sha256": "694cce70528d16d0b10068a92b5f95f1dfe6bfcec038681dd61fca904ef3dccf",
+      "size": 889
+    },
+    {
+      "path": "11_Research/machine/experiments/exp_001/manifest.json",
+      "sha256": "8c57dce0b06b4bcc8c2b31f50b22e6a3345de6cd865a629438c6399e3bc4a98e",
+      "size": 896
+    },
+    {
+      "path": "12_Future/machine/planning_backlog.json",
+      "sha256": "7c26c140ce3f96b6caef76b394afbd71d1688207a93e1fb8b17dae8c74c1d171",
+      "size": 859
+    },
+    {
+      "path": "12_Future/machine/roadmap_proposals.json",
+      "sha256": "3530bc84a02db5480676da510b292712ce8a8211acbfd7c06ada7aeb85ff526c",
+      "size": 864
+    },
+    {
+      "path": "13_OpsLog/machine/manifest.json",
+      "sha256": "84a3f7f66700494bc86b42454a551745bebea45b3ca872fcae6c878622fa0fa2",
+      "size": 868
+    },
+    {
+      "path": "13_OpsLog/machine/ops_activity.log",
+      "sha256": "30ee9cd838b85df799a2bc6e1ec0c01bcf41ecac1e4989b0d7b61f30d560d173",
+      "size": 610
+    },
+    {
+      "path": "13_OpsLog/machine/ops_workflows.yaml",
+      "sha256": "2a4bf3796808a2e5e3b7e55a784f44caa0d6fc7ad0b18199bd973890b0e2ea9c",
+      "size": 767
+    },
+    {
+      "path": "99_Archive/machine/manifest.json",
+      "sha256": "af7a5ab390c8dda0d24899d88ae2b3b47ac0a6c1661a31e47aa5602438540bd4",
+      "size": 869
+    },
+    {
+      "path": "ci/github_actions/ci.yml",
+      "sha256": "8850a2c981f5a05c4d1d1a7136cd4a3c89f405ecab151d61660aa078fb1a5fd1",
+      "size": 1093
+    },
+    {
+      "path": "ci/github_actions/package.yml",
+      "sha256": "ea4dc8f314a31c1742509c43fb6463daf463581a02bd482049014dfcd4ef5516",
+      "size": 1062
+    },
+    {
+      "path": "ci/github_actions/pre-commit.yml",
+      "sha256": "a5d534af3c912aa9dc39202987ae7f74e0c85ec1d7c144ef302053fd64fb1870",
+      "size": 841
+    },
+    {
+      "path": "templates/ci_job_template.yml",
+      "sha256": "888e04c9466a9d25f95f53e061f889d0917b3aed29886297009d1409c50f67dd",
+      "size": 766
+    },
+    {
+      "path": "templates/human_doc_template.md",
+      "sha256": "f94cd253b5fcb901f3c9f1571b18dd2b286bc42ac7f04b776204b8d26068269f",
+      "size": 70
+    },
+    {
+      "path": "templates/machine_manifest_template.json",
+      "sha256": "7beb0d8882eb27b0d441f3d0e052b9161fcafd6037e17860f09f504c915ca622",
+      "size": 912
+    },
+    {
+      "path": "tools/packaging/packaging_readme.md",
+      "sha256": "9df2cde1f35af78deff23be9f4281b1c74af753e86292f50174d240d17c55a48",
+      "size": 12
+    },
+    {
+      "path": "tools/scripts/ingest.py",
+      "sha256": "e28028900e50b3a665698ab127fa5412fdb41f776324e140c844522386deb053",
+      "size": 797
+    },
+    {
+      "path": "tools/scripts/package_latest.py",
+      "sha256": "8dddda0bc5f4eff04c1cd82f9a1791b99c1becbdda52527ce159c4bc91eb8a62",
+      "size": 780
+    },
+    {
+      "path": "tools/scripts/validate_package.py",
+      "sha256": "93108f3953190ae4c3c1b9ec4995525adeed2964c13f825aae342ac100a13063",
+      "size": 782
+    },
+    {
+      "path": "tools/scripts/validate_structure.py",
+      "sha256": "ce460ecfec6459e6b18a96c05472cbea63381a4d44d4f469ae5e13eda81ac582",
+      "size": 784
+    }
+  ],
+  "generated_at": "2025-09-10T00:46:55Z"
+}

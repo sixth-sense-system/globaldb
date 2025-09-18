@@ -1,0 +1,66 @@
+# acceptance_gates_security.yaml
+gates:
+  - id: G-SEC-IDENTITY
+    description: Git user.name and noreply user.email configured; SSH auth enabled
+    type: compliance
+    severity: error
+
+  - id: G-SEC-2FA
+    description: GitHub 2FA enabled on primary account
+    type: process
+    severity: warn
+
+  - id: G-SEC-BRANCH-PROTECT
+    description: main protected (PRs, status checks, no force pushes)
+    type: compliance
+    severity: error
+
+  - id: G-SEC-CODEOWNERS
+    description: CODEOWNERS present; critical dirs require review
+    type: process
+    severity: warn
+
+  - id: G-SEC-NO-SECRETS
+    description: No secrets committed; .env.template present; .env ignored
+    type: compliance
+    severity: error
+
+  - id: G-SEC-SOPS
+    description: .sops.yaml present; secrets stored as *.enc; decrypt only in CI with OIDC
+    type: compliance
+    severity: error
+
+  - id: G-SEC-DETERMINISM
+    description: .gitattributes normalization present; clean tree before package
+    type: compliance
+    severity: error
+
+  - id: G-SEC-SNAPSHOT
+    description: Latest snapshot present with SHA‑256 manifest
+    type: process
+    severity: warn
+
+  - id: G-SEC-CI-PIN
+    description: GitHub Actions pinned by commit SHA
+    type: compliance
+    severity: error
+
+  - id: G-SEC-CODEQL
+    description: CodeQL security analysis enabled
+    type: process
+    severity: warn
+
+  - id: G-SEC-DEPENDABOT
+    description: Dependabot security and version updates enabled
+    type: process
+    severity: warn
+
+  - id: G-SEC-MINISIGN
+    description: Minisign keys present; configs signed; runtime verify configured
+    type: process
+    severity: warn
+
+  - id: G-SEC-OFFSITE
+    description: Encrypted offsite backup configured and last restore test < 90 days
+    type: process
+    severity: warn

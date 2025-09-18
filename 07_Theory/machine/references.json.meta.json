@@ -1,0 +1,58 @@
+{
+  "_erq_meta": {
+    "canonicalization": {
+      "encoding": "utf-8",
+      "newline": "LF",
+      "sort_keys": true
+    },
+    "doc_type": "machine_artifact",
+    "governance_links": {
+      "acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml",
+      "audit_log": "00_repo/.cbr/audit_log.json",
+      "registry": "00_repo/.cbr/registry.json"
+    },
+    "integrity": {
+      "algo": "sha256",
+      "canonical_scope": "payload",
+      "value": "1570c797d7365c25aaf83a7cef77a4565d5820cc16b35f2fafd0b3a3b2cfc208"
+    },
+    "provenance": {
+      "build_id": "aeeb7881-1e0b-47a6-98bf-7321df44a1e1",
+      "builder": "EREP v2.3.3 FULL",
+      "built_at": "2025-09-12T16:36:01Z",
+      "tools": {
+        "hash": "sha256",
+        "python": "3.11.8"
+      }
+    },
+    "source_baseline_hash": "e2b77994a4cdaff1e8b9f1562e2a75522f52db3ab9d822e61125d936cdb41480",
+    "spec_version": "2.3.3"
+  },
+  "canonicalization": {
+    "encoding": "utf-8",
+    "newline": "LF",
+    "sort_keys": true
+  },
+  "doc_type": "json_document",
+  "governance_links": {
+    "acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml",
+    "audit_log": "00_repo/.cbr/audit_log.json",
+    "registry": "00_repo/.cbr/registry.json"
+  },
+  "integrity": {
+    "algo": "sha256",
+    "canonical_scope": "payload",
+    "value": "9da93208a6001c23f7cd0bb0fac4db3e659ca041429b5a43fb837d2781d073f7"
+  },
+  "provenance": {
+    "build_id": "ba2d44cd-68bd-45a0-b92e-38bf5aa41aa4",
+    "builder": "EREP v2.3.3 (FULL)",
+    "built_at": "2025-09-12T16:30:10Z",
+    "tools": {
+      "hash": "sha256",
+      "python": "3.11.8"
+    }
+  },
+  "source_baseline_hash": "6d2463e6bde5fc8c680478c610eeea7b8ba1997bc1acc64b00acb3a4c11fa700",
+  "spec_version": "2.3.3"
+}

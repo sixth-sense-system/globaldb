@@ -1,0 +1,15 @@
+﻿# OS / tools
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+
+# Archives / binaries (we ship via EREP snapshots, not Git)
+*.zip
+*.parquet
+
+# Local env
+.env
+.env.*

@@ -1,0 +1,14 @@
+// ERQ-META-BEGIN
+// {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "14b365f1e49ae2a588f340b93ab749c3b2570e1caeaa4e0595afd6835c3d380c"}, "provenance": {"build_id": "9fd88339-dcf1-4cb6-834b-1dce561ee9ff", "builder": "EREP v2.3 FULL", "built_at": "2025-09-12T06:13:49Z", "tools": {"hash": "sha256", "python": "3.11"}}, "source_baseline_hash": "pending", "spec_version": "2.3"}
+// ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "manifest", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "ebafec8088ccf7c476c1f5e008c8b13a98bd9fb82298a20e69554d4741610c69"}, "provenance": {"build_id": "c53ed3f0-05ae-4af4-bc8a-bf416c90b926", "builder": "EREP v2.2", "built_at": "2025-09-12T02:49:11Z", "tools": {"hash": "sha256", "python": "3.10"}}, "source_baseline_hash": "27fc28fe0f19e3cad5b5d3e44fc1032b732a3d7b5455ed39895731aefc4c6a6d", "spec_version": "2.2"}
+# ERQ-META-END
+# ERQ-META-BEGIN
+# {"doc_type":"manifest","spec_version":"1.0","source_baseline_hash":"471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb","provenance":{"build_id":"0b4b49eb-31e5-42ca-83d7-b3271c6aa82f","builder":"ENERQIS RC1+ upgrader","built_at":"2025-09-10T01:10:56Z","tools":{"python":"3.11.8","hashlib":"sha256"}},"governance_links":{"acceptance_gates":"00_repo/.cbr/acceptance_gates.yaml","registry":"00_repo/.cbr/registry.json","audit_log":"00_repo/.cbr/audit_log.json"},"canonicalization":{"encoding":"utf-8","newline":"LF","sort_keys":true},"integrity":{"algo":"sha256","canonical_scope":"payload","value":"14b6de8bf947bdd514e96ada5d2a5563fe37d47a6545721df1c034cb5da10888"}}
+# ERQ-META-END
+{
+  "generated_at": "2025-09-10T00:02:10Z",
+  "build_id": "49f5c31b6eb5fe868c4ced8f074db74c",
+  "items": []
+}

@@ -1,0 +1,1690 @@
+[
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/GLOBAL_REVIEW_ARTIFACTS_README.txt",
+    "sha256": "7076ab0dca9a2a9bc0190d7d82c1e674027890db8c5d1d65303de1a9d4c29ce1"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/acceptance_gates.yaml",
+    "sha256": "13397893ebc44de63a66228443e55ecca9417298f5d60dbf158e81173d3b239e"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/adoption/new_paths_overlay/00_repo/.cbr/opportunities/erep/README.md",
+    "sha256": "098e765617e7fa74576808064e41b5e086d24c6cd4e7f2ba28c3e30541cfb83c"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/adoption/new_paths_overlay/00_repo/.cbr/opportunities/erep/module_todos/README.md",
+    "sha256": "3670623d658741a54d988caaff6edd65df2a513980daff3fe1a192f5d9f8207e"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/adoption/new_paths_overlay/01_MasterControl/machine/workflows/schema/README.md",
+    "sha256": "d93be8836aa299e8e6be346bb60b45614659ae4ac6d42a619df0b8b3fc0f5dfe"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/adoption/new_paths_overlay/06_System/machine/system_strategies/README.md",
+    "sha256": "163dfc197f562b59962b91c7e877875c27cf5d1a025723bafa1903dc5bb10c5b"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/adoption/new_paths_overlay/11_Research/machine/notebooks/README.md",
+    "sha256": "8b6c3519812bd0e9503f90ce8d107afbe7012a482549956a990cfabbffc32192"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/all_file_hashes.csv",
+    "sha256": "bb9e5b5673d4bb75d36eec922259862c40bdae97ef13abfcb544fb0fea7c7939"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/all_file_hashes.json",
+    "sha256": "ef1e10d1b5a0439c773f816605a2a5e7cbb6bc36a52b341ab144b1cce4ed4e32"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/all_file_hashes.json.erqmeta.json",
+    "sha256": "43c9295f662a1495ad2799626f4e8a986c71e6ba9489ad30a3e3e7f8b3699323"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/all_files_with_content.jsonl",
+    "sha256": "c4ec35afa3e2f7f5e8fd814c9107f2821766c6a8a385d4764a6c15489b34d27f"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/audit_log.json",
+    "sha256": "e38d60b67041f1b8e214ae52b33c1a623e2ee55a3bfb0ff78536741ab99b8509"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/audit_log.json.erqmeta.json",
+    "sha256": "cf65f606c83605ed11e6ddc11f16e78646f1231b11049bf2717de6ba6653d9ab"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/erep_policy.json",
+    "sha256": "b8dd95190e5dfa3c5d46d9958a0736da8c00b08c9e49fc61e126390a7941d610"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/erep_policy.json.erqmeta.json",
+    "sha256": "3fd21c562e8ee097a2fe9d4e115834b818645eb9b303de7faedfd7256b08eb29"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/erep_upgrade_pack_manifest.json",
+    "sha256": "92ba00e5ad3a1c2f43cad5bce9245a341b90e4e60f3bead7de5a2d8da23ebd07"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/00_repo.manifest.json",
+    "sha256": "70e6d68701e4b189f3c62ab90d4be7910f1cf9d7633967c2cd1f7eae04dc9194"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/00_repo.manifest.json.erqmeta.json",
+    "sha256": "c7664ed01ac48d46a8a510b648351eb36bf906471781da007341ac40a5e92162"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/01_MasterControl.manifest.json",
+    "sha256": "51a4b194e4c89dcb9c40518c859676cfcca3828a1f5151d106ca1b8f90acb1c8"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/01_MasterControl.manifest.json.erqmeta.json",
+    "sha256": "55aac31658f282a551ff0141ee14723cb5ad72a0a9778033c74c6555aaba2b8e"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/02_Governance.manifest.json",
+    "sha256": "7b51df0e14a7c64783cbba1fea288e00f3eb90b4cdc4045e428282befc8cfb8a"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/02_Governance.manifest.json.erqmeta.json",
+    "sha256": "ed3aac33eb5cf61a02d55ff2294c94baf82c372f819189d6ef59a62ef88f199b"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/02_Governance_ControlRegistry.manifest.json",
+    "sha256": "b60cc3b22cc81a4a7d06187aa860857d97f51ed07fc223971dc02321e9357509"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/02_Governance_ControlRegistry.manifest.json.erqmeta.json",
+    "sha256": "cbda619e9667252dcec04411c067eda538523924daff97f7cbda6e2d1656d250"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/03_Data.manifest.json",
+    "sha256": "8f2414a9db0f7539ade7624e40fa187086c12587d2dbed7aef607802aa9ae6c6"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/03_Data.manifest.json.erqmeta.json",
+    "sha256": "bd0f06e7a425b7b6bd293404e1b645da3bc7bc0c892a393ff0bdafc6154e1691"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/04_Infrastructure.manifest.json",
+    "sha256": "7a8c24c71022f033b6d9f9451eed51953370500488514cf5c352d8067c797562"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/04_Infrastructure.manifest.json.erqmeta.json",
+    "sha256": "59b275c52f8b7111a01dd88e0f4af98f3a171a1f18e3e737e3eb0af4a076c1ab"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/05_Blueprint.manifest.json",
+    "sha256": "1f19f2c81178cb717e82d33cf15c3a6107c2566f867c390c47142da9177b1280"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/05_Blueprint.manifest.json.erqmeta.json",
+    "sha256": "38d39cb3be15d2b8482e9d2aa84dff8295c4df6a0da9ed116e28f25e6b2ca98b"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/06_System.manifest.json",
+    "sha256": "1fe8c9c4eba2b75004b5e1c67cd4c048bb5f747189cbbc20e1e12cc273ddda6e"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/06_System.manifest.json.erqmeta.json",
+    "sha256": "383ba588aa0e1edf61934b1fa6fd9abf6495b1e58daaffe63d892da4fd847c8e"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/07_Theory.manifest.json",
+    "sha256": "1ffde13993eadbaf4721239a938920e6cf7aeb51a313626d6cfbe8d7e488365a"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/07_Theory.manifest.json.erqmeta.json",
+    "sha256": "b01ff587cdfa3c342cc01a780d39ca01c79222f0766f770e80e0c652b96bdc2a"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/08_Market.manifest.json",
+    "sha256": "25f0dd4ff952ef117a40235a9c91e671dc0c402d83d145d66f81380be5aa36da"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/08_Market.manifest.json.erqmeta.json",
+    "sha256": "e9cc3dd354723e8b50761c7be5cedc68de6878a63f1f7e2fc9dc3cc47128b525"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/09_Tech.manifest.json",
+    "sha256": "ad320ac0df3cbfdb2517dfcf9e8573020620667b0b56f92ce6825b7e13006a5c"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/09_Tech.manifest.json.erqmeta.json",
+    "sha256": "da0e8d44175bd8f4012833d2c22ce4f41656791aabcdf2fc779eabdd6ff20585"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/10_AI_Algo.manifest.json",
+    "sha256": "d00b73f415d14458835548cc42adb982da50943b487abef3a4196eaa3844bcd0"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/10_AI_Algo.manifest.json.erqmeta.json",
+    "sha256": "7ef5ea7764b850da81d6bc872c9c790eba47a85c70ac5468fb73fc93bce85687"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/11_Research.manifest.json",
+    "sha256": "d73622a62d3086b9d450e372bba2443b318ae1160f364e14ae2c8f0a6d03976c"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/11_Research.manifest.json.erqmeta.json",
+    "sha256": "9bf1ddc0399ef87008a8aba67f4ab6384b15c92151a8ec389dd437c10fc03637"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/12_Future.manifest.json",
+    "sha256": "c351b30f7df320aaff2b66d1cbeccb3d3f683e80a7d8768e97f981f2c96f34f1"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/12_Future.manifest.json.erqmeta.json",
+    "sha256": "cdc48c749cd98b98fb6166078ef1fab5da3765dd2bceca54853c982427b42515"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/13_OpsLog.manifest.json",
+    "sha256": "1cf0d468bf9b7e406dac29f23839d034c4744347d990e0b46bc8d0016e3b8e0f"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/13_OpsLog.manifest.json.erqmeta.json",
+    "sha256": "20b13a1793aed4de72ab1f53aad0ba8641b4ac38bb4283f7e9d52b9b84719c94"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/99_Archive.manifest.json",
+    "sha256": "cc87906cb9ebf350701168203b13e35881e4eb40126e919fa784aef5c51d01a8"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/99_Archive.manifest.json.erqmeta.json",
+    "sha256": "03e16b89c2ec9596140515215872019dedd3acde26b7bea9b248ef27e4073972"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/ci.manifest.json",
+    "sha256": "767c0fc5a9bc7c46c480e9126cd9a512726e9b8c94b4eb1c72cd31900c73df28"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/ci.manifest.json.erqmeta.json",
+    "sha256": "635e510a9cc9c6e3d641f56fbbbc67d11bbb606a01db801e5172bc859cdaa765"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/templates.manifest.json",
+    "sha256": "d59303be3f3d91b50daf33bbbca7e9bfa2f1cce93fa7dff122784d205f086cd1"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/templates.manifest.json.erqmeta.json",
+    "sha256": "6e751e2557b9a2f3601c871c077ea9477cf72b5226c0c90c56c628ebe02e6444"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/tools.manifest.json",
+    "sha256": "fd74a0113a71a100d3469f3fcea8296520d6e3cbe07c7f775df8fdd86e3d5a1d"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/manifests/tools.manifest.json.erqmeta.json",
+    "sha256": "7e4718a1aa971d4bc1bfbd3e273622bece96c4a007eedbde08a8650b6b82fd0d"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/00_repo.manifest.json",
+    "sha256": "3ee5a76c3cf2c24f04603a65f86b5022479e69b8fb6e68043c031997f6253c09"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/00_repo.manifest.json.erqmeta.json",
+    "sha256": "5d21bbe0ec5fb55317b28f5dee397c8ffcbd99bdae260f8330f2977cbda447db"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/01_MasterControl.manifest.json",
+    "sha256": "30ad7ec51b52fc1a97781f93d9e174582d9eaaeb26ce9ef16b7c859dc0829564"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/01_MasterControl.manifest.json.erqmeta.json",
+    "sha256": "467a300b5520a731332cae4c7e9b7b2b2529350bdfdbc82f4cf81d4617e77c2f"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/02_Governance.manifest.json",
+    "sha256": "5354279307bcb76c028d60c2854223c0a2206f1eefb392cd7719ff40b8fe83ab"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/02_Governance.manifest.json.erqmeta.json",
+    "sha256": "78c0f929c1fa719056de526f623fe85199487517b5f803df02bbcce25b57ad56"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/03_Data.manifest.json",
+    "sha256": "d77ca10962f702f50f3235306f89587cd296d3b62ba749d728d55687e2e7e287"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/03_Data.manifest.json.erqmeta.json",
+    "sha256": "2bd4833d06645d80bb26db45c3cd19efefea2e0964d298ad42cb1c6b0b500398"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/04_Infrastructure.manifest.json",
+    "sha256": "11b66858643fcb545e28fe7d9af94d1a99d85c36765509a6821ee4d652171cab"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/04_Infrastructure.manifest.json.erqmeta.json",
+    "sha256": "aacdf44e11eced5723f04786860de1d0739e8f4ad88db373e6baf56ef0c46159"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/05_Blueprint.manifest.json",
+    "sha256": "4f88b18a51bbf5da1cc560a9516b7112cf289b3d31dd6ebdad5220b28119eca9"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/05_Blueprint.manifest.json.erqmeta.json",
+    "sha256": "9bbfb134e36bb9fb0555e2529686ff72ef1d0c9f16a4e0e8a0a0494bcb877170"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/06_System.manifest.json",
+    "sha256": "0b82165bf3ab7ea379c9540c1466c34d49678b0450b19baef2c1aed9385e2620"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/06_System.manifest.json.erqmeta.json",
+    "sha256": "be9f956e7f30281bfd8433829ee1edabed626166763e71b4bc63d5e776b50530"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/07_Theory.manifest.json",
+    "sha256": "1e11c623d9c9424afa21c6b812b716ecb92a6391e91144858e2cc3388177b1c8"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/07_Theory.manifest.json.erqmeta.json",
+    "sha256": "2fa53d432cc893eb59f29a721b3dd0c82e4e1a718fadc2acfa2a61ae4b351563"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/08_Market.manifest.json",
+    "sha256": "28fd064276320118d1a6e6bd222b5bc871be698ae568cfe00a1d6f7e0699a8ec"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/08_Market.manifest.json.erqmeta.json",
+    "sha256": "370d292fa31f544e55874e9adbc7f0fdc8b92bd2f42f8a51cb463cbd0db67258"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/09_Tech.manifest.json",
+    "sha256": "0b529398f116b565c8985e4ee56a537bffbd7622a62d3053ecc4925dac9fe6e0"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/09_Tech.manifest.json.erqmeta.json",
+    "sha256": "5a9ae61d8830e51f861ade766bb96b0576a9d80ffaf9f75572d49dbb80417461"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/10_AI_Algo.manifest.json",
+    "sha256": "daa3631baf5dba24a846574ee857992ed45d081752145b5d58bc6c5f03ca7485"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/10_AI_Algo.manifest.json.erqmeta.json",
+    "sha256": "a70a095374869f878a875a309fa9b777466a3941d04a2efe51552c4b2c984803"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/11_Research.manifest.json",
+    "sha256": "0526368929411e7786e2e67c48a952f6bc166a4fd9638013c709802fa0c2556c"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/11_Research.manifest.json.erqmeta.json",
+    "sha256": "acca93a05acd46ff4421b9c7571c4ecb87760c98f8ac120e2cf71a67338ebfaa"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/12_Future.manifest.json",
+    "sha256": "78b4b812607d8735ea5d68bf882834f6ca50f7f7fe12bce4ccba314d72f3d47d"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/12_Future.manifest.json.erqmeta.json",
+    "sha256": "39e32de47454cdfe943e69e0df0f26a05d7ce799099a33172967b61b10b395b2"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/13_OpsLog.manifest.json",
+    "sha256": "558bd8473d1ef1ba38517cf99169a7d2ec873f860aa32a5f63bc54a71ab63c6e"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/13_OpsLog.manifest.json.erqmeta.json",
+    "sha256": "0ad53b7969fc62c831d395a571c7ca8ac08427153f831df533dad9dfb1da1af6"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/99_Archive.manifest.json",
+    "sha256": "ba13d78f3f3b4567d7e8ddaee38494e6157ce09dc391a6a3f3e23b375327558f"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/99_Archive.manifest.json.erqmeta.json",
+    "sha256": "b8d1c9e21154a1a31cb73ace59d67f0ecfd04e8d9a9008cefac5047d7e18edc5"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/ci.manifest.json",
+    "sha256": "e88414dd90ddfc961e256776de2b75214c6d9aef1088c092b330b332f6260f8a"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/ci.manifest.json.erqmeta.json",
+    "sha256": "2fe8addfef98cce8c89cb304316d9bdda7cf4528d88e0491f6839355cecbe9c0"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/templates.manifest.json",
+    "sha256": "4eb7a3f254a1a91cb19dd387420d1b16e4918af1f94217c20b0501f799b91891"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/templates.manifest.json.erqmeta.json",
+    "sha256": "14fdeee2b6b3721d006a6a4aa381276942f4b430093024f9d5638cb3195a4a04"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/tools.manifest.json",
+    "sha256": "45ecea4182ebe45f718569945bccea2ca78417310b1b96646a4dad1f49db4655"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/module-manifests/tools.manifest.json.erqmeta.json",
+    "sha256": "0c9ec2109c1a080088084ba49e3e991a3896b4da5c1fb39f24cb7ef2d2c1e882"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/innovation_dossier.json",
+    "sha256": "7c6e5836a5a4f666ed4c2e4dcb5e011c5ae982278707df7aedd9a7fa78c208cf"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/innovation_dossier.json.erqmeta.json",
+    "sha256": "853fc37dc39ffe7299cbf91db2beb073485f57b7e92b5c1ea6e2df79c3d0b76f"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/innovation_dossier.md",
+    "sha256": "c5341b55c3d1b873b3b7e695559d7481bab032f1dd26076ad901607d1a8599ee"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/module_todos/01_MasterControl.md",
+    "sha256": "8544ba74668e1f41e93992da727502f6233a67d5e98f4b219794a299f02ed914"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/module_todos/01_MasterControl/TODOs.md",
+    "sha256": "01f1e28fa858af69c1308219dcec452013c672f597d9e2b74d99167abdb153f4"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/module_todos/02_Governance.md",
+    "sha256": "53e79ccc83e5499807ee1b611e0c920be232f16c027eba8886453710a85e594d"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/module_todos/02_Governance/TODOs.md",
+    "sha256": "80bc6979bcf1ec8c3e9ac925fb6b3867d539604212b844fee2a570689e5333c6"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/module_todos/03_Data.md",
+    "sha256": "eb0396094b1756626083830200eb89143c3af02d2e0832866f1e3643a77007b7"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/module_todos/03_Data/TODOs.md",
+    "sha256": "38d2ed695af4b45d2527a8df07a9ed010fa3c3523f5b0fba3bbfc721487f2ca2"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/module_todos/04_Infrastructure.md",
+    "sha256": "0ccef78412d2efb9adefa4a1fe94ad4a0c923dc0dee8ce6e5ae35267cdc2fc28"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/module_todos/04_Infrastructure/TODOs.md",
+    "sha256": "b1f62a3d34bf3e299e5449802db509f8dcdd33958ddecf3cd0cc98e8eba97214"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/module_todos/05_Blueprint.md",
+    "sha256": "dcebbfdc7dd2c0d9826a1c5f5e9862eca7acdb47d7dbd0ed20fc33a7d96638f2"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/module_todos/05_Blueprint/TODOs.md",
+    "sha256": "efd78cb2200a49afb02d2ba2aaf34002d8517cc59cc3ef966f17fefae69fe3a4"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/module_todos/06_System.md",
+    "sha256": "e73cba89f576505918545a68ddfae9b4c0d531f6ae570fd1ed570adfe2c3999d"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/module_todos/06_System/TODOs.md",
+    "sha256": "8a348abb1a6fda916057f79aa9c6bca27e733785b368e39eafb88d9631d830df"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/module_todos/07_Theory.md",
+    "sha256": "734bfbec7c164069d13dd802efce77ef00ba5531a2dc89f0679ec11305971f70"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/module_todos/07_Theory/TODOs.md",
+    "sha256": "bb3528f75ba34fe8a1c46e0dd871478a788778bd649e01fab95c6c46c320c017"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/module_todos/08_Market.md",
+    "sha256": "5ff62c7ae4f28388eb5352e7d5133a33074b128320c7701ee1de4e9d847f7ba4"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/module_todos/08_Market/TODOs.md",
+    "sha256": "8065b9f044c42beb37aa8d72752955002418a4e38f058373f56767405661fb36"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/module_todos/09_Tech.md",
+    "sha256": "7fca006371728880bea7a6f73246c79b64bb7ae0c863447e0c01b1a8e8621712"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/module_todos/09_Tech/TODOs.md",
+    "sha256": "102226d6bf8751b6c0a3d3f372795c3f7bb12a5f1bba0874e1c4c9fed2795eac"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/module_todos/10_AI_Algo.md",
+    "sha256": "c8cfe98ab6d133779ecf9072b1ac5f4b0e302ea3f81f1c2106d98cf9d0da7eb9"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/module_todos/10_AI_Algo/TODOs.md",
+    "sha256": "1b043636ee7d91721fdba493e9dfc7c3db06be4805f7e77647966dbc4bff242d"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/module_todos/11_Research.md",
+    "sha256": "7febc44c2329328311d5934a5f16a234b0b2a01098c3fc4432c157db9878775c"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/module_todos/11_Research/TODOs.md",
+    "sha256": "30f6fcc49f7bbac11be8bccb0d52396e5ce241fbcb28bb6f0c22fbb46c6329e0"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/module_todos/12_Future.md",
+    "sha256": "ceaaaa2c6e1dcef7217fe4d958b191f7234fbda9b8d01e35c1571a017d56fd00"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/module_todos/12_Future/TODOs.md",
+    "sha256": "c0bccf3c1d2fccafa3366b88b54618108033439c548b15e93c09148bae0141d3"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/module_todos/13_OpsLog.md",
+    "sha256": "71c8d6878c587045aa39e706cdced6db56dbd0b18a62fe20efeecb11ec81fb12"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/module_todos/13_OpsLog/TODOs.md",
+    "sha256": "bbf0275cdbf6c34ce8c4b9a73e1550de0d192123a94f60bab58ada998085959d"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/module_todos/99_Archive/TODOs.md",
+    "sha256": "65caee2256e719379018827dbaca604071b56bc8d38d5882dfbbaf8671377dfa"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/proposals/proposals.json",
+    "sha256": "5a32d7c33dcfbff7f19fd764b374b6b2d000a60d9c418e8b4f02f8c0be4f091d"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/proposals/proposals.json.erqmeta.json",
+    "sha256": "c6310a00cf82b62662f31838227bc72812bf658dfce0137f448cf6531da141bf"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/seed/README.md",
+    "sha256": "9d475f3eac47108e8c20ef317423917dd2508480ebc312392383174c16b84eba"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/seed/innovation_brief.json",
+    "sha256": "4fb73a2099ff42fdb021fbbef0488e23fb929441c56b2c3f47571b4a7124eecc"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/seed/innovation_brief.json.erqmeta.json",
+    "sha256": "e3513bf7970c5d61a8905e58d1d0373844ae45b2392b4ad8f72f9a5b6c83a9a2"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/seed/opportunities_report.md",
+    "sha256": "f2c1c633afd5013071bd0bdc959bd25f9373b2fc4de85d5ce1efbf6542129906"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/seed/skeletons.zip",
+    "sha256": "eb08da4e0ab407b8ae7937cf6b95d21d0197db7c724f21c2df2a127fdfe2da67"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/seed/suggested_changes.patch",
+    "sha256": "2c534c856111264d29daed383a3a8774b39536ddf08c55a0ee73de407761f192"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/skeletons.zip",
+    "sha256": "a0181446b4d4ee0e11d0d8fd963cd7be9603c5c9eaf6416dfe8dd1b6143e9909"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/skeletons/01_MasterControl/machine/workflow_synthesis.yaml",
+    "sha256": "5d9c31b0209cb034b2bf91d4e9a6d3832394c466975ad47d2c4a192facbd54b2"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/skeletons/03_Data/machine/schema_registry.json",
+    "sha256": "c737defc9ce37632c547c3b45f6fa736136af4630743b0a693c582d089d4315d"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/skeletons/03_Data/machine/schema_registry.json.erqmeta.json",
+    "sha256": "9269507e8008bb156de95f745eb2989910f67b37956759135933b6a67a05732b"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/skeletons/11_Research/machine/experiments/exp_manifest.schema.json",
+    "sha256": "b90b6aff723d8079b9c59c0133efc5388458d603ba23a7c38359435beba9b36f"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/skeletons/11_Research/machine/experiments/exp_manifest.schema.json.erqmeta.json",
+    "sha256": "6824024182a6575095667f850adbd391ff53002eb7ce7004a36b847fe273c72f"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/opportunities/erep/skeletons/ci/github_actions/ci.yml",
+    "sha256": "9aa95275146bab6b7f04424acc4e0fa6b9f184c65292208eae3f57ec60afabfd"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/out/reports/prohibited_terms_auto_resolve.json",
+    "sha256": "85b687fc4835100eafb22769a091a7af4a124717943cd5d7612eff0bafd98155"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/out/reports/prohibited_terms_auto_resolve.md",
+    "sha256": "65a8454be45b77e45c8171eecb60722923bbdb41032e7ff86d82541e6a391efe"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/out/reports/todo_fix_report.json",
+    "sha256": "17d48cbececedf46198edb28101af909aa055d9a4f0c50a189bebfa64b2890bc"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/proposals/enterprise_baseline_proposals.json",
+    "sha256": "e86c1e1adc7f824611fa26ead487fcfe8873b54bb45cefcd7c3df220f0bab038"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/proposals/enterprise_baseline_proposals.json.erqmeta.json",
+    "sha256": "606b45d95f4b2d589ee11b07949382af45a01b2b5106509160f23bac17b147dd"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/proposals/proposals.json",
+    "sha256": "ab5678b11ffcf683d7df3caeb77ee47bab97c3a2751a254ca6b57c2ce949cfaf"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/proposals/proposals.json.erqmeta.json",
+    "sha256": "297915fdc0ffded0ed152fac9f284121d62ba63840c5f3457772e8762193e0fe"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/provenance_schema.json",
+    "sha256": "11be18bd6d934226965b94d5eae1b8aee3ba8ba3bfcf3d6ed71ba7d9ba2a1bb0"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/provenance_schema.json.erqmeta.json",
+    "sha256": "6e295d231f9c4382bc6fe764bd9c1440ab7fbae250f57894f8f5c71114d5dd4f"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/rc/rc_lock.json",
+    "sha256": "b38bbd252971647117268e01bc4f6ae271dd723275c7e416f3d5c9b470e13656"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/rc/rc_lock.json.erqmeta.json",
+    "sha256": "53a9f2fa2df8ccd6cb64ccfc6080ca023c8c15deba0ce00ff17006d194ca602a"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/registry.json",
+    "sha256": "ef9806fe11d6aa619cf5f795c44c02dbf56bd6284026e99252b8b014c9e00aec"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/registry.json.erqmeta.json",
+    "sha256": "4176edbf93def124a80117849f6fb45f51c8e60f5406cf7cb49b43d58ddab255"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/registry_status.json",
+    "sha256": "710ce549313750da36c52e6c8e58fad1040baeb93dd10e26387ff740d39900c8"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/registry_status.json.erqmeta.json",
+    "sha256": "1661f79616431626a28a793ca404ab08469c804f51b1074c885f26d259d62e7f"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/reports/erep_compliance_report.json",
+    "sha256": "cc25abd8df8339419a7873bb0a2c1d4d6f3cf1f13f88eccbda1381ff13aec56b"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/reports/erep_compliance_report.json.erqmeta.json",
+    "sha256": "2c3e580148d24b09a4944c05369030437d245321783bb937e25be744517f6150"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/reports/erep_compliance_report.md",
+    "sha256": "c9e7fd711dc07a88ab302c760cafa9e979315bce7441ac41546ea730b4b0b387"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/reports/erep_full_report.json",
+    "sha256": "3de011a14ae32aeb0402d7b2d22839136e76280e8779040f3d3be87ace3d3e2c"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/reports/erep_full_report.json.erqmeta.json",
+    "sha256": "ac44f47aadeee1f4d08653e9036f125ecbd6e2434c5952e71a72cc8cdd707746"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/reports/erep_full_report.md",
+    "sha256": "54671a4152ae2fa55cf593cc7b466b313260659827f5e65efd0f8716d2c719b9"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/reports/erep_upgrade_manifest.json",
+    "sha256": "56da1b839b047e1c7a4293c35dafc1c2ee5e4b8750442b24aab56273e779e597"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/reports/erep_upgrade_manifest.json.erqmeta.json",
+    "sha256": "f1a232b7c54821e5dd707b2c7a366cf6996597f08c4e0b94d39c8bf78c2b1cbc"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/schemas/erep_policy.schema.json",
+    "sha256": "d0fca8325c639d81b77c0ea1bc9d83bd29f20066cfb4790316f19376b114a824"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/schemas/erep_policy.schema.json.erqmeta.json",
+    "sha256": "50577270f85a452eeb454a5caf98bc52ebb8abf76d1df81d14bca7d4b49ba11e"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/structure_lock.json",
+    "sha256": "1037fc44ed897ed87164cf57167003a6250b3333586dad5d25c872974188fe72"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/structure_lock.json.erqmeta.json",
+    "sha256": "2db1db12995be450d6b859488abe086af954f798604cebaa726cf5025174deae"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/structure_spec.json",
+    "sha256": "b8ffb2f3b04abe02c3a163efbc518d4776f4ac6beeaf53df9137335a7f724029"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/.cbr/structure_spec.json.erqmeta.json",
+    "sha256": "edc9fce6f9b4b905d8b05e32f400ecd18730995267ae7ec1ee27d6537ebaaefa"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/00_repo/README.md",
+    "sha256": "c7a762c27cc2f3e6f61aa4f495cdb790a8bc7b298df1dbdd52d2795f99c68bee"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/01_MasterControl/README.md",
+    "sha256": "470469997b75d4f9f236a62f857f284cc93f17ccb62a986b3fb599a4676f51ba"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/01_MasterControl/human/01_mastercontrol_overview.md",
+    "sha256": "da79b096c8bc12dca84f7d4b554a0bc188df28e0bfbee5d8981c60a6197b82c0"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/01_MasterControl/human/file_naming_prefixing_standards.md",
+    "sha256": "d2be67b0b8cd269f4bde4c834075d967871868b433af335e2789f32eb647d92b"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/01_MasterControl/human/glossary.md",
+    "sha256": "507a662b150804e9a420f30119053b11ab9b1da0a865b0ae13e4b69359cedbc2"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/01_MasterControl/human/governance.md",
+    "sha256": "40d235079f17225c04c54e01ed598a1686df1ac1661407828f6e5d2b36a952b2"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/01_MasterControl/human/news_intelligence.md",
+    "sha256": "7dfc29b7e9bff55010bc1fa519d63c29771f8a45e9d0930197eee9705940fcf7"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/01_MasterControl/human/operational_guidelines.md",
+    "sha256": "831263fb27a1a616775b05ce32726bcc67e96b060b3da4786c8cc604fac2d3e6"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/01_MasterControl/human/packaging_policy.md",
+    "sha256": "42e081ab5e4b6cc64919119ba89d3eb65d8753e9ad177ddd9c6a40908b71cc2a"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/01_MasterControl/machine/manifest.json",
+    "sha256": "65326c10255b562279f912a66fbb7b96f63faae28eb4fe9904473d3c80bbddd6"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/01_MasterControl/machine/manifest.json.erqmeta.json",
+    "sha256": "b25e18f2084214af6422fe75ac4521a1923a9a6ebb7a287c6c56f235cbefdc5b"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/01_MasterControl/machine/metrics_config.json",
+    "sha256": "0c94c8389dbeb1ca258675ccb6c224fe4ce3ac22fe76c4aa079c12c3a9034a4b"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/01_MasterControl/machine/metrics_config.json.erqmeta.json",
+    "sha256": "534d2fb45330f73c7f07e41021f44720642acd2df6c876f79630c67605bfa172"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/01_MasterControl/machine/validation_logs/integrity_checks.log",
+    "sha256": "f6c0df763e5738dafee8def01a65ddcddfa7aa50684c31a8cc49578bff3030b7"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/01_MasterControl/machine/workflow_packaging.yaml",
+    "sha256": "e6335d56ad13642192a2775b421f7843809a196ea2249e2b2b91affa8a9ea78b"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/01_MasterControl/machine/workflow_rebuild.yaml",
+    "sha256": "acbe8781e0f19ca8153785c3745247bed12247fa5fd02ebc3a74f1dd8727a17a"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/01_MasterControl/machine/workflow_synthesis.yaml",
+    "sha256": "64058236e55e2c02d6b0ab108d0d50e3a30aca032b645148d45d2f4f9d94002a"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/README.md",
+    "sha256": "55c84db4276b0f21c2eb5707b375411d233f46310b9f7caa6e9300a610115662"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/EREP_v2.3.2_HumanEditorial_Addendum.md",
+    "sha256": "96231b99a4a7b348b735c2ea73337a327a016e1175f89cbfba124ff4110bdcfa"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/access_control.md",
+    "sha256": "9f80ffb4e8ad4e11ffffe1e4a683b1663ccff85e95ba846236477d3f31206e8d"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/accountability_framework.md",
+    "sha256": "cb480bff875462aa9cc2cb0baf48a29bae1e5486c0e3017a5ca88e86c452ca90"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/compliance_confidentiality.md",
+    "sha256": "97c10b434ea77d85e05faeabc7c45f2e60bb176441908dcde9beda2484979f97"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/data_handling_policy.md",
+    "sha256": "7aa434cfe72afe3037fb6b27273a5034164a99eeed3f0b55d411c0fef0ef1a26"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/enterprise_baseline_governance_v2_2.md",
+    "sha256": "74713e721efcd82ec8e2dd51b4f1f34281dc25b7b788d8050df3cc1809d1ed52"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/governance_index.md",
+    "sha256": "6b24d85e8685f8682d7d7920b97eea6fc0e024a683125808a903deb0578c0734"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/governance_overview.md",
+    "sha256": "1ba554be82198a26cb61598cc88358a68086abe1f1682e0b3174f7bca56af559"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/llm_safety_policy.md",
+    "sha256": "3c7490be379d34a8892eaed5ab5e1ea866a27f5630d3548d598e2b5133fdb467"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/policies/01_CoreRegistry/CBR_Protocol_v1.0.md",
+    "sha256": "c8542f9e78079bad8381b0c26e7f57e9f2f55deb054be9805a943004c730aabb"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/policies/01_CoreRegistry/ENERQIS_CBR_FoolProof_v4_Locked.md",
+    "sha256": "3081f3e1219fb492630a0b9a076f06efc3c60c5af0170240f3366e05c630ebad"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/policies/01_CoreRegistry/ENERQIS_CBR_OperationalBlueprint_FoolProofImpl.md",
+    "sha256": "b07787516b018a4d06811d8b6dd62a11d26de068cb4a565aec1acc7def4f66ff"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/policies/01_CoreRegistry/GSP_v1_GlobalSupersessionProtocol.md",
+    "sha256": "02c5568b3389dd04d4ea6deb4d179830700514298d8855768a0d13da2f3b0e4d"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/policies/01_CoreRegistry/RPR_v1_RulesPoliciesRegistry.md",
+    "sha256": "7094c9405af205d9f36cbee616e11160da773b0d130253ed877423e18f9add3a"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/policies/02_BaselineWorkflow/EnterpriseBaselineEnforcement_ProjectWide.md",
+    "sha256": "e59eb729c029e1fb78fde42609ac2161f9d8f009a2282897ed031a175a7c37a8"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/policies/02_BaselineWorkflow/MACP_ModuleArtifactConfirmationProtocol.md",
+    "sha256": "0fd4c1de668690aeae0d3aae691739fdda24d2156591b7690d303623a0a9ec31"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/policies/02_BaselineWorkflow/ModuleLockProtocol_Enforcement.md",
+    "sha256": "9dce98f4b57b3f33d8d2be17832d5d365f0b11b50f8c8652543b54ceeeb54539"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/policies/02_BaselineWorkflow/PCBR_v4.md",
+    "sha256": "2fb8f1bb0fc797b95be9362edb524da0f55f8683b96144ac5b4ca09a67c3166d"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/policies/02_BaselineWorkflow/StrictWorkflowEnforcementMechanism_ProjectWide.md",
+    "sha256": "0662afa04c57aa7ed3607d126817a8964438a3a924651c7817272a1f1fc6c2e6"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/policies/02_BaselineWorkflow/UAWP_UnifiedArtifactWorkflowProtocol.md",
+    "sha256": "736f892ad828991a93057198ff60e5f9a256f89a8ccf08ef2a5408e2f269016f"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/policies/03_ManifestRules/CSEP_CSEL_Strengthened_v2025-09-07.md",
+    "sha256": "f2527467f3065e38b2a4a92ca3b2e0fc606ebe3fe61dd3e1c8e24faee0d7d7a7"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/policies/03_ManifestRules/CanonicalManifestFormat_StrictJSON.md",
+    "sha256": "6a7d8849fbb3a6cdc070f5be52043f83dec2413c15175945f5eb352759cb393e"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/policies/03_ManifestRules/HypotheticalModuleGuardrails.md",
+    "sha256": "c78715093db610b4b1111526c8c78dd5372951ced6b48c48c542abbdd4fab8a5"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/policies/04_ContentQuality/EnterpriseGradeContentRule.md",
+    "sha256": "c13f06af4bc199920442ed49d6b3cb22e6005f5657dbbe7b4606397d86da6843"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/policies/04_ContentQuality/HFPP_v1.0_HumanFilePresentationProtocol.md",
+    "sha256": "50e02a556d12e39529bf14da6a5cb8a88b6ea33fbbaeed1f9c1e84e818ab3728"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/policies/05_MachineArtifacts/EREP_Policy.md",
+    "sha256": "bbce0d59c4c9ab74ec5f74118c13b400377861a819407538071c47d4339d24b7"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/policies/05_MachineArtifacts/MachineArtifactGenerationPolicy.md",
+    "sha256": "4ffbd82e5f103a61c9a2fbbcba3c9760ee18d22d4c21cfd8fc76b6030ecfbc87"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/policies/05_MachineArtifacts/RC0_DeterministicMachineRegen_v1.0.md",
+    "sha256": "5a5a189b7908f9a152eecd1eabbc15ff02b23a8fe07c261f0ff7c0bad256eaa9"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/policies/06_ResearchIngestion/ERIP_v1_1.md",
+    "sha256": "7ec23c4d134ff50dce672eaaa0c7c81312a27c00ef4243d33e6277d3d4ac983b"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/human/policies/07_PackackingExport/DAP_EI_v1_0.md",
+    "sha256": "464d3b204b09beaa61d51dcb9dbedf9db19a2684b456d05f91860913e5754f9f"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/machine/access_control.json",
+    "sha256": "de57aef209c06371c34a87b74dbfac729001d9e36dc70932c0b5744f10cd1494"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/machine/access_control.json.erqmeta.json",
+    "sha256": "30d243dc38112fcbae29f742ffa070816234c380bc5a5951034473144a7851f4"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/machine/accountability_framework.json",
+    "sha256": "281e1753d0811c70520a48e32ca58dbec427301d990da25831ec5ec0f55d277f"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/machine/accountability_framework.json.erqmeta.json",
+    "sha256": "b8f6898cd6a24befb9e1c3dab0bc37a66797886cea37409ba4c23b80ab2d9dfe"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/machine/compliance_confidentiality.json",
+    "sha256": "f1d4bc16c4147755bdfbb59f1553d9de4dd91165671baa2ba5f5179b23ba027a"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/machine/compliance_confidentiality.json.erqmeta.json",
+    "sha256": "070b9f3c450b29a2543f9596f7f57cf295139d9ae40a19cf1c21fcbd8ebb8c38"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/machine/data_handling_policy.json",
+    "sha256": "f4d3844012692326f390e4869e13c204c6cb09fa4d271c9c453545bf6088d603"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/machine/data_handling_policy.json.erqmeta.json",
+    "sha256": "68d8d748ff8039bc7d414e086f5315fa90836b7683aac7c769006d2ef78fcb20"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/machine/enterprise_baseline_governance.json",
+    "sha256": "d3e23751eef080330e82d2d12e32a413671d91c26ef01a83809df1cd635027c6"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/machine/enterprise_baseline_governance.json.erqmeta.json",
+    "sha256": "d56fbe41762617974a6c201c4d91afb35ecea019d207c2d4e921c7229308dbf7"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/machine/enterprise_baseline_governance_v2_2.json",
+    "sha256": "0f688ea97c30a5f226e504cc43c9a2a7b2028a82c2dc78e357da8ae726358aa6"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/machine/enterprise_baseline_governance_v2_2.json.erqmeta.json",
+    "sha256": "6f23d661c6d4a382f76856da1fb223b7502b2c817cb51b0e7f9e5abf68978875"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/machine/governance_index.json",
+    "sha256": "a727fa26569cc4ec0b92e9a8b74efabc7d301d25e9b3ce122ebf17facbb8903a"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/machine/governance_index.json.erqmeta.json",
+    "sha256": "b48530b65a98a34fb3057bf5202965bc4b82dd0e46bdeccc181393f8f3d13aef"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/machine/governance_overview.json",
+    "sha256": "67634c6a464a0787a60408d707dd69369c187a54993bf3fe3c3f0e83bd5b755b"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/machine/governance_overview.json.erqmeta.json",
+    "sha256": "47a6f15467ebc07c3f6dd4a6f429665af8a3256441fc53c21601ea0ea2ed0e19"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/machine/index/Governance_Index.json",
+    "sha256": "d350d7734a6b0c6a14ac2650a07ba959da625d85c6f1647e0e257339bfcac584"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/machine/index/Governance_Index.json.erqmeta.json",
+    "sha256": "56348aaf479a599b6fdaf702efab2fcd3a2b52074a2db3088f173e034d7f6414"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/machine/llm_safety_policy.json",
+    "sha256": "ef17841a182f18373d179f3598336660eaa0affd2d43b643aa12f2c589d63c1f"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/02_Governance/machine/llm_safety_policy.json.erqmeta.json",
+    "sha256": "32aa68654e3612cfb401d7d4d7c23a5f81872acd6fc0167ffc4c4364e40918ed"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/03_Data/README.md",
+    "sha256": "814dad5c38a2803dcb7a1a51874eef65d65db89a0a4634e815b50f038d88b7e4"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/03_Data/human/data_overview.md",
+    "sha256": "573a9c5239f4a0d5b90389ccdc157d1720ba581e9da26837ae927859fa7cca4d"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/03_Data/human/glossary_data.md",
+    "sha256": "c05638ed9d1092fd073a6cdbd9c93069a445ea6309a61563c8f584f06a42d12c"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/03_Data/human/ingestion_policy.md",
+    "sha256": "0b6f99ec3cb029782e52178141084b81c65b09afb85b796fd257b3301d84d94c"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/03_Data/human/normalization_standards.md",
+    "sha256": "4d4a9c7e548daf70dcd50c026f84188454fbab39ddaa14851787e3f92dd114fa"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/03_Data/human/storage_policy.md",
+    "sha256": "9408f96d63c411906d0bc1fedc69050944f915a71f6a6cff63f2189b0a9a72e5"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/03_Data/machine/dataset-manifests/dataset_hashes.json",
+    "sha256": "2b6d26318f8bd092c567319e6840668696ea28a1d263c9ca8ba26d2926c6aa12"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/03_Data/machine/dataset-manifests/dataset_hashes.json.erqmeta.json",
+    "sha256": "5d315b686c367198bef092ae8530ba2ebfbb009fb4902d1f4462fbe7144b4bfa"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/03_Data/machine/dataset-manifests/datasets_index.json",
+    "sha256": "0a75b3b35c2d969c2f7de313069cecda82c7af03c11c6cb55d4b0916ff4d61b3"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/03_Data/machine/dataset-manifests/datasets_index.json.erqmeta.json",
+    "sha256": "9f44a605a251aefa47361ae6bc81784bd556c6f5e9184af814d02a5cfcfd5904"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/03_Data/machine/manifest.json",
+    "sha256": "759fda20e7ec43b2728f83a02122fe1e665e8e27a288ec4607bb14636b6cd680"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/03_Data/machine/manifest.json.erqmeta.json",
+    "sha256": "c21dd2d0cf24652915f0d6fdb47c8b8245979f89205c912b436f23ab7293c623"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/03_Data/machine/pipeline_ingest.yaml",
+    "sha256": "7291660a8e5812842b04a892686f4591569ab605b4adb197932f354bc7b6bbfb"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/03_Data/machine/pipeline_normalize.yaml",
+    "sha256": "c3b4c059cba85aadce22c20e5ba6c1293567f024930fc003310b45831a03a019"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/03_Data/machine/schema_registry.json",
+    "sha256": "5ebe1ccad8766a71064cc8cf32d0f21da223b354a7bbfc7b05afc0a2da726714"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/03_Data/machine/schema_registry.json.erqmeta.json",
+    "sha256": "25d2c783d95ab1430b0fc63a73867cd5e2c2166126b382aaeca8b441e9e6139c"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/03_Data/machine/validation_checks.log",
+    "sha256": "ade89723fc261e56154409c35203e27c82925e174ce1be835d9a17e9de1c9061"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/04_Infrastructure/README.md",
+    "sha256": "e826d18820145645ab7e85137a315c3418b1048ddafcf7cef32af23b5c97a0af"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/04_Infrastructure/human/compute_resources.md",
+    "sha256": "009acec1590e45ac10259b4464662d2dc5490ea4b2183e913f887c30cec7768d"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/04_Infrastructure/human/glossary_infrastructure.md",
+    "sha256": "631dd75fb95ed1534555b87aa33832b2223ddeb3ff2c10a1dadb6b30ed5d9e20"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/04_Infrastructure/human/infrastructure_overview.md",
+    "sha256": "aaf356cc13b35df5f0e157d8d0566dc5e718d6b9051a18278affd8da00b8692c"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/04_Infrastructure/human/monitoring_alerts.md",
+    "sha256": "1fc7d647e026489b5cbb193994bfb44a681d1324f6b59143a8f4f47e0ba8dee4"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/04_Infrastructure/human/network_architecture.md",
+    "sha256": "42c9163d654c4c60a3a3520a3003acf3c43ada712efebb54b6fb5787f1da63fa"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/04_Infrastructure/human/storage_infrastructure.md",
+    "sha256": "8dd70e74eacd72c9e2960a23b35a672a44442cf318210d7e80d51cbc6643f2cb"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/04_Infrastructure/machine/dr_runbooks/disaster_recovery.md",
+    "sha256": "f39a224fdead73169fa3937b38e796013c2c748e0a60975bc57c01c7fdeb2f51"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/04_Infrastructure/machine/manifest.json",
+    "sha256": "ad764bbefcdbad041063d2dd66a032093002125a45ad832ef71eb7c9c6a18d33"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/04_Infrastructure/machine/manifest.json.erqmeta.json",
+    "sha256": "0cfbabe9f293e8e77e5b2e99531b40491a2e2b72d4439af851132229530bd1ac"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/04_Infrastructure/machine/monitoring_logs/alerts.log",
+    "sha256": "c79e452d220774baac0e5085aec1301fb6e53e96a818dfe1cd33a5ef7bfc20e3"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/04_Infrastructure/machine/network_config.yaml",
+    "sha256": "58a63a4e8e5122d0cc2a5e9d2dfa78d703916140121c7893f7d9c0553dd42288"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/04_Infrastructure/machine/server_inventory.json",
+    "sha256": "1eb9f603cd0355d83417729607926d6174dea24b3e7d728f45d6c6facd1b20df"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/04_Infrastructure/machine/server_inventory.json.erqmeta.json",
+    "sha256": "8f85b7484fd1298a00971d3f6d996ea38627148374173a38053a7a5ac965605f"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/04_Infrastructure/machine/storage_layout.yaml",
+    "sha256": "161148174235dfe2f4bc7b64531a97dcc690fb53fb582c8773797d8828815713"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/05_Blueprint/README.md",
+    "sha256": "bb603b44b706fd922512eec2f9d684a02987fc9cc03d0599117415c8ea65bc88"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/05_Blueprint/human/blueprint_overview.md",
+    "sha256": "41348560e4d493b929e0aa41df94f64da9eadf5c7f53d7958060320c44620436"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/05_Blueprint/human/development_roadmap.md",
+    "sha256": "130fae5f321ce4185b7f95404f31d8d9a80125ae881a51a83990647441596cf2"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/05_Blueprint/human/module_integration.md",
+    "sha256": "b8af02b557bda6ba6b9b029b2d0b62ddbf88d4ed1858cc0e273e4957645e2369"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/05_Blueprint/human/roadmap_blueprint.md",
+    "sha256": "dda3f1511d54fce4cf6a23a629078e03a093858a3053bbdbfe6f427f898eb718"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/05_Blueprint/machine/integration_manifest.json",
+    "sha256": "9cca3459291c39c928d676c19ed8917408713ef36b9683c8d132796bddad9642"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/05_Blueprint/machine/integration_manifest.json.erqmeta.json",
+    "sha256": "19cd78e6b9f8b066e3a8e609c3f204e280154943862c836edd9ae8dd86c9aa8a"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/05_Blueprint/machine/module_dependencies.json",
+    "sha256": "7c45c06fb76b8a2eba57517d8434a32ae95f6798109289da5328cb54f1de6d4a"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/05_Blueprint/machine/module_dependencies.json.erqmeta.json",
+    "sha256": "480493068e84d5965ad1df251dae72d36fcb0275e2e3d99bb3be6b6d39d45c47"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/05_Blueprint/machine/roadmap_snapshots.json",
+    "sha256": "54d44f2dd8b42dbf80e6aa349067b4aeef1b3baa2007ed161572c63b96c812b4"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/05_Blueprint/machine/roadmap_snapshots.json.erqmeta.json",
+    "sha256": "c5fadee6278aed32179ae409371359fd9a5e08321214447e4604b2ec81fe5c7e"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/06_System/README.md",
+    "sha256": "dc7d16243775a9dc4e8df1be9a576247fde54c65fc5541abd53b9104aae8d640"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/06_System/human/deployment_playbook.md",
+    "sha256": "28dd5aa2ca6ef8735d62d60b86c3ec14d09ddaed4a898c6f8ad3b393bead3954"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/06_System/human/execution_framework.md",
+    "sha256": "39493efc976f587c17b2ea4e806f05816999f7998d6e820d44705f2526c522d9"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/06_System/human/prototype_strategies.md",
+    "sha256": "10c74c9d759039f7ad27343207fd4692e6e52e29c11fd6e61c828737d33f9d2f"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/06_System/human/risk_portfolio_framework.md",
+    "sha256": "a3234d18f1e5c10daa7904fae2edcad0ae04360e06ecb235f36409fff1f986c4"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/06_System/human/strategy_governance.md",
+    "sha256": "8200d19055168496d472fc8ba95ed89cc5833958d00a6a2e864c74fe5802141b"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/06_System/human/system_overview.md",
+    "sha256": "5060e614c73a3cc2a1bcb83b3d35576b8db57cf44c7793bc367d6313ef88de02"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/06_System/human/system_strategies.md",
+    "sha256": "3f7fbdbdd637c95bc6192ea76ea1093db86623d66fefb9db04bf05e8f96ee07d"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/06_System/machine/backtest_results.json",
+    "sha256": "cfbe87e5366ac32c8b6b5d632c3ed237b5e191ca148f62d5fa1bfa9090b495c1"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/06_System/machine/backtest_results.json.erqmeta.json",
+    "sha256": "3322f507b27641d5b569b4d539d997115295da015784190860f555998e2ddb91"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/06_System/machine/experiment_manifest.json",
+    "sha256": "bd97845f0f00141e4b744a643d1b7f4bfe446d8ef8b73b1264f02f17c0a085b8"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/06_System/machine/experiment_manifest.json.erqmeta.json",
+    "sha256": "ba5d2227ca4695a87f09a80a5ff29bf123888a746e32200871cd73a5dcf200bb"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/06_System/machine/parity_logs.json",
+    "sha256": "d564e0febdb15582f2d9646cbe46c30bf395acfc030425eb251491b94d28e209"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/06_System/machine/parity_logs.json.erqmeta.json",
+    "sha256": "6dd389fc65b6547cd7c5eacdb0976fdca0983aa3f1b3d85e60927a0367a17d01"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/06_System/machine/prototype_strategies/cBot_Breakout.cbot",
+    "sha256": "7146e90ff90769f95835be8d9c36bc377edbfdd1e71ef88c2591e344fb0b3faa"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/06_System/machine/prototype_strategies/cBot_SimpleMA.cbot",
+    "sha256": "acec2fc571e39169fb5bd798966e4ebc024c839b23638a65e5c4ef902fd11f7e"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/06_System/machine/system_strategies/.keep",
+    "sha256": "7e64b1081b18266a48ae2a51e2f739640af9dc95cce120a61173751c99aa9b66"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/07_Theory/README.md",
+    "sha256": "cc7716b2fceacb7984645d802a5e58c1789ec49452dd0f19866f5246eb8a9b0d"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/07_Theory/human/consciousness_and_behavior.md",
+    "sha256": "9d1154b6ff207233c2650afd6c4d618cd777c0ff6c6ee407e742e194df940608"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/07_Theory/human/cycles_and_time.md",
+    "sha256": "193721a51023e260481cc0fe5e529b9c547698cf221dee4f752c78c5d0a4ecd2"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/07_Theory/human/mathematical_frameworks.md",
+    "sha256": "70900e734ebc7e1641da393e46db189b4408bbb38339697966c21c9f94aa7de0"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/07_Theory/human/natural_laws.md",
+    "sha256": "c93c89e008121327efba146e71594a7a01f9def3210b5ace67fd17ef00cc1b97"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/07_Theory/human/theory_foundations.md",
+    "sha256": "18f0e22f63bd63ad5b574a19c3b38e879388e57e3c24914b4b54df0191c4205b"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/07_Theory/human/unconventional_theories.md",
+    "sha256": "dc1eb4b0fe97c2069aed0dc116836b6535b6779521e1633c984f0381f37266ce"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/07_Theory/machine/crosslinks.yaml",
+    "sha256": "1b50e388768e7fd64afb108f10fad015c1f479920c031a555356aeb9d8fbeffe"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/07_Theory/machine/hypothesis_register.csv",
+    "sha256": "a1101cdfd844aa58c3438942d0347f2be80702a82a86f86858c831c8ce41d863"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/07_Theory/machine/references.json",
+    "sha256": "3b00e08e2fb7cc917bd4bf0fbd7122bd7ee00a8bd5880f935007467f502b28b6"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/07_Theory/machine/references.json.erqmeta.json",
+    "sha256": "1b15a9b272241e6a4331def8f183c837950e4bd0f2a745d15168581392a5828c"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/07_Theory/machine/theory_tags.yaml",
+    "sha256": "a4006d025c7db8be28cdbdc71f60333d35fdf69adb4cf0d5085da9384abf386d"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/08_Market/README.md",
+    "sha256": "2d0eeed0c7837abc2aeaa3716d7654ee529a366221e22a64fc71362e61c92ff8"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/08_Market/human/indicators_and_tools.md",
+    "sha256": "17246d75a95717135dd06da24b1091d5cf5b060ae2f2efae87e56e02c03963db"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/08_Market/human/instrument_profiles.md",
+    "sha256": "fa2b0e0867fefe1d6142a59a2f5c9741729fb6d4227298747f393112a718e0ab"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/08_Market/human/market_factors.md",
+    "sha256": "a3f3a4cc6b80200b246b07736246fd74ed60c81d2922282aefbb1541e9fa9f4d"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/08_Market/human/market_overview.md",
+    "sha256": "418a61a18311b58791c00330ca38e2ab6361c0c1842d242aa546c9c5985b3909"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/08_Market/human/market_research_notes.md",
+    "sha256": "8e75c52c2e508e9a94d05503a359316264d238df4b6379aad0464f807d24819d"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/08_Market/machine/indicator_configs.yaml",
+    "sha256": "995f84d1ca1d56db0926000d79c5bf022fbf57844348603cf6a8f6f478d185f8"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/08_Market/machine/instrument_metadata.json",
+    "sha256": "608dd235f2f1f93553f00d58db45a6b333e1df12d032140679515461b548c82f"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/08_Market/machine/instrument_metadata.json.erqmeta.json",
+    "sha256": "586fef62a7df7386f1496af7e42af1832a1fc794225748cc26f46edbf39e521e"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/08_Market/machine/market_data.json",
+    "sha256": "c30986fc6b88fd822ceeae5675829326f87715c55c8a6f270e3bcaf95eacef4b"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/08_Market/machine/market_data.json.erqmeta.json",
+    "sha256": "10672da156c99a9efa0851d959abde29ef5baf49996b0934c114332fe13539fd"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/08_Market/machine/research_notes_embeddings.json",
+    "sha256": "381bb61a500b9e0857dcf29ee6a42ab9ca6c304ebe9741bd49f55e5b359da56c"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/08_Market/machine/research_notes_embeddings.json.erqmeta.json",
+    "sha256": "9b4bc37baf1d3128970d235049102137863068a9c0f511e53b6f6b479d3d02df"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/09_Tech/README.md",
+    "sha256": "9a0ebfbc582d355096f361eed172a23366ae1079d62923cc9ababbe3819444e1"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/09_Tech/human/09A_overview.md",
+    "sha256": "43e0a132854e5cfc865f9ef150a57c197f79a768865cb99fc2929befcee61bf3"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/09_Tech/human/09B_stack.md",
+    "sha256": "acacce6abb313b4e8931728ae97de7bb4f4b720c15b041c36c2c59e6bcad4507"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/09_Tech/human/09C_integrations.md",
+    "sha256": "3db417263e021cf69f18b24a93b30f19b9e351f6139890f305e77ba1e6f2722f"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/09_Tech/human/09D_data_feeds.md",
+    "sha256": "29c20d683eac05427c07881495a922a6f78eb0393cf40a41ffda9f51db5376a0"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/09_Tech/human/09E_apis.md",
+    "sha256": "1f915a2a38478f244ad11e76e7bff7912051e3ba72a7fec3cb34ba7d4edbcf84"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/09_Tech/human/09F_libraries.md",
+    "sha256": "290dd484f89fd997a2c0f1fbe52e3f89bfa1a0f09ef460ea921eb997ffd54134"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/09_Tech/human/09G_tools.md",
+    "sha256": "26d17c51e0fd0edced64ff58491f1121fbe4cd08b3ebdf73a7a4e9d5bae1de37"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/09_Tech/human/09H_environment.md",
+    "sha256": "d8db23b1cd27bbc07c80e7eda6fe563ef4b00ed8f729dbaf42686faa55b55999"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/09_Tech/human/09I_security.md",
+    "sha256": "a25ebf0621e77ff13b6a529263033cadfa51b54fe84d135095614a44245e9db1"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/09_Tech/human/09J_dependencies.md",
+    "sha256": "40d8c5ba907df31a1fcf77f08f725ff6972a02d57d04867e41f7ffe1fded79c8"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/09_Tech/human/09K_testing.md",
+    "sha256": "ec4440927602bd632d56bf78907d31de4256ef6cdb42f85f07856a1bfb39b38f"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/09_Tech/human/09L_deployment.md",
+    "sha256": "414a22c201799307bc2100bf62e02770f8d266569c4c58848757c03471d93f3c"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/09_Tech/human/09M_observability.md",
+    "sha256": "367e7c21bffb575584ca3934df05b392b3bc283eb29e0bb6c4c746351da43538"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/09_Tech/human/09N_roadmap.md",
+    "sha256": "f257c5f0f9e3b68a7b9f99f4bba6dad3097521fecf4caf22b5e636f21f089fc2"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/09_Tech/machine/dependencies_registry.json",
+    "sha256": "35feb56d9e8a8235faa70539daf9b418727ca6239926c8926712b0c45498b3f2"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/09_Tech/machine/dependencies_registry.json.erqmeta.json",
+    "sha256": "d17d960d2ef33a5262d5b9f5049572a2f71960956f0ae0038c786c71e48661a5"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/09_Tech/machine/deployment_manifest.json",
+    "sha256": "4509b30a566c2d75b0dfbccb92cba024fe1a35d7814b04b64028bac87ac860c6"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/09_Tech/machine/deployment_manifest.json.erqmeta.json",
+    "sha256": "f81080cbdb64dfd134f38dd215a99bf78a214885dacecf86926404d302baf0aa"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/09_Tech/machine/manifest.json",
+    "sha256": "6a1d316be5d3eb3839ab2d5ed863b1b082c113b7d015cd09c9fb1d8e705572b9"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/09_Tech/machine/manifest.json.erqmeta.json",
+    "sha256": "5f830c7810e174f05a754ea34ad3744dcff2c13fc4ffbe960d5c6c09938eccf7"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/09_Tech/machine/observability_manifest.json",
+    "sha256": "fbecedcb1b3485118304fa2d8753ea9f04f9ecdac622ba459121ddc06e2521c6"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/09_Tech/machine/observability_manifest.json.erqmeta.json",
+    "sha256": "5675ee6f6900cc327c0a08c5927d182c401a2bb0550f8c392b422d490c641eff"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/09_Tech/machine/security_manifest.json",
+    "sha256": "81d59fa30806f4376679595e3a7fc175aba3826c40cf13d10e7479d9d5772ddc"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/09_Tech/machine/security_manifest.json.erqmeta.json",
+    "sha256": "156713dc16a86915f12af4a9264d5597520398011c3210cb52262ef14a82d3d4"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/09_Tech/machine/tech_roadmap.json",
+    "sha256": "9cdd92c050ea60d7bf8374257f64ccc7d533f8fb4611c7828a72dbe4f7802935"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/09_Tech/machine/tech_roadmap.json.erqmeta.json",
+    "sha256": "332e750c6313417dd10fd1dd5d0842f2294c5294789e27127bac12b542a60b35"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/09_Tech/machine/testing_matrix.json",
+    "sha256": "1616f0da7ed12e3a36c979784f5c291caf8ea7df1ef9bcf6ed26b8db1150204d"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/09_Tech/machine/testing_matrix.json.erqmeta.json",
+    "sha256": "8f475f2549b7f4f5183ff3fe9c5da60b3bc841bc5728ef0af67bc27be36c29d3"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/10_AI_Algo/README.md",
+    "sha256": "a83c27c1eea93926756d57e2ddb0abb67dc59d96b5523fc41599a9bbb7f3f37b"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/10_AI_Algo/human/ai_engine_overview.md",
+    "sha256": "180441c29a4db42cb9c6423c93809f2ea5e032e45e3f65086b2057c612fa89f3"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/10_AI_Algo/human/architecture.md",
+    "sha256": "bd4c1be3c558bb46d2d4d11920926f4df7631a14c2758de283a127ec0745db6f"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/10_AI_Algo/human/evaluation_metrics.md",
+    "sha256": "7c3818913a650a0c306a19b3255c318aa72e712f4a2d13af4f173b082a1f7f71"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/10_AI_Algo/human/inference_pipeline.md",
+    "sha256": "77ef6fa651d374b0d0cbec4278acfcc6faca216633e528092d9fec47acbe9e48"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/10_AI_Algo/human/model_registry.md",
+    "sha256": "affa35a3b2d3c761e5e8887443b0a9d8096eef948e2ca73fc170833952c965e3"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/10_AI_Algo/human/safety_framework.md",
+    "sha256": "acbfcc556d3cc06757e7cfce9865a09f4f51a702937c64a6212efd0ec68bf75b"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/10_AI_Algo/human/training_protocols.md",
+    "sha256": "a925aa5a2ac1d014e02218f0dfaaf083acb5faa27f1b6bfe9fad6d446e51d3d3"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/10_AI_Algo/machine/experiment_results/exp_001.json",
+    "sha256": "e3aee468fe3d180cf0562a76e95b5c4dd5252c63561df912bf9ba416c340aba4"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/10_AI_Algo/machine/experiment_results/exp_001.json.erqmeta.json",
+    "sha256": "30344d4ea65fafc8c2a38a5f55d08f2c3e30c63ccefcf0c0e58b25b31dacd926"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/10_AI_Algo/machine/inference_pipeline.yaml",
+    "sha256": "1599ca85aac5d934eef1ab1280137fd67568eeec9dfe89dfa1850baa7251adbf"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/10_AI_Algo/machine/model_registry.json",
+    "sha256": "37b8004547c0e60c4d3eff4871718aa195f03727df058569eb74bdc0fe1a86c9"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/10_AI_Algo/machine/model_registry.json.erqmeta.json",
+    "sha256": "95a1f90b65337425d1e096ceaa0243bc1325941f9dd5c296df36d1bcdace30d3"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/10_AI_Algo/machine/models/model_001/model_config.json",
+    "sha256": "3a3498e1fb11c17b3dd4ebb43f339455babc174ce16a1f509f370fb6ec64e9c2"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/10_AI_Algo/machine/models/model_001/model_config.json.erqmeta.json",
+    "sha256": "4f89aba7817fc695822ac8940add15645d300577f42cd9e2762514d46b5b5d24"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/10_AI_Algo/machine/training_runs.log",
+    "sha256": "8c12470841749cb661a25783b5b2864994a26788beaad6da0d6182e8ac8e8e29"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/11_Research/README.md",
+    "sha256": "ed23efe451ccf004dcd3524078371d803ad59dc4e84cfa3b782774d15148fde0"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/11_Research/human/experiment_templates.md",
+    "sha256": "1be0cb358143141b98de9240af2af22c4bcd98ffc5aa782e578992d357709194"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/11_Research/human/ingestion_policy.md",
+    "sha256": "ab71e1835ee3b545a3ea174780bb813388d87e347e5fc99f3804b60e24264cb0"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/11_Research/human/master_research_log.md",
+    "sha256": "af1d4bd7413766ece246f5b1d845c75c5139efc4ac4dc8837e690336100251f6"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/11_Research/human/reproducibility_guidelines.md",
+    "sha256": "a7543b6c601cc074db8219c25bdd02d33aa14993342c3495e31312a15a362082"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/11_Research/human/research_overview.md",
+    "sha256": "e8de654a44c055ada11a78e1c635101f12a1dacd5b97445e13b28cb54e0a2aef"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/11_Research/machine/dataset_manifests/registry.json",
+    "sha256": "344b6696970d692133322b7ff3665a9f9963f5201cc9feb78aec5b594a601637"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/11_Research/machine/dataset_manifests/registry.json.erqmeta.json",
+    "sha256": "a7822854e096576a109bba8a29ce37899fc2e1ccc388cd6435e83887f9b6f3c2"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/11_Research/machine/experiments/exp_001/manifest.json",
+    "sha256": "e60b245cf984885b35c62dcb40860dfc8ca09ea6f2383011395aabb9f530b590"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/11_Research/machine/experiments/exp_001/manifest.json.erqmeta.json",
+    "sha256": "7a3c0d29d2a53cd1ddd64a1a7992f8ec188b187954fd5e97b263ecf82267eab0"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/11_Research/machine/experiments/exp_manifest.schema.json",
+    "sha256": "fe9d9370a60b57d69d0420bd4e6c7e8c98d70c76c793b593d12d9105d2ba2b2e"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/11_Research/machine/experiments/exp_manifest.schema.json.erqmeta.json",
+    "sha256": "d47082bb4d921dffc8f3db4b80517541e439f1b5d729f64f6628cb65cbbab0cf"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/11_Research/machine/notebooks/.keep",
+    "sha256": "7e64b1081b18266a48ae2a51e2f739640af9dc95cce120a61173751c99aa9b66"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/11_Research/machine/research_index.json",
+    "sha256": "d482299aee93ae89c5ab75eff704d53d6986e0fed88f18c3b20ae27367d50fed"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/11_Research/machine/research_index.json.erqmeta.json",
+    "sha256": "7efc252c01f153328ab35bc68a9552178a560e236c3eeb03138f0cb0905da278"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/12_Future/README.md",
+    "sha256": "029d234e6f6fa3fb38c6df5ed3773bea322f2fe456019eaf90bf9af1c097cbbc"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/12_Future/human/gaps_and_research.md",
+    "sha256": "0147a3202fffe808781a23b58958b7e2ca46ee9a8899c2855da65e252986bcf9"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/12_Future/human/long_term_vision.md",
+    "sha256": "13738e8b18cf8e198d84f9d5365dc98c5eba38bcaf15d03a863baa15c1a74397"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/12_Future/human/partnerships_and_funding.md",
+    "sha256": "82b83175b6f9b97799ee284433b3163d078fd40bf8ef69ca2ff250bec0b6ac06"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/12_Future/human/prioritized_pipeline.md",
+    "sha256": "89ae3534aeb00c98b2175ae37e4715afe901b2d7df618d62eadbdfc6403d21a7"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/12_Future/machine/planning_backlog.json",
+    "sha256": "ff78b87920124853b00a183bd1abf1a63920c84c39a472c052bbf23dfbe69536"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/12_Future/machine/planning_backlog.json.erqmeta.json",
+    "sha256": "1f24a77cca591eaadffd4e7459a7080e2960cddf104d2828aa0721fbc43d2f06"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/12_Future/machine/roadmap_proposals.json",
+    "sha256": "46caf1f5c9356e90c64c00f5b5b836947ca4d00b9404e4bfb732ab2d7801a28a"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/12_Future/machine/roadmap_proposals.json.erqmeta.json",
+    "sha256": "93d9603b71cf4b9bf246009641a0bd45e8914ba4d5597dd2d224f25710cd7740"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/13_OpsLog/README.md",
+    "sha256": "91ab16cc8f0523ce749798ba9553f3b8b36db58caeae9aaea78f930d0d8a6afe"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/13_OpsLog/human/escalation_matrix_ops.md",
+    "sha256": "728531e0503cf5eb60935fc403c6dfc87d93e76937140e709d8ba60f4c411c8d"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/13_OpsLog/human/glossary_ops.md",
+    "sha256": "473b2fcf7821b7393586c50345255e3939a71f3ea94e3393c4aa1cef0e7305d5"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/13_OpsLog/human/ops_log.md",
+    "sha256": "6e475b68e25c4787c3c728704564a65746b4e59472ec91fb9df903594daae930"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/13_OpsLog/human/ops_policies.md",
+    "sha256": "b57675498de1fc55b063fdd8b0e3b883a9cdd4f9e9eebb44784f68b506c38a20"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/13_OpsLog/human/opslog_overview.md",
+    "sha256": "6bca909b7af88735fa80908ca2faab17ba3ab0f081f1be751a81b2ebb7ca9809"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/13_OpsLog/machine/manifest.json",
+    "sha256": "c2304f74414f5c4d95b88e12e98f4e937dad2204ddcde0d935a3802b7f9c4912"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/13_OpsLog/machine/manifest.json.erqmeta.json",
+    "sha256": "6a007f4324983db2b397a61088614ad3a9881e1ac64f0b73d5d737bbbd54e302"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/13_OpsLog/machine/ops_activity.log",
+    "sha256": "9c8bb0ca50d2aedc95073228e0da9d6316b6abbf027eb37766cb78941096cac9"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/13_OpsLog/machine/ops_workflows.yaml",
+    "sha256": "9bc096ed6c3a3d318ae87ee21b6e68d0b1ff93bb9b3d5b8f1d47abdc1bc6796c"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/99_Archive/README.md",
+    "sha256": "008c7ac87a472e49c6a0e1d86018fed83b112e6ab5c27687bfed5980f883a09d"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/99_Archive/legacy/EnterpriseBaselineGovernance_Addendum.md",
+    "sha256": "9025d2bf809cf42adf70d56c45b8075f198b226c6aa13cecf69bb4e92930c9b6"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/99_Archive/legacy/deprecated_files.md",
+    "sha256": "aabb20103fbf5b588dd6ffb2b4b87b2e3838507634471f4146976f1402c0e92d"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/99_Archive/machine/manifest.json",
+    "sha256": "8c7916fe0a379e4671de96e86738cabca9b516fcb9cb04a782c782d8947b8287"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/99_Archive/machine/manifest.json.erqmeta.json",
+    "sha256": "56520a0d5b4d16b370d89803379af314e59f9d58718fd2961240b4c8e3ceb4a2"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/CHANGELOG.md",
+    "sha256": "8e8de359ed8d8f430edc0ddb6f4dfb46ef88eacb4cd070971107fce2d19c9303"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/CODEOWNERS",
+    "sha256": "ffa2cb0929c3729a9a65cd41dbc2d1bb122ed5cd9c2e1b339f5afdd76267ae5b"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/CONTRIBUTING.md",
+    "sha256": "3d65baee49369c60e3f527669c89312d991bd24f416a38bcc77311874c4b5516"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/LICENSE",
+    "sha256": "5958bb3e9cfb8ae37540f9d2360b201d62029b2f46977f0802072923bae546b3"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/README.md",
+    "sha256": "0869414f8fc51110a442e5f64906f549befb77e73eb0f62552f7a827f52cb3fb"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/ci/check_erq_meta.py",
+    "sha256": "536bf26a472ebe1482d95fafcef3a911e17315c10e736f70df301fb68ec26ec4"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/ci/github_actions/ci.yml",
+    "sha256": "062941caffe87e288f50a2258a586fba222746c9694da2297c4c7e7b8ade5fca"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/ci/github_actions/erep.yml",
+    "sha256": "1efea9d9baba185be55385528ea7af9bf7668709f3a0a6fa7219489b52bd33f0"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/ci/github_actions/erep_meta_check.yml",
+    "sha256": "6f84589aefde4fbbdc9843cee668b158d1d88495e9f5aa9a083fac60d9d47b75"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/ci/github_actions/package.yml",
+    "sha256": "ea4dc8f314a31c1742509c43fb6463daf463581a02bd482049014dfcd4ef5516"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/ci/github_actions/pre-commit.yml",
+    "sha256": "a5d534af3c912aa9dc39202987ae7f74e0c85ec1d7c144ef302053fd64fb1870"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/ci/runners/runner_config.md",
+    "sha256": "72975240faa200e4706b0638561d7d8ce084786832901431f91ff23ecf883a10"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/templates/ci_job_template.yml",
+    "sha256": "888e04c9466a9d25f95f53e061f889d0917b3aed29886297009d1409c50f67dd"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/templates/human_doc_template.md",
+    "sha256": "4ebc6eb41e1d4a49bfe0a896b65cd43a1b379f54fd1785baef137dab811b2e53"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/templates/machine_manifest_template.json",
+    "sha256": "5b76861915801877462305f7ce69272fb224321de6377ccb05fed8e00e64e63d"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/templates/machine_manifest_template.json.erqmeta.json",
+    "sha256": "cd08ed18193388043ddea8d7562f501d6078f864216d32657b8df96fd2874739"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/tools/packaging/packaging_readme.md",
+    "sha256": "b257d1f13bc2f8fe4d78f92d7a91c235c033c06531233639f0febb6c3028634c"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/tools/scripts/ingest.py",
+    "sha256": "e28028900e50b3a665698ab127fa5412fdb41f776324e140c844522386deb053"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/tools/scripts/package_latest.py",
+    "sha256": "8dddda0bc5f4eff04c1cd82f9a1791b99c1becbdda52527ce159c4bc91eb8a62"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/tools/scripts/validate_package.py",
+    "sha256": "93108f3953190ae4c3c1b9ec4995525adeed2964c13f825aae342ac100a13063"
+  },
+  {
+    "path": "ENERQIS_GlobalDB_TREEBUILD/tools/scripts/validate_structure.py",
+    "sha256": "ce460ecfec6459e6b18a96c05472cbea63381a4d44d4f469ae5e13eda81ac582"
+  }
+]

@@ -1,0 +1,167 @@
+// ERQ-META-BEGIN
+// {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "2f4e3e7658fa59bb927c7f5ecaedc40b421b1abfe91b6d63aa42b478415eccce"}, "provenance": {"build_id": "c3fd767d-6246-43eb-a8a4-c0eba32a0994", "builder": "EREP v2.3 FULL", "built_at": "2025-09-12T06:13:49Z", "tools": {"hash": "sha256", "python": "3.11"}}, "source_baseline_hash": "pending", "spec_version": "2.3"}
+// ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "schema", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "303620838d57a52c9e90f8929f5cdcc149720e6548a8d2b809913e3cce4fd5c8"}, "provenance": {"build_id": "09c46427-5b48-4432-a91b-6823957546a6", "builder": "EREP v2.2", "built_at": "2025-09-12T02:49:11Z", "tools": {"hash": "sha256", "python": "3.10"}}, "source_baseline_hash": "27fc28fe0f19e3cad5b5d3e44fc1032b732a3d7b5455ed39895731aefc4c6a6d", "spec_version": "2.2"}
+# ERQ-META-END
+// ERQ-META-BEGIN
+// {"canonicalization":{"encoding":"utf-8","newline":"LF","sort_keys":true},"doc_type":"schema","governance_links":{"acceptance_gates":"00_repo/.cbr/acceptance_gates.yaml","audit_log":"00_repo/.cbr/audit_log.json","registry":"00_repo/.cbr/registry.json"},"integrity":{"algo":"sha256","canonical_scope":"payload","value":"1d45134776dc4b6627d5771e7cf2103406de41ee404e25f76227cd5c67da45ed"},"provenance":{"build_id":"2ef14e34-af7d-4f1a-8dd9-2c8ee5e558d3","builder":"EREP v2.2 (COMPLIANCE_ONLY)","built_at":"2025-09-12T02:04:11Z","tools":{"python":"3.11.8"}},"source_baseline_hash":"7fd01630d003c81f7ccb2de8b1160b2e79520bc59365dd6e6b0b0f67aa76d9a0","spec_version":"2.2"}
+// ERQ-META-END
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EREP Policy v2.1",
+  "type": "object",
+  "required": ["version", "mode", "canonical_paths", "determinism", "targets", "outputs", "governance", "ci_enforcement"],
+  "properties": {
+    "version": {"type": "string", "const": "2.1"},
+    "policy_name": {"type": "string"},
+    "mode": {"type": "string", "enum": ["FULL", "COMPLIANCE_ONLY", "ENRICH_ONLY"]},
+    "canonical_paths": {
+      "type": "object",
+      "required": ["control_root","manifests_dir","module_manifests_dir","registry","audit_log","acceptance_gates","structure_lock","structure_spec"],
+      "properties": {
+        "root": {"type": "string"},
+        "control_root": {"type": "string"},
+        "manifests_dir": {"type": "string"},
+        "module_manifests_dir": {"type": "string"},
+        "registry": {"type": "string"},
+        "audit_log": {"type": "string"},
+        "acceptance_gates": {"type": "string"},
+        "structure_lock": {"type": "string"},
+        "structure_spec": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "determinism": {
+      "type": "object",
+      "required": ["tz","seed","source_date_epoch","sort_keys","newline","encoding"],
+      "properties": {
+        "tz": {"type": "string"},
+        "seed": {"type": "integer"},
+        "source_date_epoch": {"type": "integer"},
+        "sort_keys": {"type": "boolean"},
+        "newline": {"type": "string", "enum": ["LF"]},
+        "encoding": {"type": "string", "enum": ["utf-8"]}
+      },
+      "additionalProperties": false
+    },
+    "targets": {
+      "type": "object",
+      "required": ["scan_roots","machine_globs"],
+      "properties": {
+        "scan_roots": {"type": "array", "items": {"type": "string"}},
+        "machine_globs": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    },
+    "erq_meta_requirements": {
+      "type": "object",
+      "required": ["required","comment_fences","header_injection"],
+      "properties": {
+        "required": {"type": "array", "items": {"type": "string"}},
+        "comment_fences": {
+          "type": "object",
+          "required": ["begin","end"],
+          "properties": {
+            "begin": {"type": "string"},
+            "end": {"type": "string"}
+          }
+        },
+        "header_injection": {
+          "type": "object",
+          "required": ["for_text_like","strategy"],
+          "properties": {
+            "for_text_like": {"type": "array", "items": {"type": "string"}},
+            "strategy": {"type": "string", "enum": ["prepend_comment_fenced_json"]}
+          }
+        }
+      }
+    },
+    "redaction": {
+      "type": "object",
+      "required": ["enabled","patterns","replacement"],
+      "properties": {
+        "enabled": {"type": "boolean"},
+        "patterns": {"type": "array", "items": {"type": "object"}},
+        "replacement": {"type": "string"}
+      }
+    },
+    "outputs": {
+      "type": "object",
+      "required": ["compliance_pack","innovation","upgrade_pack","reports"],
+      "properties": {
+        "compliance_pack": {"type": "boolean"},
+        "innovation": {
+          "type": "object",
+          "required": ["enable","write_module_todos","include_skeletons","min_rank","dossier_paths","module_todos_dir","skeletons_zip"],
+          "properties": {
+            "enable": {"type": "boolean"},
+            "write_module_todos": {"type": "boolean"},
+            "include_skeletons": {"type": "boolean"},
+            "min_rank": {"type": "number", "minimum": 0, "maximum": 1},
+            "dossier_paths": {
+              "type": "object",
+              "required": ["human","machine"],
+              "properties": {
+                "human": {"type": "string"},
+                "machine": {"type": "string"}
+              }
+            },
+            "module_todos_dir": {"type": "string"},
+            "skeletons_zip": {"type": "string"}
+          }
+        },
+        "upgrade_pack": {
+          "type": "object",
+          "required": ["enable","path","include_manifest"],
+          "properties": {
+            "enable": {"type": "boolean"},
+            "path": {"type": "string"},
+            "include_manifest": {"type": "boolean"}
+          }
+        },
+        "reports": {
+          "type": "object",
+          "required": ["compliance_report_md","compliance_report_json"],
+          "properties": {
+            "compliance_report_md": {"type": "string"},
+            "compliance_report_json": {"type": "string"}
+          }
+        }
+      }
+    },
+    "governance": {
+      "type": "object",
+      "required": ["require_adoption_for_new_paths","auto_open_proposals","proposal_pack","proposal_policy"],
+      "properties": {
+        "require_adoption_for_new_paths": {"type": "boolean"},
+        "auto_open_proposals": {"type": "boolean"},
+        "proposal_pack": {"type": "string"},
+        "proposal_policy": {
+          "type": "object",
+          "required": ["open_for_rank_at_least","labels","assignees"],
+          "properties": {
+            "open_for_rank_at_least": {"type": "number", "minimum": 0, "maximum": 1},
+            "labels": {"type": "array", "items": {"type": "string"}},
+            "assignees": {"type": "array", "items": {"type": "string"}}
+          }
+        }
+      }
+    },
+    "ci_enforcement": {
+      "type": "object",
+      "required": ["require_dossier","gates","allowed_write_roots"],
+      "properties": {
+        "require_dossier": {"type": "boolean"},
+        "gates": {"type": "array", "items": {"type": "object"}},
+        "allowed_write_roots": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "run_profiles": {"type": "object"},
+    "scoring": {"type": "object"},
+    "privacy": {"type": "object"},
+    "performance": {"type": "object"},
+    "extensibility": {"type": "object"}
+  },
+  "additionalProperties": false
+}

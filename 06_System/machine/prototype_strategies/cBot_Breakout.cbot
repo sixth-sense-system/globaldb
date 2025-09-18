@@ -1,0 +1,37 @@
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "text_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "3256b2c1819c305d8571e920d35ff901372d32f520fdc57bda4b40d0e28a6cd9"}, "provenance": {"build_id": "349507ad-b930-4924-b00a-afabd67aeff4", "builder": "EREP v2.4 (FULL)", "built_at": "2025-09-12T18:31:46Z", "tools": {"hash": "sha256", "python": "3.11.8"}}, "source_baseline_hash": "7f565790af98f9fe5be6c6ad46ed2ab080bdbb080293d93dbf3b522d8bdc6149", "spec_version": "2.4"}
+# ERQ-META-END
+# ERQ-META-BEGIN
+# {"doc_type":"strategy","spec_version":"2.3.3","source_baseline_hash":"6d2463e6bde5fc8c680478c610eeea7b8ba1997bc1acc64b00acb3a4c11fa700","provenance":{"build_id":"ba2d44cd-68bd-45a0-b92e-38bf5aa41aa4","builder":"EREP v2.3.3 (FULL)","built_at":"2025-09-12T16:30:10Z","tools":{"python":"3.11.8","hash":"sha256"}},"governance_links":{"root":null,"control_root":"00_repo/.cbr","manifests_dir":"00_repo/.cbr/manifests","module_manifests_dir":"00_repo/.cbr/module-manifests","registry":"00_repo/.cbr/registry.json","audit_log":"00_repo/.cbr/audit_log.json","acceptance_gates":"00_repo/.cbr/acceptance_gates.yaml","structure_lock":"00_repo/.cbr/structure_lock.json","structure_spec":"00_repo/.cbr/structure_spec.json"},"canonicalization":{"encoding":"utf-8","newline":"LF","sort_keys":true},"integrity":{"algo":"sha256","canonical_scope":"payload","value":"1d27c23d7ffb8f8d751e8d5c3777c1872f0056608d82da61668c5bb6212bb960"}}
+# ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "cbot", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "9b6bd0a6ff77695f8d54f946da9e082b0cafcb8231936a24df9181b0c2e0df69"}, "provenance": {"build_id": "f7f3dd91-1786-45d1-bac4-0f565d48d93f", "builder": "ENERQIS RC1c builder", "built_at": "2025-09-10T00:46:55Z", "tools": {"hashlib": "sha256", "python": "3.10"}}, "source_baseline_hash": "471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb", "spec_version": "1.0"}
+# ERQ-META-END
+// Breakout.cbot
+// Generated enterprise skeleton with logging and parameters
+using cAlgo.API;
+using System;
+
+namespace cAlgo.Robots
+{
+    [Robot(TimeZone = TimeZones.UTC, AccessRights = AccessRights.None)]
+    public class Breakout : Robot
+    {
+        [Parameter("Fast MA", DefaultValue = 20)] public int FastMA { get; set; }
+        [Parameter("Slow MA", DefaultValue = 50)] public int SlowMA { get; set; }
+        [Parameter("Seed", DefaultValue = 1729)] public int Seed { get; set; }
+
+        private Random rng;
+
+        protected override void OnStart()
+        {
+            rng = new Random(Seed);
+            Print("Breakout started at {0:O} UTC", Server.TimeUtc);
+        }
+
+        protected override void OnBar()
+        {
+            // NOTE: implement logic
+        }
+    }
+}

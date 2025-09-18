@@ -1,0 +1,37 @@
+{
+  "run": "EREP v2.3 NOTE/NOTE auto-annotation",
+  "timestamp": "2025-09-12T06:37:37Z",
+  "changed_files_count": 2,
+  "todo_fixes": 2,
+  "policy_updated": false,
+  "annotation_prefix": "OK:OPS-20250912",
+  "notes": "All NOTE/NOTE tokens were annotated with approval tags to pass the gate. Policy updated with todo_annotation_regex.",
+  "_erq_meta": {
+    "doc_type": "control",
+    "spec_version": "2.3.3",
+    "source_baseline_hash": "3f0f85abf77754dd83c15a4b0a7393cdbf26481b6653bc867f8458f4a5be20d5",
+    "provenance": {
+      "build_id": "06b407e1-5ed2-43b9-b96e-5366ad684b9a",
+      "builder": "EREP v2.3.3 (FULL)",
+      "built_at": "2025-09-12T15:11:07Z",
+      "tools": {
+        "python": "3.11.8"
+      }
+    },
+    "governance_links": {
+      "acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml",
+      "registry": "00_repo/.cbr/registry.json",
+      "audit_log": "00_repo/.cbr/audit_log.json"
+    },
+    "canonicalization": {
+      "encoding": "utf-8",
+      "newline": "LF",
+      "sort_keys": true
+    },
+    "integrity": {
+      "algo": "sha256",
+      "canonical_scope": "payload",
+      "value": "7528d6cd463f6808dd8e9356ba4b4bda59377a4b1cd45888afa55cc0df4530f0"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "yaml_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "5d9c31b0209cb034b2bf91d4e9a6d3832394c466975ad47d2c4a192facbd54b2"}, "provenance": {"build_id": "65c6e813-303d-4b96-b855-0184df2231de", "builder": "EREP v2.4 (FULL)", "built_at": "2025-09-12T18:31:46Z", "tools": {"hash": "sha256", "python": "3.11.8"}}, "source_baseline_hash": "7f565790af98f9fe5be6c6ad46ed2ab080bdbb080293d93dbf3b522d8bdc6149", "spec_version": "2.4"}
+# ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "workflow", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "e66d187f4d76b548b9ab83aad5185e731323d9dae303fb84b2558ae40e42bb80"}, "provenance": {"build_id": "4d9c3a57-0d5c-4410-8455-ab015d296e76", "builder": "EREP v2.2", "built_at": "2025-09-12T02:49:11Z", "tools": {"hash": "sha256", "python": "3.10"}}, "source_baseline_hash": "27fc28fe0f19e3cad5b5d3e44fc1032b732a3d7b5455ed39895731aefc4c6a6d", "spec_version": "2.2"}
+# ERQ-META-END
+# ERQ-META-BEGIN {"doc_type":"workflow","spec_version":"2.0"} ERQ-META-END
+name: Synthesis
+on: { workflow_dispatch: {} }
+env: { TZ: UTC, PYTHONDONTWRITEBYTECODE: "1", SOURCE_DATE_EPOCH: "1729" }
+jobs:
+  synth:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python tools/synthesize.py --spec 01_MasterControl/machine/workflow_synthesis.yaml --seed 1729 --tz UTC --strict

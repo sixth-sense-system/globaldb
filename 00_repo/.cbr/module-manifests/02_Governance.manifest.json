@@ -1,0 +1,50 @@
+// ERQ-META-BEGIN
+// {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "3fb7239987d41409bd7bc2cb61a4c4be7428c0e33e241cd8ac6d6fe9b862914b"}, "provenance": {"build_id": "87ef8700-441c-49ed-9d19-424c6f06bcd1", "builder": "EREP v2.3 FULL", "built_at": "2025-09-12T06:13:49Z", "tools": {"hash": "sha256", "python": "3.11"}}, "source_baseline_hash": "pending", "spec_version": "2.3"}
+// ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "manifest", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "36253d81c02c261691c56a1377ea810504d32e1288ee6e74554d220fd74a14d1"}, "provenance": {"build_id": "e35a3153-88ac-4554-a7ef-b348b9340df8", "builder": "EREP v2.2", "built_at": "2025-09-12T02:49:11Z", "tools": {"hash": "sha256", "python": "3.10"}}, "source_baseline_hash": "27fc28fe0f19e3cad5b5d3e44fc1032b732a3d7b5455ed39895731aefc4c6a6d", "spec_version": "2.2"}
+# ERQ-META-END
+# ERQ-META-BEGIN
+# {"doc_type":"manifest","spec_version":"1.0","source_baseline_hash":"471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb","provenance":{"build_id":"19e67804-9ecd-4f03-9aaa-a42164eb18f2","builder":"ENERQIS RC1+ upgrader","built_at":"2025-09-10T01:10:56Z","tools":{"python":"3.11.8","hashlib":"sha256"}},"governance_links":{"acceptance_gates":"00_repo/.cbr/acceptance_gates.yaml","registry":"00_repo/.cbr/registry.json","audit_log":"00_repo/.cbr/audit_log.json"},"canonicalization":{"encoding":"utf-8","newline":"LF","sort_keys":true},"integrity":{"algo":"sha256","canonical_scope":"payload","value":"7d8c46baed9d43b078907c5cc284b060f53e17b828cce3899f1a04153e6c9e8c"}}
+# ERQ-META-END
+{
+  "generated_at": "2025-09-10T00:02:10Z",
+  "build_id": "49f5c31b6eb5fe868c4ced8f074db74c",
+  "items": [
+    {
+      "path": "02_Governance/human/access_control.md",
+      "sha256": "ed92b1188e8a4786cda294c6202ac99d317c1747df62bc3699630ec805134567",
+      "bytes": 765
+    },
+    {
+      "path": "02_Governance/human/accountability_framework.md",
+      "sha256": "aba3ab7afc3d308a5e4b893432b286e07838dfc52b07061927c1c5bf646d4aa6",
+      "bytes": 732
+    },
+    {
+      "path": "02_Governance/human/compliance_confidentiality.md",
+      "sha256": "6d9cb16f1b5c8ad1f94bf2f67cdee94105ddb0c14762f770d5be5a4fb655e6c3",
+      "bytes": 517
+    },
+    {
+      "path": "02_Governance/human/data_handling_policy.md",
+      "sha256": "6c47a20f4992027f699e71b5311d5cdc837334acd9213673bb5c40ed1991ab59",
+      "bytes": 593
+    },
+    {
+      "path": "02_Governance/human/governance_index.md",
+      "sha256": "b1a532f320b9e2b2ff01d9ec51ada9350b3da254652418d67ff9d114e57cb475",
+      "bytes": 552
+    },
+    {
+      "path": "02_Governance/human/governance_overview.md",
+      "sha256": "7db9641d69eee34bba068aa478a5e636722c49639093dc1715784c3636c0c0d0",
+      "bytes": 751
+    },
+    {
+      "path": "02_Governance/human/llm_safety_policy.md",
+      "sha256": "1453d3f805bf95c5e52df9c639579d5b87a543383cc1ab8e3555d8a95cfc210c",
+      "bytes": 654
+    }
+  ]
+}

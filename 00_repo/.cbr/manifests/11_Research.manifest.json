@@ -1,0 +1,45 @@
+// ERQ-META-BEGIN
+// {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "625e84ea0f3576e32d152deaf409e60009a006201f0bd9201c794a487e11da08"}, "provenance": {"build_id": "44c931c5-4fd7-42b1-93b9-305973bd5444", "builder": "EREP v2.3 FULL", "built_at": "2025-09-12T06:13:49Z", "tools": {"hash": "sha256", "python": "3.11"}}, "source_baseline_hash": "pending", "spec_version": "2.3"}
+// ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "manifest", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "28733589e08f2a113241c878d4cae675a86191d07e72bf5f42b07b23cf122e04"}, "provenance": {"build_id": "c5cd310d-062b-4544-aaef-891d97f13747", "builder": "EREP v2.2", "built_at": "2025-09-12T02:49:11Z", "tools": {"hash": "sha256", "python": "3.10"}}, "source_baseline_hash": "27fc28fe0f19e3cad5b5d3e44fc1032b732a3d7b5455ed39895731aefc4c6a6d", "spec_version": "2.2"}
+# ERQ-META-END
+# ERQ-META-BEGIN
+# {"doc_type":"manifest","spec_version":"1.0","source_baseline_hash":"471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb","provenance":{"build_id":"c681ac58-7e40-434d-9b0a-1c47bcdc7252","builder":"ENERQIS RC1+ upgrader","built_at":"2025-09-10T01:10:56Z","tools":{"python":"3.11.8","hashlib":"sha256"}},"governance_links":{"acceptance_gates":"00_repo/.cbr/acceptance_gates.yaml","registry":"00_repo/.cbr/registry.json","audit_log":"00_repo/.cbr/audit_log.json"},"canonicalization":{"encoding":"utf-8","newline":"LF","sort_keys":true},"integrity":{"algo":"sha256","canonical_scope":"payload","value":"6b17ec8483cd1e17fe4ebc95da5a6bdf794f38f7054d08fff277bd4e42b32dd1"}}
+# ERQ-META-END
+{
+  "generated_at": "2025-09-10T00:02:10Z",
+  "build_id": "49f5c31b6eb5fe868c4ced8f074db74c",
+  "items": [
+    {
+      "path": "11_Research/human/experiment_templates.md",
+      "sha256": "6e873f805d03792b4f8d9f4cc80fd4486cfe05d98731f42dcd6cee7567ad0fe5",
+      "bytes": 579
+    },
+    {
+      "path": "11_Research/human/ingestion_policy.md",
+      "sha256": "21968eaa3ba57599de6a44493c203f136703b2a29e823403252dfa348cedc6ea",
+      "bytes": 776
+    },
+    {
+      "path": "11_Research/human/master_research_log.md",
+      "sha256": "6e6f33bf0f7894f2071438ae71f991299e8684d4327134661b3d03614e72f5db",
+      "bytes": 536
+    },
+    {
+      "path": "11_Research/human/reproducibility_guidelines.md",
+      "sha256": "d89e03e136d993b2da85dea709a95246382817ce26ddadb642725f569a772f40",
+      "bytes": 823
+    },
+    {
+      "path": "11_Research/human/research_overview.md",
+      "sha256": "5858bd71614738bb579aa8f3d822a3f95d3a89794afd13181fb61a51b4856290",
+      "bytes": 660
+    },
+    {
+      "path": "11_Research/machine/research_index.json",
+      "sha256": "1ae1ade7a31f9eb364acde4496c209b5ab3298db108fddf52652e393a076df83",
+      "bytes": 44
+    }
+  ]
+}

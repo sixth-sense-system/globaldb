@@ -1,0 +1,50 @@
+// ERQ-META-BEGIN
+// {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "f6a93653d687a036181a38d6d9fd990f940397af791cd726ac36f0c9fe5ef06b"}, "provenance": {"build_id": "fe69c50f-d575-4c4c-9856-c8346a7463b4", "builder": "EREP v2.3 FULL", "built_at": "2025-09-12T06:13:49Z", "tools": {"hash": "sha256", "python": "3.11"}}, "source_baseline_hash": "pending", "spec_version": "2.3"}
+// ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "manifest", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "616c79d8f29742e65bcbdbf4cde6a176507b3c6f352bf5de07194faadd0833b3"}, "provenance": {"build_id": "975bfb4d-deb0-4e24-8208-1db5dd4e94cc", "builder": "EREP v2.2", "built_at": "2025-09-12T02:49:11Z", "tools": {"hash": "sha256", "python": "3.10"}}, "source_baseline_hash": "27fc28fe0f19e3cad5b5d3e44fc1032b732a3d7b5455ed39895731aefc4c6a6d", "spec_version": "2.2"}
+# ERQ-META-END
+# ERQ-META-BEGIN
+# {"doc_type":"manifest","spec_version":"1.0","source_baseline_hash":"471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb","provenance":{"build_id":"d6342548-a24d-4142-afad-80fee68812f5","builder":"ENERQIS RC1+ upgrader","built_at":"2025-09-10T01:10:56Z","tools":{"python":"3.11.8","hashlib":"sha256"}},"governance_links":{"acceptance_gates":"00_repo/.cbr/acceptance_gates.yaml","registry":"00_repo/.cbr/registry.json","audit_log":"00_repo/.cbr/audit_log.json"},"canonicalization":{"encoding":"utf-8","newline":"LF","sort_keys":true},"integrity":{"algo":"sha256","canonical_scope":"payload","value":"e6be86cf9c7feb9162e91fa43161c6b979a04736507d3a816be06b736b03607d"}}
+# ERQ-META-END
+{
+  "generated_at": "2025-09-10T00:02:10Z",
+  "build_id": "49f5c31b6eb5fe868c4ced8f074db74c",
+  "items": [
+    {
+      "path": "10_AI_Algo/human/ai_engine_overview.md",
+      "sha256": "80dd77761740b8d342d840dd1aad0856f3033db73e26cea0780f2f71738b6e8a",
+      "bytes": 673
+    },
+    {
+      "path": "10_AI_Algo/human/architecture.md",
+      "sha256": "e3cc06d7011da5c158743949343fc1e9c8f64dba895240b7bfd171829a4c1c89",
+      "bytes": 696
+    },
+    {
+      "path": "10_AI_Algo/human/evaluation_metrics.md",
+      "sha256": "faf48d345e5b882e86498a3a2c8c8b67468eae1259ed983d0cec31faf0920888",
+      "bytes": 460
+    },
+    {
+      "path": "10_AI_Algo/human/inference_pipeline.md",
+      "sha256": "f7e089395c75b405b3155ce4407418419d293032c462d805105e99e3dcabee91",
+      "bytes": 485
+    },
+    {
+      "path": "10_AI_Algo/human/model_registry.md",
+      "sha256": "f86e1b89990868a2dfb1038f399b04ee32b49f2ccb1fc68fab302363ee94888c",
+      "bytes": 505
+    },
+    {
+      "path": "10_AI_Algo/human/safety_framework.md",
+      "sha256": "a033c4ec6938295b9c54775dab0c611e2e4c7afcfa7f02ab8a180d8b4b7cc34c",
+      "bytes": 710
+    },
+    {
+      "path": "10_AI_Algo/human/training_protocols.md",
+      "sha256": "edcc381345d7cb8fb4296b56edc548d5dd87561828687ef2b7552b345feeb269",
+      "bytes": 688
+    }
+  ]
+}

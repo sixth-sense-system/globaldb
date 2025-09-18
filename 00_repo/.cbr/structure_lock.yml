@@ -1,0 +1,15 @@
+# ERQ-META-BEGIN
+# {"canonicalization":{"encoding":"utf-8","newline":"LF","sort_keys":true},"doc_type":"config","governance_links":{"acceptance_gates":"00_repo/.cbr/acceptance_gates.yaml","audit_log":"00_repo/.cbr/audit_log.json","registry":"00_repo/.cbr/registry.json"},"integrity":{"algo":"sha256","canonical_scope":"payload","value":"45686852b1685de67755b729741bdf192eb809e09821a50ccaf4ecfa4752f384"},"provenance":{"build_id":"bc0e69d9-cc7d-48d4-9d46-3eb6219ec820","builder":"EREP v2.4.1 (inline)","built_at":"2025-09-12T23:35:39Z","tools":{"python":"3.11.8"}},"source_baseline_hash":"pending","spec_version":"2.4"}
+# ERQ-META-END
+version: 2.4
+modules:
+  - id: "00_repo"
+    required: [".cbr/erep_policy.json", "README.md"]
+    allowed_ext: [".md",".json",".yml",".yaml",".py",".sh"]
+  - id: "02_Governance"
+    required: ["README.md"]
+    allowed_ext: [".md",".json",".yml",".yaml"]
+  - id: "06_System"
+    required: ["README.md"]
+    allowed_ext: [".md",".json",".yml",".yaml",".cs",".py",".ipynb"]
+# ...extend for other modules

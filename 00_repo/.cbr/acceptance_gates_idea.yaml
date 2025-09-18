@@ -1,0 +1,31 @@
+# acceptance_gates_idea.yaml — additive gates for Idea Capture & Synthesis
+gates:
+  - id: G-IDEA-CAPTURE-FORMAT
+    description: All inputs validate as CAPTURE, Card, or CSV backlog v2
+    type: compliance
+    severity: error
+
+  - id: G-IDEA-DEDUPED
+    description: Duplicates merged; provenance retained for each item
+    type: compliance
+    severity: error
+
+  - id: G-IDEA-RANKED-STAGE1
+    description: RICE+ ranking applied with Stage-1 revenue weighting config
+    type: policy
+    severity: error
+
+  - id: G-IDEA-OPSLOG
+    description: OpsLog entry posted with Top-N Now set and rationale
+    type: process
+    severity: warn
+
+  - id: G-IDEA-BLUEPRINT-SYNC
+    description: Blueprint docs updated for capabilities/milestones referencing backlog IDs
+    type: process
+    severity: warn
+
+  - id: G-IDEA-SCORECARD-SYNC
+    description: Scorecard updated and changes reflected back to backlog shared fields
+    type: process
+    severity: warn

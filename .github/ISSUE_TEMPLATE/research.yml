@@ -1,0 +1,12 @@
+name: Research
+description: Hypothesis to investigate (alpha, execution, risk)
+title: "[Research]: "
+labels: ["research"]
+body:
+  - type: input
+    id: hypothesis
+    attributes: { label: Hypothesis, placeholder: Short statement }
+    validations: { required: true }
+  - type: textarea
+    id: methodology
+    attributes: { label: Methodology, description: Data, splits, metrics, acceptance criteria }

@@ -1,0 +1,20 @@
+name: EREP Equivalence Guard
+on:
+  pull_request: {}
+  workflow_dispatch: {}
+
+jobs:
+  erep-equivalence:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+      - name: Equivalence check (FULL -> COMPLIANCE_ONLY)
+        run: |
+          python tools/scripts/erep_equivalence_check.py             --policy 00_repo/.cbr/erep_policy.json             --root .

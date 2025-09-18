@@ -1,0 +1,17 @@
+// ERQ-META-BEGIN
+// {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "12ff6b3f7b9d4189cd4c1b579bc743acb883d60379097e8b7ddf4f01af05a5e9"}, "provenance": {"build_id": "86c5c8b7-4fb9-4f39-96b5-16e58e01e21d", "builder": "EREP v2.3 FULL", "built_at": "2025-09-12T06:13:49Z", "tools": {"hash": "sha256", "python": "3.11"}}, "source_baseline_hash": "pending", "spec_version": "2.3"}
+// ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization":{"encoding":"utf-8","newline":"LF","sort_keys":true},"doc_type":"manifest","governance_links":{"acceptance_gates":"00_repo/.cbr/acceptance_gates.yaml","audit_log":"00_repo/.cbr/audit_log.json","registry":"00_repo/.cbr/registry.json"},"integrity":{"algo":"sha256","canonical_scope":"payload","value":"07a32cca84a6a171c2557a008720b8780acbf190adcee48dcdfa4cd5dcdf14e8"},"provenance":{"build_id":"8c7ed162-b417-4213-8411-a3b6bbd60025","builder":"EREP v2.2","built_at":"2025-09-12T02:53:32Z","tools":{"hashlib":"sha256","python":"3.11.8"}},"source_baseline_hash":"ff16b4e65447d1d6658cdd60d6bb9d426f0a238cd08f4488eea666a53abb8653","spec_version":"2.2"}
+# ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "manifest", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "2eda506df820cd8f2eb2e005da6a5faff018c36738f9e164f702dd29034feac5"}, "provenance": {"build_id": "fdff52d9-6361-41c4-be89-7081886fd7e2", "builder": "EREP v2.2", "built_at": "2025-09-12T02:49:11Z", "tools": {"hash": "sha256", "python": "3.10"}}, "source_baseline_hash": "27fc28fe0f19e3cad5b5d3e44fc1032b732a3d7b5455ed39895731aefc4c6a6d", "spec_version": "2.2"}
+# ERQ-META-END
+// ERQ-META-BEGIN
+// {"canonicalization":{"encoding":"utf-8","newline":"LF","sort_keys":true},"doc_type":"schema","governance_links":{"acceptance_gates":"00_repo/.cbr/acceptance_gates.yaml","audit_log":"00_repo/.cbr/audit_log.json","registry":"00_repo/.cbr/registry.json"},"integrity":{"algo":"sha256","canonical_scope":"payload","value":"90f8550108d599e67947620294055a887e9777e761bf94782aa91649a06582a4"},"provenance":{"build_id":"5bba47ad-b737-4611-a145-b630143cb494","builder":"EREP v2.2 (COMPLIANCE_ONLY)","built_at":"2025-09-12T02:04:11Z","tools":{"python":"3.11.8"}},"source_baseline_hash":"7fd01630d003c81f7ccb2de8b1160b2e79520bc59365dd6e6b0b0f67aa76d9a0","spec_version":"2.2"}
+// ERQ-META-END
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ExperimentManifest",
+  "type": "object"
+}

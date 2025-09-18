@@ -1,0 +1,7 @@
+# acceptance_gates_no_placeholders.yaml
+gates:
+  - id: G-NOPLACEHOLDER
+    description: No placeholder content (TBD/LOREM/etc.), required sections present, minimum body length met
+    type: compliance
+    severity: error
+    expects_report: "00_repo/.cbr/reports/content_guard_report.json"

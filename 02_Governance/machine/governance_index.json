@@ -1,0 +1,47 @@
+// ERQ-META-BEGIN
+// {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "b1b9d898951b5afa997dbbbf1d17050012c005c95fb30f5d50e2953d77fb8bc4"}, "provenance": {"build_id": "f53c6d79-8a50-490d-acb3-8219edeeb9b9", "builder": "EREP v2.3 FULL", "built_at": "2025-09-12T06:13:49Z", "tools": {"hash": "sha256", "python": "3.11"}}, "source_baseline_hash": "pending", "spec_version": "2.3"}
+// ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization":{"encoding":"utf-8","newline":"LF","sort_keys":true},"doc_type":"artifact","governance_links":{"acceptance_gates":"00_repo/.cbr/acceptance_gates.yaml","audit_log":"00_repo/.cbr/audit_log.json","registry":"00_repo/.cbr/registry.json"},"integrity":{"algo":"sha256","canonical_scope":"payload","value":"914e27bf647da0c6058bc1a289285a26a401375d13cc53043626257cbb877aa1"},"provenance":{"build_id":"8befaf15-88a2-426b-a8f8-2e1f8ef5e52c","builder":"EREP v2.2","built_at":"2025-09-12T02:53:32Z","tools":{"hashlib":"sha256","python":"3.11.8"}},"source_baseline_hash":"ff16b4e65447d1d6658cdd60d6bb9d426f0a238cd08f4488eea666a53abb8653","spec_version":"2.2"}
+# ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "7a3985bd18ddd2fe7223703b3c724d7e9e7ec7c96047774b9f4671b2ef2aeb42"}, "provenance": {"build_id": "25a160aa-554e-44f3-bc1f-bb28b40e194c", "builder": "EREP v2.2", "built_at": "2025-09-12T02:49:11Z", "tools": {"hash": "sha256", "python": "3.10"}}, "source_baseline_hash": "27fc28fe0f19e3cad5b5d3e44fc1032b732a3d7b5455ed39895731aefc4c6a6d", "spec_version": "2.2"}
+# ERQ-META-END
+// ERQ-META-BEGIN
+// {"doc_type":"machine","spec_version":"2.0","source_baseline_hash":"246d0097ad23b1bdf7615f56f441385b54ce69534d64aa58cff0ba194d67c854","provenance":{"erep_version":"2.2","build_id":"b5ea0a07-8e22-4f6a-9db4-9bbd9e9c5fe2","built_at":"2025-09-12T01:58:15Z","tools":{"python":"3.11.8","hashlib":"sha256"}},"governance_links":{"acceptance_gates":"00_repo/.cbr/acceptance_gates.yaml","registry":"00_repo/.cbr/registry.json","audit_log":"00_repo/.cbr/audit_log.json"},"canonicalization":{"encoding":"utf-8","newline":"LF","sort_keys":true},"integrity":{"algo":"sha256","canonical_scope":"payload","value":"b88c1e0a344f346ed1cf4b7790f68a1e6b8e64c4be9e465e72a55823758c0829"}}
+// ERQ-META-END
+{
+  "canonicalization": {
+    "encoding": "utf-8",
+    "newline": "LF",
+    "sort_keys": true
+  },
+  "doc_type": "policy_machine_projection",
+  "governance_links": {
+    "acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml",
+    "audit_log": "00_repo/.cbr/audit_log.json",
+    "registry": "00_repo/.cbr/registry.json"
+  },
+  "integrity": {
+    "algo": "sha256",
+    "canonical_scope": "payload",
+    "value": "924a599cae1b80426465bf4e4047d414cc80b3bb05a0d589d3f9dca90b4c134b"
+  },
+  "payload": {
+    "controls": [],
+    "human_source": "02_Governance/human/governance_index.md",
+    "status": "active",
+    "summary": "Machine projection of Governance Index"
+  },
+  "provenance": {
+    "build_id": "f7f3dd91-1786-45d1-bac4-0f565d48d93f",
+    "builder": "ENERQIS RC1c builder",
+    "built_at": "2025-09-10T00:46:55Z",
+    "tools": {
+      "hashlib": "sha256",
+      "python": "3.10"
+    }
+  },
+  "source_baseline_hash": "471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb",
+  "spec_version": "1.0"
+}

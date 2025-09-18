@@ -1,0 +1,70 @@
+// ERQ-META-BEGIN
+// {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "215b1671e8a8192c05179171827181b9b503d7108f02aacf5aae509f9543700b"}, "provenance": {"build_id": "19d8750f-9d29-42fd-80fb-66ca1f904471", "builder": "EREP v2.3 FULL", "built_at": "2025-09-12T06:13:49Z", "tools": {"hash": "sha256", "python": "3.11"}}, "source_baseline_hash": "pending", "spec_version": "2.3"}
+// ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "manifest", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "60b2b352c6f4aa49f8d147c08c5243915f0d6fe7e0043b664c2bb45a51d196aa"}, "provenance": {"build_id": "a37b578c-bfbb-439b-a421-f9b07777b432", "builder": "EREP v2.2", "built_at": "2025-09-12T02:49:11Z", "tools": {"hash": "sha256", "python": "3.10"}}, "source_baseline_hash": "27fc28fe0f19e3cad5b5d3e44fc1032b732a3d7b5455ed39895731aefc4c6a6d", "spec_version": "2.2"}
+# ERQ-META-END
+# ERQ-META-BEGIN
+# {"doc_type":"manifest","spec_version":"1.0","source_baseline_hash":"471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb","provenance":{"build_id":"1c533048-7a31-49d8-9cd8-e84aa7064fd3","builder":"ENERQIS RC1+ upgrader","built_at":"2025-09-10T01:10:56Z","tools":{"python":"3.11.8","hashlib":"sha256"}},"governance_links":{"acceptance_gates":"00_repo/.cbr/acceptance_gates.yaml","registry":"00_repo/.cbr/registry.json","audit_log":"00_repo/.cbr/audit_log.json"},"canonicalization":{"encoding":"utf-8","newline":"LF","sort_keys":true},"integrity":{"algo":"sha256","canonical_scope":"payload","value":"060f2d2364253e9c7c070616b571d70d01e1eff314b21eb9e057a899686d3352"}}
+# ERQ-META-END
+{
+  "generated_at": "2025-09-10T00:02:10Z",
+  "build_id": "49f5c31b6eb5fe868c4ced8f074db74c",
+  "items": [
+    {
+      "path": "00_repo/.cbr/GLOBAL_REVIEW_ARTIFACTS_README.txt",
+      "sha256": "bc8009a73d207c68cc9a83ac742587dc92b204f27cb5b00a7f2ff3925c0d839b",
+      "bytes": 357
+    },
+    {
+      "path": "00_repo/.cbr/all_file_hashes.csv",
+      "sha256": "c72308e241850a7d14e409132487220ca329f1b84c6c09c8e0efcfd50383dc09",
+      "bytes": 12872
+    },
+    {
+      "path": "00_repo/.cbr/all_file_hashes.json",
+      "sha256": "813583a02a39cc4263ec22f9a8bbb0ea2b4808bea1eaa76ad079a75b69e0d5da",
+      "bytes": 22725
+    },
+    {
+      "path": "00_repo/.cbr/all_files_with_content.jsonl",
+      "sha256": "c4ec35afa3e2f7f5e8fd814c9107f2821766c6a8a385d4764a6c15489b34d27f",
+      "bytes": 328418
+    },
+    {
+      "path": "00_repo/.cbr/audit_log.json",
+      "sha256": "5545c735b8a099c3f5b9bf18adf6416a9985781e632548289a918818a2c82848",
+      "bytes": 255
+    },
+    {
+      "path": "00_repo/.cbr/registry.json",
+      "sha256": "47371fb29a266d809630bf132b6cddf571c323daffcbb3033c9e932fba22fea1",
+      "bytes": 319
+    },
+    {
+      "path": "00_repo/CHANGELOG.md",
+      "sha256": "3c74689dbc443aa5df2770190d4c5b7831911c6b56de9d09c36c2dc3a4f9b819",
+      "bytes": 300
+    },
+    {
+      "path": "00_repo/CODEOWNERS",
+      "sha256": "ffa2cb0929c3729a9a65cd41dbc2d1bb122ed5cd9c2e1b339f5afdd76267ae5b",
+      "bytes": 663
+    },
+    {
+      "path": "00_repo/CONTRIBUTING.md",
+      "sha256": "c5d98631fcbc5575608a4948734ff631e1bd9cfabb1356bafaf773047f939886",
+      "bytes": 1138
+    },
+    {
+      "path": "00_repo/LICENSE",
+      "sha256": "5958bb3e9cfb8ae37540f9d2360b201d62029b2f46977f0802072923bae546b3",
+      "bytes": 815
+    },
+    {
+      "path": "00_repo/README.md",
+      "sha256": "a7f519b4f9df28b86b75e1056a56683b51060551962473a46545b6357e24c0ef",
+      "bytes": 1270
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+// ERQ-META-BEGIN
+// {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "c843a432e5d61c03eae5405f8f7ffd32055dea7fc70c6603aa8bf18a7b4803f7"}, "provenance": {"build_id": "4401b97a-b6cc-4ad0-b859-80ea38d74aa7", "builder": "EREP v2.3 FULL", "built_at": "2025-09-12T06:13:49Z", "tools": {"hash": "sha256", "python": "3.11"}}, "source_baseline_hash": "pending", "spec_version": "2.3"}
+// ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "manifest", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "6ddd3dcdfc7e772c3113821e8328e7c0217ee834ede5c624d18ccd06a4aab4ef"}, "provenance": {"build_id": "a812562a-c29a-4007-b10a-40c3490325d3", "builder": "EREP v2.2", "built_at": "2025-09-12T02:49:11Z", "tools": {"hash": "sha256", "python": "3.10"}}, "source_baseline_hash": "27fc28fe0f19e3cad5b5d3e44fc1032b732a3d7b5455ed39895731aefc4c6a6d", "spec_version": "2.2"}
+# ERQ-META-END
+# ERQ-META-BEGIN
+# {"doc_type":"manifest","spec_version":"1.0","source_baseline_hash":"471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb","provenance":{"build_id":"4ef2d983-86df-47ec-bf1b-09c085eb1fe7","builder":"ENERQIS RC1+ upgrader","built_at":"2025-09-10T01:10:56Z","tools":{"python":"3.11.8","hashlib":"sha256"}},"governance_links":{"acceptance_gates":"00_repo/.cbr/acceptance_gates.yaml","registry":"00_repo/.cbr/registry.json","audit_log":"00_repo/.cbr/audit_log.json"},"canonicalization":{"encoding":"utf-8","newline":"LF","sort_keys":true},"integrity":{"algo":"sha256","canonical_scope":"payload","value":"0ef927c248b23e895ae2a8c785dee14c7a4e15bfee372d8f8ee82fa3024d1966"}}
+# ERQ-META-END
+{
+  "generated_at": "2025-09-10T00:02:10Z",
+  "build_id": "49f5c31b6eb5fe868c4ced8f074db74c",
+  "items": [
+    {
+      "path": "01_MasterControl/human/01_mastercontrol_overview.md",
+      "sha256": "a8ffd424b9c9506579c26b04b9476fcb623672fe4350bc929cb51c17e895b623",
+      "bytes": 4481
+    },
+    {
+      "path": "01_MasterControl/human/file_naming_prefixing_standards.md",
+      "sha256": "2d2a89047de4067f999cbb40ba95e6b35e1cec38b46a5b0a4fb6498dc5783bb8",
+      "bytes": 2172
+    },
+    {
+      "path": "01_MasterControl/human/glossary.md",
+      "sha256": "35e41d7fa153c12a5b7fc2b16973acb684a7db0cdcc95d452b497b7026539f30",
+      "bytes": 1290
+    },
+    {
+      "path": "01_MasterControl/human/governance.md",
+      "sha256": "1f31a898fd75b2550d5fe896dc830de65862f71debbc6a64150e9b0bbf306342",
+      "bytes": 1964
+    },
+    {
+      "path": "01_MasterControl/human/news_intelligence.md",
+      "sha256": "fcb37f50b0d3b15bf72b8c70d4a76168698f59a25b7bee2bc412b575ae74d327",
+      "bytes": 1139
+    },
+    {
+      "path": "01_MasterControl/human/operational_guidelines.md",
+      "sha256": "cb78a6a9fbfb2ad0613866d6b37f956ffeaad689b22a906acb22d7b8bc32e59b",
+      "bytes": 1394
+    },
+    {
+      "path": "01_MasterControl/human/packaging_policy.md",
+      "sha256": "da17e1220ea2c91c8a10d1701b5c6f3bb46de5388cc7ba6f512a2b2ec1f60068",
+      "bytes": 1622
+    },
+    {
+      "path": "01_MasterControl/machine/workflow_packaging.yaml",
+      "sha256": "44bd090afa94dc79036d99290240475ba7c8d80c6747a50681077485430505aa",
+      "bytes": 1403
+    },
+    {
+      "path": "01_MasterControl/machine/workflow_rebuild.yaml",
+      "sha256": "9043041fabd57c6794fcff90319ba8f817dfde5618bb0863fdca92352261dd87",
+      "bytes": 917
+    },
+    {
+      "path": "01_MasterControl/machine/workflow_synthesis.yaml",
+      "sha256": "003a139448ab9fbf9af0af080757400859d96b09ec4535abede47e1a7aaa99a4",
+      "bytes": 2343
+    }
+  ]
+}

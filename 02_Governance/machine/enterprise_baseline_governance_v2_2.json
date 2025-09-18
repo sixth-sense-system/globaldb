@@ -1,0 +1,178 @@
+{
+  "name": "ENERQIS — Enterprise Baseline Governance",
+  "version": "2.2",
+  "generated": "2025-09-12T01:37:29Z",
+  "paths": {
+    "human": "02_Governance/human/enterprise_baseline_governance.md",
+    "machine": "02_Governance/machine/enterprise_baseline_governance.json",
+    "policy": "00_repo/.cbr/erep_policy.json",
+    "acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml",
+    "registry": "00_repo/.cbr/registry.json",
+    "audit_log": "00_repo/.cbr/audit_log.json"
+  },
+  "principles": [
+    "Single source of truth via manifests",
+    "Zero-inference; no unapproved structure",
+    "Enterprise-grade artifacts; no placeholders",
+    "Typed approvals; operator in loop",
+    "Cryptographic verification (sha256, optional signing)",
+    "Determinism everywhere",
+    "Append-only audit"
+  ],
+  "workflows": {
+    "order": [
+      "00_repo",
+      "01_MasterControl",
+      "02_Governance",
+      "03_Data",
+      "04_Infrastructure",
+      "05_Blueprint",
+      "06_System",
+      "07_Theory",
+      "08_Market",
+      "09_Tech",
+      "10_AI_Algo",
+      "11_Research",
+      "12_Future",
+      "13_OpsLog",
+      "99_Archive"
+    ],
+    "per_module_steps": [
+      "human_review",
+      "machine_generation_validation",
+      "sha256_confirm",
+      "opslog_append",
+      "lock_step"
+    ],
+    "rebuild": {
+      "deterministic": true,
+      "locks_baseline": true
+    },
+    "packaging": {
+      "deterministic_zip": true,
+      "from_locked_baseline_only": true
+    },
+    "synthesis": {
+      "additive_only": true,
+      "requires_operator": true
+    }
+  },
+  "erq_meta": {
+    "required": [
+      "doc_type",
+      "spec_version",
+      "source_baseline_hash",
+      "provenance.build_id",
+      "provenance.built_at",
+      "provenance.builder",
+      "governance_links.acceptance_gates",
+      "governance_links.registry",
+      "governance_links.audit_log",
+      "canonicalization.encoding",
+      "canonicalization.newline",
+      "canonicalization.sort_keys",
+      "integrity.algo",
+      "integrity.canonical_scope",
+      "integrity.value"
+    ],
+    "comment_fences": {
+      "begin": "ERQ-META-BEGIN",
+      "end": "ERQ-META-END"
+    },
+    "determinism": {
+      "tz": "UTC",
+      "seed": 1729,
+      "source_date_epoch": 1729,
+      "sort_keys": true,
+      "newline": "LF",
+      "encoding": "utf-8"
+    }
+  },
+  "attestation": {
+    "emit_sbom": true,
+    "emit_attestations": true,
+    "locations": {
+      "sbom": "00_repo/.cbr/sbom",
+      "attest": "00_repo/.cbr/attest"
+    }
+  },
+  "dq_slas": {
+    "enforced": true,
+    "metrics": [
+      "completeness",
+      "null_rate",
+      "schema_adherence"
+    ]
+  },
+  "reproducibility": {
+    "purged_cv_required": true,
+    "walk_forward_required": true
+  },
+  "observability": {
+    "metrics_logs": true,
+    "dashboards_ref": "04_Infrastructure/human/monitoring_alerts.md"
+  },
+  "privacy_compliance": {
+    "redaction_rules": true,
+    "pii_handling": "strict"
+  },
+  "ci_gates": [
+    {
+      "id": "G-NOPLACEHOLDER",
+      "description": "No placeholder/tiny machine files"
+    },
+    {
+      "id": "G-SCHEMA",
+      "description": "Machine/control files validate against schema"
+    },
+    {
+      "id": "G-DETERMINISM",
+      "description": "Deterministic settings present & used"
+    },
+    {
+      "id": "G-WRITE-SCOPE",
+      "description": "Writes limited to allowed roots"
+    },
+    {
+      "id": "G-EREP-DOSSIER",
+      "description": "Innovation dossier emitted on FULL mode when innovation.enable"
+    },
+    {}
+  ],
+  "locking": {
+    "confirm_command": "CONFIRM GOVERNANCE ENTERPRISE_BASELINE <sha256>",
+    "snapshot_path": "99_Archive/snapshots/"
+  },
+  "archival": {
+    "move_addendum_to": "99_Archive/legacy/EnterpriseBaselineGovernance_Addendum.md",
+    "status": "merged_into_v2.2"
+  },
+  "_erq_meta": {
+    "doc_type": "json_document",
+    "spec_version": "2.3.2",
+    "source_baseline_hash": "2633341e7df10a1ab4cce38334b03cac3906c28d643394c77a4df58bcb58c314",
+    "provenance": {
+      "build_id": "1275a51c72722128058c0c500d81c1f6",
+      "builder": "EREP v2.3.2 FULL (auto)",
+      "built_at": "2025-09-12T07:35:47Z",
+      "tools": {
+        "python": "3.11.8"
+      }
+    },
+    "governance_links": {
+      "acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml",
+      "registry": "00_repo/.cbr/registry.json",
+      "audit_log": "00_repo/.cbr/audit_log.json"
+    },
+    "canonicalization": {
+      "encoding": "utf-8",
+      "newline": "LF",
+      "sort_keys": true
+    },
+    "integrity": {
+      "algo": "sha256",
+      "canonical_scope": "payload",
+      "value": "1634b9eb0782fde03dd71deba0eaa102e261cc8c254ec9398479c5fd03e43cb7"
+    }
+  }
+}

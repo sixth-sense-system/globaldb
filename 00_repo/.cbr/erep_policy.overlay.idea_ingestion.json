@@ -1,0 +1,46 @@
+{
+  "policy_sets": {
+    "IIS:v1.0": {
+      "description": "Idea Capture & Synthesis pipeline (Human-tier ingestion)",
+      "inputs": [
+        "13_OpsLog/TODO/enerqis_backlog.csv",
+        "13_OpsLog/ROADMAP/enerqis_backlog.md",
+        "13_OpsLog/TODO/inbox/*.md",
+        "13_OpsLog/TODO/inbox/*.txt",
+        "13_OpsLog/TODO/inbox/*.csv"
+      ],
+      "canonical_outputs": [
+        "13_OpsLog/TODO/enerqis_backlog.csv",
+        "13_OpsLog/ROADMAP/enerqis_backlog.md"
+      ],
+      "gates": [
+        "G-IDEA-CAPTURE-FORMAT",
+        "G-IDEA-DEDUPED",
+        "G-IDEA-RANKED-STAGE1",
+        "G-IDEA-OPSLOG",
+        "G-IDEA-BLUEPRINT-SYNC",
+        "G-IDEA-SCORECARD-SYNC"
+      ],
+      "ranking": {
+        "formula": "RICE*(Stage1RevenueWeight)*(VelocityWeight)/(ComplexityPenalty)",
+        "weights": {
+          "Stage1RevenueWeight": {
+            "direct_live_cBots": 1.35,
+            "infra_enabler": 1.2,
+            "research": 1.0
+          },
+          "VelocityWeight": {
+            "Now_Pilot": 1.15,
+            "Next": 1.0,
+            "Later": 0.9
+          },
+          "ComplexityPenalty": {
+            "Easy": 1.0,
+            "Medium": 1.1,
+            "Hard": 1.3
+          }
+        }
+      }
+    }
+  }
+}

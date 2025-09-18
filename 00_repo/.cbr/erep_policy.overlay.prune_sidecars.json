@@ -1,0 +1,24 @@
+{
+  "prune": {
+    "sidecars": {
+      "enabled": true,
+      "rules": [
+        {
+          "pattern": ".*\\.meta\\.json(\\.(meta\\.json|erqmeta\\.json))*$",
+          "action": "delete_if_parent_has_erqmeta"
+        },
+        {
+          "pattern": ".*\\.erqmeta\\.json(\\.(meta\\.json|erqmeta\\.json))*$",
+          "action": "keep_latest_only"
+        }
+      ],
+      "emit_delete_list": "00_repo/.cbr/reports/erep_delete_list.txt",
+      "emit_prune_report": "00_repo/.cbr/reports/erep_prune_report.json",
+      "emit_scripts": {
+        "bash": "00_repo/.cbr/reports/erep_prune.sh",
+        "powershell": "00_repo/.cbr/reports/erep_prune.ps1"
+      },
+      "auto_apply_in_full_package": true
+    }
+  }
+}

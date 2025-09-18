@@ -1,0 +1,20 @@
+# CODEOWNERS file for ENERQIS GlobalDB
+
+# Default owners
+*       @enerqis-core
+
+# Module-specific ownership
+/01_MasterControl/     @enerqis-core @enerqis-governance
+/02_Governance/        @enerqis-governance
+/03_Data/              @enerqis-data
+/04_Infrastructure/    @enerqis-infra
+/05_Blueprint/         @enerqis-arch
+/06_System/            @enerqis-systems
+/07_Theory/            @enerqis-theory
+/08_Market/            @enerqis-market
+/09_Tech/              @enerqis-tech
+/10_AI_Algo/           @enerqis-ai
+/11_Research/          @enerqis-research
+/12_Future/            @enerqis-future
+/13_OpsLog/            @enerqis-ops
+/99_Archive/           @enerqis-core 

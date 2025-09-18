@@ -1,0 +1,43 @@
+{
+  "mode": "FULL",
+  "policy_version": "2.3.2",
+  "run_id": "bbe042ad3030",
+  "repo_zip": "ENERQIS_GlobalDB_TREEBUILD.zip",
+  "scanned_files": 123,
+  "enriched_files": 1,
+  "already_compliant": 122,
+  "source_baseline_hash": "2633341e7df10a1ab4cce38334b03cac3906c28d643394c77a4df58bcb58c314",
+  "builder": "EREP v2.3.2 FULL (auto)",
+  "built_at": "2025-09-12T07:35:47Z",
+  "tools": {
+    "python": "3.11.8"
+  },
+  "_erq_meta": {
+    "doc_type": "control",
+    "spec_version": "2.3.3",
+    "source_baseline_hash": "3f0f85abf77754dd83c15a4b0a7393cdbf26481b6653bc867f8458f4a5be20d5",
+    "provenance": {
+      "build_id": "06b407e1-5ed2-43b9-b96e-5366ad684b9a",
+      "builder": "EREP v2.3.3 (FULL)",
+      "built_at": "2025-09-12T15:11:07Z",
+      "tools": {
+        "python": "3.11.8"
+      }
+    },
+    "governance_links": {
+      "acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml",
+      "registry": "00_repo/.cbr/registry.json",
+      "audit_log": "00_repo/.cbr/audit_log.json"
+    },
+    "canonicalization": {
+      "encoding": "utf-8",
+      "newline": "LF",
+      "sort_keys": true
+    },
+    "integrity": {
+      "algo": "sha256",
+      "canonical_scope": "payload",
+      "value": "0b3e4253e25eaa897d5060a137ae8fe63074696d770c0d1942fe5647bfcb7208"
+    }
+  }
+}

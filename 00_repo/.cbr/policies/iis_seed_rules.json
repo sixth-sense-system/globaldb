@@ -1,0 +1,13 @@
+{
+  "critical_concepts": [
+    "gann",
+    "time factor",
+    "square of nine",
+    "gann angle",
+    "wd gann"
+  ],
+  "create_item_if_missing": true,
+  "default_priority": "P1",
+  "default_timeframe": "Now",
+  "default_theme": "TimeGeometry"
+}

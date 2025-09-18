@@ -1,0 +1,127 @@
+// ERQ-META-BEGIN
+// {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "7afb6abbf638d26b03d38defbc3993cf9201137977bd807894101bdebdd9f918"}, "provenance": {"build_id": "729da05a-c524-4ef5-8212-6d229c999289", "builder": "EREP v2.3 FULL", "built_at": "2025-09-12T06:13:49Z", "tools": {"hash": "sha256", "python": "3.11"}}, "source_baseline_hash": "pending", "spec_version": "2.3"}
+// ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "manifest", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "1680a7372582fa5e401dfa5e375fc63aeb89e1f608942e909aa2c87dce1cc7b0"}, "provenance": {"build_id": "713845a7-1c76-4f6f-b296-763ee9bfe747", "builder": "EREP v2.2", "built_at": "2025-09-12T02:49:11Z", "tools": {"hash": "sha256", "python": "3.10"}}, "source_baseline_hash": "27fc28fe0f19e3cad5b5d3e44fc1032b732a3d7b5455ed39895731aefc4c6a6d", "spec_version": "2.2"}
+# ERQ-META-END
+/* ERQ-META-BEGIN
+{
+  "canonicalization": {
+    "encoding": "utf-8",
+    "newline": "LF",
+    "sort_keys": true
+  },
+  "doc_type": "manifest",
+  "governance_links": {
+    "acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml",
+    "audit_log": "00_repo/.cbr/audit_log.json",
+    "registry": "00_repo/.cbr/registry.json"
+  },
+  "integrity": {
+    "algo": "sha256",
+    "canonical_scope": "payload",
+    "value": "69a662aaefdfd09f3d78d7ba6b3955bf3bb7ec3943b0bfb6683d482b6a043a79"
+  },
+  "provenance": {
+    "build_id": "6283585a-1ee4-4648-b376-6c35b2388550",
+    "builder": "EREP v2.2",
+    "built_at": "2025-09-12T00:20:14Z",
+    "tools": {
+      "hashlib": "sha256",
+      "python": "3.11.8"
+    }
+  },
+  "source_baseline_hash": "471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb",
+  "spec_version": "1.0"
+}
+ERQ-META-END */
+{
+  "module": "02_Governance_ControlRegistry",
+  "hash_status": "locked",
+  "files": [
+    {
+      "type": "machine",
+      "name": "02_Governance/machine/control/approvals/README.md",
+      "sha256": "c5d904008dd722278fe5726099a81d2c278b492ea249b62a861f0e2c8242d082",
+      "size": 109
+    },
+    {
+      "type": "machine",
+      "name": "02_Governance/machine/control/escalation/README.md",
+      "sha256": "e3428360b53c78d5676952e50d9b26d266c0576b84875eccfe4663d4c39c6245",
+      "size": 79
+    },
+    {
+      "type": "machine",
+      "name": "02_Governance/machine/control/index/README.md",
+      "sha256": "b272c13b4622718942b95336899330c9776c59dbe352a7a5cc9708975e81e53f",
+      "size": 83
+    },
+    {
+      "type": "machine",
+      "name": "02_Governance/machine/control/owners/CODEOWNERS",
+      "sha256": "ec566520600f4cb12361d50246fcc1630a9308b4bcb973deee1c6078311a9ec4",
+      "size": 109
+    },
+    {
+      "type": "machine",
+      "name": "02_Governance/machine/control/roles/roles.json",
+      "sha256": "ac2e55ddd0feb9183a104fcf36b6cabcd8203060cbf69d831cccd4854041f6ff",
+      "size": 811
+    },
+    {
+      "type": "machine",
+      "name": "02_Governance/machine/control/templates/policy_template.md",
+      "sha256": "f371d3159a284b983e30ff10948132b2fbab9b1d32b7c9ed296a0eb3a39c180f",
+      "size": 184
+    },
+    {
+      "type": "machine",
+      "name": "00_repo/.cbr/acceptance_gates.yaml",
+      "sha256": "f04727949df82f4bbe16d0aaa58c87852945e62f4a165db947353483299ecdf6",
+      "size": 360
+    },
+    {
+      "type": "machine",
+      "name": "00_repo/.cbr/audit_log.jsonl",
+      "sha256": "08ae23dea5ab8fdafa70e7216033a602baa20e74c3f15b87fa058195295c1e63",
+      "size": 260
+    },
+    {
+      "type": "machine",
+      "name": "00_repo/.cbr/registry.json",
+      "sha256": "4ed9da76723a393ccbf841dc3f675d60630ad791ebc43d9e86e719536dae011a",
+      "size": 2085
+    },
+    {
+      "type": "machine",
+      "name": "00_repo/.cbr/registry_status.json",
+      "sha256": "49bf9a7217b5ba104c5a103b71752db6709680e318ea149c098aba3edb1b9999",
+      "size": 125
+    },
+    {
+      "type": "machine",
+      "name": "00_repo/.cbr/rc/rc_lock.json",
+      "sha256": "c7d56e9579483f5ea6d1fa98691db821e0c3c89f436694d267c208ad09b44d11",
+      "size": 203
+    },
+    {
+      "type": "machine",
+      "name": "00_repo/.cbr/structure_lock.json",
+      "sha256": "a18017a37e5a4413017f0441e564c8400a9d1a9196cb80b96cb6e41167166d9e",
+      "size": 1691
+    },
+    {
+      "type": "machine",
+      "name": "ci/workflows/baseline_promotion.yml",
+      "sha256": "9950f30d1435bd06b4cbda4ac9825fecfe6f81f843b6623120185ade53610cc5",
+      "size": 1342
+    },
+    {
+      "type": "machine",
+      "name": "ci/workflows/rc0_regeneration.yml",
+      "sha256": "46e555cd0ba01baaa889105055c6e474709b53a67b0ee26bed18f0b810fa10cd",
+      "size": 1176
+    }
+  ]
+}

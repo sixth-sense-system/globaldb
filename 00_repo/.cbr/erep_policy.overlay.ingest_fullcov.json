@@ -1,0 +1,8 @@
+{
+  "policy_sets": {
+    "INGEST:fullcov:v1.0": {
+      "description": "IIS/ERIP multimodal coverage gates",
+      "gates": ["G-IIS-EXTRACT-COVERAGE", "G-IIS-OCR-REQUIRED", "G-IIS-SRT-PARSED"]
+    }
+  }
+}

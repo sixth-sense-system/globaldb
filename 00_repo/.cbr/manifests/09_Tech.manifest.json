@@ -1,0 +1,85 @@
+// ERQ-META-BEGIN
+// {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "c167566efe215193457f2590d4810861c2a4b802891aa2da66ca0e29adee5335"}, "provenance": {"build_id": "623d8e67-52a7-4981-9369-c1abb4a78311", "builder": "EREP v2.3 FULL", "built_at": "2025-09-12T06:13:49Z", "tools": {"hash": "sha256", "python": "3.11"}}, "source_baseline_hash": "pending", "spec_version": "2.3"}
+// ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "manifest", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "1366b10bb767d5eb2dcde89ca0a77032b72bfee00caaf2c04c22f39174dac5b2"}, "provenance": {"build_id": "76a71b36-0dd5-4837-a33b-6b4a9e2a1bba", "builder": "EREP v2.2", "built_at": "2025-09-12T02:49:11Z", "tools": {"hash": "sha256", "python": "3.10"}}, "source_baseline_hash": "27fc28fe0f19e3cad5b5d3e44fc1032b732a3d7b5455ed39895731aefc4c6a6d", "spec_version": "2.2"}
+# ERQ-META-END
+# ERQ-META-BEGIN
+# {"doc_type":"manifest","spec_version":"1.0","source_baseline_hash":"471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb","provenance":{"build_id":"9114c71b-4797-432f-9b07-41bbf6ac4bbd","builder":"ENERQIS RC1+ upgrader","built_at":"2025-09-10T01:10:56Z","tools":{"python":"3.11.8","hashlib":"sha256"}},"governance_links":{"acceptance_gates":"00_repo/.cbr/acceptance_gates.yaml","registry":"00_repo/.cbr/registry.json","audit_log":"00_repo/.cbr/audit_log.json"},"canonicalization":{"encoding":"utf-8","newline":"LF","sort_keys":true},"integrity":{"algo":"sha256","canonical_scope":"payload","value":"0966d157d000110ccd9fdd02073ba0f1237bb944425fd4b75e8dda8762021411"}}
+# ERQ-META-END
+{
+  "generated_at": "2025-09-10T00:02:10Z",
+  "build_id": "49f5c31b6eb5fe868c4ced8f074db74c",
+  "items": [
+    {
+      "path": "09_Tech/human/09A_overview.md",
+      "sha256": "c7d742207c2a0fe39d02240ede8a52e16158009bda2ac5676fa0baaf5c7adfdf",
+      "bytes": 381
+    },
+    {
+      "path": "09_Tech/human/09B_stack.md",
+      "sha256": "d7c61949433e7264fef906f8c4ea31610ae0837425e8b3801de337868f326e1d",
+      "bytes": 312
+    },
+    {
+      "path": "09_Tech/human/09C_integrations.md",
+      "sha256": "f5835cfc700efbc9404499701e264da1b511acf505a5dd830555d09c5e073384",
+      "bytes": 281
+    },
+    {
+      "path": "09_Tech/human/09D_data_feeds.md",
+      "sha256": "a37fdd9a13a85f62998356a6a8671262bfb565942cba830020510a895f6a4acc",
+      "bytes": 210
+    },
+    {
+      "path": "09_Tech/human/09E_apis.md",
+      "sha256": "11c999a4900b63b1526fdbed4a225a8ec52807e180e87ddc9dbc3aaadb7e459a",
+      "bytes": 163
+    },
+    {
+      "path": "09_Tech/human/09F_libraries.md",
+      "sha256": "3b2384e75499bd9af5b972d78ac2f2d15f2e99c5dd7f607c8eedf6ec9424f8c6",
+      "bytes": 215
+    },
+    {
+      "path": "09_Tech/human/09G_tools.md",
+      "sha256": "c1c5c8d16cf4617912dcfe045fa69729f5bb5b7dc72d770373e6cba189477809",
+      "bytes": 201
+    },
+    {
+      "path": "09_Tech/human/09H_environment.md",
+      "sha256": "8909f614f374c24bbacff3c61aa8e4fc541304acd562f402d8346d7c74efe3e9",
+      "bytes": 183
+    },
+    {
+      "path": "09_Tech/human/09I_security.md",
+      "sha256": "43b647697399193100f8cc967caa151a5ca214d85d1e0dabbd8187ebe82e071f",
+      "bytes": 183
+    },
+    {
+      "path": "09_Tech/human/09J_dependencies.md",
+      "sha256": "985c7d839eb2422ee9b466bac333dd632ce2c7173b56e2d263ec0d35132da524",
+      "bytes": 187
+    },
+    {
+      "path": "09_Tech/human/09K_testing.md",
+      "sha256": "07e7d1aaaff8dc17882f83a1a720b37b77c863a49fadd2fb4809b6e29c56c7b7",
+      "bytes": 179
+    },
+    {
+      "path": "09_Tech/human/09L_deployment.md",
+      "sha256": "264614d345938b9701ce2b9ebe96f8b758cb8997dc5f3a2e82dfe309f1f98913",
+      "bytes": 169
+    },
+    {
+      "path": "09_Tech/human/09M_observability.md",
+      "sha256": "dfedc3296126122173d978cd127d0a9111722922bc8f639c8d117e5505d9a85c",
+      "bytes": 146
+    },
+    {
+      "path": "09_Tech/human/09N_roadmap.md",
+      "sha256": "02d339993c45e8b844b8e976543596625136118ce5e617b7f42b440621e70f08",
+      "bytes": 385
+    }
+  ]
+}

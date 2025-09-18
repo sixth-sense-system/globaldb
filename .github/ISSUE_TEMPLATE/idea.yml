@@ -1,0 +1,15 @@
+name: Idea
+description: Propose a new idea or capability
+title: "[Idea]: "
+labels: ["idea"]
+body:
+  - type: input
+    id: summary
+    attributes: { label: Summary, placeholder: One-liner }
+    validations: { required: true }
+  - type: textarea
+    id: details
+    attributes: { label: Details, description: What / Why / Success metrics }
+  - type: dropdown
+    id: theme
+    attributes: { label: Theme, options: ["Data","Research","Execution","Risk","Infra","Ops"] }

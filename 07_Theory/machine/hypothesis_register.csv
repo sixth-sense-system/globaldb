@@ -1,0 +1,6 @@
+# ERQ-META-BEGIN
+# {"doc_type":"csv-register","spec_version":"2.2","source_baseline_hash":"d0ae1e584b81c6470bec874c69019e0b4d20fa93d3b14c7ec013d1c2246863fa","provenance":{"build_id":"7fc1d1f7-a863-4742-9017-04b03c3e0fd0","built_at":"2025-09-12T02:41:58Z","builder":"EREP v2.2","tools":{"python":"3.11.8"}},"governance_links":{"acceptance_gates":"00_repo/.cbr/acceptance_gates.yaml","registry":"00_repo/.cbr/registry.json","audit_log":"00_repo/.cbr/audit_log.json"},"canonicalization":{"encoding":"utf-8","newline":"LF","sort_keys":true},"integrity":{"algo":"sha256","canonical_scope":"payload","value":"a42f5147fc19a8bfbc47f05dc98b70cd8256003abd2af0a7362feb4b1f0185a7"}}
+# ERQ-META-END
+id,statement,variables,market_scope,prior_belief,test_plan,status,evidence_links,owner,created_at,updated_at,next_review
+H-001,Increased geomagnetic Kp index precedes higher FX volatility,"Kp_index,FX_vol",FX,0.4,Backtest regime classification vs realized vol,proposed,03_Data/machine/dataset-manifests/datasets_index.json,theory-team,2025-09-10,2025-09-10,2025-10-10
+H-002,Oil futures respond to M2 momentum with 2–4 week lag,"M2,CL_returns",Commodities,0.6,Cross-correlation & WFA,proposed,11_Research/machine/experiments/exp_001/manifest.json,theory-team,2025-09-10,2025-09-10,2025-10-10

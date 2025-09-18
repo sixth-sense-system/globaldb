@@ -1,0 +1,35 @@
+{
+  "version": "1",
+  "entries": [],
+  "last_run": null,
+  "policy_version": "2.3.3-stable",
+  "_erq_meta": {
+    "doc_type": "idempotency_ledger",
+    "spec_version": "2.3.3",
+    "source_baseline_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "provenance": {
+      "build_id": "7b266e149a91244fba764b6515952df4",
+      "builder": "EREP v2.3.3-stable overlay pack",
+      "built_at": "2025-09-12T15:48:31Z",
+      "tools": {
+        "python": "3.11.8",
+        "hashlib": "sha256"
+      }
+    },
+    "governance_links": {
+      "acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml",
+      "registry": "00_repo/.cbr/registry.json",
+      "audit_log": "00_repo/.cbr/audit_log.json"
+    },
+    "canonicalization": {
+      "encoding": "utf-8",
+      "newline": "LF",
+      "sort_keys": true
+    },
+    "integrity": {
+      "algo": "sha256",
+      "canonical_scope": "payload",
+      "value": "6db15b21e2b3e4ffd63d68747a1e8695514dccd564e8e16274a28d3d3ce818d9"
+    }
+  }
+}

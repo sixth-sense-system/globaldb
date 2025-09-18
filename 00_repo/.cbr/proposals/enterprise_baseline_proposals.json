@@ -1,0 +1,129 @@
+// ERQ-META-BEGIN
+// {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "629d27ef16c33d6c2fd7239d4e8b2608bd9c42f49db0a84e4ce9f7d60c685421"}, "provenance": {"build_id": "51c33dfd-2a91-4b2b-ac81-a003919aff78", "builder": "EREP v2.3 FULL", "built_at": "2025-09-12T06:13:49Z", "tools": {"hash": "sha256", "python": "3.11"}}, "source_baseline_hash": "pending", "spec_version": "2.3"}
+// ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "c4e224bb0354801718c3148bce40c113a34332eb97b843144a6a0c46ee65b8e0"}, "provenance": {"build_id": "1cf74b2e-1389-4014-97dc-70f1cfaf20f7", "builder": "EREP v2.2", "built_at": "2025-09-12T02:49:11Z", "tools": {"hash": "sha256", "python": "3.10"}}, "source_baseline_hash": "27fc28fe0f19e3cad5b5d3e44fc1032b732a3d7b5455ed39895731aefc4c6a6d", "spec_version": "2.2"}
+# ERQ-META-END
+/* ERQ-META-BEGIN
+{
+  "canonicalization": {
+    "encoding": "utf-8",
+    "newline": "LF",
+    "sort_keys": true
+  },
+  "doc_type": "machine_file",
+  "governance_links": {
+    "acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml",
+    "audit_log": "00_repo/.cbr/audit_log.json",
+    "registry": "00_repo/.cbr/registry.json"
+  },
+  "integrity": {
+    "algo": "sha256",
+    "canonical_scope": "payload",
+    "value": "3bcc0b93fd1e9568b2588080389f49e50cb39d4547c12a0bb3f4e700e5b5fae5"
+  },
+  "provenance": {
+    "build_id": "f0825a8b-bc58-4b0b-ae00-eeb2a4787dc4",
+    "builder": "EREP v2.2",
+    "built_at": "2025-09-12T00:20:14Z",
+    "tools": {
+      "hashlib": "sha256",
+      "python": "3.11.8"
+    }
+  },
+  "source_baseline_hash": "471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb",
+  "spec_version": "1.0"
+}
+ERQ-META-END */
+{
+  "approvals": [
+    {
+      "at": "2025-09-10T00:46:55Z",
+      "by": "MasterControl"
+    },
+    {
+      "at": "2025-09-10T00:46:55Z",
+      "by": "Governance"
+    }
+  ],
+  "canonicalization": {
+    "encoding": "utf-8",
+    "newline": "LF",
+    "sort_keys": true
+  },
+  "created_at": "2025-09-10T00:46:55Z",
+  "doc_type": "enterprise_baseline_proposals",
+  "governance_links": {
+    "acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml",
+    "audit_log": "00_repo/.cbr/audit_log.json",
+    "registry": "00_repo/.cbr/registry.json"
+  },
+  "history": [
+    {
+      "at": "2025-09-10T00:46:55Z",
+      "by": "RC1c",
+      "event": "created"
+    }
+  ],
+  "integrity": {
+    "algo": "sha256",
+    "canonical_scope": "items",
+    "value": "638595ca166915bbfceeb54613ec3983fdafb5d19bc3cdd537ad8830ababb466"
+  },
+  "items": [
+    {
+      "acceptance_criteria": [
+        "CI fails on placeholders",
+        "JSON/YAML schema-valid",
+        "Write-scope limited to machine roots"
+      ],
+      "depends_on": [],
+      "effective_date": "2025-09-10",
+      "id": "P-001",
+      "impacts": {
+        "files": [
+          "00_repo/.cbr/acceptance_gates.yaml",
+          "ci/github_actions/ci.yml"
+        ],
+        "modules": [
+          "00_repo",
+          "ci",
+          "tools"
+        ]
+      },
+      "owner": "MasterControl",
+      "rationale": "Prevent placeholders/schema drift; enforce scope/determinism.",
+      "review_date": "2026-03-10",
+      "rollback_plan": "Disable gate job; revert gates file.",
+      "rollout_plan": {
+        "phases": [
+          "dry-run",
+          "enforce"
+        ]
+      },
+      "status": "adopted",
+      "summary": "Adopt acceptance gates at CI",
+      "supersedes": []
+    }
+  ],
+  "provenance": {
+    "build_id": "f7f3dd91-1786-45d1-bac4-0f565d48d93f",
+    "builder": "ENERQIS RC1c builder",
+    "built_at": "2025-09-10T00:46:55Z",
+    "tools": {
+      "hashlib": "sha256",
+      "python": "3.10"
+    }
+  },
+  "source_baseline_hash": "471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb",
+  "spec_version": "1.0",
+  "status_enum": [
+    "proposed",
+    "adopted",
+    "deferred",
+    "rejected",
+    "superseded"
+  ],
+  "title": "Enterprise Baseline Proposals (Machine Supplement)",
+  "tz": "UTC"
+}

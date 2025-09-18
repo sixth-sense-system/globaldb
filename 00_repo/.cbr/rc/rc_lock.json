@@ -1,0 +1,43 @@
+// ERQ-META-BEGIN
+// {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "ce5ba70f20e5258867a445e4c22b84ded797ccb892f6bc1c3dc1e7876230ba11"}, "provenance": {"build_id": "9971d04d-2350-478e-9431-fcac4b0d829b", "builder": "EREP v2.3 FULL", "built_at": "2025-09-12T06:13:49Z", "tools": {"hash": "sha256", "python": "3.11"}}, "source_baseline_hash": "pending", "spec_version": "2.3"}
+// ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "f2e29dea5c39522cfd96b2dcdbe2c1bcfed7484edbb9fafcb18b82a44b5f313c"}, "provenance": {"build_id": "f4c94272-ed6b-4e77-91ba-20f405eac197", "builder": "EREP v2.2", "built_at": "2025-09-12T02:49:11Z", "tools": {"hash": "sha256", "python": "3.10"}}, "source_baseline_hash": "27fc28fe0f19e3cad5b5d3e44fc1032b732a3d7b5455ed39895731aefc4c6a6d", "spec_version": "2.2"}
+# ERQ-META-END
+/* ERQ-META-BEGIN
+{
+  "canonicalization": {
+    "encoding": "utf-8",
+    "newline": "LF",
+    "sort_keys": true
+  },
+  "doc_type": "machine_file",
+  "governance_links": {
+    "acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml",
+    "audit_log": "00_repo/.cbr/audit_log.json",
+    "registry": "00_repo/.cbr/registry.json"
+  },
+  "integrity": {
+    "algo": "sha256",
+    "canonical_scope": "payload",
+    "value": "46542487798f46be573a52406ab7abe7388a8ca1c5ad6b31d98cafadc3f2e50b"
+  },
+  "provenance": {
+    "build_id": "67d3e2e3-b065-4b87-af6e-ff13ab188d17",
+    "builder": "EREP v2.2",
+    "built_at": "2025-09-12T00:20:14Z",
+    "tools": {
+      "hashlib": "sha256",
+      "python": "3.11.8"
+    }
+  },
+  "source_baseline_hash": "471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb",
+  "spec_version": "1.0"
+}
+ERQ-META-END */
+{
+  "description": "Auto-synthesized by EREP v2.2 (non-empty canonical payload)",
+  "items": [],
+  "name": "rc_lock",
+  "version": 1
+}

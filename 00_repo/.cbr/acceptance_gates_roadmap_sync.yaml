@@ -1,0 +1,21 @@
+gates:
+  - id: G-IIS-COVERAGE
+    description: IIS/ERIP coverage >= 95% for targeted file/URL set (including OCR for PDFs/images/SRT)
+    type: compliance
+    severity: error
+    expects_report: "00_repo/.cbr/reports/ingest_coverage.json"
+  - id: G-ROADMAP-SYNC
+    description: Backlog + Living Scorecard + Mission Control updated in same pass
+    type: process
+    severity: error
+    expects_report: "00_repo/.cbr/reports/roadmap_sync_report.json"
+  - id: G-INBOX-FRESH
+    description: INBOX items older than 14 days are handled (processed or explicitly deferred)
+    type: process
+    severity: warn
+    expects_report: "00_repo/.cbr/reports/inbox_staleness_report.json"
+  - id: G-THIN-PAGE
+    description: High-value pages under word target must receive editorial patch proposals
+    type: process
+    severity: warn
+    expects_report: "00_repo/.cbr/reports/editorial_suggestions.json"

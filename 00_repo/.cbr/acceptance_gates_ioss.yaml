@@ -1,0 +1,6 @@
+gates:
+  - id: G-RUNBOOK-FRESH
+    description: MASTER_RUNBOOK.md updated within last 7 days and steps.csv present
+    type: process
+    severity: error
+    expects_report: "00_repo/.cbr/reports/ioss_report.json"

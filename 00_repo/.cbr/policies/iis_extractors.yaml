@@ -1,0 +1,15 @@
+version: 2
+coverage_threshold: 0.99
+strict: true                # new
+miss_audit_required: true   # new
+handlers:
+  - ext: [".md",".txt",".csv",".json",".yaml",".yml"]
+    handler: "text"
+  - ext: [".pdf"]
+    handler: "pdf"
+    options: { ocr_fallback: true }
+  - ext: [".srt",".vtt"]
+    handler: "subs"
+  - ext: [".png",".jpg",".jpeg",".tif",".tiff",".bmp"]
+    handler: "image"
+    options: { ocr: true }

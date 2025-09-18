@@ -1,0 +1,6 @@
+# acceptance_gates_idea_extra.yaml — seed presence for critical concepts
+gates:
+  - id: G-IDEA-SEED-CRITICAL
+    description: Ensure critical concepts (e.g., Gann) exist in backlog; auto-seed if absent using iis_seed_rules.json
+    type: policy
+    severity: error

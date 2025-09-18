@@ -1,0 +1,10 @@
+id,priority,title,why,how,owner,due_by
+SEC-001,P0,Adopt sops/age; encrypt .env.enc,Eliminate secret leaks; allow safe CI,Add .sops.yaml; convert secrets; add pre-commit scan,ENERQIS,
+SEC-002,P0,Protect main with branch rules + CODEOWNERS,Prevent accidental merges; enforce 4-eyes,Enable in GitHub; add CODEOWNERS for critical dirs,ENERQIS,
+SEC-003,P0,Pin GitHub Actions by SHA; enable CodeQL/Dependabot,Close supply-chain vulnerabilities,Update workflows; enable scanners,ENERQIS,
+SEC-004,P0,Implement risk rails + kill-switch,Contain runaway losses,Shared module; wire to all cBots,ENERQIS,
+SEC-005,P0,Config signing (minisign) + runtime verify,Tamper-evident configs,Generate keys; sign sleeves; verify at startup,ENERQIS,
+SEC-006,P0,Daily encrypted offsite snapshot + restore test,Resilience; disaster recovery,Schedule; script; test quarterly,ENERQIS,
+SEC-007,P1,SBOM (CycloneDX) on snapshot; license headers,Dependency transparency,Generate on FULL PACKAGE; add headers,ENERQIS,
+SEC-008,P1,Minimal backtest gate in CI,Quality on strategies,Run toy backtest on PRs,ENERQIS,
+SEC-009,P1,"NOESIS alerts for loss_cap_trip, slippage_3σ, gate_fail",Operational visibility,Wire telemetry & thresholds,ENERQIS,

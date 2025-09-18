@@ -1,0 +1,50 @@
+// ERQ-META-BEGIN
+// {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "ec86c7937461b06ae12f9eaf933c3d7f33b6a87ce2dfe7a82b5e2a3f3c1b5eca"}, "provenance": {"build_id": "0f1ce10b-5a36-464a-b6d5-f409f7e518c2", "builder": "EREP v2.3 FULL", "built_at": "2025-09-12T06:13:49Z", "tools": {"hash": "sha256", "python": "3.11"}}, "source_baseline_hash": "pending", "spec_version": "2.3"}
+// ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "manifest", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "2888cbc9b434dc8954aaccff0f8859c99cffba41227cd8775d8a1e39f9f2e9d4"}, "provenance": {"build_id": "fd7f227e-c324-4cd7-8eeb-bc2e7c0f2d81", "builder": "EREP v2.2", "built_at": "2025-09-12T02:49:11Z", "tools": {"hash": "sha256", "python": "3.10"}}, "source_baseline_hash": "27fc28fe0f19e3cad5b5d3e44fc1032b732a3d7b5455ed39895731aefc4c6a6d", "spec_version": "2.2"}
+# ERQ-META-END
+# ERQ-META-BEGIN
+# {"doc_type":"manifest","spec_version":"1.0","source_baseline_hash":"471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb","provenance":{"build_id":"f98fc60d-057b-47ec-a5be-20ad2c00d6d3","builder":"ENERQIS RC1+ upgrader","built_at":"2025-09-10T01:10:56Z","tools":{"python":"3.11.8","hashlib":"sha256"}},"governance_links":{"acceptance_gates":"00_repo/.cbr/acceptance_gates.yaml","registry":"00_repo/.cbr/registry.json","audit_log":"00_repo/.cbr/audit_log.json"},"canonicalization":{"encoding":"utf-8","newline":"LF","sort_keys":true},"integrity":{"algo":"sha256","canonical_scope":"payload","value":"71526fc7da38264ac7c840740b882b6937231c04580fc650714ccc79d4d18511"}}
+# ERQ-META-END
+{
+  "generated_at": "2025-09-10T00:02:10Z",
+  "build_id": "49f5c31b6eb5fe868c4ced8f074db74c",
+  "items": [
+    {
+      "path": "06_System/human/deployment_playbook.md",
+      "sha256": "53d2ce5b6bc790f6832dee4a977e3b510f292ec70746b6cd04bdf762e5b9f69e",
+      "bytes": 802
+    },
+    {
+      "path": "06_System/human/execution_framework.md",
+      "sha256": "0547a3704650b05809b33ae947877c4fa0df5e830c1adfccb5e385dedf1396f1",
+      "bytes": 2000
+    },
+    {
+      "path": "06_System/human/prototype_strategies.md",
+      "sha256": "eb2b6214a4127f6e75982cf1277d948a6ab575b2f848739b14239bebf189ff3c",
+      "bytes": 516
+    },
+    {
+      "path": "06_System/human/risk_portfolio_framework.md",
+      "sha256": "22c6d2309d0e3a14a1fb22018bdabc48921f99abbccca05a9db67e06a4c57e80",
+      "bytes": 3135
+    },
+    {
+      "path": "06_System/human/strategy_governance.md",
+      "sha256": "cb66e26ff7702844b44d53efdff01dcdb3218ac24acddb1000724f0b5bdd995b",
+      "bytes": 2221
+    },
+    {
+      "path": "06_System/human/system_overview.md",
+      "sha256": "672d7996f92692fbc589799894b10d50cfe0a1c1916deb89c7223d4383e5d7be",
+      "bytes": 810
+    },
+    {
+      "path": "06_System/human/system_strategies.md",
+      "sha256": "06c22e87e63ca3598aa1cc15cdd9a6930934f99ad12e72653de06f95158e07ea",
+      "bytes": 517
+    }
+  ]
+}

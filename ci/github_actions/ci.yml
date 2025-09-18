@@ -1,0 +1,46 @@
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "ci_workflow", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "05e21dde019767a8373948f22e8d2e5127b1425d25be82c376f990c943ce7b69"}, "provenance": {"build_id": "f7f3dd91-1786-45d1-bac4-0f565d48d93f", "builder": "ENERQIS RC1c builder", "built_at": "2025-09-10T00:46:55Z", "tools": {"hashlib": "sha256", "python": "3.10"}}, "source_baseline_hash": "471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb", "spec_version": "1.0"}
+# ERQ-META-END
+name: CI
+on: [pull_request]
+env: { TZ: UTC }
+jobs:
+  gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install --upgrade pip && pip install -r ci/requirements.txt
+      - name: Enforce acceptance gates
+        run: python ci/enforce_gates.py --config 00_repo/.cbr/acceptance_gates.yaml
+
+name: EREP-Policy
+on: [pull_request, workflow_dispatch]
+env:
+  TZ: UTC
+  PYTHONDONTWRITEBYTECODE: "1"
+  SOURCE_DATE_EPOCH: "1729"
+
+jobs:
+  erep:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with: { python-version: "3.10", cache: "pip" }
+      - run: |
+          python -m pip install --upgrade pip
+          pip install -r ci/requirements.txt
+      - name: Validate EREP policy schema
+        run: python ci/validate_json.py 00_repo/.cbr/erep_policy.json 00_repo/.cbr/schemas/erep_policy.schema.json
+      - name: Run EREP
+        run: |
+          python tools/erep/run.py --policy 00_repo/.cbr/erep_policy.json --mode FULL
+      - name: Enforce acceptance gates
+        run: python ci/enforce_gates.py --gates 00_repo/.cbr/acceptance_gates.yaml
+      - uses: actions/upload-artifact@v4
+        with:
+          name: erep-artifacts-${{ github.run_id }}
+          path: |
+            00_repo/.cbr/reports/**
+            00_repo/.cbr/opportunities/erep/**
+            00_repo/.cbr/erep_upgrade_pack.zip

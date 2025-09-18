@@ -1,0 +1,55 @@
+// ERQ-META-BEGIN
+// {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "1a28063a9d2d21f6b18d326f8c2d76fda8d731d51592e649cd33a23f1da1fd9f"}, "provenance": {"build_id": "5c223117-cb33-4c84-82ac-08bd3597cc52", "builder": "EREP v2.3 FULL", "built_at": "2025-09-12T06:13:49Z", "tools": {"hash": "sha256", "python": "3.11"}}, "source_baseline_hash": "pending", "spec_version": "2.3"}
+// ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "manifest", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "34d229ddfa231b24e4faa0f54070bc8d9414856f08f276797c3380a946eb2a5d"}, "provenance": {"build_id": "5b51c97c-a4c8-4aca-9eed-9c7c772836c0", "builder": "EREP v2.2", "built_at": "2025-09-12T02:49:11Z", "tools": {"hash": "sha256", "python": "3.10"}}, "source_baseline_hash": "27fc28fe0f19e3cad5b5d3e44fc1032b732a3d7b5455ed39895731aefc4c6a6d", "spec_version": "2.2"}
+# ERQ-META-END
+# ERQ-META-BEGIN
+# {"doc_type":"manifest","spec_version":"1.0","source_baseline_hash":"471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb","provenance":{"build_id":"cbae6a28-9649-4060-9830-1467bf14b1a0","builder":"ENERQIS RC1+ upgrader","built_at":"2025-09-10T01:10:56Z","tools":{"python":"3.11.8","hashlib":"sha256"}},"governance_links":{"acceptance_gates":"00_repo/.cbr/acceptance_gates.yaml","registry":"00_repo/.cbr/registry.json","audit_log":"00_repo/.cbr/audit_log.json"},"canonicalization":{"encoding":"utf-8","newline":"LF","sort_keys":true},"integrity":{"algo":"sha256","canonical_scope":"payload","value":"f2e3e0e7ca426420c5622c12a358d170a474196b42c6d86dab667e5f658ea513"}}
+# ERQ-META-END
+{
+  "generated_at": "2025-09-10T00:02:10Z",
+  "build_id": "49f5c31b6eb5fe868c4ced8f074db74c",
+  "items": [
+    {
+      "path": "13_OpsLog/human/escalation_matrix_ops.md",
+      "sha256": "1e7af9d856468c8360af909d78cc8e1a2620c9046df0820789cadfe745ba43a4",
+      "bytes": 715
+    },
+    {
+      "path": "13_OpsLog/human/glossary_ops.md",
+      "sha256": "868319437985a67e8facb92b2d663536a449dde102daad46267024033ee625c8",
+      "bytes": 547
+    },
+    {
+      "path": "13_OpsLog/human/ops_log.md",
+      "sha256": "ecfca0129cbc14b2f4b185ca0c75b44f996c99f70a67d525e1437c3edd672ab7",
+      "bytes": 496
+    },
+    {
+      "path": "13_OpsLog/human/ops_policies.md",
+      "sha256": "da28bd5aded2382acdc993cb3ebbbd212238be9e2e798b44e35f9b7ca82af3e0",
+      "bytes": 657
+    },
+    {
+      "path": "13_OpsLog/human/opslog_overview.md",
+      "sha256": "78a447f7647ff1753ecab786a2bcdec5889c0aea48323798d18e5e2f06f34e68",
+      "bytes": 528
+    },
+    {
+      "path": "13_OpsLog/machine/manifest.json",
+      "sha256": "a2d5f9f4d5bded8219f9a2d277dbafcc0fc82b24190af178449767eb7888c86a",
+      "bytes": 161
+    },
+    {
+      "path": "13_OpsLog/machine/ops_activity.log",
+      "sha256": "3745d5c5242667f6440b4470e9b06891935c57a46bda12b1a6bfef8c04bf0e5f",
+      "bytes": 122
+    },
+    {
+      "path": "13_OpsLog/machine/ops_workflows.yaml",
+      "sha256": "3e41c5d39e825fb863fa0a980aca46f0caeebb0cd14e2c1671e2622ae022ff0a",
+      "bytes": 675
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "yaml_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "9aa95275146bab6b7f04424acc4e0fa6b9f184c65292208eae3f57ec60afabfd"}, "provenance": {"build_id": "80cbd5b2-42af-4ca1-8225-d484fbbae83c", "builder": "EREP v2.4 (FULL)", "built_at": "2025-09-12T18:31:46Z", "tools": {"hash": "sha256", "python": "3.11.8"}}, "source_baseline_hash": "7f565790af98f9fe5be6c6ad46ed2ab080bdbb080293d93dbf3b522d8bdc6149", "spec_version": "2.4"}
+# ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "yaml_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "a6b2b04e03bd08ed1a0cbad3ad7e049d09a766fe96f58d720092e3d74d95aa92"}, "provenance": {"build_id": "b09bae86-1686-4143-a99e-0184350642fc", "builder": "EREP v2.2", "built_at": "2025-09-12T02:49:11Z", "tools": {"hash": "sha256", "python": "3.10"}}, "source_baseline_hash": "27fc28fe0f19e3cad5b5d3e44fc1032b732a3d7b5455ed39895731aefc4c6a6d", "spec_version": "2.2"}
+# ERQ-META-END
+# ERQ-META-BEGIN {"doc_type":"ci_workflow","spec_version":"2.0"} ERQ-META-END
+name: CI
+on: [push, pull_request]
+env: { TZ: UTC, SOURCE_DATE_EPOCH: "1729" }
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: EREP Compliance
+        run: python tools/validate_package.py --mode compliance

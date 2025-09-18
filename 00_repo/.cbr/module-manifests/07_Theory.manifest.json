@@ -1,0 +1,45 @@
+// ERQ-META-BEGIN
+// {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "449291ab16ba86942b299f8408b60356f57e008fef7471d09c4f5afdfc9e69da"}, "provenance": {"build_id": "c171d72a-f241-468c-bfd2-fd44226a9aeb", "builder": "EREP v2.3 FULL", "built_at": "2025-09-12T06:13:49Z", "tools": {"hash": "sha256", "python": "3.11"}}, "source_baseline_hash": "pending", "spec_version": "2.3"}
+// ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "manifest", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "68d64c37f20e04f55e7929d8c783ff882d6e1c791062bac2784663569b7d5b94"}, "provenance": {"build_id": "c55d8415-c0e6-47b7-8476-b234acc6d0f1", "builder": "EREP v2.2", "built_at": "2025-09-12T02:49:11Z", "tools": {"hash": "sha256", "python": "3.10"}}, "source_baseline_hash": "27fc28fe0f19e3cad5b5d3e44fc1032b732a3d7b5455ed39895731aefc4c6a6d", "spec_version": "2.2"}
+# ERQ-META-END
+# ERQ-META-BEGIN
+# {"doc_type":"manifest","spec_version":"1.0","source_baseline_hash":"471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb","provenance":{"build_id":"94ec0cd4-b5ce-401a-8a70-2c06c367f3f2","builder":"ENERQIS RC1+ upgrader","built_at":"2025-09-10T01:10:56Z","tools":{"python":"3.11.8","hashlib":"sha256"}},"governance_links":{"acceptance_gates":"00_repo/.cbr/acceptance_gates.yaml","registry":"00_repo/.cbr/registry.json","audit_log":"00_repo/.cbr/audit_log.json"},"canonicalization":{"encoding":"utf-8","newline":"LF","sort_keys":true},"integrity":{"algo":"sha256","canonical_scope":"payload","value":"e978fd9a07aa7d07653e2a87b0e3dbc4f252a6b35ab910d1939f4b4e5d8d41fd"}}
+# ERQ-META-END
+{
+  "generated_at": "2025-09-10T00:02:10Z",
+  "build_id": "49f5c31b6eb5fe868c4ced8f074db74c",
+  "items": [
+    {
+      "path": "07_Theory/human/consciousness_and_behavior.md",
+      "sha256": "c9b691bff25bd58911bb42eca5df5d0adca1293764238ce01147a8246db3f251",
+      "bytes": 513
+    },
+    {
+      "path": "07_Theory/human/cycles_and_time.md",
+      "sha256": "65af85c8de3413965b02b4e69cb8c2cba9ef118f97af8fa77e3ccc48cd3c94a6",
+      "bytes": 490
+    },
+    {
+      "path": "07_Theory/human/mathematical_frameworks.md",
+      "sha256": "c791fc05104101b8555ae8acb7173f499e96a0c3ef84192b87cf9a35c36e707d",
+      "bytes": 462
+    },
+    {
+      "path": "07_Theory/human/natural_laws.md",
+      "sha256": "15d8cbc1bfeb3a47235ab02659e72dd901f36296c40e579d20c5a77731b3df4c",
+      "bytes": 497
+    },
+    {
+      "path": "07_Theory/human/theory_foundations.md",
+      "sha256": "312c357641a6953cb00836baa563d0fbf73a4bc080b330327a7e9fd91e182dc1",
+      "bytes": 765
+    },
+    {
+      "path": "07_Theory/human/unconventional_theories.md",
+      "sha256": "33a30e985cb4e89c50421abfd1b40647c5abbefc1a1e81a53b8ec395de1aec11",
+      "bytes": 464
+    }
+  ]
+}

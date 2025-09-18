@@ -1,0 +1,13 @@
+id,initiative,timeframe,status,owner,start_date,due_date,kpi1_name,kpi1_current,kpi1_target,kpi2_name,kpi2_current,kpi2_target,kpi3_name,kpi3_current,kpi3_target,risks,notes,last_updated
+1,Discovery+Synthesis,0-30,InProgress,ENERQIS,,,Artifacts per run,0,≥1,Mech auto-apply success,0%,≥95%,Editorial accept rate,0%,≥50%,,Initial row,
+2,Strategy Factory v1,0-30,InProgress,ENERQIS,,,Backtests/week,0,≥10,Leakage guards,No,Yes,Cost model integrated,No,Yes,,,
+3,LOB+CVD Core,0-30,InProgress,ENERQIS,,,AUC next-N-tick,0.50,≥0.58,Slippage MAPE,—,≤20%,Recorder uptime,—,≥99%,,,
+4,Fees/Swap Uplift,0-30,InProgress,ENERQIS,,,Cashback error,—,≤5%,Swap-aware rule,No,Yes,,,,,,
+5,OI+Funding+Basis,31-60,NotStarted,ENERQIS,,,Venue coverage,—,≥80%,Latency,—,≤2m,Squeeze lift (IR),—,>0.05,,,
+6,Liquidation Density,31-60,NotStarted,ENERQIS,,,Hit-rate uplift,—,≥7pp,Cluster proximity live,No,Yes,,,,,,
+7,Risk Brain v1,31-60,NotStarted,ENERQIS,,,Vol target Δ,—,≤10%,DD throttle latency,—,<5s,Turnover caps,—,Met,,,
+8,Multi-timeframe Alignment,31-60,NotStarted,ENERQIS,,,Precision gain,—,≥5pp,,,,,,,
+9,Execution Router,61-90,NotStarted,ENERQIS,,,Impact/$ ↓,—,≥10%,Mark-out(60s) ↑,—,≥15bp,Failover MTTR,—,<30s,,,
+10,Space Weather Nowcast,61-90,NotStarted,ENERQIS,,,Kp≥6 latency,—,<60m,Nowcast MAE ↓,—,≥5%,,,,,,
+11,Gann Ingestion,61-90,NotStarted,ENERQIS,,,Hypotheses count,—,≥10,Leakage cases,—,0,Candidates OOS pass,—,1–2,,,
+12,Dashboard v1,61-90,NotStarted,ENERQIS,,,Widget uptime,—,≥99%,Source latency tracked,No,Yes,,,,,,

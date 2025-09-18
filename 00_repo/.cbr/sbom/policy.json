@@ -1,0 +1,45 @@
+{
+  "version": "1",
+  "policy": {
+    "format": "SPDX-2.3",
+    "generator": "erep-sbom/2.3.3",
+    "strategy": "central",
+    "collect": [
+      "python",
+      "node",
+      "system"
+    ],
+    "paths": {
+      "out": "00_repo/.cbr/sbom/sbom.json"
+    }
+  },
+  "_erq_meta": {
+    "doc_type": "sbom_policy",
+    "spec_version": "2.3.3",
+    "source_baseline_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "provenance": {
+      "build_id": "d6005b5075d6bd7ea40378c919b25fd4",
+      "builder": "EREP v2.3.3-stable overlay pack",
+      "built_at": "2025-09-12T15:48:31Z",
+      "tools": {
+        "python": "3.11.8",
+        "hashlib": "sha256"
+      }
+    },
+    "governance_links": {
+      "acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml",
+      "registry": "00_repo/.cbr/registry.json",
+      "audit_log": "00_repo/.cbr/audit_log.json"
+    },
+    "canonicalization": {
+      "encoding": "utf-8",
+      "newline": "LF",
+      "sort_keys": true
+    },
+    "integrity": {
+      "algo": "sha256",
+      "canonical_scope": "payload",
+      "value": "115a0576a58c7d757e828f4ac9fc2f6b1d3420e17969aa32278207ac223153f9"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+// ERQ-META-BEGIN
+// {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "165ca53bfa26f05c6cd12ea33a0c245ecad5ea8ec8544c861bf14389e46ef54f"}, "provenance": {"build_id": "544561d4-96bd-47e9-9d7d-243bb6c61b66", "builder": "EREP v2.3 FULL", "built_at": "2025-09-12T06:13:49Z", "tools": {"hash": "sha256", "python": "3.11"}}, "source_baseline_hash": "pending", "spec_version": "2.3"}
+// ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "manifest", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "55b39c8070497c1ebabe7bd8d1c7f0b8197e9ba3ba493af2ad5cc87bf1664820"}, "provenance": {"build_id": "6cd8d3e9-1597-446f-ae77-a24a20e68b52", "builder": "EREP v2.2", "built_at": "2025-09-12T02:49:11Z", "tools": {"hash": "sha256", "python": "3.10"}}, "source_baseline_hash": "27fc28fe0f19e3cad5b5d3e44fc1032b732a3d7b5455ed39895731aefc4c6a6d", "spec_version": "2.2"}
+# ERQ-META-END
+# ERQ-META-BEGIN
+# {"doc_type":"manifest","spec_version":"1.0","source_baseline_hash":"471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb","provenance":{"build_id":"29892f63-fc33-4453-8e1b-fc410e9fab3b","builder":"ENERQIS RC1+ upgrader","built_at":"2025-09-10T01:10:56Z","tools":{"python":"3.11.8","hashlib":"sha256"}},"governance_links":{"acceptance_gates":"00_repo/.cbr/acceptance_gates.yaml","registry":"00_repo/.cbr/registry.json","audit_log":"00_repo/.cbr/audit_log.json"},"canonicalization":{"encoding":"utf-8","newline":"LF","sort_keys":true},"integrity":{"algo":"sha256","canonical_scope":"payload","value":"ad0316c86a33d725c62254e672eb86ebc64697a701710b2672967f0964402e70"}}
+# ERQ-META-END
+{
+  "generated_at": "2025-09-10T00:02:10Z",
+  "build_id": "49f5c31b6eb5fe868c4ced8f074db74c",
+  "items": [
+    {
+      "path": "05_Blueprint/human/blueprint_overview.md",
+      "sha256": "8694c172a7941fdb09258543257dc22a3a3cee2d84f343db5fc62a46e7dc2d43",
+      "bytes": 1248
+    },
+    {
+      "path": "05_Blueprint/human/development_roadmap.md",
+      "sha256": "eda0f0e82654528e2a6f5b7f4c16c0cf61e39b3696853d14424c5837570d4d27",
+      "bytes": 4684
+    },
+    {
+      "path": "05_Blueprint/human/module_integration.md",
+      "sha256": "da9f838b726986ae6441ce6c2afe1446ac73a0a65ba93639fee6ec144e44aa07",
+      "bytes": 1717
+    },
+    {
+      "path": "05_Blueprint/human/roadmap_blueprint.md",
+      "sha256": "ae9b160219da5804a17f7841b6f75d04a8ed7a71c023a146625510fbb8a67d50",
+      "bytes": 10986
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+// ERQ-META-BEGIN
+// {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "ed7ef782e3be84f7297d1b09a383e1554c944f800246d07f604252af0fc840a4"}, "provenance": {"build_id": "d054592e-e0c6-4c47-93e3-26701aa291f6", "builder": "EREP v2.3.2", "built_at": "2025-09-12T06:13:49Z", "tools": {"hash": "sha256", "python": "3.11"}}, "source_baseline_hash": "pending", "spec_version": "2.3"}
+// ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "registry", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "38f56197c60214ffbc2858dcf888024a8d4efeed74c5355cd997ea86b8949a38"}, "provenance": {"build_id": "ce0032f4-ccfd-4f29-86ea-e8bf051a8743", "builder": "EREP v2.2", "built_at": "2025-09-12T02:49:11Z", "tools": {"hash": "sha256", "python": "3.10"}}, "source_baseline_hash": "27fc28fe0f19e3cad5b5d3e44fc1032b732a3d7b5455ed39895731aefc4c6a6d", "spec_version": "2.2"}
+# ERQ-META-END
+/* ERQ-META-BEGIN
+{
+  "version": "2.3.2",
+  "runs": [],
+  "modules": ["00_repo","01_MasterControl","02_Governance","03_Data","04_Infrastructure","05_Blueprint","06_System","07_Theory","08_Market","09_Tech","10_AI_Algo","11_Research","12_Future","13_OpsLog"],
+  "last_manifest_sha256": null,
+  "policy_path": "00_repo/.cbr/erep_policy.json"
+}
+
+{
+  "canonicalization": {
+    "encoding": "utf-8",
+    "newline": "LF",
+    "sort_keys": true
+  },
+  "doc_type": "registry",
+  "governance_links": {
+    "acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml",
+    "audit_log": "00_repo/.cbr/audit_log.json",
+    "registry": "00_repo/.cbr/registry.json"
+  },
+  "integrity": {
+    "algo": "sha256",
+    "canonical_scope": "payload",
+    "value": "a4571f80a82fe417037efb606d184e3c9e46e7c5bb198e559c575ac0af1b756a"
+  },
+  "provenance": {
+    "build_id": "62effa10-7131-44c8-862f-5c916946f207",
+    "builder": "EREP v2.2",
+    "built_at": "2025-09-12T00:20:14Z",
+    "tools": {
+      "hashlib": "sha256",
+      "python": "3.11.8"
+    }
+  },
+  "source_baseline_hash": "471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb",
+  "spec_version": "1.0"
+}
+ERQ-META-END */
+{
+  "approvals": [
+    {
+      "at": "2025-09-10T00:46:55Z",
+      "by": "MasterControl"
+    }
+  ],
+  "canonicalization": {
+    "encoding": "utf-8",
+    "newline": "LF",
+    "sort_keys": true
+  },
+  "doc_type": "registry",
+  "governance_links": {
+    "acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml",
+    "audit_log": "00_repo/.cbr/audit_log.json",
+    "registry": "00_repo/.cbr/registry.json"
+  },
+  "history": [
+    {
+      "at": "2025-09-10T00:46:55Z",
+      "by": "RC1c",
+      "event": "registry_init"
+    }
+  ],
+  "modules": [
+    {
+      "id": "01_MasterControl",
+      "title": "MasterControl"
+    },
+    {
+      "id": "02_Governance",
+      "title": "Governance"
+    },
+    {
+      "id": "03_Data",
+      "title": "Data"
+    },
+    {
+      "id": "04_Infrastructure",
+      "title": "Infrastructure"
+    },
+    {
+      "id": "05_Blueprint",
+      "title": "Blueprint"
+    },
+    {
+      "id": "06_System",
+      "title": "System"
+    },
+    {
+      "id": "07_Theory",
+      "title": "Theory"
+    },
+    {
+      "id": "08_Market",
+      "title": "Market"
+    },
+    {
+      "id": "09_Tech",
+      "title": "Tech"
+    },
+    {
+      "id": "10_AI_Algo",
+      "title": "AI_Algo"
+    },
+    {
+      "id": "11_Research",
+      "title": "Research"
+    },
+    {
+      "id": "12_Future",
+      "title": "Future"
+    },
+    {
+      "id": "13_OpsLog",
+      "title": "OpsLog"
+    },
+    {
+      "id": "99_Archive",
+      "title": "Archive"
+    }
+  ],
+  "provenance": {
+    "build_id": "f7f3dd91-1786-45d1-bac4-0f565d48d93f",
+    "builder": "ENERQIS RC1c builder",
+    "built_at": "2025-09-10T00:46:55Z",
+    "tools": {
+      "hashlib": "sha256",
+      "python": "3.10"
+    }
+  },
+  "source_baseline_hash": "471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb",
+  "spec_version": "1.0"
+}
+
+{
+  "project": "ENERQIS_GlobalDB",
+  "generated": "2025-09-10T14:13:19Z",
+  "modules": [
+    {
+      "id": "02_Governance",
+      "policies": [
+        {
+          "file": "02_Governance/human/policies/CSEP_CSEL_Strengthened.md",
+          "title": "CSEP & CSEL \u2014 Strengthened Edition"
+        },
+        {
+          "file": "02_Governance/human/policies/Enterprise_Baseline_Governance_Addendum.md",
+          "title": "Enterprise Baseline Governance Addendum"
+        },
+        {
+          "file": "02_Governance/human/policies/DAP_EI_v1_0.md",
+          "title": "Dual-Artifact Packaging & Export Integrity (DAP-EI) v1.0"
+        },
+        {
+          "file": "02_Governance/human/policies/RC0_Deterministic_Regen.md",
+          "title": "RC0 \u2014 Deterministic Machine Artifact Regeneration"
+        },
+        {
+          "file": "02_Governance/human/policies/EREP_v1_0.md",
+          "title": "EREP v1.0 \u2014 Enterprise Regeneration & Enrichment (ERQ-META)"
+        },
+        {
+          "file": "02_Governance/human/policies/ERIP_v1_1.md",
+          "title": "ERIP v1.1 \u2014 Research & Ingestion Protocol"
+        },
+        {
+          "file": "02_Governance/human/policies/UAWP.md",
+          "title": "UAWP \u2014 Unified Artifact Workflow Protocol"
+        },
+        {
+          "file": "02_Governance/human/policies/MACP.md",
+          "title": "MACP \u2014 Module Artifact Confirmation Protocol"
+        },
+        {
+          "file": "02_Governance/human/policies/HFPP_v1_0.md",
+          "title": "HFPP v1.0 \u2014 Human File Presentation Protocol"
+        },
+        {
+          "file": "02_Governance/human/policies/Machine_Artifact_Generation_Policy.md",
+          "title": "Machine Artifact Generation Policy"
+        },
+        {
+          "file": "02_Governance/human/policies/CBR_EXPORT_001.md",
+          "title": "CBR-EXPORT-001 \u2014 Canonical Export Fidelity Rule"
+        },
+        {
+          "file": "02_Governance/human/policies/CBR_Protocol_v1_0.md",
+          "title": "CBR Protocol v1.0 \u2014 Canonical Baseline Registry"
+        },
+        {
+          "file": "02_Governance/human/policies/Module_Lock_Protocol_Enforcement.md",
+          "title": "Module Lock Protocol Enforcement"
+        },
+        {
+          "file": "02_Governance/human/policies/Enterprise_Grade_Content_Rule.md",
+          "title": "Enterprise-Grade Content Rule"
+        },
+        {
+          "file": "02_Governance/human/policies/Strict_Step_State_Enforcement.md",
+          "title": "Strict Step-State Enforcement"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "canonicalization": {
+    "encoding": "utf-8",
+    "newline": "LF",
+    "sort_keys": true
+  },
+  "doc_type": "control",
+  "governance_links": {
+    "acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml",
+    "audit_log": "00_repo/.cbr/audit_log.json",
+    "registry": "00_repo/.cbr/registry.json"
+  },
+  "integrity": {
+    "algo": "sha256",
+    "canonical_scope": "payload",
+    "value": "ef1e10d1b5a0439c773f816605a2a5e7cbb6bc36a52b341ab144b1cce4ed4e32"
+  },
+  "provenance": {
+    "build_id": "367ba1c1-29f4-46ef-9996-5c2d3c8cb34b",
+    "builder": "EREP v2.3.3 (offline)",
+    "built_at": "2025-09-12T17:39:28Z",
+    "tools": {
+      "python": "3.11"
+    }
+  },
+  "source_baseline_hash": "ef1e10d1b5a0439c773f816605a2a5e7cbb6bc36a52b341ab144b1cce4ed4e32",
+  "spec_version": "2.3.3"
+}

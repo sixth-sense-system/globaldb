@@ -1,0 +1,65 @@
+# ERQ-META-BEGIN
+# {"doc_type":"workflow","spec_version":"2.2","source_baseline_hash":"d0ae1e584b81c6470bec874c69019e0b4d20fa93d3b14c7ec013d1c2246863fa","provenance":{"build_id":"7fc1d1f7-a863-4742-9017-04b03c3e0fd0","built_at":"2025-09-12T02:41:58Z","builder":"EREP v2.2","tools":{"python":"3.11.8"}},"governance_links":{"acceptance_gates":"00_repo/.cbr/acceptance_gates.yaml","registry":"00_repo/.cbr/registry.json","audit_log":"00_repo/.cbr/audit_log.json"},"canonicalization":{"encoding":"utf-8","newline":"LF","sort_keys":true},"integrity":{"algo":"sha256","canonical_scope":"payload","value":"c3f398c079ff70f8c5122763eecb81f6dfaed0f14d72f1ac68d96234df3cb31e"}}
+# ERQ-META-END
+name: DataNormalizationPipeline
+version: 1.0
+determinism:
+  tz: UTC
+  seed: 1729
+  source_date_epoch: 1729
+inputs:
+  datasets:
+    - id: market_ticks_v1
+      path: 03_Data/raw/market_ticks/
+      format: parquet
+      schema_id: ticks_schema_v1
+      version: 2025-01-01
+steps:
+  - id: load
+    type: read_parquet
+    options: { coerce_timestamps: UTC, fail_on_schema_mismatch: true }
+  - id: normalize_columns
+    type: transform
+    mapping:
+      sym: { to: symbol, dtype: string, required: true }
+      ts:  { to: timestamp, dtype: timestamp[ns, UTC], required: true }
+      px:  { to: price, dtype: float64, units: USD }
+      qty: { to: size, dtype: int64 }
+  - id: enforce_rules
+    type: validate
+    rules:
+      - name: non_negative_price
+        expr: price >= 0
+      - name: valid_size
+        expr: size > 0
+  - id: resample
+    type: transform
+    options:
+      method: ohlc
+      interval: 1m
+      price_col: price
+      size_col: size
+  - id: write
+    type: write_parquet
+    output:
+      path: 03_Data/processed/ohlc_1m/
+      partition_by: [date]
+      overwrite: false
+outputs:
+  dataset_id: ohlc_1m_v1
+  manifest: 03_Data/machine/dataset-manifests/ohlc_1m_v1.json
+validation:
+  row_bounds: { min: 1 }
+  schema: 03_Data/machine/schema_registry.json#ohlc_1m_schema_v1
+acceptance_gates:
+  require_schema_validation: true
+  forbid_placeholders: true
+  write_scope:
+    - 03_Data/processed
+    - 03_Data/machine/dataset-manifests
+sla:
+  max_runtime_minutes: 30
+  max_lag_minutes: 5
+ownership:
+  owner: data-platform
+  reviewers: [ @master-control, @data-lead ]

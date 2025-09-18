@@ -1,0 +1,137 @@
+// ERQ-META-BEGIN
+// {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "73f6ac84779411213b76bda55fd06b72faa6b2aa4360a990a0eaa2c282b319a3"}, "provenance": {"build_id": "acb63eab-0495-4624-8ab6-36825c9a9a35", "builder": "EREP v2.3 FULL", "built_at": "2025-09-12T06:13:49Z", "tools": {"hash": "sha256", "python": "3.11"}}, "source_baseline_hash": "pending", "spec_version": "2.3"}
+// ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "334e9e282270898e8839908105c5ff396e6c047c4e04174190ec67076ce444b2"}, "provenance": {"build_id": "6e7ab19c-659a-4d66-9560-07101b6aca6c", "builder": "EREP v2.2", "built_at": "2025-09-12T02:49:11Z", "tools": {"hash": "sha256", "python": "3.10"}}, "source_baseline_hash": "27fc28fe0f19e3cad5b5d3e44fc1032b732a3d7b5455ed39895731aefc4c6a6d", "spec_version": "2.2"}
+# ERQ-META-END
+// ERQ-META-BEGIN
+// {"canonicalization":{"encoding":"utf-8","newline":"LF","sort_keys":true},"doc_type":"control","governance_links":{"acceptance_gates":"00_repo/.cbr/acceptance_gates.yaml","audit_log":"00_repo/.cbr/audit_log.json","registry":"00_repo/.cbr/registry.json"},"integrity":{"algo":"sha256","canonical_scope":"payload","value":"ad48a1670ec9a2c858726f05182ca3bf397c90b6929ffc82643f5e66bdca127e"},"provenance":{"build_id":"a85a90ca-0302-4641-a9e2-f75280d3ce27","builder":"EREP v2.2 (COMPLIANCE_ONLY)","built_at":"2025-09-12T02:04:11Z","tools":{"python":"3.11.8"}},"source_baseline_hash":"7fd01630d003c81f7ccb2de8b1160b2e79520bc59365dd6e6b0b0f67aa76d9a0","spec_version":"2.2"}
+// ERQ-META-END
+{
+  "doc_type": "innovation_brief",
+  "spec_version": "1.0",
+  "provenance": {
+    "built_at": "2025-09-11T22:43:19Z",
+    "build_id": "8d402dca-db94-449c-845e-b1c760214273",
+    "builder": "EREP v2.1 seed"
+  },
+  "items": [
+    {
+      "id": "OP-STRAT-GENOME",
+      "title": "Strategy Genome Registry",
+      "owner": "06_System",
+      "modules": [
+        "06_System",
+        "11_Research",
+        "13_OpsLog"
+      ],
+      "impact": 0.9,
+      "effort": 0.4,
+      "confidence": 0.85,
+      "actions": [
+        "Define JSON schema for strategy genetic signatures",
+        "Backfill from existing cBot skeletons",
+        "Wire to backtest ledger to track phenotype\u2192performance links"
+      ],
+      "dependencies": [
+        "Deterministic Backtest Ledger"
+      ],
+      "acceptance_criteria": [
+        "Schema validated in CI",
+        "\u22652 strategies registered with hashes and lineage",
+        "Cross-links visible in ERQ Graph-of-Record"
+      ]
+    },
+    {
+      "id": "OP-DBL",
+      "title": "Deterministic Backtest Ledger",
+      "owner": "06_System",
+      "modules": [
+        "06_System",
+        "03_Data"
+      ],
+      "impact": 0.95,
+      "effort": 0.5,
+      "confidence": 0.9,
+      "actions": [
+        "Create canonical run manifest schema (dataset hash, code hash, params, seed, tz)",
+        "Emit JSONL rows for each run with sha256 attestations",
+        "Integrate with CI packaging to store ledger snapshots"
+      ],
+      "dependencies": [],
+      "acceptance_criteria": [
+        "Two backtests produce identical ledger rows under same seeds",
+        "CI gate rejects runs without ledger records"
+      ]
+    },
+    {
+      "id": "OP-DRIFT-GUARD",
+      "title": "Data/Feature Drift Guard in CI",
+      "owner": "03_Data",
+      "modules": [
+        "03_Data",
+        "06_System"
+      ],
+      "impact": 0.8,
+      "effort": 0.3,
+      "confidence": 0.85,
+      "actions": [
+        "Add drift checks (KS-test, PSI) over rolling windows",
+        "Fail PR if drift > threshold unless approved in governance"
+      ],
+      "dependencies": [
+        "Backtest Ledger"
+      ],
+      "acceptance_criteria": [
+        "PRs fail on excessive drift; override logged in audit"
+      ]
+    },
+    {
+      "id": "OP-GOR",
+      "title": "ERQ Graph-of-Record (crosslinks of facts/artifacts)",
+      "owner": "01_MasterControl",
+      "modules": [
+        "01_MasterControl",
+        "11_Research",
+        "06_System",
+        "07_Theory"
+      ],
+      "impact": 0.85,
+      "effort": 0.6,
+      "confidence": 0.75,
+      "actions": [
+        "Initialize graph JSON with nodes for modules, docs, datasets, experiments",
+        "Emit edges from manifests (produced_by, depends_on, validates)",
+        "Add CI visual export (SVG)"
+      ],
+      "dependencies": [],
+      "acceptance_criteria": [
+        "Graph validates against schema; at least 50 edges"
+      ]
+    },
+    {
+      "id": "OP-SWL",
+      "title": "Space\u2011Weather Factor Lab (NOAA + indices)",
+      "owner": "11_Research",
+      "modules": [
+        "11_Research",
+        "08_Market",
+        "06_System"
+      ],
+      "impact": 0.7,
+      "effort": 0.5,
+      "confidence": 0.6,
+      "actions": [
+        "Add ingestion script for NOAA SWPC endpoints (historical)",
+        "Create factor transforms & lag windows",
+        "Run correlation study vs. target markets; store results in Research"
+      ],
+      "dependencies": [
+        "Research Notebook Registry"
+      ],
+      "acceptance_criteria": [
+        "Reproducible notebook with plots and CSV factors"
+      ]
+    }
+  ]
+}

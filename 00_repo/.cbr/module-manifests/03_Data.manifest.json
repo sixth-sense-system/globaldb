@@ -1,0 +1,40 @@
+// ERQ-META-BEGIN
+// {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "07e58943295c53ce97b15c4b82b801e586daea4188aca89c9c2adae21e9339b6"}, "provenance": {"build_id": "8390d7f7-f455-42d7-85e5-39bbd9db8f00", "builder": "EREP v2.3 FULL", "built_at": "2025-09-12T06:13:49Z", "tools": {"hash": "sha256", "python": "3.11"}}, "source_baseline_hash": "pending", "spec_version": "2.3"}
+// ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "manifest", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "6ca57e4a7be1e14f09ccf86aacc0f555cbfddfdf6e2afb1de59e0e29dd689e38"}, "provenance": {"build_id": "e3586e20-76bf-4020-a319-fcef61ec6541", "builder": "EREP v2.2", "built_at": "2025-09-12T02:49:11Z", "tools": {"hash": "sha256", "python": "3.10"}}, "source_baseline_hash": "27fc28fe0f19e3cad5b5d3e44fc1032b732a3d7b5455ed39895731aefc4c6a6d", "spec_version": "2.2"}
+# ERQ-META-END
+# ERQ-META-BEGIN
+# {"doc_type":"manifest","spec_version":"1.0","source_baseline_hash":"471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb","provenance":{"build_id":"219ff9b4-d32d-4377-80e2-64bbfac2ea8d","builder":"ENERQIS RC1+ upgrader","built_at":"2025-09-10T01:10:56Z","tools":{"python":"3.11.8","hashlib":"sha256"}},"governance_links":{"acceptance_gates":"00_repo/.cbr/acceptance_gates.yaml","registry":"00_repo/.cbr/registry.json","audit_log":"00_repo/.cbr/audit_log.json"},"canonicalization":{"encoding":"utf-8","newline":"LF","sort_keys":true},"integrity":{"algo":"sha256","canonical_scope":"payload","value":"29f03b563341590467e2a64bf8b817817fb35b7f9bd2a4368eb4532cfcd4a4cf"}}
+# ERQ-META-END
+{
+  "generated_at": "2025-09-10T00:02:10Z",
+  "build_id": "49f5c31b6eb5fe868c4ced8f074db74c",
+  "items": [
+    {
+      "path": "03_Data/human/data_overview.md",
+      "sha256": "4d79c0da4f97335805731c0bb1acb40f7271d6f06183cbd81bb467028ae29322",
+      "bytes": 1449
+    },
+    {
+      "path": "03_Data/human/glossary_data.md",
+      "sha256": "73ca3b0211c8aab93097d262b05b1324a879e85096d649d471a738c216635295",
+      "bytes": 533
+    },
+    {
+      "path": "03_Data/human/ingestion_policy.md",
+      "sha256": "cce49a9fc60d182475853b5b6a790a15e2560531c378120f960dda29129052d8",
+      "bytes": 788
+    },
+    {
+      "path": "03_Data/human/normalization_standards.md",
+      "sha256": "e34c8a447cfb37922241ae3b3b3e0a4229f2db4a007088fde8611689aeb788d7",
+      "bytes": 642
+    },
+    {
+      "path": "03_Data/human/storage_policy.md",
+      "sha256": "53001dc22b8de120e97a53c6598b655c9385b0666d8a55b300bae1cfcd652913",
+      "bytes": 610
+    }
+  ]
+}

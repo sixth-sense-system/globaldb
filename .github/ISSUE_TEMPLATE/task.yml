@@ -1,0 +1,15 @@
+name: Task
+description: Concrete implementation task
+title: "[Task]: "
+labels: ["task"]
+body:
+  - type: input
+    id: outcome
+    attributes: { label: Outcome, placeholder: What exists when done? }
+    validations: { required: true }
+  - type: textarea
+    id: steps
+    attributes: { label: Steps }
+  - type: dropdown
+    id: priority
+    attributes: { label: Priority, options: ["P0","P1","P2","P3"] }

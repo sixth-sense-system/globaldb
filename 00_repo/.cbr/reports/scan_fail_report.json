@@ -1,0 +1,40 @@
+{
+  "_erq_meta": {
+    "canonicalization": {
+      "encoding": "utf-8",
+      "newline": "LF",
+      "sort_keys": true
+    },
+    "doc_type": "control",
+    "governance_links": {
+      "acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml",
+      "audit_log": "00_repo/.cbr/audit_log.json",
+      "registry": "00_repo/.cbr/registry.json"
+    },
+    "integrity": {
+      "algo": "sha256",
+      "canonical_scope": "payload",
+      "value": "4f81d6ec1a2884738c4df7c9f4d4bb6f367394250ada591e2da0406e3cb256ee"
+    },
+    "provenance": {
+      "build_id": "080c6549-a454-424d-9a36-b15ee47c29c6",
+      "builder": "EREP v2.3.3 FULL",
+      "built_at": "2025-09-12T16:36:01Z",
+      "tools": {
+        "hash": "sha256",
+        "python": "3.11.8"
+      }
+    },
+    "source_baseline_hash": "e2b77994a4cdaff1e8b9f1562e2a75522f52db3ab9d822e61125d936cdb41480",
+    "spec_version": "2.3.3"
+  },
+  "build_id": "6f0ea3ff-f97f-474d-86db-b747aee49eb6",
+  "detail": "The provided ZIP opened but individual entries returned a 'BadZipFile: Bad magic number for file header' when reading. This indicates archive corruption. I cannot compute a real compliance result from this file.",
+  "next_steps": [
+    "Re-zip your repository from the folder root using a fresh archive.",
+    "Avoid nesting zip-inside-zip; ensure a single top-level folder ENERQIS_GlobalDB_TREEBUILD/.",
+    "macOS CLI: cd <parent> && zip -r ENERQIS_GlobalDB_TREEBUILD.zip ENERQIS_GlobalDB_TREEBUILD -x \"*.DS_Store\""
+  ],
+  "status": "UNABLE_TO_SCAN_ARCHIVE_CONTENTS",
+  "ts": "2025-09-12T16:09:22Z"
+}

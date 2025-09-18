@@ -1,0 +1,296 @@
+{
+  "version": "2.4.1",
+  "policy_name": "EREP v2.4.1 — Prune & Package (Idempotent + Delete Lists)",
+  "mode": "FULL",
+  "canonical_paths": {
+    "root": ".",
+    "control_root": "00_repo/.cbr",
+    "manifests_dir": "00_repo/.cbr/manifests",
+    "module_manifests_dir": "00_repo/.cbr/module-manifests",
+    "registry": "00_repo/.cbr/registry.json",
+    "audit_log": "00_repo/.cbr/audit_log.json",
+    "acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml",
+    "structure_lock": "00_repo/.cbr/structure_lock.yml",
+    "structure_spec": "00_repo/.cbr/structure_spec.json"
+  },
+  "determinism": {
+    "tz": "UTC",
+    "seed": 1729,
+    "source_date_epoch": 1729,
+    "sort_keys": true,
+    "newline": "LF",
+    "encoding": "utf-8"
+  },
+  "targets": {
+    "scan_roots": [
+      "00_repo",
+      "01_MasterControl",
+      "02_Governance",
+      "03_Data",
+      "04_Infrastructure",
+      "05_Blueprint",
+      "06_System",
+      "07_Theory",
+      "08_Market",
+      "09_Tech",
+      "10_AI_Algo",
+      "11_Research",
+      "12_Future",
+      "13_OpsLog",
+      "99_Archive",
+      "ci",
+      "templates",
+      "tools"
+    ],
+    "machine_globs": [
+      "**/machine/**",
+      "00_repo/.cbr/**"
+    ]
+  },
+  "erq_meta_requirements": {
+    "required": [
+      "doc_type",
+      "spec_version",
+      "source_baseline_hash",
+      "provenance.build_id",
+      "provenance.built_at",
+      "provenance.builder",
+      "governance_links.acceptance_gates",
+      "governance_links.registry",
+      "governance_links.audit_log",
+      "canonicalization.encoding",
+      "canonicalization.newline",
+      "canonicalization.sort_keys",
+      "integrity.algo",
+      "integrity.canonical_scope",
+      "integrity.value"
+    ],
+    "comment_fences": {
+      "begin": "ERQ-META-BEGIN",
+      "end": "ERQ-META-END"
+    },
+    "header_injection": {
+      "strategy_order": [
+        "json_embed_key",
+        "sidecar_meta",
+        "prepend_comment_fenced_json"
+      ],
+      "json_embed_key": "_erq_meta",
+      "sidecar_extension": ".meta.json",
+      "for_text_like": [
+        ".yaml",
+        ".yml",
+        ".md",
+        ".txt",
+        ".cbot",
+        ".csv",
+        ".log"
+      ],
+      "for_json_like": [
+        ".json"
+      ],
+      "accepts": [
+        "fenced_comment",
+        "sidecar_meta",
+        "json_embed_key"
+      ]
+    }
+  },
+  "outputs": {
+    "compliance_pack": true,
+    "innovation": {
+      "enable": true,
+      "write_module_todos": true,
+      "include_skeletons": true,
+      "min_rank": 0.6,
+      "dossier_paths": {
+        "human": "00_repo/.cbr/opportunities/erep/innovation_dossier.md",
+        "machine": "00_repo/.cbr/opportunities/erep/innovation_dossier.json"
+      },
+      "module_todos_dir": "00_repo/.cbr/opportunities/erep/module_todos",
+      "skeletons_zip": "00_repo/.cbr/opportunities/erep/skeletons.zip"
+    },
+    "upgrade_pack": {
+      "enable": true,
+      "path": "00_repo/.cbr/erep_upgrade_pack.zip",
+      "include_manifest": true,
+      "auto_apply": true,
+      "auto_commit": false
+    },
+    "reports": {
+      "compliance_report_md": "00_repo/.cbr/reports/erep_compliance_report.md",
+      "compliance_report_json": "00_repo/.cbr/reports/erep_compliance_report.json",
+      "filelist_snapshot": "00_repo/.cbr/reports/erep_last_scanned_filelist.json"
+    },
+    "prune_reports": {
+      "delete_list": "00_repo/.cbr/reports/erep_delete_list.txt",
+      "prune_report_json": "00_repo/.cbr/reports/erep_prune_report.json",
+      "prune_script_bash": "00_repo/.cbr/reports/erep_prune.sh",
+      "prune_script_ps1": "00_repo/.cbr/reports/erep_prune.ps1"
+    }
+  },
+  "governance": {
+    "require_adoption_for_new_paths": true,
+    "auto_open_proposals": true,
+    "proposal_pack": "00_repo/.cbr/opportunities/erep/proposals/proposals.json",
+    "proposal_policy": {
+      "open_for_rank_at_least": 0.75,
+      "labels": [
+        "EREP",
+        "innovation",
+        "auto"
+      ],
+      "assignees": [
+        "@master-control",
+        "@governance-team"
+      ]
+    }
+  },
+  "ci_enforcement": {
+    "require_dossier": true,
+    "gates": [
+      {
+        "id": "G-NOPLACEHOLDER",
+        "description": "No placeholder/tiny machine files"
+      },
+      {
+        "id": "G-SCHEMA",
+        "description": "Machine/control files validate against schema"
+      },
+      {
+        "id": "G-DETERMINISM",
+        "description": "Deterministic settings present & used"
+      },
+      {
+        "id": "G-WRITE-SCOPE",
+        "description": "Writes limited to allowed roots"
+      },
+      {
+        "id": "G-EREP-DOSSIER",
+        "description": "Dossier emitted on FULL mode when innovation.enable"
+      },
+      {
+        "id": "G-EREP-TODOS",
+        "description": "Module TODOs emitted when innovation.write_module_todos"
+      },
+      {
+        "id": "G-EREP-EQUIV",
+        "description": "FULL and COMPLIANCE produce equivalent compliance state"
+      },
+      {
+        "id": "G-ERQ-META-UNIQUE",
+        "description": "At most one sidecar per parent; no chains"
+      }
+    ],
+    "allowed_write_roots": [
+      "00_repo/.cbr",
+      "00_repo/.cbr/opportunities",
+      "01_MasterControl/machine/validation_logs",
+      "03_Data/machine",
+      "06_System/machine",
+      "07_Theory/machine",
+      "08_Market/machine",
+      "09_Tech/machine",
+      "10_AI_Algo/machine",
+      "11_Research/machine",
+      "13_OpsLog/machine"
+    ]
+  },
+  "pruning": {
+    "enable": true,
+    "dry_run_on_overlay": true,
+    "auto_prune_in_full_package": true,
+    "keep": {
+      "min_report_versions": [
+        "2.4",
+        "2.4.1"
+      ],
+      "retain_last_n_runs": 5,
+      "sidecar_rules": {
+        "text_like": "delete",
+        "json_object": "delete",
+        "json_array": "keep_one"
+      }
+    },
+    "delete_globs": [
+      "**/*.meta.json.meta.json*",
+      "**/*.erqmeta.json",
+      "00_repo/.cbr/reports/*v2.3*",
+      "00_repo/.cbr/reports/*_FULL_Report.md.meta.json.erqmeta.json",
+      "00_repo/.cbr/reports/*_FULL_Report.md.meta.json.meta.json*",
+      "00_repo/.cbr/archive/tmp/**"
+    ],
+    "delete_if_redundant": [
+      {
+        "sidecar": "*.md.meta.json",
+        "when_text_has_fenced_meta": true
+      },
+      {
+        "sidecar": "*.yaml.meta.json",
+        "when_text_has_fenced_meta": true
+      },
+      {
+        "sidecar": "*.yml.meta.json",
+        "when_text_has_fenced_meta": true
+      },
+      {
+        "sidecar": "*.json.meta.json",
+        "when_json_has_embed": true
+      }
+    ],
+    "protect_globs": [
+      "00_repo/.cbr/erep_policy.json",
+      "00_repo/.cbr/acceptance_gates.yaml",
+      "00_repo/.cbr/structure_lock.yml",
+      "00_repo/.cbr/structure_spec.json",
+      "02_Governance/**",
+      "99_Archive/**"
+    ]
+  },
+  "run_profiles": {
+    "FULL": {
+      "enrich": true,
+      "repair": true,
+      "emit_innovation": true,
+      "emit_upgrade_pack": true
+    },
+    "COMPLIANCE_ONLY": {
+      "enrich": false,
+      "repair": false,
+      "emit_innovation": false,
+      "emit_upgrade_pack": false
+    }
+  },
+  "privacy": {
+    "log_min_level": "INFO",
+    "log_redact_patterns": true,
+    "artifact_redaction": true
+  },
+  "performance": {
+    "concurrency": 4,
+    "max_file_mb": 25,
+    "skip_globs": [
+      "**/*.parquet",
+      "**/*.zip",
+      "99_Archive/snapshots/**"
+    ]
+  },
+  "extensibility": {
+    "hooks": {
+      "pre_scan": [],
+      "post_scan": [],
+      "pre_proposal_open": [],
+      "post_proposal_open": []
+    }
+  },
+  "overlays": [
+    "00_repo/.cbr/erep_policy.overlay.ingest_fullcov.json",
+    "00_repo/.cbr/erep_policy.overlay.roadmap_sync.json",
+    "00_repo/.cbr/erep_policy.overlay.security.json",
+    "00_repo/.cbr/erep_policy.overlay.idea_ingestion.json",
+    "00_repo/.cbr/erep_policy.overlay.no_placeholders.json",
+    "00_repo/.cbr/erep_policy.overlay.cross_project_synthesis.json",
+    "00_repo/.cbr/erep_policy.overlay.ioss.json",
+    "00_repo/.cbr/erep_policy.overlay.prune_sidecars.json"
+  ]
+}

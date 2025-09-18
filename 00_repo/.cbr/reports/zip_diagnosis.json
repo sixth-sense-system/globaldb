@@ -1,0 +1,22 @@
+{
+  "exists": true,
+  "size_bytes": 836695,
+  "sha256": "4b6520e067045b9ede7b0ae3abb4e3ed296dd1293974c361590d11dcb0a70358",
+  "open_ok": true,
+  "testzip_first_bad_file": null,
+  "entries": 659,
+  "root_prefix_counts": {
+    "ENERQIS_GlobalDB_TREEBUILD": 659
+  },
+  "compression_methods": {
+    "0": 135,
+    "8": 524
+  },
+  "long_paths_over_200": 0,
+  "absolute_paths": 0,
+  "windows_backslashes": 0,
+  "dot_underscore_files": 0,
+  "ds_store_files": 0,
+  "non_utf8_names": 0,
+  "single_wrapper_dir": "ENERQIS_GlobalDB_TREEBUILD"
+}

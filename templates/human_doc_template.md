@@ -1,0 +1,4 @@
+# ERQ-META-BEGIN
+# {"doc_type": "doc", "spec_version": "2.0", "source_baseline_hash": "471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb", "provenance": {"build_id": "32492333-e5a3-4381-b5e0-1d8ca20fd994", "built_at": "2025-09-11T21:56:19Z", "builder": "EREP v2.0", "tools": {"python": "3.11", "hashlib": "sha256"}}, "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "registry": "00_repo/.cbr/registry.json", "audit_log": "00_repo/.cbr/audit_log.json"}, "canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "f94cd253b5fcb901f3c9f1571b18dd2b286bc42ac7f04b776204b8d26068269f"}}
+# ERQ-META-END
+<!-- human template placeholder; human files not regenerated here -->

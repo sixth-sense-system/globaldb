@@ -1,0 +1,8 @@
+{
+  "policy_sets": {
+    "IIS:roadmap_sync:v1": {
+      "description": "Backlog/Scorecard/Mission must be updated in same pass",
+      "gates": ["G-IIS-PROVENANCE", "G-ROADMAP-SYNC", "G-SCORECARD-CONSISTENT", "G-OPS-DEBT-ZERO"]
+    }
+  }
+}

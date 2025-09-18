@@ -1,0 +1,20 @@
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "control", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "6f84589aefde4fbbdc9843cee668b158d1d88495e9f5aa9a083fac60d9d47b75"}, "provenance": {"build_id": "06b407e1-5ed2-43b9-b96e-5366ad684b9a", "builder": "EREP v2.3.3 (FULL)", "built_at": "2025-09-12T15:11:07Z", "tools": {"python": "3.11.8"}}, "source_baseline_hash": "3f0f85abf77754dd83c15a4b0a7393cdbf26481b6653bc867f8458f4a5be20d5", "spec_version": "2.3.3"}
+# ERQ-META-END
+
+name: EREP ERQ-META Check
+on:
+  pull_request:
+  push:
+    branches: [ main, master ]
+jobs:
+  erq_meta_check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run ERQ-META presence check
+        run: |
+          python ci/check_erq_meta.py

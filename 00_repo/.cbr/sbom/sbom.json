@@ -1,0 +1,43 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "ENERQIS Central SBOM",
+  "documentNamespace": "https://enerqis.local/spdx/central",
+  "creationInfo": {
+    "created": "2025-09-12T15:48:31Z",
+    "creators": [
+      "Tool: erep-sbom/2.3.3"
+    ]
+  },
+  "packages": [],
+  "_erq_meta": {
+    "doc_type": "sbom_document",
+    "spec_version": "2.3.3",
+    "source_baseline_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "provenance": {
+      "build_id": "6b6e256524d447831ddaf85d25b39187",
+      "builder": "EREP v2.3.3-stable overlay pack",
+      "built_at": "2025-09-12T15:48:31Z",
+      "tools": {
+        "python": "3.11.8",
+        "hashlib": "sha256"
+      }
+    },
+    "governance_links": {
+      "acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml",
+      "registry": "00_repo/.cbr/registry.json",
+      "audit_log": "00_repo/.cbr/audit_log.json"
+    },
+    "canonicalization": {
+      "encoding": "utf-8",
+      "newline": "LF",
+      "sort_keys": true
+    },
+    "integrity": {
+      "algo": "sha256",
+      "canonical_scope": "payload",
+      "value": "bfdc6b53973ddb0c6de60113a0626b23e2006c3275f22f92da8532dd766d2484"
+    }
+  }
+}

@@ -1,0 +1,97 @@
+// ERQ-META-BEGIN
+// {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "a1df4da6fa05c6b76b7accf4cc7321547e834f56a90162b02ed01e9307df14cc"}, "provenance": {"build_id": "01fa0e0e-4ae6-46f3-a731-060249d24e13", "builder": "EREP v2.3 FULL", "built_at": "2025-09-12T06:13:49Z", "tools": {"hash": "sha256", "python": "3.11"}}, "source_baseline_hash": "pending", "spec_version": "2.3"}
+// ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "529d7222230b49f4ceafdfe3c605f00199cc989ee061f55da4cd6973c3c1dada"}, "provenance": {"build_id": "49788841-5153-40bd-a138-b40eef6e4e62", "builder": "EREP v2.3.2", "built_at": "2025-09-12T02:49:11Z", "tools": {"hash": "sha256", "python": "3.10"}}, "source_baseline_hash": "27fc28fe0f19e3cad5b5d3e44fc1032b732a3d7b5455ed39895731aefc4c6a6d", "spec_version": "2.3.2"}
+# ERQ-META-END
+/* ERQ-META-BEGIN
+
+{
+  "version": "2.3.2",
+  "modules": [
+    {"id": "00_repo", "required": ["README.md", ".cbr/erep_policy.json"], "allowed_ext": [".md", ".json", ".yml", ".yaml", ".py", ".sh", ".ps1"]},
+    {"id": "01_MasterControl", "required": ["README.md"], "allowed_ext": [".md", ".json", ".yml", ".yaml"]},
+    {"id": "02_Governance", "required": ["README.md"], "allowed_ext": [".md", ".json", ".yml", ".yaml"]},
+    {"id": "03_Data", "required": ["README.md"], "allowed_ext": [".md", ".json", ".yml", ".yaml", ".py", ".ipynb", ".csv", ".parquet", ".feather"]},
+    {"id": "04_Infrastructure", "required": ["README.md"], "allowed_ext": [".md", ".json", ".yml", ".yaml", ".sh", ".ps1"]},
+    {"id": "05_Blueprint", "required": ["README.md"], "allowed_ext": [".md", ".json", ".yml", ".yaml"]},
+    {"id": "06_System", "required": ["README.md"], "allowed_ext": [".md", ".json", ".yml", ".yaml", ".cs", ".py", ".ipynb"]},
+    {"id": "07_Theory", "required": ["README.md"], "allowed_ext": [".md", ".json", ".yml", ".yaml"]},
+    {"id": "08_Market", "required": ["README.md"], "allowed_ext": [".md", ".json", ".yml", ".yaml", ".csv"]},
+    {"id": "09_Tech", "required": ["README.md"], "allowed_ext": [".md", ".json", ".yml", ".yaml", ".py", ".sh"]},
+    {"id": "10_AI_Algo", "required": ["README.md"], "allowed_ext": [".md", ".json", ".yml", ".yaml", ".py", ".ipynb"]},
+    {"id": "11_Research", "required": ["README.md"], "allowed_ext": [".md", ".json", ".yml", ".yaml"]},
+    {"id": "12_Future", "required": ["README.md"], "allowed_ext": [".md", ".json", ".yml", ".yaml"]},
+    {"id": "13_OpsLog", "required": ["README.md"], "allowed_ext": [".md", ".json", ".yml", ".yaml", ".log"]}
+  ],
+  "naming": {
+    "module_prefix": "^\\d{2}_.+",
+    "file_rules": {
+      "no_spaces": true,
+      "require_extension": true,
+      "case": "kebab_or_snake"
+    }
+  }
+}
+
+{
+  "canonicalization": {
+    "encoding": "utf-8",
+    "newline": "LF",
+    "sort_keys": true
+  },
+  "doc_type": "machine_file",
+  "governance_links": {
+    "acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml",
+    "audit_log": "00_repo/.cbr/audit_log.json",
+    "registry": "00_repo/.cbr/registry.json"
+  },
+  "integrity": {
+    "algo": "sha256",
+    "canonical_scope": "payload",
+    "value": "d001db7a4c21582078272ed141e43efeb4bd873bf14b36108f74a3bd2a677ecd"
+  },
+  "provenance": {
+    "build_id": "8aa0be15-9d64-4ec7-8172-8586eb7be93e",
+    "builder": "EREP v2.3.2",
+    "built_at": "2025-09-12T00:20:14Z",
+    "tools": {
+      "hashlib": "sha256",
+      "python": "3.11.8"
+    }
+  },
+  "source_baseline_hash": "471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb",
+  "spec_version": "1.0"
+}
+ERQ-META-END */
+{
+  "doc_type": "structure_spec",
+  "rules": {
+    "dir_order": "directories-first",
+    "encoding": "utf-8",
+    "newline": "LF",
+    "prohibit_symlinks": true
+  },
+  "spec_version": "1.0"
+}
+
+{
+  "paths": [
+    "02_Governance/human/policies/CBR-EXPORT-001.md",
+    "02_Governance/human/policies/CBR_Protocol_v1_0.md",
+    "02_Governance/human/policies/CSEP_CSEL_Strengthened_Edition.md",
+    "02_Governance/human/policies/Canonical_Manifest_Format_Policy.md",
+    "02_Governance/human/policies/DAP-EI_v1_0.md",
+    "02_Governance/human/policies/EREP_v1_0_ERQ_META.md",
+    "02_Governance/human/policies/ERIP_v1_1.md",
+    "02_Governance/human/policies/Enterprise_Baseline_Governance_Addendum.md",
+    "02_Governance/human/policies/Enterprise_Grade_Content_Rule.md",
+    "02_Governance/human/policies/HFPP_v1_0.md",
+    "02_Governance/human/policies/MACP.md",
+    "02_Governance/human/policies/Machine_Artifact_Generation_Policy.md",
+    "02_Governance/human/policies/Module_Lock_Protocol_Enforcement.md",
+    "02_Governance/human/policies/PCBR_v4_plus_Hypothetical_Guardrails.md",
+    "02_Governance/human/policies/RC0_Deterministic_Regen.md",
+    "02_Governance/human/policies/UAWP.md"
+  ]
+}

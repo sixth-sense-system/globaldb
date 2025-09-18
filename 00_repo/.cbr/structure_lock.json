@@ -1,0 +1,68 @@
+// ERQ-META-BEGIN
+// {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "47828b39deece440a1eb312eb0a720c950faced3151a62cbf033e9e212bf107b"}, "provenance": {"build_id": "c7e7fb64-26d2-4c1a-9d36-c70fd3cc08be", "builder": "EREP v2.3 FULL", "built_at": "2025-09-12T06:13:49Z", "tools": {"hash": "sha256", "python": "3.11"}}, "source_baseline_hash": "pending", "spec_version": "2.3"}
+// ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "2018eae55568ba8a57a043502e8b6d9be28be28e3f3f05bf214022fb647a1688"}, "provenance": {"build_id": "5a0737b2-df22-4161-bba9-7386fe157919", "builder": "EREP v2.3.2", "built_at": "2025-09-12T02:49:11Z", "tools": {"hash": "sha256", "python": "3.10"}}, "source_baseline_hash": "27fc28fe0f19e3cad5b5d3e44fc1032b732a3d7b5455ed39895731aefc4c6a6d", "spec_version": "2.3.2"}
+# ERQ-META-END
+/* ERQ-META-BEGIN
+{
+  "version": "2.3.2",
+  "locked": {
+    "00_repo": ["README.md", ".cbr/erep_policy.json", ".cbr/structure_spec.json", ".cbr/structure_lock.json", ".cbr/registry.json", ".cbr/audit_log.json"],
+    "02_Governance": ["README.md"],
+    "06_System": ["README.md"],
+    "13_OpsLog": ["README.md"]
+  }
+}
+{
+  "canonicalization": {
+    "encoding": "utf-8",
+    "newline": "LF",
+    "sort_keys": true
+  },
+  "doc_type": "machine_file",
+  "governance_links": {
+    "acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml",
+    "audit_log": "00_repo/.cbr/audit_log.json",
+    "registry": "00_repo/.cbr/registry.json"
+  },
+  "integrity": {
+    "algo": "sha256",
+    "canonical_scope": "payload",
+    "value": "03157fadc4b1658ec70f9c2c9b7e55d3df708b38a34dd99138927562706fe9b6"
+  },
+  "provenance": {
+    "build_id": "520ae9aa-b01b-4bdf-98f5-fa8698e9edb0",
+    "builder": "EREP v2.3.2",
+    "built_at": "2025-09-12T00:20:14Z",
+    "tools": {
+      "hashlib": "sha256",
+      "python": "3.11.8"
+    }
+  },
+  "source_baseline_hash": "471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb",
+  "spec_version": "1.0"
+}
+ERQ-META-END */
+{
+  "baseline_hash": "471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb",
+  "builder": "RC1c",
+  "doc_type": "structure_lock",
+  "locked_at": "2025-09-10T00:46:55Z",
+  "spec_version": "1.0"
+}
+
+{
+  "state": "open"
+}
+
+{
+  "profile": "strict-with-slots",
+  "slots": [
+    { "path": "03_Data/machine/dataset-manifests/optional/**" },
+    { "path": "06_System/machine/system_strategies/**" },
+    { "path": "08_Market/machine/feeds/**" },
+    { "path": "11_Research/machine/notebooks/**" },
+    { "path": "11_Research/machine/experiments/*/artifacts/**" }
+  ]
+}

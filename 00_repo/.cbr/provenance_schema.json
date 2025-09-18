@@ -1,0 +1,35 @@
+// ERQ-META-BEGIN
+// {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "json_document", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "80f6bfa9276320c1cd3182ad0f202803ce47c4e1e166afd79165625eafcd6632"}, "provenance": {"build_id": "7a585f48-42f9-42f1-9140-08abe923ee9f", "builder": "EREP v2.3 FULL", "built_at": "2025-09-12T06:13:49Z", "tools": {"hash": "sha256", "python": "3.11"}}, "source_baseline_hash": "pending", "spec_version": "2.3"}
+// ERQ-META-END
+# ERQ-META-BEGIN
+# {"canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "doc_type": "schema", "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "audit_log": "00_repo/.cbr/audit_log.json", "registry": "00_repo/.cbr/registry.json"}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "63b31f635c88148184ec555de4d6df7ec83916af953fa95c4146c1bf54f5a05c"}, "provenance": {"build_id": "a489fee6-c1ee-4784-a1a0-aff450886a7f", "builder": "EREP v2.2", "built_at": "2025-09-12T02:49:11Z", "tools": {"hash": "sha256", "python": "3.10"}}, "source_baseline_hash": "27fc28fe0f19e3cad5b5d3e44fc1032b732a3d7b5455ed39895731aefc4c6a6d", "spec_version": "2.2"}
+# ERQ-META-END
+# ERQ-META-BEGIN
+# {"doc_type":"schema","spec_version":"1.0","source_baseline_hash":"471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb","provenance":{"build_id":"d998ea50-b658-4046-bf7d-12c0e66c318e","builder":"ENERQIS RC1+ upgrader","built_at":"2025-09-10T01:10:56Z","tools":{"python":"3.11.8","hashlib":"sha256"}},"governance_links":{"acceptance_gates":"00_repo/.cbr/acceptance_gates.yaml","registry":"00_repo/.cbr/registry.json","audit_log":"00_repo/.cbr/audit_log.json"},"canonicalization":{"encoding":"utf-8","newline":"LF","sort_keys":true},"integrity":{"algo":"sha256","canonical_scope":"payload","value":"a905a1ac965be8485660925198e8792104839603ad3936374814cd3154e3fe30"}}
+# ERQ-META-END
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "build_id": {
+      "type": "string"
+    },
+    "builder": {
+      "type": "string"
+    },
+    "built_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "tools": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "build_id",
+    "built_at",
+    "builder",
+    "tools"
+  ],
+  "title": "ENERQIS provenance",
+  "type": "object"
+}

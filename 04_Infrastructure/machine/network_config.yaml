@@ -1,0 +1,32 @@
+# ERQ-META-BEGIN
+# {"doc_type":"config","spec_version":"2.2","source_baseline_hash":"d0ae1e584b81c6470bec874c69019e0b4d20fa93d3b14c7ec013d1c2246863fa","provenance":{"build_id":"7fc1d1f7-a863-4742-9017-04b03c3e0fd0","built_at":"2025-09-12T02:41:58Z","builder":"EREP v2.2","tools":{"python":"3.11.8"}},"governance_links":{"acceptance_gates":"00_repo/.cbr/acceptance_gates.yaml","registry":"00_repo/.cbr/registry.json","audit_log":"00_repo/.cbr/audit_log.json"},"canonicalization":{"encoding":"utf-8","newline":"LF","sort_keys":true},"integrity":{"algo":"sha256","canonical_scope":"payload","value":"71d1da6709fb79602ffad3506c2966db7751d2e2bdcf76c12e50cf2e9bba9d8d"}}
+# ERQ-META-END
+version: 1
+vpc:
+  cidr: 10.0.0.0/16
+  subnets:
+    - name: public-a
+      cidr: 10.0.1.0/24
+    - name: private-a
+      cidr: 10.0.2.0/24
+security_groups:
+  - name: enerqis-ci
+    ingress:
+      - { port: 443, proto: tcp, src: 0.0.0.0/0 }
+    egress:
+      - { port: 443, proto: tcp, dst: 0.0.0.0/0 }
+endpoints:
+  s3: enabled
+  secrets_manager: enabled
+dns:
+  zone: enerqis.local
+policy:
+  egress_restrictions: true
+  allowed_destinations: [ s3.amazonaws.com, pypi.org, github.com ]
+tags:
+  owner: infra
+  environment: dev
+change_window:
+  day: Saturday
+  start_utc: "02:00"
+  duration_minutes: 120

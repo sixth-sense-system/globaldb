@@ -1,0 +1,67 @@
+// ERQ-META-BEGIN
+// {"canonicalization":{"encoding":"utf-8","newline":"LF","sort_keys":true},"doc_type":"artifact","governance_links":{"acceptance_gates":"00_repo/.cbr/acceptance_gates.yaml","audit_log":"00_repo/.cbr/audit_log.json","registry":"00_repo/.cbr/registry.json"},"integrity":{"algo":"sha256","canonical_scope":"payload","value":"1f04d795edc44a2dcfd1f976754803b56b53ad4dd982442e1fc53e3c1b5d7eea"},"provenance":{"build_id":"5bc21ec7-b2ed-4d6a-b331-7293242c09ff","builder":"EREP v2.2 (COMPLIANCE_ONLY)","built_at":"2025-09-12T02:04:11Z","tools":{"python":"3.11.8"}},"source_baseline_hash":"7fd01630d003c81f7ccb2de8b1160b2e79520bc59365dd6e6b0b0f67aa76d9a0","spec_version":"2.2"}
+// ERQ-META-END
+{
+  "x_erq_meta": {
+    "doc_type": "json_spec",
+    "spec_version": "2.0",
+    "source_baseline_hash": "471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb",
+    "provenance": {
+      "build_id": "08f90fe2-e173-4628-b8e0-f6e35cb02a8a",
+      "built_at": "2025-09-11T21:56:19Z",
+      "builder": "EREP v2.0",
+      "tools": {
+        "python": "3.11",
+        "hashlib": "sha256"
+      }
+    },
+    "governance_links": {
+      "acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml",
+      "registry": "00_repo/.cbr/registry.json",
+      "audit_log": "00_repo/.cbr/audit_log.json"
+    },
+    "canonicalization": {
+      "encoding": "utf-8",
+      "newline": "LF",
+      "sort_keys": true
+    },
+    "integrity": {
+      "algo": "sha256",
+      "canonical_scope": "payload",
+      "value": "6d4bfe0ae13000298bd462e87e8cedf188513c85ccf7eb16de8ddd49643fe5b9"
+    }
+  },
+  "canonicalization": {
+    "encoding": "utf-8",
+    "newline": "LF",
+    "sort_keys": true
+  },
+  "doc_type": "template_machine_manifest",
+  "governance_links": {
+    "acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml",
+    "audit_log": "00_repo/.cbr/audit_log.json",
+    "registry": "00_repo/.cbr/registry.json"
+  },
+  "integrity": {
+    "algo": "sha256",
+    "canonical_scope": "payload",
+    "value": "2036f998db955eb96a62f8c38e4cd5e5b773c804b182a09f909f96ae75866bdd"
+  },
+  "payload": {
+    "fields": [
+      "module",
+      "machine_files"
+    ]
+  },
+  "provenance": {
+    "build_id": "f7f3dd91-1786-45d1-bac4-0f565d48d93f",
+    "builder": "ENERQIS RC1c builder",
+    "built_at": "2025-09-10T00:46:55Z",
+    "tools": {
+      "hashlib": "sha256",
+      "python": "3.10"
+    }
+  },
+  "source_baseline_hash": "471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb",
+  "spec_version": "1.0"
+}
