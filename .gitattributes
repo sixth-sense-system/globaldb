@@ -1,21 +1,33 @@
-﻿# Normalize text files to LF in repo; Windows gets CRLF on checkout
-* text=auto eol=lf
+﻿# ---------- Line endings policy ----------
+# Default: normalize text in repo; LF in repo, platform EOL on checkout per rule.
+* text=auto
 
-# Scripts
-*.ps1  text eol=crlf
+# Scripts — keep LF (works on Windows PowerShell & PowerShell 7)
+*.sh   text eol=lf
+*.py   text eol=lf
+*.ps1  text eol=lf
+
+# Windows batch/cmd prefer CRLF on checkout (still LF in the repo)
 *.bat  text eol=crlf
 *.cmd  text eol=crlf
-*.sh   text eol=lf
 
-# Data / config as LF
-*.json text eol=lf
+# Data/config — keep LF for stable diffs
+*.json  text eol=lf
 *.jsonl text eol=lf
-*.yaml text eol=lf
-*.yml  text eol=lf
-*.md   text eol=lf
+*.yaml  text eol=lf
+*.yml   text eol=lf
+*.md    text eol=lf
+
+# Repo-specific (add as needed)
+*.cbot text eol=lf
 
 # Binary (never modify line endings)
 *.zip     binary
 *.parquet binary
 *.png     binary
 *.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.pdf     binary
+*.exe     binary
+*.dll     binary
