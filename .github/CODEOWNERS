@@ -1,0 +1,7 @@
+# Default owner for everything
+* @sixth-sense-system
+
+# (Examples) Tighten ownership per area later as more people join:
+# 00_repo/.cbr/**        @sixth-sense-system
+# tools/**               @sixth-sense-system
+# .github/**             @sixth-sense-system
