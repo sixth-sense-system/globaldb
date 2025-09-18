@@ -2,7 +2,11 @@
 # {"doc_type": "workflow", "spec_version": "2.0", "source_baseline_hash": "471210aae34a0cb71fa200aa901d8747e7d0e4f1b6e68781f000f4e17cc22cbb", "provenance": {"build_id": "7f0ca3e6-b6aa-4ace-b2e1-d845ffd4ae8f", "built_at": "2025-09-11T21:56:19Z", "builder": "EREP v2.0", "tools": {"python": "3.11", "hashlib": "sha256"}}, "governance_links": {"acceptance_gates": "00_repo/.cbr/acceptance_gates.yaml", "registry": "00_repo/.cbr/registry.json", "audit_log": "00_repo/.cbr/audit_log.json"}, "canonicalization": {"encoding": "utf-8", "newline": "LF", "sort_keys": true}, "integrity": {"algo": "sha256", "canonical_scope": "payload", "value": "84ea1cb2179d3d481a472252ee23d0f24f67285e8713c2db1a0bbfeee1e16b0e"}}
 # ERQ-META-END
 name: EREP v1.1
-on: [pull_request]
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
 env: { TZ: UTC }
 jobs:
   erep:
