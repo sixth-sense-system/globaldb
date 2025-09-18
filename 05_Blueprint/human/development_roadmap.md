@@ -18,39 +18,39 @@ This single canonical file contains ENERQIS layered architecture (concept → im
 
 **Phase 1.1 — Baseline Build**
 1. Establish Global Database (folder structure, human + machine mirroring)
-2. Repo & Governance (R: DevOps, A: Master Control) 
-   - Create repo skeleton, branch model, CODEOWNERS, policies, 'git' layout. 
+2. Repo & Governance (R: DevOps, A: Master Control)
+   - Create repo skeleton, branch model, CODEOWNERS, policies, 'git' layout.
    - Configure branch protection rules (require PR reviews, status checks).
-3. Secrets & Vault (R: Infrastructure, A: Governance) 
+3. Secrets & Vault (R: Infrastructure, A: Governance)
    - Provision secrets vault (HashiCorp Vault or cloud KMS).
    - Create initial secret entries (broker test keys, db test creds).
-   - Initial secrets policy, vault skeleton. 
-4. Environment & Dependencies (R: DevOps) 
+   - Initial secrets policy, vault skeleton.
+4. Environment & Dependencies (R: DevOps)
    - Create Conda/Python env spec, `requirements.txt`, `environment.yml`.
    - Pin core versions (python, pandas, pyarrow, etc).
-5. Data Ingestion v1 (R: Data) 
+5. Data Ingestion v1 (R: Data)
    - Implement `ingest.py` to pull sample historical files.
    - Validate with checksum and write into `raw/` and `processed/`.
    - Create `parquet/` baseline.
 6. CI/CD & Packaging (R: DevOps)
    - Add unit tests, packaging job (mode: `package-only`), generate manifest.json.
-- **Deliverable**: Canonical Global DB baseline repository (with human & machine files) + ingestion running locally. 
+- **Deliverable**: Canonical Global DB baseline repository (with human & machine files) + ingestion running locally.
 
 **Phase 1.2 — Core cBots**
-1. cBot Skeletons & Backtest Harness (R: Strategies) 
+1. cBot Skeletons & Backtest Harness (R: Strategies)
    - Define strategies to move forward with (including "market energy" strats).
-   - Create cBot templates with risk hooks & config manifests. 
+   - Create cBot templates with risk hooks & config manifests.
    - Run local backtests; store results with dataset + config hashes.
 2. Log & Parity
-   - Integrate logging and JSONL audit trails. 
-   - Local backtest harness and parity test scaffolding. 
-- **Deliverable**: Reproducible cBot prototypes with backtest reports and artifacts. 
+   - Integrate logging and JSONL audit trails.
+   - Local backtest harness and parity test scaffolding.
+- **Deliverable**: Reproducible cBot prototypes with backtest reports and artifacts.
 
 **Phase 1.3 — Ops & Deployment**
-1. Monitoring & Ops (R: Ops) 
+1. Monitoring & Ops (R: Ops)
    - Deploy minimal Grafana dashboards and alerting for ingestion latency, job failures, errors.
-   - Validate packaging SOP end-to-end (package-only flow). 
-   - Paper-trading adapters integrated. 
+   - Validate packaging SOP end-to-end (package-only flow).
+   - Paper-trading adapters integrated.
 - **Deliverable**: Paper trading cycle + operational playbooks.
 
 ---
@@ -63,42 +63,42 @@ This single canonical file contains ENERQIS layered architecture (concept → im
 - **Deliverable**: Python parity prototypes.
 
 **Phase 2.2 — Validation & Feature Store**
-- Implement purged CV pipeline and walk-forward harness.  
-- Parameter-search automation (grid/SMBO skeleton).  
-- Feature Store & Experiment Tracking (Parquet feature store, dataset hashing, MLflow-like experiment tracking, metadata).  
+- Implement purged CV pipeline and walk-forward harness.
+- Parameter-search automation (grid/SMBO skeleton).
+- Feature Store & Experiment Tracking (Parquet feature store, dataset hashing, MLflow-like experiment tracking, metadata).
 - **Deliverable**: Feature store + validated experiments with tracked artifacts.
 
 **Phase 2.3 — Expansion**
-- Multi-market Python strategies and parameter baselines.  
-- Add equities, futures, crypto connectors; expand normalization rules.  
-- Early portfolio-level aggregation logic.  
-- **Deliverable**: Diversified strategy set ready for sandbox experiments with reproducible experiment manifests.  
+- Multi-market Python strategies and parameter baselines.
+- Add equities, futures, crypto connectors; expand normalization rules.
+- Early portfolio-level aggregation logic.
+- **Deliverable**: Diversified strategy set ready for sandbox experiments with reproducible experiment manifests.
 
 ---
 
 ### Stage 3 — AI Orchestration & Adaptation (9–24 months)
 
 **Phase 3.1 — Meta-Models**
-- Build embedding pipelines for news, features, and market snapshots.  
-- Strategy-selection meta-model training pipeline (supervised models, sandbox deployment).  
+- Build embedding pipelines for news, features, and market snapshots.
+- Strategy-selection meta-model training pipeline (supervised models, sandbox deployment).
 - **Deliverable**: Ensemble selection prototypes.
 
 **Phase 3.2 — Advisory AI**
-- LLM ensemble advisor (grounding, provenance) + advisory layers.  
-- Agentic gating layer (explicit human approval for any auto-trade decision).  
-- **Deliverable**: Advisory system in sandbox + evaluation dashboards.  
+- LLM ensemble advisor (grounding, provenance) + advisory layers.
+- Agentic gating layer (explicit human approval for any auto-trade decision).
+- **Deliverable**: Advisory system in sandbox + evaluation dashboards.
 
 ---
 
 ### Stage 4 — Productionization (24–36 months)
-- Harden execution (latency SLAs, slippage model).  
-- Blue/green deployment templates, project runbooks.  
-- Risk automation: automated shutdowns, capital throttles.  
-- **Deliverable**: Live limited-capital deployments under governance.  
+- Harden execution (latency SLAs, slippage model).
+- Blue/green deployment templates, project runbooks.
+- Risk automation: automated shutdowns, capital throttles.
+- **Deliverable**: Live limited-capital deployments under governance.
 
 ---
 
 ### Stage 5 — Scale & Diversify (36+ months)
-- Multi-asset pools and portfolio optimizer.  
-- Full governance board + compliance review cadence.  
+- Multi-asset pools and portfolio optimizer.
+- Full governance board + compliance review cadence.
 - **Deliverable**: Mature AI trading portfolio and governance.

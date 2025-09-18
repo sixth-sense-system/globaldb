@@ -22,4 +22,4 @@ Standardized templates for designing, documenting, and executing experiments.
 ## Guidelines
 - All experiments must use the template to ensure consistency
 - Templates should link to associated datasets and AI models
-- Any deviations must be documented in the Master Research Log 
+- Any deviations must be documented in the Master Research Log

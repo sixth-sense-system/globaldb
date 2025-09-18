@@ -3,7 +3,7 @@
 # ERQ-META-END
 # Packaging Policy — Master Control Module
 
-**Purpose**  
+**Purpose**
 To codify strict workflows preventing drift, paraphrasing, or truncation during rebuild, packaging, or synthesis.
 
 ---
@@ -11,38 +11,38 @@ To codify strict workflows preventing drift, paraphrasing, or truncation during 
 ## ✦ Workflows
 
 ### 1. Rebuild Workflow (Canonical Compilation)
-- Compiles full Global DB exactly as is (all human + machine files).  
-- No paraphrasing or rewording.  
-- Scope includes every module and subfolder.  
-- Baseline locked upon confirmation.  
+- Compiles full Global DB exactly as is (all human + machine files).
+- No paraphrasing or rewording.
+- Scope includes every module and subfolder.
+- Baseline locked upon confirmation.
 
-**Optimal Prompt**  
+**Optimal Prompt**
 > "Rebuild ENERQIS Global Database using Rebuild Workflow (canonical compilation). Compile entire DB verbatim, including all human and machine files, preserving canonical text without paraphrasing."
 
 ---
 
 ### 2. Packaging Workflow (Export / ZIP Creation)
-- Executed only when explicitly requested.  
-- Uses latest confirmed canonical baseline.  
-- Output = ZIP with full hierarchy, integrity verified.  
-- No new content added.  
+- Executed only when explicitly requested.
+- Uses latest confirmed canonical baseline.
+- Output = ZIP with full hierarchy, integrity verified.
+- No new content added.
 
-**Optimal Prompt**  
+**Optimal Prompt**
 > "Package ENERQIS Global Database using Packaging Workflow. Use latest canonical rebuild verbatim. Export as ZIP with full hierarchy and validation."
 
 ---
 
 ### 3. Synthesize Workflow (Data Integration & Expansion)
-- Additive updates only; never overwrite canonical text.  
-- Scope = new research, experiments, or operational updates.  
-- Confirmation locks new baseline.  
+- Additive updates only; never overwrite canonical text.
+- Scope = new research, experiments, or operational updates.
+- Confirmation locks new baseline.
 
-**Optimal Prompt**  
+**Optimal Prompt**
 > "Synthesize ENERQIS Global Database with latest updates using Synthesize Workflow. Append new information without altering canonical content."
 
 ---
 
 ## ✦ Validation
-- No stubs, truncations, or placeholders.  
-- All files must be complete and structurally correct.  
+- No stubs, truncations, or placeholders.
+- All files must be complete and structurally correct.
 - SHA-256 manifest recommended for packaging.

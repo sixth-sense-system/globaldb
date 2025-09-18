@@ -24,4 +24,3 @@ Authoritative 30–60–90 day plan with KPIs, gates, and owners. Updates weekly
 - PIT correctness, schema locks, acceptance gates
 - CI green; pre-commit enforced
 - Editorial synthesis via patch/PR only
-

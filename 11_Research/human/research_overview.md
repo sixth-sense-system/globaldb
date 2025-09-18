@@ -17,4 +17,4 @@ The Research module centralizes all investigative work, experimentation, and kno
 1. Maintain a single source of truth for research findings
 2. Standardize experiment recording and documentation
 3. Support reproducibility and versioning
-4. Bridge research insights into operational strategies 
+4. Bridge research insights into operational strategies

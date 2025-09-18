@@ -23,4 +23,4 @@ The architecture follows a modular, layered design:
    - Integrates observability and error handling
 
 5. **Integration Layer**
-   - Connects AI outputs to System execution, Research insights, and Market data 
+   - Connects AI outputs to System execution, Research insights, and Market data

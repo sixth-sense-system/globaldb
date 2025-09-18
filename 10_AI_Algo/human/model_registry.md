@@ -18,4 +18,4 @@ Centralized registry for all AI models, ensuring traceability, version control, 
 ## Guidelines
 - All models must be registered prior to training or deployment
 - Each entry requires a unique Model ID
-- Changes in architecture, hyperparameters, or datasets must trigger a new version 
+- Changes in architecture, hyperparameters, or datasets must trigger a new version

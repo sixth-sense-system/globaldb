@@ -3,35 +3,35 @@
 # ERQ-META-END
 # News & Intelligence — Master Control Module
 
-**Purpose**  
+**Purpose**
 Define ingestion, normalization, and usage of external intelligence (news, filings, calendars) within ENERQIS.
 
 ---
 
 ## ✦ Sources
-- Economic calendars (e.g., FOMC, NFP, CPI)  
-- SEC/EDGAR filings (10-K, 8-K)  
-- Market-moving news feeds (curated, timestamped)  
-- Alternative data (social signals, industry news, etc.)  
+- Economic calendars (e.g., FOMC, NFP, CPI)
+- SEC/EDGAR filings (10-K, 8-K)
+- Market-moving news feeds (curated, timestamped)
+- Alternative data (social signals, industry news, etc.)
 
 ---
 
 ## ✦ Ingestion Rules
-- Timestamp alignment → always UTC  
-- Deduplication → hash-based canonical storage  
-- Raw text stored sparsely → embeddings cached for queries  
-- Grounding → every LLM inference tied to explicit source IDs  
+- Timestamp alignment → always UTC
+- Deduplication → hash-based canonical storage
+- Raw text stored sparsely → embeddings cached for queries
+- Grounding → every LLM inference tied to explicit source IDs
 
 ---
 
 ## ✦ Usage
-- **Research**: Detecting sentiment shifts and regime context.  
-- **Trading**: Signal gating (only act if spectral or price triggers align).  
-- **Risk Management**: Event-risk filters to suppress exposure ahead of known catalysts.  
+- **Research**: Detecting sentiment shifts and regime context.
+- **Trading**: Signal gating (only act if spectral or price triggers align).
+- **Risk Management**: Event-risk filters to suppress exposure ahead of known catalysts.
 
 ---
 
 ## ✦ Safeguards
-- No direct LLM-to-trade linkage; all intelligence passes through human or statistical validation.  
-- Bias detection: monitor for over-representation of certain outlets.  
+- No direct LLM-to-trade linkage; all intelligence passes through human or statistical validation.
+- Bias detection: monitor for over-representation of certain outlets.
 - Integrity: Store SHA-256 checksums of ingested data.

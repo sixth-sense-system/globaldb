@@ -25,18 +25,18 @@ Identify current gaps in ENERQIS systems, AI models, data coverage, and market u
 
 ## Process
 - Each identified gap logged in the Master Research Log
-- Assign research lead, expected deliverables, and timeline 
+- Assign research lead, expected deliverables, and timeline
 
 
 ### Integrity & Audit Automation (Tracking ID: FUT-IA-001)
 
-**Description:**  
+**Description:**
 Automate the logging and verification of SHA-256 manifest confirmations and other integrity checkpoints across ENERQIS_GlobalDB. This includes generating standardized JSON audit entries (timestamp, operator, hash, notes) for each confirmation event and running periodic integrity checks.
 
-**Rationale:**  
+**Rationale:**
 Ensures tamper-evidence, traceability, and compliance at scale without manual steps. Supports enterprise-grade auditability of all module manifests and project manifests.
 
-**Next Steps:**  
+**Next Steps:**
 - Design an automated job (CI or scheduled script) to capture confirmations.
 - Define the storage location and retention policy for these audit logs.
 - When approved, migrate implementation details into `13_OpsLog` (procedures/runbooks) and `tools/ci` (scripts) and update governance docs accordingly.

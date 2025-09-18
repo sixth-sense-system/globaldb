@@ -17,4 +17,4 @@ Standardized pipeline for model inference and signal generation.
 ## Requirements
 - Real-time and batch inference support
 - Fault tolerance and fallback mechanisms
-- Compatibility with multiple models concurrently 
+- Compatibility with multiple models concurrently

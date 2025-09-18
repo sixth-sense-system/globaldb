@@ -3,7 +3,7 @@
 # ERQ-META-END
 # ENERQIS Global Database (GlobalDB)
 
-The ENERQIS GlobalDB is the **authoritative central repository** for the ENERQIS ecosystem.  
+The ENERQIS GlobalDB is the **authoritative central repository** for the ENERQIS ecosystem.
 It provides a unified, structured, and canonical baseline of all modules, policies, strategies, theories, and technical assets across the project.
 
 ## Purpose
@@ -27,4 +27,4 @@ The GlobalDB is organized into modules (`01_MasterControl` through `13_OpsLog` a
 ## Related Resources
 - [CONTRIBUTING.md](./CONTRIBUTING.md)
 - [CODEOWNERS](./CODEOWNERS)
-- [LICENSE](./LICENSE) 
+- [LICENSE](./LICENSE)

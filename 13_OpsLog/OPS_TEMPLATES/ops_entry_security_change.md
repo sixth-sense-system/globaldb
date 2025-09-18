@@ -1,6 +1,6 @@
 # CHANGE: Security — <short change>
-**Date:** 2025-09-16 16:09  
-**Scope:** repo/modules affected  
+**Date:** 2025-09-16 16:09
+**Scope:** repo/modules affected
 **Risk & Rollback:** <one-liner risk>; rollback: <steps>
 
 ## Change summary

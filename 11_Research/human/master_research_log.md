@@ -19,4 +19,4 @@ Comprehensive, append-only record of all research activities, experiments, and o
 
 ## Policy
 - Must be updated immediately after each research task or experiment
-- Maintains versioning and audit trail for all entries 
+- Maintains versioning and audit trail for all entries

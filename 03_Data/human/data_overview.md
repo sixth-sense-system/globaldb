@@ -3,7 +3,7 @@
 # ERQ-META-END
 # 03_Data — Data Layer Overview
 
-**Purpose:**  
+**Purpose:**
 The Data Layer of ENERQIS serves as the foundation for all quantitative, qualitative, and operational data. It ensures structured, validated, and traceable data flows into the feature store, research layer, and downstream modules.
 
 ## ✦ Core Principles

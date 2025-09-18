@@ -20,4 +20,4 @@ This document tracks files, modules, or scripts that have been removed, replaced
 | File/Module          | Reason for Deprecation         | Replacement                  | Date Deprecated | Notes |
 |---------------------|-------------------------------|------------------------------|----------------|-------|
 | old_market_data.csv  | Outdated schema               | market_data.json             | 2025-08-15     | Replaced with canonical JSON format |
-| legacy_cBot_v1.cbot  | Superseded by cBot_SimpleMA  | prototype_strategies/cBot_SimpleMA.cbot | 2025-08-20 | Deprecated experimental bot | 
+| legacy_cBot_v1.cbot  | Superseded by cBot_SimpleMA  | prototype_strategies/cBot_SimpleMA.cbot | 2025-08-20 | Deprecated experimental bot |

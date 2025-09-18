@@ -14,4 +14,4 @@ The OpsLog module documents daily operational activities, key events, and workfl
 ## Structure
 - Daily human Ops Log (append-only)
 - Machine logs for automated activity tracking
-- Escalation and resolution records 
+- Escalation and resolution records

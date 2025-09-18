@@ -36,19 +36,19 @@ Provides reproducibility and version control:
 ---
 
 ## Macro Drivers in Strategy Design
-Strategies must reflect structural forces shaping asset classes.  
+Strategies must reflect structural forces shaping asset classes.
 Macro inputs such as **interest rate regimes, inflationary cycles, and monetary policy shifts** guide directional biases, volatility expectations, and portfolio allocations.
 
 ---
 
 ## Market Dynamics in System Logic
-Market microstructure (order flow, liquidity pockets, volatility clustering) is integrated into rule design.  
+Market microstructure (order flow, liquidity pockets, volatility clustering) is integrated into rule design.
 System triggers must align with observed dynamics like **trending vs. mean-reverting phases, liquidity shocks, and intraday volume distributions**.
 
 ---
 
 ## Behavioral Models in Trading Systems
-Trader psychology and mass behavioral effects create predictable inefficiencies.  
+Trader psychology and mass behavioral effects create predictable inefficiencies.
 Anchoring bias, overreaction, and herding behavior manifest in price structure, forming exploitable strategy edges.
 
 ---

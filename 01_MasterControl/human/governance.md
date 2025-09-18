@@ -3,53 +3,53 @@
 # ERQ-META-END
 # Governance — Master Control Module
 
-**Purpose**  
+**Purpose**
 To define how authority, accountability, and safeguards are enforced within ENERQIS, ensuring all modules operate under consistent and auditable rules.
 
 ---
 
 ## ✦ Core Governance Principles
-1. **Canonical Baseline**  
-   - Once a rebuild or synthesis is confirmed, that state becomes the immutable reference.  
+1. **Canonical Baseline**
+   - Once a rebuild or synthesis is confirmed, that state becomes the immutable reference.
    - All packaging and exports must derive from the last confirmed baseline.
 
-2. **Auditability**  
-   - Every action—data ingestion, code update, synthesis—produces a log entry.  
+2. **Auditability**
+   - Every action—data ingestion, code update, synthesis—produces a log entry.
    - Entries are immutable; edits create append-only corrections.
 
-3. **Authority**  
-   - **Operator-in-Loop** approval required for production changes.  
+3. **Authority**
+   - **Operator-in-Loop** approval required for production changes.
    - AI/LLM modules run in advisory-only mode unless explicitly authorized.
 
-4. **Risk Gating**  
-   - All new strategies must pass:  
-     - Walk-forward OOS validation  
-     - Stress-testing (tail risk, regime shifts)  
-     - Compliance with system-level drawdown and exposure caps  
+4. **Risk Gating**
+   - All new strategies must pass:
+     - Walk-forward OOS validation
+     - Stress-testing (tail risk, regime shifts)
+     - Compliance with system-level drawdown and exposure caps
 
 ---
 
 ## ✦ Roles & Responsibilities
-- **Chief Operator** — owns baseline confirmation and packaging approval.  
-- **Researcher** — ingests and synthesizes new research or experiments.  
-- **System Maintainer** — manages infrastructure, metrics, validation logs.  
+- **Chief Operator** — owns baseline confirmation and packaging approval.
+- **Researcher** — ingests and synthesizes new research or experiments.
+- **System Maintainer** — manages infrastructure, metrics, validation logs.
 - **Audit AI** — runs validation sweeps and integrity checks.
 
 ---
 
 ## ✦ Decision Protocols
-- **Rebuild Request** → Compiles entire database (verbatim).  
-- **Packaging Request** → Produces ZIP export, never adds new data.  
-- **Synthesis Request** → Expands with new research/updates (additive only).  
+- **Rebuild Request** → Compiles entire database (verbatim).
+- **Packaging Request** → Produces ZIP export, never adds new data.
+- **Synthesis Request** → Expands with new research/updates (additive only).
 
 ---
 
 ## ✦ Escalation
-- Any detected drift (unexpected content differences, truncations, paraphrasing) → immediate halt of automation.  
-- Manual review, rollback to last confirmed canonical baseline.  
+- Any detected drift (unexpected content differences, truncations, paraphrasing) → immediate halt of automation.
+- Manual review, rollback to last confirmed canonical baseline.
 
 ---
 
 ## ✦ Linked Policies
-- See `packaging_policy.md` for strict rebuild/packaging/synthesis workflows.  
+- See `packaging_policy.md` for strict rebuild/packaging/synthesis workflows.
 - See `operational_guidelines.md` for live execution safety rules.

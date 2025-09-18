@@ -13,4 +13,4 @@ An append-only human-readable log documenting daily operational events, incident
 ## Guidelines
 - Each entry must include all fields
 - No deletion of previous entries; corrections appended as new lines
-- Synchronize with machine-generated ops_activity.log for verification 
+- Synchronize with machine-generated ops_activity.log for verification

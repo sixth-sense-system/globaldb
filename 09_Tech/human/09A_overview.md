@@ -3,7 +3,7 @@
 # ERQ-META-END
 # Module 09_Tech Overview
 
-Provides a complete view of the technology, tools, and processes supporting ENERQIS. 
+Provides a complete view of the technology, tools, and processes supporting ENERQIS.
 Covers architecture, integrations, environment, security, and operational standards.
 
 ## Key Objectives

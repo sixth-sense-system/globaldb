@@ -18,4 +18,4 @@ The AI Engine module defines the core intelligence layer of ENERQIS. It manages 
 2. Experiment tracking
 3. Training orchestration
 4. Inference and prediction pipelines
-5. Safety and risk enforcement 
+5. Safety and risk enforcement

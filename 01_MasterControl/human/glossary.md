@@ -8,23 +8,23 @@ This glossary defines critical ENERQIS terminology to ensure precision and consi
 ---
 
 ## ✦ Core Terms
-- **Canonical Baseline**: The last user-confirmed rebuild or synthesis, serving as the single source of truth.  
-- **Rebuild**: Verbatim compilation of the Global DB; no new text or paraphrasing allowed.  
-- **Packaging**: Export of canonical DB into ZIP form; structure only, no synthesis.  
-- **Synthesis**: Additive integration of new research, experiments, or data.  
+- **Canonical Baseline**: The last user-confirmed rebuild or synthesis, serving as the single source of truth.
+- **Rebuild**: Verbatim compilation of the Global DB; no new text or paraphrasing allowed.
+- **Packaging**: Export of canonical DB into ZIP form; structure only, no synthesis.
+- **Synthesis**: Additive integration of new research, experiments, or data.
 
 ---
 
 ## ✦ Trading & Research
-- **Parity**: Functional equivalence of strategies across platforms (e.g., cBot vs Python).  
-- **Walk-forward Testing**: Rolling validation ensuring robustness across time regimes.  
-- **Grounded Sentiment**: LLM-based output with attached provenance (source, time, hash).  
-- **Spectral Energy**: Quantified frequency-domain intensity used for breakout detection.  
+- **Parity**: Functional equivalence of strategies across platforms (e.g., cBot vs Python).
+- **Walk-forward Testing**: Rolling validation ensuring robustness across time regimes.
+- **Grounded Sentiment**: LLM-based output with attached provenance (source, time, hash).
+- **Spectral Energy**: Quantified frequency-domain intensity used for breakout detection.
 
 ---
 
 ## ✦ Governance & Operations
-- **Operator-in-Loop**: Human approval required for live-trading actions.  
-- **Append-Only Log**: Immutable audit structure, no overwrites permitted.  
-- **Risk Gate**: Validation checkpoint preventing unsafe deployments.  
+- **Operator-in-Loop**: Human approval required for live-trading actions.
+- **Append-Only Log**: Immutable audit structure, no overwrites permitted.
+- **Risk Gate**: Validation checkpoint preventing unsafe deployments.
 - **Manifest**: JSON-based machine file describing version, hashes, and file integrity.

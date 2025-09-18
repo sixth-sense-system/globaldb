@@ -11,4 +11,4 @@ Each entry is tied to a CBR update.
 ## [Unreleased]
 - Initial canonical baseline established.
 - Placeholder machine file hashes registered.
-- Module 00 human files authored with enterprise-ready content. 
+- Module 00 human files authored with enterprise-ready content.

@@ -23,4 +23,4 @@ Define enterprise-grade protocols for AI model training:
    - Evaluate against multiple metrics
 
 5. **Reproducibility**
-   - All runs must be fully reproducible from model registry and dataset hash 
+   - All runs must be fully reproducible from model registry and dataset hash

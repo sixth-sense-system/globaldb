@@ -3,7 +3,7 @@
 # ERQ-META-END
 # 03_Data — Ingestion Policy
 
-**Purpose:**  
+**Purpose:**
 Defines rules, procedures, and protocols for importing data into ENERQIS.
 
 ## ✦ Scope

@@ -4,7 +4,7 @@
 # Module 05: Blueprint Overview
 
 ## Purpose
-Module 05 defines the **structural architecture, roadmap, sprints, tasking, and integration design** of ENERQIS.   
+Module 05 defines the **structural architecture, roadmap, sprints, tasking, and integration design** of ENERQIS.
 It translates **vision into structure**, ensuring enterprise-level clarity in design, milestones, and execution.
 
 ## Role within ENERQIS

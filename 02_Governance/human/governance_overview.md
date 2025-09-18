@@ -5,7 +5,7 @@
 
 **Canonical Baseline**
 
-This module defines the governance architecture for ENERQIS, ensuring transparent control, accountability, and safe expansion of the Global Database. Governance policies separate duties, define authorities, and set access restrictions.  
+This module defines the governance architecture for ENERQIS, ensuring transparent control, accountability, and safe expansion of the Global Database. Governance policies separate duties, define authorities, and set access restrictions.
 
 Key domains:
 - **Access Control** — role-based permissions and security enforcement.

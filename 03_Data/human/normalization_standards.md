@@ -3,7 +3,7 @@
 # ERQ-META-END
 # 03_Data — Normalization Standards
 
-**Purpose:**  
+**Purpose:**
 Standardize and normalize all datasets to ensure consistency and usability across ENERQIS.
 
 ## ✦ Rules

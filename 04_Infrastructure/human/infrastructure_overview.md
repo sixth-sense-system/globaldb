@@ -3,7 +3,7 @@
 # ERQ-META-END
 # 04_Infrastructure — Overview
 
-**Purpose:**  
+**Purpose:**
 Provides a detailed view of the infrastructure backbone supporting ENERQIS operations, including compute, storage, networking, and monitoring systems.
 
 ## ✦ Core Components

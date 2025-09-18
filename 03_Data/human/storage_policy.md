@@ -3,7 +3,7 @@
 # ERQ-META-END
 # 03_Data — Storage Policy
 
-**Purpose:**  
+**Purpose:**
 Define storage conventions for all data within ENERQIS.
 
 ## ✦ Storage Architecture

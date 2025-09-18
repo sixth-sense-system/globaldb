@@ -25,6 +25,6 @@
 - G-EDIT-DIFF · G-EDIT-SCOPE · G-EDIT-APPROVAL · G-EDIT-SOURCE · G-HUMAN-QUALITY
 
 ## Use
-1) Put JSON at `00_repo/.cbr/erep_policy.json` (replace).  
-2) Put this MD at `02_Governance/human/EREP_v2.3.2_Editorial_Addendum.md`.  
+1) Put JSON at `00_repo/.cbr/erep_policy.json` (replace).
+2) Put this MD at `02_Governance/human/EREP_v2.3.2_Editorial_Addendum.md`.
 3) Run EREP FULL. Review redlines/proposals, then approve & re-run to apply.

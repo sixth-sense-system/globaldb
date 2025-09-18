@@ -58,33 +58,33 @@ This document defines the system-wide quantitative frameworks for **risk managem
 
 Risk is controlled at three levels:
 
-- **Position Level**  
-  Stop placement, position sizing, asymmetric payoffs.  
+- **Position Level**
+  Stop placement, position sizing, asymmetric payoffs.
 
-- **System Level**  
-  Drawdown controls, regime filters, capital allocation rules.  
+- **System Level**
+  Drawdown controls, regime filters, capital allocation rules.
 
-- **Portfolio Level**  
-  Correlation management, stress testing, capital rotation.  
+- **Portfolio Level**
+  Correlation management, stress testing, capital rotation.
 
 Frameworks integrate **probabilistic expectancy** with **robust capital preservation**.
 
 ---
 
 ## 4. Portfolio Construction
-- Capital allocated via risk-weighted models.  
-- Correlation and volatility-based optimization ensure diversification.  
-- Dynamic sizing across assets adjusts to regime changes.  
+- Capital allocated via risk-weighted models.
+- Correlation and volatility-based optimization ensure diversification.
+- Dynamic sizing across assets adjusts to regime changes.
 
 ---
 
 ## 5. Risk Governance
-- Risk limits codified and enforced at engine level.  
-- Independent validation of system risk assumptions.  
-- Continuous stress testing against tail events.  
+- Risk limits codified and enforced at engine level.
+- Independent validation of system risk assumptions.
+- Continuous stress testing against tail events.
 
 ---
 
 ### References
 - System-wide risk thresholds and allocation rules are referenced by all strategies.
-- Updates to this file require Ops approval and integration with `execution_framework.md`. 
+- Updates to this file require Ops approval and integration with `execution_framework.md`.

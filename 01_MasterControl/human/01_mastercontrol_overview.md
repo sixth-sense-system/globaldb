@@ -27,8 +27,8 @@ ENERQIS is an enterprise-grade AI Trading Engine that blends robust, interpretab
 ---
 
 ## ✦ Purpose
-The Master Control file acts as the **root control center** of the ENERQIS Global Database.  
-It integrates strategy, research, infrastructure, and operations into a unified architecture.  
+The Master Control file acts as the **root control center** of the ENERQIS Global Database.
+It integrates strategy, research, infrastructure, and operations into a unified architecture.
 All other modules inherit structural guidance, formatting, and canonical rules from this file.
 
 ---
@@ -88,6 +88,6 @@ All other modules inherit structural guidance, formatting, and canonical rules f
 ---
 
 ## ✦ How to Navigate This Module
-Each human file is mirrored by machine artifacts.  
-See `machine/manifest.json` and per-section `index.json`.  
+Each human file is mirrored by machine artifacts.
+See `machine/manifest.json` and per-section `index.json`.
 Start with `roadmap_blueprint.md` for step-by-step operational guidance.

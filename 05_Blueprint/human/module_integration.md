@@ -4,44 +4,44 @@
 # Module 05 — Module Integration Protocols
 
 ## Purpose
-Defines **interconnections** between Module 05 (Blueprint) and all other ENERQIS modules.  
+Defines **interconnections** between Module 05 (Blueprint) and all other ENERQIS modules.
 This ensures that design decisions are **system-wide**, not isolated.
 
 ---
 
 ## Integration Rules
-1. **Single Source of Truth**  
-   - Architecture, roadmap, and execution blueprints live in Module 05.  
-   - Other modules may reference but not redefine these structures.  
+1. **Single Source of Truth**
+   - Architecture, roadmap, and execution blueprints live in Module 05.
+   - Other modules may reference but not redefine these structures.
 
-2. **Dependency Mapping**  
-   - Every task in Roadmap must explicitly map dependencies across:  
-     - Data Layer  
-     - AI/Algo  
-     - Infra  
-     - Market  
-     - Theory  
-     - Research  
-     - Future  
+2. **Dependency Mapping**
+   - Every task in Roadmap must explicitly map dependencies across:
+     - Data Layer
+     - AI/Algo
+     - Infra
+     - Market
+     - Theory
+     - Research
+     - Future
 
-3. **Canonical Sync**  
-   - Each confirmed update in Module 05 propagates to all dependent modules via Packaging/Rebuild workflow.  
+3. **Canonical Sync**
+   - Each confirmed update in Module 05 propagates to all dependent modules via Packaging/Rebuild workflow.
 
 ---
 
 ## Cross-Module Responsibilities
-- **Data Layer** → Provides structured, normalized datasets into which Roadmap tasks feed.  
-- **AI/Algo** → Consumes Roadmap direction for strategy building, backtesting, ML/AI evolution.  
-- **Infra** → Implements CI/CD, vaults, monitoring, deployment standards.  
-- **Market** → Supplies market-specific intelligence for Roadmap-driven experiments.  
-- **Theory** → Anchors Roadmap tasks in conceptual models.  
-- **Research** → Extends external knowledge into Roadmap.  
-- **Future** → Captures unbuilt opportunities not yet staged in Roadmap.  
+- **Data Layer** → Provides structured, normalized datasets into which Roadmap tasks feed.
+- **AI/Algo** → Consumes Roadmap direction for strategy building, backtesting, ML/AI evolution.
+- **Infra** → Implements CI/CD, vaults, monitoring, deployment standards.
+- **Market** → Supplies market-specific intelligence for Roadmap-driven experiments.
+- **Theory** → Anchors Roadmap tasks in conceptual models.
+- **Research** → Extends external knowledge into Roadmap.
+- **Future** → Captures unbuilt opportunities not yet staged in Roadmap.
 
 ---
 
 ## Governance
-- Integration changes must be reviewed by Governance Board before canonical confirmation.  
+- Integration changes must be reviewed by Governance Board before canonical confirmation.
 - Conflicts resolved at **Blueprint level**; downstream modules adjust accordingly.
 
 ---

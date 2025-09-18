@@ -21,4 +21,4 @@ Define operational rules, responsibilities, and best practices to ensure smooth 
 
 4. **Compliance**
    - Adhere to governance and security guidelines
-   - Maintain confidentiality of sensitive operational data 
+   - Maintain confidentiality of sensitive operational data

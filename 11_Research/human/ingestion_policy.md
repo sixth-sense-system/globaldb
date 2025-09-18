@@ -25,4 +25,4 @@ Defines enterprise-standard procedures for ingesting datasets into the Research 
 
 5. **Access Control**
    - Restricted access based on role and project needs
-   - All ingestion events logged 
+   - All ingestion events logged

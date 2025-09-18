@@ -19,4 +19,4 @@ Define the metrics used to evaluate AI model performance and reliability.
    - Sensitivity analysis
 
 4. **Reproducibility**
-   - Consistency of results across repeated runs 
+   - Consistency of results across repeated runs

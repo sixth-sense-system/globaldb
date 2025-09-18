@@ -3,41 +3,41 @@
 # ERQ-META-END
 # Operational Guidelines — Master Control Module
 
-**Purpose**  
+**Purpose**
 To define daily operational discipline for ENERQIS to ensure safety, consistency, and compliance.
 
 ---
 
 ## ✦ Daily Operator Checklist
 1. **Morning Ops**
-   - Sync latest canonical baseline.  
-   - Verify data freshness (overnight ETL).  
-   - Run integrity check on manifests.  
+   - Sync latest canonical baseline.
+   - Verify data freshness (overnight ETL).
+   - Run integrity check on manifests.
 
 2. **Research Ops**
-   - Ingest new data or news into research log.  
-   - Run controlled experiments only in sandbox.  
-   - If synthesis needed → request explicitly.  
+   - Ingest new data or news into research log.
+   - Run controlled experiments only in sandbox.
+   - If synthesis needed → request explicitly.
 
 3. **Trading Ops**
-   - Verify system state vs canonical config.  
-   - Confirm strategy manifests are parity-checked.  
-   - Approve or reject pending live deployments.  
+   - Verify system state vs canonical config.
+   - Confirm strategy manifests are parity-checked.
+   - Approve or reject pending live deployments.
 
 4. **Packaging**
-   - Trigger only if external export is required.  
-   - Validate output against canonical baseline.  
+   - Trigger only if external export is required.
+   - Validate output against canonical baseline.
 
 ---
 
 ## ✦ Safeguards
-- **No Auto-Deploy**: Live changes require operator-in-loop approval.  
-- **Red-Team Harness**: Simulate prompt injection, exfiltration, or adversarial ML before enabling new AI workflows.  
-- **Rollback**: Always possible to revert to prior canonical baseline.  
+- **No Auto-Deploy**: Live changes require operator-in-loop approval.
+- **Red-Team Harness**: Simulate prompt injection, exfiltration, or adversarial ML before enabling new AI workflows.
+- **Rollback**: Always possible to revert to prior canonical baseline.
 
 ---
 
 ## ✦ Escalation Procedures
-- **Minor Drift**: Flag, log, confirm with operator.  
-- **Critical Drift (content mismatch, truncation, rephrasing)**: Halt system, rollback, require human review.  
+- **Minor Drift**: Flag, log, confirm with operator.
+- **Critical Drift (content mismatch, truncation, rephrasing)**: Halt system, rollback, require human review.
 - **Operational Failure**: Escalate to Chief Operator; restore from last packaging export.

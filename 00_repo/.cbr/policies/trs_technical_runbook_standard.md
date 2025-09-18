@@ -1,6 +1,6 @@
 # Technical Runbook Standard (TRS) — v1.0
-**Date:** 2025-09-16 16:09  
-**Owner:** ENERQIS Ops  
+**Date:** 2025-09-16 16:09
+**Owner:** ENERQIS Ops
 **Status:** Active
 
 ## Purpose

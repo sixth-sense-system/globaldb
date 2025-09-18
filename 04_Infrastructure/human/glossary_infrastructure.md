@@ -3,9 +3,9 @@
 # ERQ-META-END
 # Infrastructure Glossary
 
-**VLAN:** Virtual Local Area Network.  
-**GPU Cluster:** Group of GPUs working together for high-performance computation.  
-**Parquet:** Columnar storage file format optimized for analytics.  
-**RBAC:** Role-Based Access Control.  
-**Ops/Log:** Operations & Log module (Module 13) for auditing and monitoring.  
+**VLAN:** Virtual Local Area Network.
+**GPU Cluster:** Group of GPUs working together for high-performance computation.
+**Parquet:** Columnar storage file format optimized for analytics.
+**RBAC:** Role-Based Access Control.
+**Ops/Log:** Operations & Log module (Module 13) for auditing and monitoring.
 **Manifest.json:** Machine-readable record of dataset and file hashes.

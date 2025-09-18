@@ -30,4 +30,4 @@ ENERQIS operates at enterprise-level standards. Contributions must comply with *
 - Final approval lies with **MasterControl** module governance.
 
 ## Confidentiality
-- No information from ENERQIS GlobalDB may be published externally. 
+- No information from ENERQIS GlobalDB may be published externally.

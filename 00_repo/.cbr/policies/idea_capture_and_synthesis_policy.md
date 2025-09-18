@@ -21,8 +21,8 @@ Make human knowledge a first‑class ingestion stream, governed like any dataset
 
 ## Inputs (accepted formats)
 - CSV/MD backlog files (current canonical pair).
-- `.md` / `.txt` idea dumps:  
-  - **CAPTURE line**: `[Theme]|Type|Priority|Title — one-line description`  
+- `.md` / `.txt` idea dumps:
+  - **CAPTURE line**: `[Theme]|Type|Priority|Title — one-line description`
   - **Card**:
     ```
     ### Title
@@ -64,22 +64,22 @@ RICE+ = (R*I*C/E) × Stage1RevenueWeight × VelocityWeight / ComplexityPenalty
 - Blocked items require `notes` reason.
 
 ## Outputs (each Pass)
-1. **Backlog CSV** — `13_OpsLog/TODO/enerqis_backlog.csv` (canonical, re‑ranked).  
-2. **Backlog MD** — `13_OpsLog/ROADMAP/enerqis_backlog.md` (cards grouped by Timeframe→Priority).  
-3. **OpsLog entry** — “RUN: Discovery/Synthesis — Backlog refresh (YYYY‑MM‑DD)” with Top‑N Now set + rationale.  
-4. **Blueprint sync** — update `05_Blueprint/roadmap_blueprint.md` (capabilities) and `05_Blueprint/development_roadmap.md` (milestones) referencing item IDs.  
+1. **Backlog CSV** — `13_OpsLog/TODO/enerqis_backlog.csv` (canonical, re‑ranked).
+2. **Backlog MD** — `13_OpsLog/ROADMAP/enerqis_backlog.md` (cards grouped by Timeframe→Priority).
+3. **OpsLog entry** — “RUN: Discovery/Synthesis — Backlog refresh (YYYY‑MM‑DD)” with Top‑N Now set + rationale.
+4. **Blueprint sync** — update `05_Blueprint/roadmap_blueprint.md` (capabilities) and `05_Blueprint/development_roadmap.md` (milestones) referencing item IDs.
 5. **Scorecard sync** — push owners/dates/status to `LIVING_SCORECARD/*` and reflect changes back to backlog shared fields.
 
 ## Governance & Gates (see acceptance_gates_idea.yaml)
-- G‑IDEA‑CAPTURE‑FORMAT: inputs conform to CAPTURE/Card/CSV.  
-- G‑IDEA‑DEDUPED: duplicates merged; provenance kept.  
-- G‑IDEA‑RANKED‑STAGE1: RICE+ applied with current weights.  
-- G‑IDEA‑OPSLOG: Ops entry posted with Top‑N Now set & links.  
-- G‑IDEA‑BLUEPRINT‑SYNC: Blueprint updated to reflect accepted set.  
+- G‑IDEA‑CAPTURE‑FORMAT: inputs conform to CAPTURE/Card/CSV.
+- G‑IDEA‑DEDUPED: duplicates merged; provenance kept.
+- G‑IDEA‑RANKED‑STAGE1: RICE+ applied with current weights.
+- G‑IDEA‑OPSLOG: Ops entry posted with Top‑N Now set & links.
+- G‑IDEA‑BLUEPRINT‑SYNC: Blueprint updated to reflect accepted set.
 - G‑IDEA‑SCORECARD‑SYNC: Scorecard reflects owners, KPIs, milestones.
 
 ## NOESIS
-- Display “Now” lane and Top‑N with **Explainer**, **Benefits**, **ETA**, **Complexity**; one‑click open PR/spec.  
+- Display “Now” lane and Top‑N with **Explainer**, **Benefits**, **ETA**, **Complexity**; one‑click open PR/spec.
 - Snapshot writer drops tiles into `13_OpsLog/SNAPSHOTS/` for audit.
 
 ## Versioning

@@ -14,4 +14,4 @@ Catalog of **officially integrated strategies** that are part of the operational
 ## Example Entries
 1. **MomentumAlgo** — Multi-timeframe momentum execution.
 2. **MeanReversion** — Standard deviation reversion with risk hooks.
-3. **PortfolioBalancer** — Dynamic allocation across assets. 
+3. **PortfolioBalancer** — Dynamic allocation across assets.

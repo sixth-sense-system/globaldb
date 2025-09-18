@@ -1,8 +1,8 @@
 # ENERQIS — Enterprise Baseline Governance (v2.2, Canonical, Merged)
 
-**Version:** 2025-09-10  
-**Generated:** 2025-09-12T01:37:29Z (UTC)  
-**Scope:** Comprehensive governance and operational standard for the entire ENERQIS ecosystem, modules 00 → 99, including human and machine files, CI/CD, OpsLog protocols, SHA‑256 verification, workflow enforcement, escalation procedures, and MasterControl oversight.  
+**Version:** 2025-09-10
+**Generated:** 2025-09-12T01:37:29Z (UTC)
+**Scope:** Comprehensive governance and operational standard for the entire ENERQIS ecosystem, modules 00 → 99, including human and machine files, CI/CD, OpsLog protocols, SHA‑256 verification, workflow enforcement, escalation procedures, and MasterControl oversight.
 **Purpose:** Establish an unambiguous, fully operational, and auditable enterprise-standard protocol for the ENERQIS Global Database, ensuring all modules and processes are strictly controlled, sequential, and validated before progressing.
 
 ---
@@ -46,7 +46,7 @@
 ---
 
 ## 1. Canonical Baseline Definition & Enforcement
-**Definition.** The canonical baseline is the last fully confirmed, audited, and SHA‑256–verified state of ENERQIS_GlobalDB (human + machine).  
+**Definition.** The canonical baseline is the last fully confirmed, audited, and SHA‑256–verified state of ENERQIS_GlobalDB (human + machine).
 **Enforcement Rules.**
 - No deviation without explicit operator confirmation.
 - All rebuild/packaging/synthesis reference canonical baseline.
@@ -55,8 +55,8 @@
 **Cross-Module Dependencies.** Upgrades must preserve inter-module references; dependency checks are automatic.
 
 ## 2. Module Stepwise Confirmation Protocol
-**Human file ingestion.** Present verbatim; operator confirms fidelity.  
-**Machine file generation.** Generate enterprise-grade machine files; compute SHA‑256 for every file.  
+**Human file ingestion.** Present verbatim; operator confirms fidelity.
+**Machine file generation.** Generate enterprise-grade machine files; compute SHA‑256 for every file.
 **Step closure.** Module complete only after confirmations + OpsLog entry + module hash confirmation.
 
 ## 3. SHA‑256 Audit & Append-Only Logging
@@ -64,19 +64,19 @@
 ```json
 {"timestamp":"<UTC_ISO8601>","event":"<CONFIRM_PROJECT_MANIFEST|CONFIRM_MODULE_MANIFEST>","module":"<module_name>","operator":"<operator_id>","project_manifest_hash":"<sha256>","notes":"<desc>"}
 ```
-**Mechanism.** All confirmations append to `13_OpsLog/ops_activity.log`. Immutable; append-only.  
+**Mechanism.** All confirmations append to `13_OpsLog/ops_activity.log`. Immutable; append-only.
 **Verification.** Periodic integrity sweep; mismatch → alert + halt.
 
 ## 4. Operator-in-Loop Requirements
-**Roles.** Chief Operator (final), Module Owner (compliance), Audit AI (integrity).  
+**Roles.** Chief Operator (final), Module Owner (compliance), Audit AI (integrity).
 **Procedures.** Explicit approval for all ingests; confirm project manifest SHA‑256 before downstream actions; no automation overrides human.
 
 ## 5. Workflow Hierarchy & Execution Order
 Process modules sequentially 00 → 13 → 99. Each module: (1) human review, (2) machine generation/validation, (3) SHA‑256 confirm, (4) OpsLog entry, (5) lock step.
 
 ## 6. Rebuild, Packaging, and Synthesis Policies
-**Rebuild.** Verbatim compile all files; lock baseline post‑confirm.  
-**Packaging.** On request; deterministic ZIP from confirmed baseline.  
+**Rebuild.** Verbatim compile all files; lock baseline post‑confirm.
+**Packaging.** On request; deterministic ZIP from confirmed baseline.
 **Synthesis.** Additive, operator‑approved; new baseline locks post hash‑verify.
 
 ## 7. File Naming, Prefixing & Folder Structure
@@ -86,7 +86,7 @@ Two‑digit module prefix (e.g., `06_System/`). Human vs machine mirroring. `.gi
 Pipelines validate structure, hashes, schemas; halt on drift. Machine artifacts include registry/audit/manifests. Pre‑commit validates manifest quickly.
 
 ## 9. Integrity, Escalation & Exception Handling
-**Drift.** Minor → flag; critical → halt.  
+**Drift.** Minor → flag; critical → halt.
 **Rollback.** Revert to last locked baseline; audit entries retain chronology.
 
 ## 10. Module-Specific Governance (00 → 99)
@@ -144,10 +144,10 @@ Scheduled checks on datasets/models/modules; alerts + operator review; correctiv
 Critical failures escalate to OpsLog + Chief Operator + two‑person review; rollback from last baseline; all steps logged.
 
 ## 28. Approval, Sign-Off & Archival Procedures
-Store MD at `02_Governance/human/enterprise_baseline_governance.md`; machine mirror at `02_Governance/machine/enterprise_baseline_governance.json`; confirm via:  
+Store MD at `02_Governance/human/enterprise_baseline_governance.md`; machine mirror at `02_Governance/machine/enterprise_baseline_governance.json`; confirm via:
 ```
 CONFIRM GOVERNANCE ENTERPRISE_BASELINE <sha256>
-```  
+```
 Snapshots in `99_Archive/snapshots/`.
 
 ---
@@ -180,11 +180,11 @@ Snapshots in `99_Archive/snapshots/`.
 
 ## 34. Roadmap, Commands & Locking
 - Roadmap: Phases 0–6 (as defined), scaling from cBot prototypes to AI orchestration.
-- Commands:  
-  - `APPROVE PROPOSAL <uuid>`  
-  - `CONFIRM MODULE <id>`  
-  - `CONFIRM PROJECT MANIFEST <sha256>`  
-  - `EXPORT PROJECT`  
+- Commands:
+  - `APPROVE PROPOSAL <uuid>`
+  - `CONFIRM MODULE <id>`
+  - `CONFIRM PROJECT MANIFEST <sha256>`
+  - `EXPORT PROJECT`
 - **Signature & Lock:** Once committed, lock with `CONFIRM GOVERNANCE ENTERPRISE_BASELINE <sha256>` and record in audit.
 
 ---

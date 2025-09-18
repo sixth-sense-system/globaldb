@@ -1,7 +1,20 @@
-# ENERQIS / NOESIS — MASTER RUNBOOK (IOSS FULL)  
+# ENERQIS / NOESIS — MASTER RUNBOOK (IOSS FULL)
 _Generated: 2025-09-17 18:55_
 
 This runbook consolidates and de-duplicates all operational instructions (Windows 11 + PowerShell) and orders them **by execution dependency**. It includes sub-steps, why each matters, and exact commands.
+
+1. Finish Git identify / settings / push + same for anything else (like VS Code, etc) 2. Apply IIS
+3. New Security measures (given IIS)
+4. Discovery/Synthesis steps (resume from 3) Governance & approvals, merge policy fragments, etc.)
+5. Update EREP as needed
+6. Run Discovery/Synthesis & EREP (validate gates, commits, entire repo) (with a refined mission/roadmap/etc)
+7. Finish Local Env Bootstrap & Repo Hardening (resume from 2.2) 8. Project-wide stage/apply/commit/etc + other checks
+8. Lock branch protection (PRs, checks, no force-push), no-secrets hygiene + more
+9. Spec & implement kill-switch, daily loss cap, fast overlays that move the live edge
+10. Steps to maximize quality (add code-quality gates to EREP, golden examples, curate skill capsules, make prompt contract standard + more)
+11. Data ingestion / deep research (All PIT-correct & leakage-safe + gather historical data of markets/others)
+12. Strategy Factory (develop/backtest/more)
+13. NOESIS
 
 ---
 
@@ -13,7 +26,7 @@ This runbook consolidates and de-duplicates all operational instructions (Window
 ---
 
 ## 1) Git identity + SSH (privacy-first, verified)
-**Why:** every commit is immutable; set noreply email; enable SSH + optional commit signing.  
+**Why:** every commit is immutable; set noreply email; enable SSH + optional commit signing.
 **Do:**
 ```powershell
 # Replace with your GitHub noreply
@@ -38,7 +51,7 @@ git config --global commit.gpgsign true
 ---
 
 ## 2) VS Code + workspace (quality-of-life)
-**Why:** consistent environment, path-aware tasks.  
+**Why:** consistent environment, path-aware tasks.
 **Do:** File → Save Workspace As… → `ENERQIS.code-workspace`. Add terminal default: PowerShell; enable Git, Prettier, EditorConfig.
 
 ---
@@ -71,7 +84,7 @@ pre-commit install
 ---
 
 ## 4) Governance pack (EREP overlays + gates + hooks)
-**Why:** makes Discovery/Synthesis governed & reproducible; blocks placeholder content; enforces planning freshness.  
+**Why:** makes Discovery/Synthesis governed & reproducible; blocks placeholder content; enforces planning freshness.
 **Do:** Ensure these exist and commit:
 - `00_repo/.cbr/erep_policy.overlay.ingest_fullcov.json`
 - `00_repo/.cbr/erep_policy.overlay.roadmap_sync.json`

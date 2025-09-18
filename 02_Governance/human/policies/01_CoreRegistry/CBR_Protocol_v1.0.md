@@ -155,4 +155,3 @@ CONFIRM MODULE XX SNAPSHOT
 ---
 
 This protocol can now be **set as a governance rule**.
-

@@ -21,4 +21,4 @@ Provide a clear hierarchy and process for escalating operational issues or incid
 
 ## Communication Protocol
 - Record all escalations in Ops Log
-- Notify relevant stakeholders based on severity and impact 
+- Notify relevant stakeholders based on severity and impact

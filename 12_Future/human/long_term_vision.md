@@ -25,29 +25,29 @@ Document the strategic vision for ENERQIS over the next 3-10 years, integrating 
 
 5. **Innovation Goals**
    - Continuous exploration of unconventional theories, market patterns, and execution techniques
-   - Partnership with research institutions and fintech innovators 
+   - Partnership with research institutions and fintech innovators
 
 ## Integrity & Audit Automation — FUT-IA-001
 
-**Priority:** High  
-**Owner:** MasterControl / OpsLog  
-**Status:** Proposed  
+**Priority:** High
+**Owner:** MasterControl / OpsLog
+**Status:** Proposed
 
-**Summary:**  
+**Summary:**
 Automate the logging and verification of SHA-256 manifest confirmations and other integrity checkpoints across ENERQIS_GlobalDB.
 
-**Scope & Deliverables:**  
+**Scope & Deliverables:**
 - CI or scheduled script to capture and append confirmation events into a centralized JSON audit log.
 - Standardized schema for audit entries (timestamp, operator, hash, notes).
 - Retention policy and storage location defined under Governance.
 - Runbook and monitoring procedures added to `13_OpsLog`.
 
-**Dependencies:**  
-- `tools/ci` scripts for automation  
-- Governance/Compliance policies  
+**Dependencies:**
+- `tools/ci` scripts for automation
+- Governance/Compliance policies
 
-**Next Milestones:**  
-- [ ] Design draft automation job (script or GitHub Action)  
-- [ ] Approve schema & retention policy  
-- [ ] Implement & test logging mechanism  
+**Next Milestones:**
+- [ ] Design draft automation job (script or GitHub Action)
+- [ ] Approve schema & retention policy
+- [ ] Implement & test logging mechanism
 - [ ] Document procedures in OpsLog runbooks
