@@ -22,9 +22,6 @@
 *.md    text eol=lf
 *.csv   text eol=lf
 
-# Repo-specific (add as needed)
-*.cbot text eol=lf
-
 # Binary (never modify line endings)
 *.zip     binary
 *.parquet binary
