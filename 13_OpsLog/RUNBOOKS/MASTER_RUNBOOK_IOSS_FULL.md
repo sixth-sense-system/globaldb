@@ -41,6 +41,12 @@ ssh-keygen -t ed25519 -C "<id+username>@users.noreply.github.com"
 ssh-add $env:USERPROFILE\.ssh\id_ed25519
 ssh -T git@github.com   # expect greeting
 ```
+
+
+
+
+
+
 **Optional (recommended): verified commits via SSH-signing**
 ```powershell
 git config --global gpg.format ssh
