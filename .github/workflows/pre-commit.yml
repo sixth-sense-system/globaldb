@@ -7,8 +7,13 @@ repos:
     hooks: [{ id: black }]
 
 # .github/workflows/precommit.yml
-name: Pre-commit
-on: [pull_request]
+name: pre-commit
+on:
+  pull_request:           # <-- add this
+    branches: [ main ]    # (or remove this line to run on all PRs)
+  push:
+    branches: [ main ]
+
 jobs:
   precommit:
     runs-on: ubuntu-latest
