@@ -28,3 +28,14 @@ The GlobalDB is organized into modules (`01_MasterControl` through `13_OpsLog` a
 - [CONTRIBUTING.md](./CONTRIBUTING.md)
 - [CODEOWNERS](./CODEOWNERS)
 - [LICENSE](./LICENSE)
+## Build & Quality Gates
+
+These checks run on every pull request and are required to merge:
+
+[![pre-commit](https://github.com/sixth-sense-system/globaldb/actions/workflows/pre-commit.yml/badge.svg)](https://github.com/sixth-sense-system/globaldb/actions/workflows/pre-commit.yml)
+[![EREP](https://github.com/sixth-sense-system/globaldb/actions/workflows/erep.yml/badge.svg)](https://github.com/sixth-sense-system/globaldb/actions/workflows/erep.yml)
+[![EREP Guard](https://github.com/sixth-sense-system/globaldb/actions/workflows/erep-guard.yml/badge.svg)](https://github.com/sixth-sense-system/globaldb/actions/workflows/erep-guard.yml)
+[![EREP Equivalence](https://github.com/sixth-sense-system/globaldb/actions/workflows/erep_equivalence.yml/badge.svg)](https://github.com/sixth-sense-system/globaldb/actions/workflows/erep_equivalence.yml)
+[![CodeQL](https://github.com/sixth-sense-system/globaldb/actions/workflows/codeql.yml/badge.svg)](https://github.com/sixth-sense-system/globaldb/actions/workflows/codeql.yml)
+
+See our [Security Policy](SECURITY.md) for private vulnerability reporting.
