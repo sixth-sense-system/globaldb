@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"terminal.integrated.defaultProfile.windows": "PowerShell",
+		"git.enabled": true,
+		"editor.formatOnSave": false,
+		"files.eol": "\n"
+	}
+}

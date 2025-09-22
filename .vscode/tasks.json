@@ -1,0 +1,11 @@
+﻿{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Repo: Health check",
+      "type": "shell",
+      "command": "powershell -NoLogo -NoProfile -ExecutionPolicy Bypass -File .tools\\health.ps1",
+      "problemMatcher": []
+    }
+  ]
+}
