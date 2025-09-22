@@ -13,3 +13,16 @@ __pycache__/
 # Local env
 .env
 .env.*
+
+@'
+# VS Code (shared workspace files)
+.vscode/*
+!.vscode/tasks.json
+!.vscode/settings.json
+!.vscode/extensions.json
+'@ | Out-File -FilePath .gitignore -Encoding utf8 -Append
+# VS Code (shared workspace files)
+.vscode/*
+!.vscode/tasks.json
+!.vscode/settings.json
+!.vscode/extensions.json
