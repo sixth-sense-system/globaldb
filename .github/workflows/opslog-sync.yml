@@ -29,13 +29,14 @@ jobs:
           if (Test-Path "13_OpsLog/scripts/requirements.txt") {
             pip install -r 13_OpsLog/scripts/requirements.txt
           } else {
-            pip install pyyaml pyarrow
+            pip install pyyaml pyarrow jinja2 pandas
           }
 
       - name: Ensure CI dirs exist
         shell: pwsh
         run: |
           New-Item -ItemType Directory -Force -Path 13_OpsLog\DERIVED\ci | Out-Null
+          New-Item -ItemType Directory -Force -Path 13_OpsLog\LEDGER     | Out-Null
           New-Item -ItemType Directory -Force -Path 13_OpsLog\SSOT       | Out-Null
 
       - name: Validate SSOT schemas (tolerant)
@@ -64,6 +65,28 @@ jobs:
             exit 0
           }
 
+      - name: Guarantee expected files exist (touch placeholders)
+        shell: pwsh
+        run: |
+          $files = @(
+            "13_OpsLog\DERIVED\ci\ci_validation.json",
+            "13_OpsLog\DERIVED\ci\ci_rendered.md",
+            "13_OpsLog\DERIVED\ci\ci_mission_control.md",
+            "13_OpsLog\DERIVED\ci\render.log",
+            "13_OpsLog\DERIVED\ci\render_error.txt",
+            "13_OpsLog\LEDGER\commit_ledger.md"
+          )
+          foreach ($f in $files) {
+<<<<<<< HEAD
+            if (-not (Test-Path $f)) { New-Item -ItemType File -Path $f -Force | Out-Null }
+||||||| parent of dd19233 (ci(opslog): artifact upload tolerant (if-no-files-found: warn))
+=======
+            if (-not (Test-Path $f)) {
+              New-Item -ItemType File -Path $f -Force | Out-Null
+            }
+>>>>>>> dd19233 (ci(opslog): artifact upload tolerant (if-no-files-found: warn))
+          }
+
       - name: Generate Commit Ledger
         shell: pwsh
         run: |
@@ -71,10 +94,24 @@ jobs:
           if (-not $since) { $since = "4 weeks ago" }
           ./13_OpsLog/scripts/commit_ledger.ps1 -Since "$since" -Output "13_OpsLog/LEDGER/commit_ledger.md"
 
+      - name: List generated files (debug)
+        shell: pwsh
+        run: |
+          Write-Host "==== DERIVED/ci ===="
+          Get-ChildItem -Recurse 13_OpsLog\DERIVED\ci | ForEach-Object { Write-Host $_.FullName }
+          Write-Host "==== LEDGER ===="
+<<<<<<< HEAD
+          Get-ChildItem -Recurse 13_OpsLog\LEDGER | ForEach-Object { Write-Host $_.FullName }
+||||||| parent of dd19233 (ci(opslog): artifact upload tolerant (if-no-files-found: warn))
+=======
+          Get-ChildItem -Recurse 13_OpsLog\LEDGER     | ForEach-Object { Write-Host $_.FullName }
+>>>>>>> dd19233 (ci(opslog): artifact upload tolerant (if-no-files-found: warn))
+
       - name: Upload CI artifacts
         uses: actions/upload-artifact@v4
         with:
           name: opslog-ci
+          if-no-files-found: warn
           path: |
             13_OpsLog/DERIVED/ci/ci_validation.json
             13_OpsLog/DERIVED/ci/ci_rendered.md
