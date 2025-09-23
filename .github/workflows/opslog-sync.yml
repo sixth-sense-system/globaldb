@@ -24,18 +24,19 @@ jobs:
           python-version: '3.11'
 
       - name: Install Python deps
-        shell: pwsh
         run: |
           python -m pip install --upgrade pip
           if (Test-Path "13_OpsLog/scripts/requirements.txt") {
             pip install -r 13_OpsLog/scripts/requirements.txt
+          } else {
+            pip install pyyaml pyarrow
           }
 
       - name: Ensure CI dirs exist
         shell: pwsh
         run: |
-          New-Item -ItemType Directory -Force -Path 13_OpsLog/DERIVED/ci | Out-Null
-          New-Item -ItemType Directory -Force -Path 13_OpsLog/LEDGER     | Out-Null
+          New-Item -ItemType Directory -Force -Path 13_OpsLog\DERIVED\ci | Out-Null
+          New-Item -ItemType Directory -Force -Path 13_OpsLog\SSOT       | Out-Null
 
       - name: Validate SSOT schemas (tolerant)
         shell: pwsh
@@ -56,12 +57,11 @@ jobs:
         run: |
           try {
             python 13_OpsLog/scripts/40_render.py `
-              --config 13_OpsLog/policies/opslog_render.yml
+              --config 13_OpsLog/policies/opslog_render.yml `
+              *> 13_OpsLog\DERIVED\ci\render.log
           } catch {
-            "Render failed: $($_.Exception.Message)" |
-              Set-Content -Encoding UTF8 13_OpsLog\DERIVED\ci\ci_rendered.md
-            "Render failed" |
-              Set-Content -Encoding UTF8 13_OpsLog\DERIVED\ci\ci_mission_control.md
+            $_ | Out-String | Set-Content -Encoding UTF8 13_OpsLog\DERIVED\ci\render_error.txt
+            exit 0
           }
 
       - name: Generate Commit Ledger
@@ -69,8 +69,7 @@ jobs:
         run: |
           $since = (git describe --tags --abbrev=0 --match 'scorecard-*' 2>$null)
           if (-not $since) { $since = "4 weeks ago" }
-          ./13_OpsLog/scripts/commit_ledger.ps1 -Since "$since" `
-            -Output "13_OpsLog/LEDGER/commit_ledger.md"
+          ./13_OpsLog/scripts/commit_ledger.ps1 -Since "$since" -Output "13_OpsLog/LEDGER/commit_ledger.md"
 
       - name: Upload CI artifacts
         uses: actions/upload-artifact@v4
@@ -80,4 +79,6 @@ jobs:
             13_OpsLog/DERIVED/ci/ci_validation.json
             13_OpsLog/DERIVED/ci/ci_rendered.md
             13_OpsLog/DERIVED/ci/ci_mission_control.md
+            13_OpsLog/DERIVED/ci/render.log
+            13_OpsLog/DERIVED/ci/render_error.txt
             13_OpsLog/LEDGER/commit_ledger.md
