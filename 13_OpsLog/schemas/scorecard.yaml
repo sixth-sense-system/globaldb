@@ -1,0 +1,50 @@
+# Executive Scorecard v2 (metrics + "why rose" + levers) + financial tiers + valuation + weekly pulse
+version: 1
+table: scorecard
+columns:
+  - { name: record_type, type: enum, required: true, values: [metric, financial_tier, valuation, pulse] }
+
+  # Common
+  - { name: date,        type: date,   required: true }
+  - { name: source_file, type: string, required: true }
+  - { name: source_sha256, type: string, required: true }
+
+  # metric
+  - { name: metric_id,           type: string, required: false }  # slug for the row, e.g., governance_determinism
+  - { name: domain,              type: string, required: false }
+  - { name: label,               type: string, required: false }
+  - { name: now,                 type: float,  required: false }
+  - { name: h6_12mo,             type: float,  required: false }
+  - { name: ceiling_2_3y,        type: float,  required: false }
+  - { name: definition_of_10_md, type: string, required: false }
+  - { name: rationale_md,        type: string, required: false }  # "Why scores rose"
+  - { name: levers_md,           type: string, required: false }  # moves toward 9.5–10
+
+  # financial_tier
+  - { name: tier,                type: enum, required: false, values: [50k,100k,500k,1m,10m] }
+  - { name: prob_today,          type: float, required: false }
+  - { name: assumptions_md,      type: string, required: false }
+  - { name: notes_md,            type: string, required: false }
+
+  # valuation
+  - { name: org_type,            type: enum, required: false, values: [solo, small_shop, consultancy, larger_org, big_firm] }
+  - { name: timeframe,           type: string, required: false }   # e.g., "4–8 weeks"
+  - { name: replace_cost_low,    type: float,  required: false }
+  - { name: replace_cost_high,   type: float,  required: false }
+  - { name: scope_md,            type: string, required: false }
+
+  # pulse
+  - { name: week_start,          type: date,   required: false }
+  - { name: headlines_md,        type: string, required: false }
+  - { name: what_shipped_md,     type: string, required: false }
+  - { name: value_delta_low,     type: float,  required: false }
+  - { name: value_delta_high,    type: float,  required: false }
+  - { name: roi_notes_md,        type: string, required: false }
+  - { name: open_risks_md,       type: string, required: false }
+  - { name: next_moves_md,       type: string, required: false }
+constraints:
+  composite_keys:
+    - record_type
+    - metric_id
+    - tier
+    - week_start

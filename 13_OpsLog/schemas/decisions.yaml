@@ -1,0 +1,17 @@
+# ADR-style decisions with lineage
+version: 1
+table: decisions
+columns:
+  - { name: id,              type: string, required: true }
+  - { name: date,            type: date,   required: true }
+  - { name: status,          type: enum,   required: true, values: [accepted, superseded, rejected, proposed] }
+  - { name: context_md,      type: string, required: true }
+  - { name: decision_md,     type: string, required: true }
+  - { name: consequences_md, type: string, required: true }
+  - { name: supersedes,      type: list[string], required: false }
+  - { name: superseded_by,   type: list[string], required: false }
+  - { name: tags,            type: list[string], required: false }
+  - { name: source_file,     type: string, required: true }
+  - { name: source_sha256,   type: string, required: true }
+constraints:
+  primary_key: [id]
