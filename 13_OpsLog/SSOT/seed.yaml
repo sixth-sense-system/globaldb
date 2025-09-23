@@ -1,0 +1,25 @@
+events:
+  - id: evt-0001
+    when: 2025-09-23
+    type: config
+    title: "CI bootstrap completed"
+    details: "opslog-sync and pre-commit wired; commit signing enforced; pandas deps added"
+
+decisions:
+  - id: dec-0001
+    when: 2025-09-23
+    topic: "Opslog CI policy"
+    outcome: "Adopt tolerant pipeline until SSOT fills in"
+    rationale: "Keep green while we migrate transcripts"
+
+systems:
+  - id: sys-opslog
+    name: "OpsLog"
+    owner: "Sixth Sense"
+    status: "active"
+
+next:
+  - id: nxt-0001
+    title: "Run Discovery/Synthesis #1"
+    owner: "Sixth Sense"
+    due: 2025-09-24
