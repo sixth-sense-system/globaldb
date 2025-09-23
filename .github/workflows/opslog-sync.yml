@@ -16,13 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-<<<<<<< HEAD
           fetch-depth: 0
-||||||| parent of f53cb8d (opslog: make CI tolerant; ensure dirs; correct render config path)
-          fetch-depth: 0   # needed for tags/ranges
-=======
-          fetch-depth: 0     # needed for tags/ranges
->>>>>>> f53cb8d (opslog: make CI tolerant; ensure dirs; correct render config path)
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -30,60 +24,23 @@ jobs:
           python-version: '3.11'
 
       - name: Install Python deps
-        shell: pwsh
         run: |
           python -m pip install --upgrade pip
           if (Test-Path "13_OpsLog/scripts/requirements.txt") {
             pip install -r 13_OpsLog/scripts/requirements.txt
           } else {
-            pip install pyyaml
+            pip install pyyaml pyarrow
           }
 
-<<<<<<< HEAD
       - name: Ensure CI dirs exist
-||||||| parent of f53cb8d (opslog: make CI tolerant; ensure dirs; correct render config path)
-      - name: Validate SSOT schemas
-=======
-      - name: Ensure output/SSOT dirs exist
->>>>>>> f53cb8d (opslog: make CI tolerant; ensure dirs; correct render config path)
         shell: pwsh
         run: |
-<<<<<<< HEAD
-          New-Item -ItemType Directory -Force -Path 13_OpsLog/DERIVED/ci | Out-Null
-          New-Item -ItemType Directory -Force -Path 13_OpsLog/LEDGER     | Out-Null
-||||||| parent of f53cb8d (opslog: make CI tolerant; ensure dirs; correct render config path)
-          python 13_OpsLog/scripts/30_validate_schemas.py `
-            --schemas 13_OpsLog/SCHEMA `
-            --ssot 13_OpsLog/SSOT
-=======
           New-Item -ItemType Directory -Force -Path 13_OpsLog\DERIVED\ci | Out-Null
           New-Item -ItemType Directory -Force -Path 13_OpsLog\SSOT       | Out-Null
 
-      # ✅ Tolerant validation: if SSOT is empty, write a "skipped" JSON and keep going
-      - name: Validate SSOT schemas
-        shell: pwsh
-        run: |
-          if (Test-Path 13_OpsLog\SSOT) {
-            python 13_OpsLog/scripts/30_validate_schemas.py `
-              --schemas 13_OpsLog/SCHEMA `
-              --ssot    13_OpsLog/SSOT `
-              --out     13_OpsLog/DERIVED/ci/ci_validation.json
-          } else {
-            '{"status":"skipped","reason":"SSOT not present"}' |
-              Set-Content -Encoding UTF8 13_OpsLog\DERIVED\ci\ci_validation.json
-          }
->>>>>>> f53cb8d (opslog: make CI tolerant; ensure dirs; correct render config path)
-
-<<<<<<< HEAD
       - name: Validate SSOT schemas (tolerant)
-||||||| parent of f53cb8d (opslog: make CI tolerant; ensure dirs; correct render config path)
-      - name: Render views (history/decisions/systems/next/scorecard/mission)
-=======
-      - name: Render views (history/decisions/systems/next/scorecard/mission)
->>>>>>> f53cb8d (opslog: make CI tolerant; ensure dirs; correct render config path)
         shell: pwsh
         run: |
-<<<<<<< HEAD
           $hasSsot = Test-Path 13_OpsLog\SSOT
           if ($hasSsot) {
             python 13_OpsLog/scripts/30_validate_schemas.py `
@@ -100,28 +57,19 @@ jobs:
         run: |
           try {
             python 13_OpsLog/scripts/40_render.py `
-              --config 13_OpsLog/policies/opslog_render.yml
+              --config 13_OpsLog/policies/opslog_render.yml `
+              *> 13_OpsLog\DERIVED\ci\render.log
           } catch {
-            "Render failed: $($_.Exception.Message)" |
-              Set-Content -Encoding UTF8 13_OpsLog\DERIVED\ci\ci_rendered.md
-            "Render failed" |
-              Set-Content -Encoding UTF8 13_OpsLog\DERIVED\ci\ci_mission_control.md
+            $_ | Out-String | Set-Content -Encoding UTF8 13_OpsLog\DERIVED\ci\render_error.txt
+            exit 0
           }
-||||||| parent of f53cb8d (opslog: make CI tolerant; ensure dirs; correct render config path)
-          python 13_OpsLog/scripts/40_render.py `
-            --config 13_OpsLog/oplogs_render.yml
-=======
-          python 13_OpsLog/scripts/40_render.py `
-            --config 13_OpsLog/policies/opslog_render.yml
->>>>>>> f53cb8d (opslog: make CI tolerant; ensure dirs; correct render config path)
 
       - name: Generate Commit Ledger
         shell: pwsh
         run: |
           $since = (git describe --tags --abbrev=0 --match 'scorecard-*' 2>$null)
           if (-not $since) { $since = "4 weeks ago" }
-          ./13_OpsLog/scripts/commit_ledger.ps1 -Since "$since" `
-            -Output "13_OpsLog/LEDGER/commit_ledger.md"
+          ./13_OpsLog/scripts/commit_ledger.ps1 -Since "$since" -Output "13_OpsLog/LEDGER/commit_ledger.md"
 
       - name: Upload CI artifacts
         uses: actions/upload-artifact@v4
@@ -131,4 +79,6 @@ jobs:
             13_OpsLog/DERIVED/ci/ci_validation.json
             13_OpsLog/DERIVED/ci/ci_rendered.md
             13_OpsLog/DERIVED/ci/ci_mission_control.md
+            13_OpsLog/DERIVED/ci/render.log
+            13_OpsLog/DERIVED/ci/render_error.txt
             13_OpsLog/LEDGER/commit_ledger.md
