@@ -7,16 +7,15 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
-# Least-privilege + SARIF upload
+# least-privilege plus SARIF upload
 permissions:
   contents: read
-  actions: read
   security-events: write
 
 jobs:
   analyze:
     name: CodeQL / Analyze (python)
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     timeout-minutes: 30
 
     steps:
@@ -28,18 +27,17 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3
         with:
           languages: python
-          queries: security-extended,security-and-quality
-          build-mode: none
+          # let CodeQL pick default query packs (stable)
 
-      # No build step needed for pure Python (no C/C++/Java build)
+      # No build step needed for pure Python
 
-      - name: Perform CodeQL Analysis
+      - name: Analyze
         uses: github/codeql-action/analyze@v3
         with:
-          category: '/language:python'
+          category: "/language:python"
