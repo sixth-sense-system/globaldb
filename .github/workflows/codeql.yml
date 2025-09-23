@@ -5,40 +5,37 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-  schedule:
-    - cron: '30 1 * * 1'  # Mondays 01:30 UTC
+  workflow_dispatch:
 
 permissions:
   contents: read
   actions: read
-  security-events: write  # REQUIRED for uploading SARIF to code scanning
+  security-events: write
 
 jobs:
   analyze:
-    name: CodeQL / Analyze (${{ matrix.language }})
-    runs-on: ubuntu-latest
-    timeout-minutes: 60
-
-    strategy:
-      fail-fast: false
-      matrix:
-        language: [ 'python', 'actions' ]  # analyze repo code + GitHub Actions
+    name: CodeQL / Analyze (python)
+    runs-on: windows-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3
         with:
-          languages: ${{ matrix.language }}
+          languages: python
+          queries: security-extended,security-and-quality
+          build-mode: none
 
-      # Only try to autobuild when analyzing source code (not when analyzing workflows)
-      - name: Autobuild
-        if: matrix.language != 'actions'
-        uses: github/codeql-action/autobuild@v3
+      # No build step needed for Python unless you import native/compiled deps
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3
         with:
-          category: "/language:${{ matrix.language }}"
+          category: '/language:python'
