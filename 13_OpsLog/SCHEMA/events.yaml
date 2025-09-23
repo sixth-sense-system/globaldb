@@ -1,0 +1,19 @@
+# Events & milestones (chronology of what actually happened)
+version: 1
+table: events
+columns:
+  - { name: id,              type: string, required: true }
+  - { name: date,            type: date,   required: true }
+  - { name: type,            type: enum,   required: true, values: [setup, change, fix, integration, policy, infra, data, ai_algo, market, research, governance, blueprint, system, ops] }
+  - { name: title,           type: string, required: true }
+  - { name: summary_md,      type: string, required: true }
+  - { name: importance,      type: int,    required: true, range: { min: 1, max: 5 } }
+  - { name: tags,            type: list[string], required: false }
+  - { name: links,           type: list[string], required: false }
+  - { name: module,          type: enum, required: false, values: [00_repo,01_MasterControl,02_Governance,03_Data,04_Infrastructure,05_Blueprint,06_System,07_Theory,08_Market,09_Tech,10_AI_Algo,11_Research,12_Future,13_OpsLog] }
+  - { name: source_file,     type: string, required: true }
+  - { name: source_sha256,   type: string, required: true }
+  - { name: line_start,      type: int,    required: false }
+  - { name: line_end,        type: int,    required: false }
+constraints:
+  primary_key: [id]

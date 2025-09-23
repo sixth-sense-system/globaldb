@@ -1,0 +1,39 @@
+{
+    "name": "OpsLog SSOT Determinism Policy",
+    "version": "1.0",
+    "description": "Validates OpsLog SSOT tables and enforces deterministic view generation.",
+    "tables": [
+        "13_OpsLog/data/events.parquet",
+        "13_OpsLog/data/decisions.parquet",
+        "13_OpsLog/data/configs.parquet",
+        "13_OpsLog/data/ideas.parquet",
+        "13_OpsLog/data/roadmap.parquet",
+        "13_OpsLog/data/scorecard.parquet"
+    ],
+    "schemas": [
+        "13_OpsLog/schemas/events.yaml",
+        "13_OpsLog/schemas/decisions.yaml",
+        "13_OpsLog/schemas/configs.yaml",
+        "13_OpsLog/schemas/ideas.yaml",
+        "13_OpsLog/schemas/roadmap.yaml",
+        "13_OpsLog/schemas/scorecard.yaml"
+    ],
+    "rules": {
+        "require_provenance": true,
+        "fail_on_schema_violation": true,
+        "deny_orphan_entities": true,
+        "deterministic_render": true
+    },
+    "render": {
+        "inputs": "13_OpsLog/data/*.parquet",
+        "outputs": [
+            "13_OpsLog/views/HISTORY.md",
+            "13_OpsLog/views/DECISIONS.md",
+            "13_OpsLog/views/SYSTEMS.md",
+            "13_OpsLog/views/EXEC_SCORECARD.md",
+            "13_OpsLog/views/NEXT.md",
+            "13_OpsLog/views/ROADMAP.md"
+        ],
+        "footer": "Generated from SSOT at {{TS_UTC}} under opslog_policy.json"
+    }
+}
