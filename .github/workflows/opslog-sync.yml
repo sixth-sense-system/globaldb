@@ -29,31 +29,26 @@ jobs:
           python -m pip install --upgrade pip
           if (Test-Path "13_OpsLog/scripts/requirements.txt") {
             pip install -r 13_OpsLog/scripts/requirements.txt
-          } else {
-            pip install pyyaml
           }
 
-      - name: Ensure output/SSOT dirs exist
+      - name: Ensure CI dirs exist
         shell: pwsh
         run: |
-          New-Item -ItemType Directory -Force -Path 13_OpsLog\DERIVED\ci | Out-Null
-          New-Item -ItemType Directory -Force -Path 13_OpsLog\SSOT       | Out-Null
+          New-Item -ItemType Directory -Force -Path 13_OpsLog/DERIVED/ci | Out-Null
+          New-Item -ItemType Directory -Force -Path 13_OpsLog/LEDGER     | Out-Null
 
       - name: Validate SSOT schemas (tolerant)
         shell: pwsh
         run: |
-          try {
-            if (Test-Path 13_OpsLog\SSOT) {
-              python 13_OpsLog/scripts/30_validate_schemas.py `
-                --schemas 13_OpsLog/SCHEMA `
-                --ssot    13_OpsLog/SSOT `
-                --out     13_OpsLog/DERIVED/ci/ci_validation.json
-            } else {
-              throw "SSOT path missing"
-            }
-          } catch {
-            '{"status":"skipped","reason":"{0}"}' -f $_.Exception.Message `
-              | Set-Content -Encoding UTF8 13_OpsLog\DERIVED\ci\ci_validation.json
+          $hasSsot = Test-Path 13_OpsLog\SSOT
+          if ($hasSsot) {
+            python 13_OpsLog/scripts/30_validate_schemas.py `
+              --schemas 13_OpsLog/SCHEMA `
+              --ssot    13_OpsLog/SSOT `
+              --out     13_OpsLog/DERIVED/ci/ci_validation.json
+          } else {
+            '{"status":"skipped","reason":"SSOT not present"}' |
+              Set-Content -Encoding UTF8 13_OpsLog\DERIVED\ci\ci_validation.json
           }
 
       - name: Render views (tolerant)
@@ -62,19 +57,11 @@ jobs:
           try {
             python 13_OpsLog/scripts/40_render.py `
               --config 13_OpsLog/policies/opslog_render.yml
-            if (-not (Test-Path 13_OpsLog\DERIVED\ci\ci_rendered.md)) {
-              "# Render completed but no ci_rendered.md was written." `
-                | Set-Content -Encoding UTF8 13_OpsLog\DERIVED\ci\ci_rendered.md
-            }
-            if (-not (Test-Path 13_OpsLog\DERIVED\ci\ci_mission_control.md)) {
-              "# Mission control placeholder" `
-                | Set-Content -Encoding UTF8 13_OpsLog\DERIVED\ci\ci_mission_control.md
-            }
           } catch {
-            "# Render failed\n`n````\n$($_ | Out-String)\n````" `
-              | Set-Content -Encoding UTF8 13_OpsLog\DERIVED\ci\ci_rendered.md
-            "# Mission control placeholder (render error)" `
-              | Set-Content -Encoding UTF8 13_OpsLog\DERIVED\ci\ci_mission_control.md
+            "Render failed: $($_.Exception.Message)" |
+              Set-Content -Encoding UTF8 13_OpsLog\DERIVED\ci\ci_rendered.md
+            "Render failed" |
+              Set-Content -Encoding UTF8 13_OpsLog\DERIVED\ci\ci_mission_control.md
           }
 
       - name: Generate Commit Ledger
@@ -82,7 +69,8 @@ jobs:
         run: |
           $since = (git describe --tags --abbrev=0 --match 'scorecard-*' 2>$null)
           if (-not $since) { $since = "4 weeks ago" }
-          ./13_OpsLog/scripts/commit_ledger.ps1 -Since "$since" -Output "13_OpsLog/LEDGER/commit_ledger.md"
+          ./13_OpsLog/scripts/commit_ledger.ps1 -Since "$since" `
+            -Output "13_OpsLog/LEDGER/commit_ledger.md"
 
       - name: Upload CI artifacts
         uses: actions/upload-artifact@v4
