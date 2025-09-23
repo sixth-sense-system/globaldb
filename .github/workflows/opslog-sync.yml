@@ -77,14 +77,9 @@ jobs:
             "13_OpsLog\LEDGER\commit_ledger.md"
           )
           foreach ($f in $files) {
-<<<<<<< HEAD
-            if (-not (Test-Path $f)) { New-Item -ItemType File -Path $f -Force | Out-Null }
-||||||| parent of dd19233 (ci(opslog): artifact upload tolerant (if-no-files-found: warn))
-=======
             if (-not (Test-Path $f)) {
               New-Item -ItemType File -Path $f -Force | Out-Null
             }
->>>>>>> dd19233 (ci(opslog): artifact upload tolerant (if-no-files-found: warn))
           }
 
       - name: Generate Commit Ledger
@@ -100,12 +95,7 @@ jobs:
           Write-Host "==== DERIVED/ci ===="
           Get-ChildItem -Recurse 13_OpsLog\DERIVED\ci | ForEach-Object { Write-Host $_.FullName }
           Write-Host "==== LEDGER ===="
-<<<<<<< HEAD
-          Get-ChildItem -Recurse 13_OpsLog\LEDGER | ForEach-Object { Write-Host $_.FullName }
-||||||| parent of dd19233 (ci(opslog): artifact upload tolerant (if-no-files-found: warn))
-=======
           Get-ChildItem -Recurse 13_OpsLog\LEDGER     | ForEach-Object { Write-Host $_.FullName }
->>>>>>> dd19233 (ci(opslog): artifact upload tolerant (if-no-files-found: warn))
 
       - name: Upload CI artifacts
         uses: actions/upload-artifact@v4
