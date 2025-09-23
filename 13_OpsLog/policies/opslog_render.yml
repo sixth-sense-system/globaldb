@@ -1,0 +1,17 @@
+﻿# Minimal opslog render config (safe defaults)
+out:
+  rendered_md: 13_OpsLog/DERIVED/ci/ci_rendered.md
+  mission_md: 13_OpsLog/DERIVED/ci/ci_mission_control.md
+
+inputs:
+  # Allow empty on first run; we just want the pipeline green
+  ssot_glob: "13_OpsLog/SSOT/**/*.yaml"
+  schemas_dir: "13_OpsLog/SCHEMA"
+
+templates:
+  history: true
+  decisions: true
+  systems: true
+  next: true
+  scorecard: true
+  mission_control: true
