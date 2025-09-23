@@ -16,7 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0     # needed for tags/ranges
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -39,25 +39,43 @@ jobs:
           New-Item -ItemType Directory -Force -Path 13_OpsLog\DERIVED\ci | Out-Null
           New-Item -ItemType Directory -Force -Path 13_OpsLog\SSOT       | Out-Null
 
-      # ✅ Tolerant validation: if SSOT is empty, write a "skipped" JSON and keep going
-      - name: Validate SSOT schemas
+      - name: Validate SSOT schemas (tolerant)
         shell: pwsh
         run: |
-          if (Test-Path 13_OpsLog\SSOT) {
-            python 13_OpsLog/scripts/30_validate_schemas.py `
-              --schemas 13_OpsLog/SCHEMA `
-              --ssot    13_OpsLog/SSOT `
-              --out     13_OpsLog/DERIVED/ci/ci_validation.json
-          } else {
-            '{"status":"skipped","reason":"SSOT not present"}' |
-              Set-Content -Encoding UTF8 13_OpsLog\DERIVED\ci\ci_validation.json
+          try {
+            if (Test-Path 13_OpsLog\SSOT) {
+              python 13_OpsLog/scripts/30_validate_schemas.py `
+                --schemas 13_OpsLog/SCHEMA `
+                --ssot    13_OpsLog/SSOT `
+                --out     13_OpsLog/DERIVED/ci/ci_validation.json
+            } else {
+              throw "SSOT path missing"
+            }
+          } catch {
+            '{"status":"skipped","reason":"{0}"}' -f $_.Exception.Message `
+              | Set-Content -Encoding UTF8 13_OpsLog\DERIVED\ci\ci_validation.json
           }
 
-      - name: Render views (history/decisions/systems/next/scorecard/mission)
+      - name: Render views (tolerant)
         shell: pwsh
         run: |
-          python 13_OpsLog/scripts/40_render.py `
-            --config 13_OpsLog/policies/opslog_render.yml
+          try {
+            python 13_OpsLog/scripts/40_render.py `
+              --config 13_OpsLog/policies/opslog_render.yml
+            if (-not (Test-Path 13_OpsLog\DERIVED\ci\ci_rendered.md)) {
+              "# Render completed but no ci_rendered.md was written." `
+                | Set-Content -Encoding UTF8 13_OpsLog\DERIVED\ci\ci_rendered.md
+            }
+            if (-not (Test-Path 13_OpsLog\DERIVED\ci\ci_mission_control.md)) {
+              "# Mission control placeholder" `
+                | Set-Content -Encoding UTF8 13_OpsLog\DERIVED\ci\ci_mission_control.md
+            }
+          } catch {
+            "# Render failed\n`n````\n$($_ | Out-String)\n````" `
+              | Set-Content -Encoding UTF8 13_OpsLog\DERIVED\ci\ci_rendered.md
+            "# Mission control placeholder (render error)" `
+              | Set-Content -Encoding UTF8 13_OpsLog\DERIVED\ci\ci_mission_control.md
+          }
 
       - name: Generate Commit Ledger
         shell: pwsh
