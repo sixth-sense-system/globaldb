@@ -1,0 +1,5 @@
+# Suggested additions (merge into your CODEOWNERS)
+13_OpsLog/**          @ENERQIS
+02_Governance/**      @ENERQIS
+05_Blueprint/**       @ENERQIS
+.github/workflows/**  @ENERQIS

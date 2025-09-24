@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EventsSchema",
+  "type": "object",
+  "required": [
+    "id",
+    "date",
+    "module",
+    "title",
+    "summary_md",
+    "provenance",
+    "created_at"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^EVT-[0-9]{8}-[0-9]{4}$"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "module": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "summary_md": {
+      "type": "string"
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "links": {
+      "type": "array"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

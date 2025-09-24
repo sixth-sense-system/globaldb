@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DecisionsSchema",
+  "type": "object",
+  "required": [
+    "id",
+    "date",
+    "adr_id",
+    "module",
+    "title",
+    "rationale_md",
+    "status",
+    "provenance",
+    "created_at"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^DEC-[0-9]{8}-[0-9]{4}$"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "adr_id": {
+      "type": "string"
+    },
+    "module": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "rationale_md": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "accepted",
+        "superseded",
+        "rejected"
+      ]
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "links": {
+      "type": "array"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

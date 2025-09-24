@@ -1,0 +1,120 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EvidenceTicket",
+  "type": "object",
+  "required": [
+    "id",
+    "origin",
+    "type",
+    "title",
+    "summary_md",
+    "provenance",
+    "confidence",
+    "created_at"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^ET-[0-9]{8}-[0-9]{4}$"
+    },
+    "origin": {
+      "type": "string",
+      "enum": [
+        "synthesized",
+        "discussed"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "event",
+        "decision",
+        "config",
+        "idea",
+        "roadmap"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3
+    },
+    "summary_md": {
+      "type": "string"
+    },
+    "module_hint": {
+      "type": "string",
+      "pattern": "^(0[0-9]|1[0-3]|99)_[A-Za-z0-9_]+$"
+    },
+    "stage_hint": {
+      "type": "string",
+      "enum": [
+        "Stage1",
+        "Stage2",
+        "Stage3",
+        "Stage4",
+        "Stage5"
+      ]
+    },
+    "priority_hint": {
+      "type": "string",
+      "enum": [
+        "P0",
+        "P1",
+        "P2",
+        "P3"
+      ]
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "repo_relpath",
+        "sha256",
+        "line_start",
+        "line_end"
+      ],
+      "properties": {
+        "repo_relpath": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "line_start": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "line_end": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "rel": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

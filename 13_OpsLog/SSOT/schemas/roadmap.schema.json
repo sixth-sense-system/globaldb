@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RoadmapSchema",
+  "type": "object",
+  "required": [
+    "id",
+    "stage",
+    "title",
+    "owner",
+    "status",
+    "deps",
+    "evidence_targets",
+    "created_at"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^RM-[0-9]{4}$"
+    },
+    "stage": {
+      "type": "string",
+      "enum": [
+        "Stage1",
+        "Stage2",
+        "Stage3",
+        "Stage4",
+        "Stage5"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "todo",
+        "doing",
+        "blocked",
+        "done"
+      ]
+    },
+    "window": {
+      "type": "string"
+    },
+    "deps": {
+      "type": "array"
+    },
+    "evidence_targets": {
+      "type": "array"
+    },
+    "links": {
+      "type": "array"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

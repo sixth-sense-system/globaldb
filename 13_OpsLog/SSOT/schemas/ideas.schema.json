@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "IdeasSchema",
+  "type": "object",
+  "required": [
+    "id",
+    "origin",
+    "module_hint",
+    "stage_hint",
+    "title",
+    "summary_md",
+    "priority",
+    "confidence",
+    "provenance",
+    "created_at"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^IDEA-[0-9]{8}-[0-9]{4}$"
+    },
+    "origin": {
+      "type": "string",
+      "enum": [
+        "discussed",
+        "synthesized"
+      ]
+    },
+    "module_hint": {
+      "type": "string"
+    },
+    "stage_hint": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "summary_md": {
+      "type": "string"
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "P0",
+        "P1",
+        "P2",
+        "P3"
+      ]
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

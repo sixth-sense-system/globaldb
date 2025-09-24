@@ -1,0 +1,49 @@
+version: 2
+domains:
+  governance_integrity:
+    weight: 0.12
+    signals: [erep_version, branch_protection, code_owners, policy_hash_mismatch, commit_signing]
+  infra_readiness:
+    weight: 0.12
+    signals: [ci_green_rate, codeql_enabled, dependabot_enabled, actions_pinned_by_sha, secret_scanning, sops_age_configured]
+  data_foundation:
+    weight: 0.12
+    signals: [schemas_versioned, parquet_lints, data_freshness_sla, pit_correctness, checksums_verified]
+  systems_execution:
+    weight: 0.15
+    signals: [kill_switch, daily_loss_cap, router_health, backtest_smoke_gate, runtime_config_signing]
+  strategy_factory:
+    weight: 0.15
+    signals: [templates_ready, golden_examples, promotion_criteria, wfa_ready, telemetry_markout]
+  ai_algo:
+    weight: 0.1
+    signals: [discovery_enabled, synthesis_preview, model_registry, eval_harness, determinism_guard]
+  research_velocity:
+    weight: 0.08
+    signals: [ideas_unlocked_week, idea_conversion_rate, time_to_promotion, literature_ingestions]
+  market_depth:
+    weight: 0.08
+    signals: [venues_covered, instruments_profiles, liquidity_features, stress_scenarios]
+  ops_velocity:
+    weight: 0.08
+    signals: [wip_to_done_ratio, mttr_ops, pr_lead_time, weekly_throughput]
+
+valuation:
+  replacement_cost:
+    method: "bottom_up"
+    bands:
+      conservative: [75000, 110000]
+      base: [110000, 180000]
+      aggressive: [180000, 260000]
+  per_accomplishment:
+    # These are example defaults; the renderer will compute from SSOT events
+    repo_hardening: [3000, 8000]
+    pre_commit_gates: [2000, 5000]
+    codeql_setup: [1500, 4000]
+    sops_age_enable: [2500, 7000]
+    kill_switch_module: [3500, 9000]
+    strategy_factory_bootstrap: [5000, 14000]
+    data_ingestion_pit: [4000, 12000]
+
+pulse:
+  include_family_message: true

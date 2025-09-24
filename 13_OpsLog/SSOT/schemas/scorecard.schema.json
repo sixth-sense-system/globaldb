@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ScorecardSchema",
+  "type": "object",
+  "required": [
+    "id",
+    "week_start",
+    "week_end",
+    "domains",
+    "valuation",
+    "pulse",
+    "created_at"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^SC-[0-9]{4}$"
+    },
+    "week_start": {
+      "type": "string",
+      "format": "date"
+    },
+    "week_end": {
+      "type": "string",
+      "format": "date"
+    },
+    "domains": {
+      "type": "object"
+    },
+    "valuation": {
+      "type": "object"
+    },
+    "pulse": {
+      "type": "object"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

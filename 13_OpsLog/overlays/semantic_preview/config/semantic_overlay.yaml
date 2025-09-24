@@ -1,0 +1,57 @@
+# Semantic overlay configuration for ENERQIS (generated 2025-09-24T21:04:44Z)
+mode: auto  # auto | deterministic_only | llm_only
+min_confidence_promote: 0.72
+min_confidence_candidate: 0.42
+max_tickets_per_file: 64
+
+paths:
+  include_globs:
+    - "13_OpsLog/**/*.md"
+    - "0*_*/**/*.md"
+    - "1*_*/**/*.md"
+  exclude_globs:
+    - "*/machine/**"
+    - "*/DERIVED/**"
+    - ".github/**"
+
+patterns:
+  # Deterministic lexical cues (weighted); still used in hybrid mode
+  action_verbs:
+    weight: 0.35
+    list:
+      - "installed"
+      - "set up"
+      - "configured"
+      - "enabled"
+      - "disabled"
+      - "updated"
+      - "migrated"
+      - "whitelisted"
+      - "signed"
+      - "benchmarked"
+      - "backtested"
+      - "refactored"
+      - "documented"
+      - "seeded"
+      - "pinned"
+      - "encrypted"
+      - "rotated"
+      - "tested"
+      - "rolled out"
+      - "hardened"
+  first_person_markers:
+    weight: 0.2
+    list: ["I ", "I’ve ", "I did ", "I had ", "we ", "we’ve "]
+  imperative_markers:
+    weight: 0.1
+    list: ["do ", "set ", "make sure ", "ensure "]
+  asset_markers:
+    weight: 0.2
+    list: ["Windows 11", "BIOS", "driver", "Kaspersky", "cTrader", "SSH", "CodeQL", "Dependabot", "branch protection", "sops", "age", "minisign", "GitHub Actions"]
+
+llm:
+  provider: env  # read from ENV: OVERLAY_PROVIDER, MODEL, API_KEY
+  prompt_template_path: "13_OpsLog/overlays/semantic_preview/templates/prompt_template.md"
+  temperature: 0.15
+  top_p: 0.9
+  max_tokens: 1800
