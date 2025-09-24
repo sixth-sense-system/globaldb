@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Exec Scorecard v2",
+  "type": "object",
+  "required": [
+    "snapshot_id",
+    "period_start",
+    "period_end",
+    "total_value"
+  ],
+  "properties": {
+    "snapshot_id": {
+      "type": "string"
+    },
+    "period_start": {
+      "type": "string",
+      "format": "date"
+    },
+    "period_end": {
+      "type": "string",
+      "format": "date"
+    },
+    "total_value": {
+      "type": "number"
+    },
+    "delta_value": {
+      "type": "number"
+    },
+    "dimensions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "number"
+      }
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

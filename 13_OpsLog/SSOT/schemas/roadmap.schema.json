@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Roadmap",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "stage",
+    "window",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "detail": {
+      "type": "string"
+    },
+    "stage": {
+      "type": "string",
+      "enum": [
+        "1-foundation",
+        "2-factory",
+        "3-scale",
+        "4-advanced",
+        "5-enterprise"
+      ]
+    },
+    "window": {
+      "type": "string",
+      "description": "YYYY-Www or YYYY-Qn or ISO range"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "todo",
+        "doing",
+        "done",
+        "blocked"
+      ]
+    },
+    "depends_on": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_targets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

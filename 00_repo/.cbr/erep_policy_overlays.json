@@ -1,0 +1,46 @@
+{
+  "version": "2.4.1",
+  "rules": [
+    {
+      "id": "R-SSOT-SCHEMA",
+      "description": "SSOT schema validation must pass",
+      "required": true
+    },
+    {
+      "id": "R-VIEWS-RENDER",
+      "description": "Views render deterministically from SSOT",
+      "required": true
+    },
+    {
+      "id": "R-PREVIEW-ARTIFACTS",
+      "description": "If preview job ran, evidence_tickets.jsonl must be attached and provenance complete",
+      "required": false
+    },
+    {
+      "id": "R-NO-HUMAN-EDITS-VIEWS",
+      "description": "No manual edits to generated views",
+      "required": true
+    },
+    {
+      "id": "R-ACTIONS-PINNED",
+      "description": "GitHub Actions pinned by SHA",
+      "required": true
+    },
+    {
+      "id": "R-SECRETS-MANAGED",
+      "description": "sops/age present when secrets referenced",
+      "required": true
+    }
+  ],
+  "checks": {
+    "opslog-sync": {
+      "required": true
+    },
+    "codeql": {
+      "required": true
+    },
+    "pre-commit": {
+      "required": true
+    }
+  }
+}

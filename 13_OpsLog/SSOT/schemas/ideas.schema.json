@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ideas",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "stage_hint",
+    "priority"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "detail": {
+      "type": "string"
+    },
+    "stage_hint": {
+      "type": "string",
+      "enum": [
+        "foundation",
+        "factory",
+        "scale",
+        "advanced",
+        "enterprise"
+      ]
+    },
+    "priority": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

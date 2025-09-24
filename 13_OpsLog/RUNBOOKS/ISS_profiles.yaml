@@ -1,0 +1,51 @@
+# ISS Profiles Registry (Enterprise)
+generated: 2025-09-24T21:33:04Z
+
+defaults:
+  review_policy:
+    required_approvals: 2
+    reviewers:
+      - 02_Governance
+      - 05_Blueprint
+      - 13_OpsLog
+  artifacts:
+    ssot_tables:
+      - events.parquet
+      - decisions.parquet
+      - configs.parquet
+      - ideas.parquet
+      - roadmap.parquet
+      - scorecard.parquet
+    views:
+      - HISTORY.md
+      - DECISIONS.md
+      - SYSTEMS.md
+      - EXEC_SCORECARD.md
+      - NEXT.md
+      - ROADMAP.md
+    mirrors:
+      - 05_Blueprint/MASTER/mission_control.md
+
+profiles:
+  CONSOLIDATION_ONLY:
+    description: Deterministic backbone (no model). Produces SSOT + 6 views + Mission Control.
+    steps: [ingest, normalize, classify_link, scorecard_compute, render_views]
+    required_checks: [erep, erep-guard, erep-equivalence, pre-commit, opslog-sync, codeql]
+    preview_artifacts: []
+
+  CONSOLIDATION_PREVIEW:
+    description: Deterministic backbone + semantic overlay (tickets preview).
+    steps: [ingest, normalize, classify_link, semantic_overlay_preview, scorecard_compute, render_views]
+    required_checks: [erep, erep-guard, erep-equivalence, pre-commit, opslog-sync, codeql]
+    preview_artifacts:
+      - 13_OpsLog/overlays/semantic_preview/DERIVED/evidence_tickets.jsonl
+
+  TRUE_SYNTHESIS:
+    description: Full synthesis (Discovery + Synthesis overlays) on expanded corpus.
+    steps: [ingest, normalize, classify_link, discovery_overlay_preview, synthesis_overlay_preview, scorecard_compute, render_views]
+    required_checks: [erep, erep-guard, erep-equivalence, pre-commit, opslog-sync, codeql]
+    preview_artifacts:
+      - opslog-preview
+notes:
+  - SSOT is authoritative; views and mission_control are derived.
+  - Preview artifacts are never auto-promoted; promotion requires PR + approvals.

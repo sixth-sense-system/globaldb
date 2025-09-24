@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Configs",
+  "type": "object",
+  "required": [
+    "id",
+    "component",
+    "version",
+    "hash",
+    "signed"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "component": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "hash": {
+      "type": "string"
+    },
+    "signed": {
+      "type": "boolean"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

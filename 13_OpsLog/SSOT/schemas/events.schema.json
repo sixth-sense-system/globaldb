@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpsLog Events",
+  "type": "object",
+  "required": [
+    "id",
+    "timestamp",
+    "title",
+    "source",
+    "category",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string",
+      "description": "file/PR/commit/ref"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "governance",
+        "security",
+        "research",
+        "data",
+        "infra",
+        "strategy",
+        "run"
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "done",
+        "planned",
+        "candidate"
+      ]
+    },
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "derived_from_ticket": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}
