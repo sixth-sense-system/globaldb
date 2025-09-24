@@ -1,1 +1,54 @@
-<PASTE THE YAML ABOVE VERBATIM>
+name: opslog-preview
+
+on:
+  pull_request:
+    branches: [ "main" ]
+    types: [ opened, synchronize, reopened, ready_for_review ]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  validate_and_render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c
+        with:
+          python-version: "3.11"
+
+      - name: Enforce pinned actions
+        run: python .github/tools/check_workflow_pins.py
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml jsonschema pandas pyarrow
+
+      - name: Ensure CI dirs exist
+        run: |
+          mkdir -p 13_OpsLog/DERIVED/ci
+          mkdir -p 13_OpsLog/LEDGER
+          mkdir -p 13_OpsLog/SSOT
+
+      - name: Validate SSOT schemas (placeholder)
+        run: |
+          echo '{"status":"ok","note":"placeholder validator"}' > 13_OpsLog/DERIVED/ci/ci_validation.json
+
+      - name: Render views (placeholder)
+        run: |
+          echo "# CI preview" > 13_OpsLog/DERIVED/ci/ci_rendered.md
+          echo "# Mission Control (CI)" > 13_OpsLog/DERIVED/ci/ci_mission_control.md
+          echo "render ok" > 13_OpsLog/DERIVED/ci/render.log
+
+      - name: Upload opslog-ci bundle
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: opslog-ci
+          path: 13_OpsLog/DERIVED/ci
