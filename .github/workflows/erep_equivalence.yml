@@ -11,14 +11,25 @@ jobs:
   erep-equivalence:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - name: Checkout
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+
       - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c
         with:
           python-version: "3.11"
+
+      - name: Enforce pinned actions
+        run: python .github/tools/check_workflow_pins.py
+
       - name: Install deps
         run: |
           python -m pip install --upgrade pip
+          # add any explicit deps if needed, e.g.:
+          # pip install -r tools/scripts/requirements.txt
+
       - name: Equivalence check (FULL -> COMPLIANCE_ONLY)
         run: |
-          python tools/scripts/erep_equivalence_check.py             --policy 00_repo/.cbr/erep_policy.json             --root .
+          python tools/scripts/erep_equivalence_check.py \
+            --policy 00_repo/.cbr/erep_policy.json \
+            --root .
