@@ -45,3 +45,5 @@ See our [Security Policy](SECURITY.md) for private vulnerability reporting.
 <!-- final smoke -->
 
 <!-- sanity: required checks only -->
+
+<!-- sanity: no dynamic codeql -->
