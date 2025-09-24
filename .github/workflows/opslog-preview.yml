@@ -1,4 +1,4 @@
-name: opslog-preview
+﻿name: opslog-preview
 on:
   workflow_dispatch:
 permissions:
@@ -22,7 +22,7 @@ jobs:
         run: |
           python 13_OpsLog/overlays/semantic_preview/semantic_overlay.py --config 13_OpsLog/overlays/semantic_preview/config/semantic_overlay.yaml --out 13_OpsLog/overlays/semantic_preview/DERIVED/evidence_tickets.jsonl
       - name: Upload evidence tickets
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: opslog-preview
           path: 13_OpsLog/overlays/semantic_preview/DERIVED/evidence_tickets.jsonl

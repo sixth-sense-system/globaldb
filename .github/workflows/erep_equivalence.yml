@@ -1,4 +1,4 @@
-name: EREP Equivalence Guard
+﻿name: EREP Equivalence Guard
 
 on:
   pull_request: {}
@@ -11,14 +11,26 @@ jobs:
   erep-equivalence:
     runs-on: ubuntu-latest
     steps:
+      # 1) Checkout (pinned)
       - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
-      - name: Set up Python
-        uses: actions/setup-python@v6
+
+      # 2) Setup Python (pinned)
+      - uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c
         with:
           python-version: "3.11"
+
+      # 3) Enforce pins (after checkout/setup so python exists & file is present)
+      - name: Enforce pinned actions
+        run: python .github/tools/check_workflow_pins.py
+
+      # 4) Install deps
       - name: Install deps
         run: |
           python -m pip install --upgrade pip
+
+      # 5) Equivalence check
       - name: Equivalence check (FULL -> COMPLIANCE_ONLY)
         run: |
-          python tools/scripts/erep_equivalence_check.py             --policy 00_repo/.cbr/erep_policy.json             --root .
+          python tools/scripts/erep_equivalence_check.py \
+            --policy 00_repo/.cbr/erep_policy.json \
+            --root .
