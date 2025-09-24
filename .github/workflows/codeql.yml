@@ -1,11 +1,9 @@
 name: CodeQL
 
 on:
+  workflow_dispatch:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
-  workflow_dispatch:
 
 permissions:
   contents: read
@@ -14,16 +12,14 @@ permissions:
 
 jobs:
   analyze:
-    name: CodeQL / Analyze (${{ matrix.language }}) (dynamic)
-    runs-on: ubuntu-latest
+    name: CodeQL / Analyze (python)
+    runs-on: ubuntu-22.04
     timeout-minutes: 60
 
     strategy:
       fail-fast: false
       matrix:
         language: [ 'python' ]
-        include:
-          - language: 'actions'
 
     steps:
       - name: Checkout
@@ -33,6 +29,7 @@ jobs:
         uses: github/codeql-action/init@v3
         with:
           languages: ${{ matrix.language }}
+          # Optional, keep or drop:
           queries: +security-extended
 
       - name: Autobuild
@@ -40,5 +37,3 @@ jobs:
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3
-        with:
-          category: "/language:${{ matrix.language }}"
