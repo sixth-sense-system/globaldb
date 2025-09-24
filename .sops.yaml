@@ -1,0 +1,6 @@
+# SOPS baseline — do not commit private keys. Store recipients only.
+creation_rules:
+  - path_regex: ^(secrets/|config/secure/|.*\.enc\.ya?ml|.*\.env\.enc)$
+    encrypted_regex: '^(data|stringData|password|token|secret|apiKey|clientSecret|PRIVATE_KEY)$'
+    age:
+      - 'age1REPLACE_THIS_WITH_YOUR_PUBLIC_RECIPIENT'

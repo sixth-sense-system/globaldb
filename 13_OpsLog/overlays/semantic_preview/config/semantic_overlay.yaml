@@ -1,0 +1,16 @@
+# Semantic overlay config — generated 2025-09-24T23:13:41Z
+include_globs:
+  - "13_OpsLog/**/*.md"
+  - "02_Governance/**/*.md"
+  - "05_Blueprint/**/*.md"
+  - "11_Research/**/*.md"
+  - "10_AI_Algo/**/*.md"
+  - "transcripts/**/*.md"
+model_profile: "preview-governed"
+confidence_threshold: 0.72
+ticket_output: "13_OpsLog/overlays/semantic_preview/DERIVED/evidence_tickets.jsonl"
+promotion_rules:
+  - target: "events"
+    when: "ticket.kind == 'event' and ticket.confidence >= 0.78"
+  - target: "ideas"
+    when: "ticket.kind == 'idea' and ticket.confidence >= 0.80"
