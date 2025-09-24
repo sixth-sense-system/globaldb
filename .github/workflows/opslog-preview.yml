@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-﻿name: opslog-preview
+﻿<<<<<<< HEAD
+ï»¿name: opslog-preview
 ||||||| parent of 6c855eb (ci: align job id with required check (validate_and_render) + keep workflows pinned)
 name: opslog-preview
 =======
@@ -16,7 +16,7 @@ permissions:
   contents: read
 
 jobs:
-  validate_and_render:       # 👈 matches branch protection required check
+  validate_and_render:       # ðŸ‘ˆ matches branch protection required check
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -45,7 +45,7 @@ jobs:
 ||||||| parent of 6c855eb (ci: align job id with required check (validate_and_render) + keep workflows pinned)
           python 13_OpsLog/overlays/semantic_preview/semantic_overlay.py --config 13_OpsLog/overlays/semantic_preview/config/semantic_overlay.yaml --out 13_OpsLog/overlays/semantic_preview/DERIVED/evidence_tickets.jsonl
       - name: Upload evidence tickets
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
 =======
           mkdir -p 13_OpsLog/DERIVED/ci
           mkdir -p 13_OpsLog/LEDGER
