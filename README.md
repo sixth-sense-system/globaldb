@@ -39,3 +39,5 @@ These checks run on every pull request and are required to merge:
 [Code scanning (CodeQL)](../../security/code-scanning)
 
 See our [Security Policy](SECURITY.md) for private vulnerability reporting.
+
+<!-- require opslog check smoke -->
