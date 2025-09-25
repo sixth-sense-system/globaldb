@@ -5,7 +5,7 @@ on:
     branches: [ main ]
   push:
     branches: [ main ]
-  workflow_dispatch:
+  workflow_dispatch: {}
 
 permissions:
   contents: read
@@ -45,3 +45,21 @@ jobs:
           extra_args: >-
             --from-ref ${{ github.event.pull_request.base.sha }}
             --to-ref   ${{ github.sha }}
+
+  plaintext_env_guard:
+    name: block plaintext .env in Git
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+        with:
+          fetch-depth: 0
+      - name: Fail if plaintext .env files are tracked
+        run: |
+          set -euo pipefail
+          hits="$(git ls-files | grep -E '(^|/)\.env($|\.)' | grep -v '\.env\..*\.enc$' || true)"
+          if [ -n "$hits" ]; then
+            echo "::error::Plaintext .env files are tracked in Git:"
+            echo "$hits"
+            exit 1
+          fi
