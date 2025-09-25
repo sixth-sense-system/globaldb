@@ -1,0 +1,35 @@
+name: ISS Run (manual)
+
+on:
+  workflow_dispatch:
+    inputs:
+      baseline_tag:
+        description: Optional tag name to include in preview headers
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  iss_run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+        with:
+          fetch-depth: 0
+
+      - name: Render preview views (placeholder)
+        shell: pwsh
+        run: |
+          ./tools/opslog-render.ps1 -BaselineTag "${{ github.event.inputs.baseline_tag }}"
+
+      - name: Upload preview artefacts
+        uses: actions/upload-artifact@9dc911c07c246eb893a1f9d6045dbf1c4c3e62a0
+        with:
+          name: opslog-views
+          path: |
+            13_OpsLog/views/**
+            05_Blueprint/MASTER/mission_control.md
