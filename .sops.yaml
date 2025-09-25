@@ -1,6 +1,30 @@
-# SOPS baseline — do not commit private keys. Store recipients only.
+# SOPS policy (age) — repo root
+# Do NOT commit private keys. Only public recipients belong here.
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mozilla/sops/master/docs/sops.schema.json
+
+# Define recipients once; reuse via YAML alias
+recipients: &age_recipients
+  - 'age10yq4vwek5y4mf8ua0kcha4202r8tju0k9utc9nju3747nwzzxsys89lulk'
+
 creation_rules:
-  - path_regex: ^(secrets/|config/secure/|.*\.enc\.ya?ml|.*\.env\.enc)$
+  # 1) Canonical secrets locations (structured secrets)
+  #    Encrypt only sensitive fields inside structured files (YAML/JSON, k8s Secrets, etc.)
+  - path_regex: ^(00_repo/secrets/|config/secure/).*
+    key_groups:
+      - age: *age_recipients
+    encrypted_regex: '^(data|stringData|password|token|secret|apiKey|clientSecret|accessKey|PRIVATE_KEY|AUTH|CREDENTIALS|DB_URL|URL|USER|PASS|COOKIE|SESSION|KEY|CERT|CERTIFICATE)$'
+    mac_only_encrypted: true
+
+  # 2) Explicit full-file encrypted artifacts
+  #    Any file that ends with .env.<anything>.enc or .enc.yaml/.enc.yml is fully encrypted.
+  - path_regex: ^.*(\.env\..*\.enc|\.enc\.ya?ml)$
+    key_groups:
+      - age: *age_recipients
+    mac_only_encrypted: true
+
+  # 3) Generic fallback for a top-level "secrets/" folder (if used)
+  - path_regex: ^secrets/.*
+    key_groups:
+      - age: *age_recipients
     encrypted_regex: '^(data|stringData|password|token|secret|apiKey|clientSecret|PRIVATE_KEY)$'
-    age:
-      - 'age1REPLACE_THIS_WITH_YOUR_PUBLIC_RECIPIENT'
+    mac_only_encrypted: true
