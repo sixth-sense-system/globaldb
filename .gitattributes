@@ -3,25 +3,37 @@
 * text=auto eol=lf
 
 # Scripts — keep LF (works on Windows PowerShell & PowerShell 7)
-*.sh   text eol=lf
-*.py   text eol=lf
-*.ps1  text eol=lf
+*.sh    text eol=lf
+*.py    text eol=lf
+*.ps1   text eol=lf
 
 # cTrader bots (text, keep LF)
-*.cbot text eol=lf
+*.cbot  text eol=lf
 
 # Windows batch/cmd prefer CRLF on checkout (still LF in the repo)
-*.bat  text eol=crlf
-*.cmd  text eol=crlf
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
 
 # Data/config — keep LF for stable diffs
-*.json  text eol=lf
-*.jsonl text eol=lf
-*.yaml  text eol=lf
-*.yml   text eol=lf
-*.md    text eol=lf
-*.csv   text eol=lf
-*.txt   text eol=lf
+*.json   text eol=lf
+*.jsonl  text eol=lf
+*.yaml   text eol=lf
+*.yml    text eol=lf
+*.md     text eol=lf
+*.csv    text eol=lf
+*.txt    text eol=lf
+.gitattributes text eol=lf
+.editorconfig  text eol=lf
+
+# GitHub workflow files — keep LF
+.github/workflows/*.yml  text eol=lf
+.github/workflows/*.yaml text eol=lf
+
+# Encrypted/config artifacts — keep LF to avoid CRLF churn
+*.enc           text eol=lf
+*.env.*.enc     text eol=lf
+*.enc.yml       text eol=lf
+*.enc.yaml      text eol=lf
 
 # Binary (never modify line endings)
 *.zip     binary
